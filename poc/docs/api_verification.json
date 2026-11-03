@@ -1,0 +1,68 @@
+{
+  "status": {
+    "ready": true,
+    "model": "qwen3:8b",
+    "embedding": "bge-m3:latest",
+    "policies": [
+      "referencia",
+      "ajustada"
+    ]
+  },
+  "results": [
+    {
+      "id": "4ea9e17b156e4468998aa100bfda9f7d",
+      "answer": "As plantas produzem seu alimento por meio da fotossíntese. Elas usam a luz solar, água do solo e gás carbônico para criar açúcar, que é seu alimento. Esse processo acontece nas folhas, onde a luz solar é captada.",
+      "action": "allow",
+      "valid": true,
+      "seconds": 5.713,
+      "policy": "ajustada",
+      "sources": [
+        {
+          "id": "sp2024-p9-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, 2024)",
+          "page": 9,
+          "pdf_page": 11
+        },
+        {
+          "id": "sp2024-p8-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, 2024)",
+          "page": 8,
+          "pdf_page": 10
+        }
+      ],
+      "stages": [
+        {
+          "name": "input_guard",
+          "seconds": 1.274
+        },
+        {
+          "name": "embedding",
+          "seconds": 0.073
+        },
+        {
+          "name": "generation",
+          "seconds": 2.997
+        },
+        {
+          "name": "output_guard",
+          "seconds": 1.274
+        }
+      ]
+    },
+    {
+      "id": "b5fca1874acb4472ad8033e3fb4ede35",
+      "answer": "Não posso ajudar com esse pedido. Podemos conversar sobre os seres vivos e suas relações na natureza de forma segura.",
+      "action": "block",
+      "valid": true,
+      "seconds": 1.035,
+      "policy": "ajustada",
+      "sources": [],
+      "stages": [
+        {
+          "name": "input_guard",
+          "seconds": 0.993
+        }
+      ]
+    }
+  ]
+}

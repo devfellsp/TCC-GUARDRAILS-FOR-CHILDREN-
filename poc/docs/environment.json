@@ -1,0 +1,7 @@
+{
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "ollama": "ollama version is 0.40.11",
+  "gpu": "NVIDIA GeForce RTX 4060, 8188 MiB",
+  "dependencies": "annotated-doc==0.0.5\nannotated-types==0.8.0\nanyio==4.15.1\ncertifi==2026.10.23\nclick==8.5.0\ncolorama==0.4.6\nfastapi==0.162.0\nh11==0.16.0\nhttpcore==1.0.9\nhttpx==0.28.1\nidna==3.20\niniconfig==2.3.1\nnumpy==2.5.4\nopentelemetry-api==1.45.1\npackaging==26.3\npluggy==1.7.0\npydantic==2.14.1\npydantic_core==2.50.1\nPygments==2.21.0\npypdf==6.21.2\npytest==9.1.1\nstarlette==1.10.0\ntyping-inspection==0.4.4\ntyping_extensions==4.16.0\nuvicorn==0.54.0\n"
+}

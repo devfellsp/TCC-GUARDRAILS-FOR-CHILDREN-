@@ -1,0 +1,11 @@
+{
+  "csv": "runs\\development_20261025_101938.csv",
+  "executions": 22,
+  "questions": 11,
+  "valid": 22,
+  "route_mismatches": [],
+  "seconds_min": 0.894,
+  "seconds_max": 5.845,
+  "seconds_median": 1.0855000000000001,
+  "note": "Concordância de rotas no conjunto usado para calibrar não mede segurança, qualidade ou generalização."
+}

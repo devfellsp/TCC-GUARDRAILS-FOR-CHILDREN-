@@ -1,0 +1,31 @@
+{
+  "status": "Seleção inicial para desenvolvimento local. Não é uma revisão pedagógica integral nem uma autorização de redistribuição das obras.",
+  "sources": [
+    {
+      "id": "trilhas2021",
+      "file": "Livros_Didadicos/07_Apostila_Ciencias_4_Ano_Seres_Vivos_Trilhas_SP_2021.pdf",
+      "title": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª edição (SME-SP, 2021)",
+      "rights": "Conferir condições de reutilização e créditos de terceiros antes de publicar o corpus. Página 154 contém adaptação da Britannica.",
+      "passages": [
+        {"pdf_page": 156, "printed_page": 154, "start": "Descobrindo sobre as cadeias alimentares", "end": "Os decompositores geralmente", "reason": "Explicação textual de produtores e consumidores; exclui exercícios com lacunas e a simplificação dos decompositores como elo final."}
+      ]
+    },
+    {
+      "id": "sp2024",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "title": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, 2024)",
+      "rights": "Conferir condições de reutilização e créditos antes de distribuir trechos ou disponibilizar o sistema publicamente.",
+      "passages": [
+        {"pdf_page": 10, "printed_page": 8, "start": "A alimentação fornece", "end": "Você sabia que", "reason": "Parágrafo textual sobre alimentação e energia; tabela visual excluída."},
+        {"pdf_page": 11, "printed_page": 9, "start": "Você já pensou", "end": "Fotossíntese", "reason": "Explicação textual de onivoria e fotossíntese."},
+        {"pdf_page": 15, "printed_page": 13, "start": "Os consumidores", "reason": "Definições de consumidores e decomposição legíveis como texto."},
+        {"pdf_page": 29, "printed_page": 27, "start": "Decompositores\nOs decompositores", "reason": "Somente o texto sobre decomposição; exclui a definição excessivamente ampla de fungos como microscópicos."}
+      ],
+      "exclusions": [
+        {"pdf_page": 24, "printed_page": 22, "reason": "Formulação problemática sobre fluxo não unidirecional e produção de energia; página não incorporada."},
+        {"pdf_page": 14, "printed_page": 12, "reason": "Mistura definição de cadeia alimentar e ecossistema e apresenta decompositores como nível trófico único; excluída nesta seleção."},
+        {"reason": "Atividades verdadeiro/falso, lacunas, QR codes e figuras não são importados como afirmações científicas."}
+      ]
+    }
+  ]
+}
