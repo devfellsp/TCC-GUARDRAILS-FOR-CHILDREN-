@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net" modified="2026-11-03T16:35:00.000Z" agent="GuardKids-TCC" version="24.0.0" type="device">
+  <diagram id="diag_2" name="Fig 2 - Classificacao Indicativa">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="680" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title_banner" value="Figura 2 — Fluxo decisório da Classificação Indicativa brasileira (Brasil, 2025) aplicado a guardrails contextuais" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;fontColor=#1A365D;" vertex="1" parent="1"><mxGeometry x="30" y="15" width="1040" height="35" as="geometry" /></mxCell>
+        <mxCell id="msg" value="Mensagem na Interação (Pergunta da Criança ou Rascunho de Resposta)&lt;br&gt;Perfil de Referência: 9 anos (4º ano do Ensino Fundamental)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="350" y="60" width="400" height="55" as="geometry" /></mxCell>
+        <mxCell id="fase1" value="FASE 1: Análise Descritiva (Identificação Temática Preliminar — Brasil, 2025)&lt;br&gt;Inspeção nos 4 eixos: (1) Violência | (2) Sexo e Nudez | (3) Drogas | (4) Interatividade (IA e Dados)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="280" y="145" width="540" height="80" as="geometry" /></mxCell>
+        <mxCell id="d_sens" value="Contém tema sensível&lt;br&gt;ou descritor restrito&lt;br&gt;para 9 anos?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;fontColor=#1a1a1a;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="410" y="255" width="280" height="95" as="geometry" /></mxCell>
+        <mxCell id="livre" value="Conteúdo Livre (normal)&lt;br&gt;Dúvida escolar sem vocábulos&lt;br&gt;de violência, sexo, drogas ou PII" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="50" y="270" width="260" height="65" as="geometry" /></mxCell>
+        <mxCell id="fase2" value="FASE 2: Análise Contextual (Ponderação de Agravantes vs. Atenuantes)&lt;br&gt;Avalia propósito, detalhamento, incitação ao dano ou finalidade científica/escolar" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="310" y="390" width="480" height="70" as="geometry" /></mxCell>
+        <mxCell id="agrav" value="Presença de AGRAVANTES (needs_protection = true)&lt;br&gt;• Violência gráfica ou crueldade contra animal (A.4.5)&lt;br&gt;• Autolesão / suicídio (NR 14–18) ou Bullying&lt;br&gt;• Sexo explícito / linguagem chula / Drogas&lt;br&gt;• Coleta de dados pessoais (D.6.1) ou Prompt Injection&lt;br&gt;→ DECISÃO: Bloqueio ou Orientação Segura" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="690" y="495" width="360" height="145" as="geometry" /></mxCell>
+        <mxCell id="aten" value="Presença de ATENUANTE EDUCATIVO (Brasil, 2025)&lt;br&gt;• Contexto científico/escolar do 4º ano (Seres Vivos)&lt;br&gt;• Predação natural na cadeia alimentar sem crueldade&lt;br&gt;• IA generativa educacional controlada (D.3.1 — 10 anos)&lt;br&gt;(needs_protection = false | educational_predation = true)&lt;br&gt;→ DECISÃO: Submetida à Política Configurável" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="50" y="495" width="370" height="145" as="geometry" /></mxCell>
+        <mxCell id="rag_go" value="Prossegue ao RAG&lt;br&gt;e Geração Ancorada&lt;br&gt;(Se política permitir&lt;br&gt;contexto educativo)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="455" y="520" width="195" height="95" as="geometry" /></mxCell>
+        <mxCell id="e2_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="msg" target="fase1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fase1" target="d_sens">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_3" value="Não" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2d6a4f;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_sens" target="livre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_4" value="Sim" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9c6615;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d_sens" target="fase2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_5" value="Agravante de Risco" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.75;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fase2" target="agrav">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_6" value="Atenuante Educativo" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9c6615;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.25;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fase2" target="aten">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_7" value="ajustada&lt;br&gt;(allow)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2d6a4f;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aten" target="rag_go">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_8" value="allow" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2d6a4f;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="livre" target="rag_go">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="480" />
+              <mxPoint x="552" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

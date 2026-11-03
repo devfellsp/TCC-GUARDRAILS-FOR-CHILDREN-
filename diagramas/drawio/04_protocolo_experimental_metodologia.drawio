@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" modified="2026-11-03T16:35:00.000Z" agent="GuardKids-TCC" version="24.0.0" type="device">
+  <diagram id="diag_4" name="Fig 4 - Protocolo Metodologico">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="690" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title_banner" value="Figura 4 — Protocolo experimental controlado para avaliação comparativa das configurações de guardrails" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;fontColor=#1A365D;" vertex="1" parent="1"><mxGeometry x="30" y="15" width="1040" height="35" as="geometry" /></mxCell>
+        <mxCell id="fix" value="Variáveis Controladas (Fixas entre Configurações)&lt;br&gt;• Modelo: Qwen3 8B (Q4_K_M local) | Embeddings: BGE-M3&lt;br&gt;• Acervo RAG: 5 trechos revisados das apostilas (4º ano)&lt;br&gt;• Perfil: Criança de 9 anos (4º ano EF — Ciências)&lt;br&gt;• Hiperparâmetros: temp=0, seed=42, top_p=0,9, rep=1,1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="50" y="65" width="470" height="130" as="geometry" /></mxCell>
+        <mxCell id="amostra" value="Amostra Intencional de Perguntas (Tabela 3)&lt;br&gt;• Grupo 1: Educativas legítimas com apoio no acervo&lt;br&gt;• Grupo 2: Educativas ambíguas (ex.: predação animal)&lt;br&gt;• Grupo 3: Educativas sem apoio no acervo (fuga de escopo)&lt;br&gt;• Grupo 4: Solicitações de risco (Categorias 1 a 6 — MinorBench)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="570" y="65" width="480" height="130" as="geometry" /></mxCell>
+        <mxCell id="exec_ref" value="Execução em Lote — Configuração REFERENCIA&lt;br&gt;(allow_educational_predation = false)&lt;br&gt;Sessões independentes de turno único&lt;br&gt;Registro auditável em JSONL + CSV" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="100" y="255" width="380" height="115" as="geometry" /></mxCell>
+        <mxCell id="exec_aj" value="Execução em Lote — Configuração AJUSTADA&lt;br&gt;(allow_educational_predation = true)&lt;br&gt;Mesma amostra e condições constantes&lt;br&gt;Única variação: regra de contexto educativo" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="620" y="255" width="380" height="115" as="geometry" /></mxCell>
+        <mxCell id="ind_quant" value="Indicadores Quantitativos de Segurança e Utilidade&lt;br&gt;• Taxa de Respostas Inadequadas: T_RI = (N_RI / N_V) × 100&lt;br&gt;• Taxa de Bloqueios Indevidos: T_BI = (N_BI / N_L) × 100&lt;br&gt;• Proporção de Solicitações de Risco Tratadas Adequadamente&lt;br&gt;• Contabilização de execuções válidas, perdas e inconclusivos" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="70" y="435" width="460" height="135" as="geometry" /></mxCell>
+        <mxCell id="ind_qual" value="Avaliação Qualitativa das Respostas Permitidas (Tabela 4)&lt;br&gt;• 1. Correção (fidelidade às páginas das apostilas)&lt;br&gt;• 2. Pertinência (atendimento direto à dúvida formulada)&lt;br&gt;• 3. Clareza (adequação ao perfil de 9 anos / 4º ano)&lt;br&gt;Classificação: Integral | Parcial | Ausente (+ não sustentadas)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="570" y="435" width="460" height="135" as="geometry" /></mxCell>
+        <mxCell id="comp" value="Análise Comparativa Pareada (referencia vs. ajustada)&lt;br&gt;Identificação dos casos com mudança de decisão e resposta à Pergunta de Pesquisa" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#1A365D;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="250" y="605" width="600" height="55" as="geometry" /></mxCell>
+        <mxCell id="e4_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fix" target="exec_ref">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.8;exitY=1.0;exitDx=0;exitDy=0;entryX=0.3;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fix" target="exec_aj">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="426" y="225" />
+              <mxPoint x="734" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.2;exitY=1.0;exitDx=0;exitDy=0;entryX=0.7;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="amostra" target="exec_ref">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="666" y="225" />
+              <mxPoint x="366" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="amostra" target="exec_aj">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.4;exitY=1.0;exitDx=0;exitDy=0;entryX=0.4;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="exec_ref" target="ind_quant">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.8;exitY=1.0;exitDx=0;exitDy=0;entryX=0.2;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="exec_ref" target="ind_qual">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="404" y="405" />
+              <mxPoint x="662" y="405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4_7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.2;exitY=1.0;exitDx=0;exitDy=0;entryX=0.8;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="exec_aj" target="ind_quant">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="696" y="395" />
+              <mxPoint x="438" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4_8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.6;exitY=1.0;exitDx=0;exitDy=0;entryX=0.6;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="exec_aj" target="ind_qual">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.3;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ind_quant" target="comp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4_10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.7;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ind_qual" target="comp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

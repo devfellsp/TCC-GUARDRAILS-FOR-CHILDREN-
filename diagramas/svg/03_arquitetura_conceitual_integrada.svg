@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" width="1100" height="680" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#333333" />
+    </marker>
+  </defs>
+  <rect width="1100" height="680" fill="#ffffff" />
+  <text x="550.0" y="36" text-anchor="middle" font-size="15" font-weight="bold" fill="#1A365D">Figura 3 — Arquitetura conceitual de guardrails integrados ao RAG e ao controle de perfil e hiperparâmetros</text>
+  <rect x="60" y="65" width="980" height="110" rx="8" ry="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.8"  />
+  <text x="550.0" y="109.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">CAMADA 1 — Proteção por Padrão e Privacidade Infantil (Wang et al., 2022)</text>
+  <text x="550.0" y="124.3" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Operação desacoplada de coleta de dados pessoais (superando os 85% de tutores que perfilam crianças)</text>
+  <text x="550.0" y="139.7" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Perfil etário/escolar fixo e não identificável (9 anos / 4º ano EF) + Regra determinística anti-exposição de PII</text>
+  <rect x="60" y="205" width="980" height="125" rx="8" ry="8" fill="#fff2cc" stroke="#d6b656" stroke-width="1.8"  />
+  <text x="550.0" y="248.8" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">CAMADA 2 — Guardrails Configuráveis de Entrada e Saída (Rath et al., 2025; Khoo, Chua e Shong, 2025; Brasil, 2025)</text>
+  <text x="550.0" y="264.1" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Políticas declaradas em arquivo de configuração externo (config.json) separado da lógica da aplicação</text>
+  <text x="550.0" y="279.5" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Verificação de turno único na Entrada (antes do RAG) e na Saída (inspeção do rascunho antes da entrega à criança)</text>
+  <text x="550.0" y="294.9" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Cobertura das categorias: Perigo, Autolesão, Sexual, Ofensas/Ódio, Substâncias, Privacidade e Prompt Injection</text>
+  <rect x="60" y="360" width="980" height="125" rx="8" ry="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.8"  />
+  <text x="550.0" y="403.8" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">CAMADA 3 — Memória Não Paramétrica e Guardrail de Escopo Curricular via RAG (Lewis et al., 2020)</text>
+  <text x="550.0" y="419.1" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Índice vetorial denso (BGE-M3) construído exclusivamente com trechos revisados de apostilas públicas do 4º ano</text>
+  <text x="550.0" y="434.5" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Guardrail de suficiência documental (limiar de similaridade cosseno &gt;= 0,45 e validação estrita de source_ids)</text>
+  <text x="550.0" y="449.9" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Redirecionamento educativo para perguntas fora do tema Seres Vivos, contendo alucinações paramétricas</text>
+  <rect x="60" y="515" width="980" height="120" rx="8" ry="8" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.8"  />
+  <text x="550.0" y="556.3" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">CAMADA 4 — Controle de Perfil Sociolinguístico e Hiperparâmetros de Inferência (Martínez et al., 2024)</text>
+  <text x="550.0" y="571.6" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Papel sociolinguístico infantil (child role) instruindo frases curtas, vocabulário simples e explicação de termos científicos</text>
+  <text x="550.0" y="587.0" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Estabilidade experimental pela fixação de hiperparâmetros (temperature = 0, seed = 42, top_p = 0,9, repeat_penalty = 1,1)</text>
+  <text x="550.0" y="602.4" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Isolamento rigoroso do efeito das configurações de guardrails sobre T_RI, T_BI e clareza lexical</text>
+  <path d="M 550.0 175.0 L 550.0 205.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
+  <rect x="467.0" y="181.0" width="166.0" height="18.0" rx="3" fill="#ffffff" stroke="none" opacity="0.92" />
+  <text x="550.0" y="194.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#333333">Fronteira de Privacidade</text>
+  <path d="M 403.0 330.0 L 403.0 360.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
+  <rect x="284.2" y="336.0" width="237.5" height="18.0" rx="3" fill="#ffffff" stroke="none" opacity="0.92" />
+  <text x="403.0" y="349.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#333333">Pergunta Permitida pelos Guardrails</text>
+  <path d="M 550.0 485.0 L 550.0 515.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
+  <rect x="421.5" y="491.0" width="257.0" height="18.0" rx="3" fill="#ffffff" stroke="none" opacity="0.92" />
+  <text x="550.0" y="504.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#333333">Contexto Curricular Recuperado (Top-K)</text>
+  <path d="M 893.0 515.0 L 913.0 345.0 L 893.0 330.0" fill="none" stroke="#b85450" stroke-width="1.8"  marker-end="url(#arrow)" />
+  <rect x="777.8" y="421.0" width="250.5" height="18.0" rx="3" fill="#ffffff" stroke="none" opacity="0.92" />
+  <text x="903.0" y="434.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#b85450">Rascunho Gerado p/ Guardrail de Saída</text>
+</svg>
