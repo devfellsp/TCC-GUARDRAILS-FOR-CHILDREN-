@@ -1,0 +1,23 @@
+\chapter{Materiais, evidências e reprodução}\label{ap:reproducao}
+
+Os materiais atuais estão separados do histórico. O protocolo final ativo está em \nolinkurl{avaliacao/final_multichat_v1/README.md}; seus \nolinkurl{casos.json}, \nolinkurl{protocolo.json} e \nolinkurl{agenda_planejada.json} registram 32 perguntas, 16 famílias, 64 oportunidades e seleção prévia de segunda revisão. A referência humana está em CSV com campos de confirmação, identidade, data e justificativa vazios. Nenhuma saída final foi produzida nesta revisão.
+
+\begin{table}[htbp]\centering\small\SingleSpacing
+\caption{Materiais atuais e históricos}\label{tab:materiais}
+\begin{tabularx}{\textwidth}{L{5.2cm} Y}
+\toprule Arquivo ou diretório & Função \\\midrule
+\nolinkurl{poc/corpus_manifest.json} & Fontes, exclusões, referências e revisão das sínteses. \\
+\nolinkurl{avaliacao/revisao_acervos_multichat_2026-11-04.json} & Revisão documental e referências propostas antes do desenvolvimento. \\
+\nolinkurl{avaliacao/evidencias/multichat_20261104_revisado/} & Agenda, resultados, snapshot, resumo e inspeção assistida das 32 tentativas. \\
+\nolinkurl{avaliacao/final_multichat_v1/} & Protocolo, reserva, referência pendente e agenda de 64 oportunidades. \\
+\nolinkurl{poc/final_multichat.py} & Ratificação, congelamento e execução final condicionada. \\
+\nolinkurl{avaliacao/congelamentos/} & Versões históricas anteriores, preservadas. \\
+\nolinkurl{poc/docs/pilot_evidence.json} & Registros do piloto de outubro, sem incorporação aos indicadores atuais. \\
+\bottomrule\end{tabularx}\fonte{Elaboração própria.}
+\end{table}
+
+A reprodução técnica usa Python 3.12, dependências fixadas, Ollama, Qwen3:8b e BGE-M3, os PDFs originais e o índice validado. Executar \texttt{python -m pytest poc/tests -q} e \texttt{node --test poc/tests/test\_web.cjs} verifica funcionamento. O desenvolvimento usa \nolinkurl{poc/run_development.py}; a opção \texttt{--plan} prepara agenda sem inferência e cada lote deve usar nova pasta para preservar as evidências.
+
+A avaliação final usa \nolinkurl{poc/final_multichat.py}: \texttt{plan}, \texttt{ratify}, \texttt{freeze} e \texttt{run}, nessa sequência. Ratificação exige declaração humana real; o programa não autentica identidade ou qualificação. O congelamento registra fontes, casos, instruções, implementação, modelos e índice. Mudanças posteriores impedem a execução até nova revisão e identificação.
+
+O executor grava resultados completos e uma cópia para avaliação sem condição, rota ou chave; o conteúdo pode revelar o estilo. A chave não deve acompanhar a cópia dos revisores. Erros técnicos e julgamentos inconclusivos precisam ser preservados. Os campos humanos não são preenchidos pela IA. O executor antigo \nolinkurl{poc/evaluation.py} pertence ao desenho anterior e rejeita procedimentos experimentais sob a configuração atual.

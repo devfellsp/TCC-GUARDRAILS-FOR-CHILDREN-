@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-04",
+  "diagrams": 7,
+  "editable_tabs": 7,
+  "formats": [
+    "Draw.io",
+    "SVG",
+    "PDF vetorial"
+  ],
+  "xml_valid": true,
+  "pdf_checks": {
+    "caderno": {
+      "pages": 7,
+      "sha256": "41d2a9ae48d5695e8aaf4ba75d6ff8c44dd32b074692229e38d0adfeaa03113f"
+    },
+    "tcc": {
+      "pages": 33,
+      "sha256": "530ffea36375091d27beda190244a0e1aaefdf833a279050105c1271fdbf7124"
+    },
+    "pacote_compilado": {
+      "pages": 33,
+      "sha256": "1637cbf325117a6330ed83b4a0a84922640214b79e85f31f7e2ca5e59eaaed9c"
+    }
+  },
+  "no_overflow_or_undefined_references": true,
+  "poc_code_changed": false,
+  "visual_review": "sete desenhos e três figuras no manuscrito renderizados e inspecionados"
+}

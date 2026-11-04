@@ -1,0 +1,51 @@
+{
+  "commit_revisado": "0aa64d3",
+  "metodo": "Mocks e arquivos temporarios; sem inferencia real",
+  "privacidade": {
+    "action": "safe_guidance",
+    "pergunta_integral_no_log": true
+  },
+  "sustentacao": {
+    "afirmacao_falsa_com_id_valido_aceita": true,
+    "limite": "Gerador e classificador simulados; nao demonstra jailbreak do Qwen3"
+  },
+  "integridade": {
+    "texto_modificado_aceito": true,
+    "hash_registrado_muda": true,
+    "precondicao": "Acesso de escrita local a chunks.json; sem vetor HTTP de escrita identificado"
+  },
+  "api": {
+    "host_arbitrario_status": 200,
+    "sem_content_type_status": 422,
+    "text_plain_status": 422,
+    "cors_libera_origem": false,
+    "limite": "Nao demonstra exploracao via navegador ou acesso remoto pela LAN"
+  },
+  "status": {
+    "ready_com_indice_corrompido_e_sem_metadados": true
+  },
+  "fragmentacao": {
+    "limite_configurado": 850,
+    "tamanhos_obtidos": [
+      901,
+      1803
+    ]
+  },
+  "auditoria_dev01": {
+    "fonte": "sp2024-p9-1",
+    "acucar_e_folhas_presentes": true,
+    "trecho": "Por meio desse processo, a luz solar, a água e o dióxido de carbono são transformados em açúcar",
+    "trechos_extraidos": 5
+  },
+  "piloto_local": {
+    "arquivo": "poc\\runs\\development_20261025_101938.csv",
+    "execucoes": 22,
+    "linhas_com_julgamento_humano": 0,
+    "max_seconds": 5.845,
+    "respostas_educativas_literais_presentes_no_tex": {
+      "dev01": false,
+      "dev02": false,
+      "dev03": false
+    }
+  }
+}

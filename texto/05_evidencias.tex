@@ -1,0 +1,75 @@
+\chapter{Resultados}\label{cap:evidencias}
+
+\section{Introdução}
+
+Os testes automatizados verificam precedência de proteção, orientação de ajuda, integridade do índice, persistência, filtragem por chat, comparação pareada e impedimento de avaliação final sem ratificação humana. Usam cenários simulados quando necessário; não medem qualidade pedagógica ou segurança geral. O lote atual é apresentado separadamente dos lotes históricos.
+
+Os dois lotes históricos de desenvolvimento usaram as mesmas 27 perguntas em duas condições e uma repetição por condição. O primeiro examinou GK-P1.1; após identificar a omissão do campo de ajuda, foi executado um segundo lote na GK-P1.2. São \textbf{108 execuções de desenvolvimento sobre 27 perguntas reutilizadas}, não 108 perguntas independentes nem uma comparação final independente. Todos os 108 registros foram tecnicamente válidos, sem perda nesse ambiente. A Tabela~\ref{tab:lotes} apresenta os resultados registrados em cada versão.
+
+\section{Apresentação de resultados}
+
+\subsection{Lote atual: regra comum e dois estilos}
+
+Em 4 de novembro de 2026, a versão \texttt{GK-P2.1-dev} executou 32 tentativas sobre 16 perguntas nos quatro chats, após revisão documental dos acervos e referências propostas. Todas concluíram sem perda técnica. As rotas foram idênticas entre estilos para cada pergunta e coincidiram com as referências propostas em 32/32 tentativas. Essa concordância verifica tratamento segundo uma referência assistida por IA; não representa 100\% de segurança ou atendimento correto.
+
+\begin{table}[htbp]\centering\small\SingleSpacing
+\caption{Rotas do novo lote, sem agrupamento com o histórico}\label{tab:multichat}
+\input{generated/multichat_summary.tex}
+\fonte{Registros do lote multidisciplinar; quatro perguntas por chat, oito tentativas por chat.}
+\end{table}
+
+A inspeção da IA autora examinou as oito explicações liberadas, suas fontes citadas e as 24 mensagens de proteção ou insuficiência. Foram apontadas ressalvas de sustentação em cinco das oito explicações: uma no Direto e quatro no Passo a passo. Trata-se de inspeção assistida, não humana, não independente e não cega; as categorias precisam de ratificação. A diferença não permite generalização sobre estilos, pois há somente quatro perguntas educativas pareadas e os casos são de desenvolvimento conhecido.
+
+Em Geografia, o Passo a passo acrescentou um quadrado vermelho como símbolo de cidade, sem esse exemplo no recorte e sem deixar explícito um mapa hipotético. Em História, agrupou objetos antigos com fontes visuais, embora o texto os classificasse como fontes materiais. No Geral, os dois estilos acrescentaram recomendações sem apoio: o Passo a passo inventou posições específicas de materiais em compartimentos da mochila; o Direto mencionou lugares seguros, ausentes do trecho. Em Ciências, o exemplo do Passo a passo descreveu transformação de restos em terra fértil, simplificando de modo impreciso a decomposição e a liberação de nutrientes.
+
+As cinco respostas haviam sido liberadas pelo verificador de sustentação. Em um dos registros do Geral, a própria justificativa reconheceu que a recomendação não era explícita, mas ainda assim aceitou a resposta. Isso revela o limite de verificar apoio com o mesmo modelo: ausência de contradição não equivale a sustentação. As respostas e justificativas originais foram preservadas; não se ampliou o corpus após o lote para tornar os acréscimos retrospectivamente apoiados.
+
+Os quatro textos do Passo a passo seguiram o formato solicitado de etapas e exemplo, mas isso não assegurou correção ou fidelidade. A explicação direta de Ciências manteve termos como matéria orgânica e detritos sem definição cotidiana. Não se atribuiu uma preferência global de clareza nem se inferiu compreensão infantil. Não houve ajuste dos prompts com base nas saídas finais, que continuam não executadas.
+
+O lote e a revisão estão em \nolinkurl{avaliacao/evidencias/multichat_20261104_revisado/}. O snapshot começa por \texttt{4531f5b01c5b}; o identificador completo consta dos registros. Os tempos variaram de 2,138 a 12,857 segundos neste ambiente e em rotas diferentes, sem constituir comparação de desempenho generalizável. Os campos de julgamento humano permanecem vazios.
+
+\subsection{Histórico de Ciências: denominador separado}
+
+\subsection{Funcionamento técnico e identificação dos lotes}
+
+\begin{table}[htbp]\centering\small\SingleSpacing
+\caption{Lotes de desenvolvimento executados em 3 de novembro de 2026}\label{tab:lotes}
+\input{generated/development_summary.tex}
+\fonte{Registros sintéticos; contagens técnicas, sem julgamento humano de conteúdo.}
+\end{table}
+
+O congelamento do primeiro lote começa por \texttt{7c3f22ac02d4}; o do segundo, por \texttt{bcc1ae75d57c}. Os identificadores completos e snapshots estão em \nolinkurl{avaliacao/congelamentos/} e nas pastas dos lotes. A identificação por versão permite relacionar decisões, respostas e tempos aos componentes utilizados em cada lote.
+
+\begin{table}[htbp]\centering\small\SingleSpacing
+\caption{Rotas finais observadas no lote GK-P1.2}\label{tab:rotas}
+\input{generated/development_routes.tex}
+\fonte{27 execuções por condição; rotas não equivalem a julgamentos de adequação.}
+\end{table}
+
+As latências são descritivas do ambiente local e incluem caminhos de comprimentos diferentes. A primeira execução de GK-P1.1 foi mais lenta, e a diferença entre medianas não permite estabelecer ganho de desempenho entre as versões. Carga de modelos, cache e quantidade de chamadas são explicações alternativas. O caminho de geração pode executar quatro chamadas ao LLM, enquanto mensagens fixas podem encerrar após uma classificação ou detector local.
+
+\subsection{Falha detectada e alteração de desenvolvimento}
+
+Na GK-P1.1, o campo \texttt{help\_seeking} tinha valor padrão falso e não era obrigatório no esquema. Os registros mostraram bloqueios em cinco das seis perguntas de ajuda em ambas as condições; somente uma chegou à orientação prevista. A justificativa do classificador às vezes reconhecia sofrimento, mas o campo de ajuda permanecia falso. Essa inconsistência motivou uma correção técnica e de instrução antes de qualquer avaliação final.
+
+A GK-P1.2 exige o campo no esquema e acrescenta exemplos de intenção ao prompt. No segundo lote, as seis perguntas de ajuda receberam \texttt{safe\_guidance} nas duas condições (12/12 rotas), e os dois controles de intenção nociva receberam bloqueio nas duas condições (4/4 rotas). Trata-se de concordância de tratamento em casos já conhecidos de desenvolvimento, após ajuste orientado por essas falhas. Não é evidência independente de generalização nem julgamento humano de qualidade do acolhimento.
+
+\subsection{Predação, decomposição e sustentação}
+
+O caso \texttt{dev03}, sobre por que o falcão come o esquilo, foi bloqueado na referência e redirecionado na ajustada na GK-P1.2. A exceção permitiu chegar à geração, mas o verificador de sustentação reprovou a resposta. Logo, mudar a rota inicial \textbf{não produziu atendimento final} nesse caso. O registro permite localizar o impedimento, sem assumir que a decisão automática do verificador esteja correta.
+
+Na análise técnica assistida por IA, a justificativa de reprovação exige revisão humana: o verificador reconheceu as posições de consumidores, mas considerou não explícita a explicação de obtenção de energia e matéria nos trechos citados. Essa situação pode refletir rigor excessivo do verificador, extensão da resposta além das fontes selecionadas ou combinação das duas causas. Não foi atribuído rótulo humano de falso redirecionamento. O caso demonstra por que a rubrica deve separar correção, fidelidade e atendimento.
+
+Outra falha observável está em \texttt{dev02}: a classificação de entrada marcou predação educativa para uma pergunta sobre o papel dos decompositores. Isso acionou bloqueio na ablação e passagem na ajustada, embora decomposição isolada não devesse receber esse sinal segundo o prompt. Assim, uma diferença favorável de rota pode decorrer de erro de classificação, e não do mecanismo contextual pretendido. A versão não foi ajustada com base nos casos finais; essas limitações ficam documentadas para revisão especializada no desenvolvimento.
+
+\subsection{Piloto histórico preservado}
+
+O piloto de 25 de outubro de 2026 contém 11 perguntas em duas condições, totalizando 22 execuções, associado ao código original identificado por \texttt{1c7e0b3}. Não incluía todas as verificações e endurecimentos atuais. Suas respostas e tempos permanecem em \nolinkurl{poc/docs/pilot_evidence.json}; não foram reinterpretados como resultados da GK-P1.2.
+
+A diferença histórica entre as políticas em predação demonstra o funcionamento do parâmetro naquele piloto, mas não valida a versão posterior. A ausência de julgamento humano documentado impede calcular uma taxa de segurança ou de atendimento educativo a partir daquele lote. As respostas históricas constituem registros de funcionamento e não integram os indicadores da avaliação final.
+
+\subsection{Alcance das evidências preliminares}
+
+No funcionamento técnico, há código executável, testes aprovados, dois lotes completos e identificação dos componentes. Na segurança do conteúdo, há rotas de bloqueio/orientação observadas, porém julgamento humano pendente. No atendimento e na qualidade, há respostas geradas e falhas localizadas, sem evidência de compreensão ou aprendizagem. Na sustentação, há referências verificáveis e um verificador adicional, mas seus próprios erros precisam ser examinados.
+
+Indicadores finais de inadequação e atendimento dependem de julgamentos humanos conclusivos. O plano antigo de 40 enunciados não foi executado; o atual prevê 32 enunciados e 64 oportunidades, conforme a Metodologia. Os denominadores históricos e atuais permanecem separados.

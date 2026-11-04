@@ -1,56 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 690" width="1100" height="690" font-family="Segoe UI, Arial, sans-serif">
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 1 L 10 5 L 0 9 z" fill="#333333" />
-    </marker>
-  </defs>
-  <rect width="1100" height="690" fill="#ffffff" />
-  <text x="550.0" y="36" text-anchor="middle" font-size="15" font-weight="bold" fill="#1A365D">Figura 4 — Protocolo experimental controlado para avaliação comparativa das configurações de guardrails</text>
-  <rect x="50" y="65" width="470" height="130" rx="8" ry="8" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.8"  />
-  <text x="285.0" y="103.6" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Variáveis Controladas (Fixas entre Configurações)</text>
-  <text x="285.0" y="119.0" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Modelo: Qwen3 8B (Q4_K_M local) | Embeddings: BGE-M3</text>
-  <text x="285.0" y="134.3" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Acervo RAG: 5 trechos revisados das apostilas (4º ano)</text>
-  <text x="285.0" y="149.7" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Perfil: Criança de 9 anos (4º ano EF — Ciências)</text>
-  <text x="285.0" y="165.0" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Hiperparâmetros: temp=0, seed=42, top_p=0,9, rep=1,1</text>
-  <rect x="570" y="65" width="480" height="130" rx="8" ry="8" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.8"  />
-  <text x="810.0" y="103.6" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Amostra Intencional de Perguntas (Tabela 3)</text>
-  <text x="810.0" y="119.0" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Grupo 1: Educativas legítimas com apoio no acervo</text>
-  <text x="810.0" y="134.3" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Grupo 2: Educativas ambíguas (ex.: predação animal)</text>
-  <text x="810.0" y="149.7" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Grupo 3: Educativas sem apoio no acervo (fuga de escopo)</text>
-  <text x="810.0" y="165.0" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Grupo 4: Solicitações de risco (Categorias 1 a 6 — MinorBench)</text>
-  <rect x="100" y="255" width="380" height="115" rx="8" ry="8" fill="#fff2cc" stroke="#d6b656" stroke-width="1.8"  />
-  <text x="290.0" y="293.8" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Execução em Lote — Configuração REFERENCIA</text>
-  <text x="290.0" y="309.1" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">(allow_educational_predation = false)</text>
-  <text x="290.0" y="324.5" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Sessões independentes de turno único</text>
-  <text x="290.0" y="339.9" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Registro auditável em JSONL + CSV</text>
-  <rect x="620" y="255" width="380" height="115" rx="8" ry="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.8"  />
-  <text x="810.0" y="293.8" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Execução em Lote — Configuração AJUSTADA</text>
-  <text x="810.0" y="309.1" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">(allow_educational_predation = true)</text>
-  <text x="810.0" y="324.5" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Mesma amostra e condições constantes</text>
-  <text x="810.0" y="339.9" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Única variação: regra de contexto educativo</text>
-  <rect x="70" y="435" width="460" height="135" rx="8" ry="8" fill="#f8cecc" stroke="#b85450" stroke-width="1.8"  />
-  <text x="300.0" y="476.1" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Indicadores Quantitativos de Segurança e Utilidade</text>
-  <text x="300.0" y="491.5" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Taxa de Respostas Inadequadas: T_RI = (N_RI / N_V) × 100</text>
-  <text x="300.0" y="506.8" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Taxa de Bloqueios Indevidos: T_BI = (N_BI / N_L) × 100</text>
-  <text x="300.0" y="522.2" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Proporção de Solicitações de Risco Tratadas Adequadamente</text>
-  <text x="300.0" y="537.5" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• Contabilização de execuções válidas, perdas e inconclusivos</text>
-  <rect x="570" y="435" width="460" height="135" rx="8" ry="8" fill="#d5e8d4" stroke="#82b366" stroke-width="1.8"  />
-  <text x="800.0" y="476.1" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Avaliação Qualitativa das Respostas Permitidas (Tabela 4)</text>
-  <text x="800.0" y="491.5" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• 1. Correção (fidelidade às páginas das apostilas)</text>
-  <text x="800.0" y="506.8" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• 2. Pertinência (atendimento direto à dúvida formulada)</text>
-  <text x="800.0" y="522.2" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">• 3. Clareza (adequação ao perfil de 9 anos / 4º ano)</text>
-  <text x="800.0" y="537.5" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a1a1a">Classificação: Integral | Parcial | Ausente (+ não sustentadas)</text>
-  <rect x="250" y="605" width="600" height="55" rx="8" ry="8" fill="#dae8fc" stroke="#1A365D" stroke-width="1.8"  />
-  <text x="550.0" y="629.1" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Análise Comparativa Pareada (referencia vs. ajustada)</text>
-  <text x="550.0" y="644.5" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a1a1a">Identificação dos casos com mudança de decisão e resposta à Pergunta de Pesquisa</text>
-  <path d="M 285.0 195.0 L 290.0 255.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
-  <path d="M 426.0 195.0 L 426.0 225.0 L 734.0 225.0 L 734.0 255.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
-  <path d="M 666.0 195.0 L 666.0 225.0 L 366.0 225.0 L 366.0 255.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
-  <path d="M 810.0 195.0 L 810.0 255.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
-  <path d="M 252.0 370.0 L 254.0 435.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
-  <path d="M 404.0 370.0 L 404.0 405.0 L 662.0 405.0 L 662.0 435.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
-  <path d="M 696.0 370.0 L 696.0 395.0 L 438.0 395.0 L 438.0 435.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
-  <path d="M 848.0 370.0 L 846.0 435.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
-  <path d="M 300.0 570.0 L 430.0 605.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
-  <path d="M 800.0 570.0 L 670.0 605.0" fill="none" stroke="#333333" stroke-width="1.8"  marker-end="url(#arrow)" />
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#20364a"/></marker></defs>
+<rect width="1000" height="100%" fill="white"/>
+<text x="500" y="38" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle" fill="#20364a">Desenho de pesquisa e separação das evidências</text>
+<text x="500" y="76" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#536574">Os denominadores pertencem a etapas distintas e não devem ser somados.</text>
+<rect x="30" y="120" width="290" height="520" rx="9" fill="#f4f5f6" stroke="#73808c" stroke-dasharray="6 5"/>
+<text x="175.0" y="155" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">A  HISTÓRICO</text>
+<rect x="355" y="120" width="290" height="520" rx="9" fill="#eef4fb" stroke="#426b95" stroke-dasharray="6 5"/>
+<text x="500.0" y="155" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">B  DESENVOLVIMENTO</text>
+<rect x="680" y="120" width="290" height="520" rx="9" fill="#edf6f2" stroke="#367260" stroke-dasharray="6 5"/>
+<text x="825.0" y="155" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">C  AVALIAÇÃO FINAL</text>
+<polyline points="175.0,290.0 175.0,335.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="175.0,435.0 175.0,480.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="500.0,290.0 500.0,335.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="500.0,435.0 500.0,480.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="825.0,290.0 825.0,335.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="825.0,435.0 825.0,480.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="45" y="190" width="260" height="100" rx="7" fill="#f4f5f6" stroke="#73808c" stroke-width="1.8"/>
+<text x="175.0" y="220.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Piloto de outubro</text>
+<text x="175.0" y="250.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">22 execuções preservadas</text>
+<text x="175.0" y="275.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Condições anteriores</text>
+<rect x="45" y="335" width="260" height="100" rx="7" fill="#f4f5f6" stroke="#73808c" stroke-width="1.8"/>
+<text x="175.0" y="365.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Dois lotes de Ciências</text>
+<text x="175.0" y="395.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">108 execuções no total</text>
+<text x="175.0" y="420.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">27 perguntas reutilizadas</text>
+<rect x="45" y="480" width="260" height="100" rx="7" fill="#f4f5f6" stroke="#73808c" stroke-width="1.8"/>
+<text x="175.0" y="510.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Uso das evidências</text>
+<text x="175.0" y="540.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Descrever falhas e versões</text>
+<text x="175.0" y="565.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Sem integrar o lote atual</text>
+<rect x="370" y="190" width="260" height="100" rx="7" fill="#eef4fb" stroke="#426b95" stroke-width="1.8"/>
+<text x="500.0" y="220.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Regra comum + estilos</text>
+<text x="500.0" y="250.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">16 perguntas conhecidas</text>
+<text x="500.0" y="275.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">32 tentativas executadas</text>
+<rect x="370" y="335" width="260" height="100" rx="7" fill="#eef4fb" stroke="#426b95" stroke-width="1.8"/>
+<text x="500.0" y="365.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Inspeção assistida por IA</text>
+<text x="500.0" y="395.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">5 de 8 explicações com</text>
+<text x="500.0" y="420.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">ressalvas de sustentação</text>
+<rect x="370" y="480" width="260" height="100" rx="7" fill="#eef4fb" stroke="#426b95" stroke-width="1.8"/>
+<text x="500.0" y="510.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Limite da interpretação</text>
+<text x="500.0" y="540.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Campos humanos vazios</text>
+<text x="500.0" y="565.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Sem eficácia demonstrada</text>
+<rect x="695" y="190" width="260" height="100" rx="7" fill="#edf6f2" stroke="#367260" stroke-width="1.8"/>
+<text x="825.0" y="220.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Reserva operacional</text>
+<text x="825.0" y="250.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">32 perguntas / 16 famílias</text>
+<text x="825.0" y="275.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">64 tentativas planejadas</text>
+<rect x="695" y="335" width="260" height="100" rx="7" fill="#edf6f2" stroke="#367260" stroke-width="1.8"/>
+<text x="825.0" y="365.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Antes da execução</text>
+<text x="825.0" y="395.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Ratificação humana</text>
+<text x="825.0" y="420.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Congelamento da versão</text>
+<rect x="695" y="480" width="260" height="100" rx="7" fill="#edf6f2" stroke="#367260" stroke-width="1.8"/>
+<text x="825.0" y="510.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Depois da execução</text>
+<text x="825.0" y="540.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Revisão por dimensão</text>
+<text x="825.0" y="565.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Comparação pareada</text>
+<rect x="50" y="680" width="900" height="66" rx="7" fill="#f3eff8" stroke="#78628f" stroke-width="1.8"/>
+<text x="500.0" y="705.5" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">O que a comparação atual modifica?</text>
+<text x="500.0" y="735.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Somente a instrução de linguagem. Perfil, regra, fontes e modelo permanecem iguais.</text>
+<text x="500" y="782" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#536574">A avaliação final não foi executada. A reserva é conhecida pelos autores e não é independente.</text>
 </svg>

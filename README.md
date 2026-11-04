@@ -3,11 +3,39 @@
 Autor: Filipe Martins Henrique — UNITINS
 Orientador: Prof. Marcos Souza
 
-Guardrails configuráveis para uma prova de conceito de chatbot educativo infantil em português brasileiro, destinado a crianças de 7 a 11 anos.
+**Projeto/TCC I**, conforme confirmação do autor. GuardKids: desenvolvimento e verificação preliminar de guardrails contextuais em quatro chats educativos. Destinação pretendida de 7–11 anos; perfil operacional fictício de nove anos; sem participantes infantis.
+
+## POC atual — regra comum e comparação de linguagem (04/11/2026)
+
+A versão `GK-P2.1-dev` usa uma regra comum em Ciências, História, Geografia e Geral, com estilos Direto e Passo a passo. A revisão documental precedeu um lote de **32 tentativas executadas sobre 16 perguntas**, sem perdas técnicas. A inspeção assistida apontou ressalvas de sustentação em cinco das oito explicações liberadas; os campos humanos continuam vazios. As rotas não são indicadores de eficácia.
+
+O conjunto reservado atual tem 32 perguntas em 16 famílias e 64 oportunidades, ainda não executadas. A referência humana e o congelamento permanecem pendentes. O manuscrito e seus diagramas foram atualizados, mantendo as 108 execuções anteriores em seção histórica, sem somar denominadores.
+
+- PDF atual: `output/pdf/TCC_PoC_TCCI_multichat_revisado.pdf`.
+- Diagramas revisados: `output/pdf/Diagramas_GuardKids_revisados.pdf` e `diagramas/Diagramas_GuardKids_editaveis.zip`; três figuras vetoriais incorporadas ao TCC, agora com 33 páginas.
+- Versões visuais posteriores, disponíveis separadamente: `diagramas/estilo_usuario/` (preto e branco) e `diagramas/estilo_usuario_com_simbolos/` (símbolos editáveis do Draw.io). Seus PDFs estão em `output/pdf/`; essas versões ainda não foram incorporadas ao manuscrito.
+- Fonte e pacote: `main.tex`, `texto/`, `generated/` e `Overleaf_TCC_PoC.zip`.
+- Relatório: `poc/docs/RELATORIO_PESQUISA_2026-11-04.md`.
+- Lote e revisão: `avaliacao/evidencias/multichat_20261104_revisado/`.
+- Protocolo final atual: `avaliacao/final_multichat_v1/README.md`.
+- Instruções da POC: `poc/LEIA-ME.md`.
+
+
+## Entrega acadêmica anterior, revisada em 03/11/2026
+
+- Fonte principal: `main.tex`, com capítulos e figuras em `texto/`; compilador XeLaTeX. Instruções em `LEIA-ME_OVERLEAF.md`.
+- PDF: `output/pdf/TCC_GuardKids_TCCI_revisado.pdf`.
+- Protocolo, rubrica, casos e matrizes: `avaliacao/`; comece por `avaliacao/ALTERACOES_E_PENDENCIAS.md`.
+- Planilha completa e cópia com condições omitidas: `outputs/guardkids_revisao_20261103/`.
+- Evidências: dois lotes de desenvolvimento (108 execuções sobre 27 perguntas reutilizadas), sondagem e congelamentos em `avaliacao/evidencias/` e `avaliacao/congelamentos/`.
+
+A avaliação final e os julgamentos humanos estão pendentes. Os 40 enunciados reservados e as 160 oportunidades planejadas não foram executados nesta revisão. Há falhas remanescentes de classificação/sustentação discutidas no texto; não se declara eficácia ou segurança geral.
+
+A ficha de tema Word e o cronograma PDF anteriores listados abaixo são antecedentes preservados. O título, a etapa e o cronograma vigentes são os do texto revisado; aprovação institucional não foi presumida.
 
 ## Arquivos atuais
 
-- `document.tex`: versão principal da metodologia, trazida da pasta do Git em 25/10/2026. No Overleaf, selecione este arquivo como documento principal. As três cópias idênticas do texto foram consolidadas aqui.
+- `main.tex`: fonte principal do TCC. `document.tex` é uma entrada de compatibilidade que carrega `main.tex`, sem duplicar o texto. No Overleaf, selecione `main.tex`.
 - `ficha_tema_tcc_Filipe_Martins_Henrique_revisada.docx`: ficha de definição do tema.
 - `Cronograma.pdf`: cronograma do projeto.
 - `Livros_Didadicos/`: as duas apostilas educativas selecionadas, Trilhas (2021) e Livro do Estudante (2024).
@@ -19,7 +47,13 @@ Guardrails configuráveis para uma prova de conceito de chatbot educativo infant
 
 Com o Ollama aberto, execute `poc/Iniciar_GuardKids.cmd` e abra http://127.0.0.1:8765. As perguntas iniciam sessões independentes. O protótipo está em desenvolvimento; os testes iniciais não são a avaliação final do TCC.
 
-Os diagramas editáveis e as decisões estão em `poc/docs/ARQUITETURA_E_DECISOES.md`. O texto acadêmico `document.tex` ainda precisa ser atualizado a partir da implementação após a calibração.
+Os diagramas editáveis estão em `diagramas/`; as decisões, em `poc/docs/ARQUITETURA_E_DECISOES.md`. O TCC distingue a rodada histórica da implementação revisada. A avaliação independente e os julgamentos humanos ainda estão pendentes.
+
+## Revisão de 03/11/2026
+
+As correções estão descritas em `poc/docs/CORRECOES_2026-11-03.md`. Os registros comuns omitem texto livre; o executor de desenvolvimento habilita registros completos somente para seus casos fictícios. O índice local anterior pode ser validado e migrado com `poc/.venv/Scripts/python.exe poc/guardkids.py migrate-index`, sem nova inferência.
+
+`poc/docs/pilot_evidence.json` contém as 22 execuções fictícias conferidas do piloto histórico, com identificadores e julgamentos pendentes. `tools/build_assets.py` gera as transcrições e o pacote Overleaf a partir dessa evidência e da fonte principal. Para regenerar os diagramas, execute `python diagramas/gerar_diagramas.py`. A suíte é executada com `python -m pytest poc/tests -q`, usando o ambiente do projeto.
 
 ## Histórico
 

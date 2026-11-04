@@ -1,0 +1,37 @@
+{
+  "stage": "Projeto/TCC I",
+  "pdf_pages": 32,
+  "pdf_sha256": "8c257e5c629d4d0e0eebccbf7b0614205bbee91174294e04a362649f85fc883f",
+  "pdf_no_overfull_missing_glyphs_or_undefined_refs": true,
+  "visual_review": "capas, resumos, sumario, listas, figuras, tabelas, algoritmo, referencias e paginas de contato inspecionados",
+  "fonts": [
+    "/AKHCZK+TimesNewRomanPS-BoldMT",
+    "/BZIVMZ+LMSans10-Bold-Identity-H",
+    "/CAFSZL+LMMono12-Regular-Identity-H",
+    "/DDIEWW+LMMono10-Regular-Identity-H",
+    "/FKPJSN+CMMI12",
+    "/IHAIZV+LMSans17-Regular-Identity-H",
+    "/IXFAWU+LMSans12-Regular-Identity-H",
+    "/PVTTLK+CMR12",
+    "/TQTHRL+LMSans10-Regular-Identity-H",
+    "/VDVGTR+TimesNewRomanPS-ItalicMT",
+    "/YEUUOC+TimesNewRomanPSMT"
+  ],
+  "python_tests_passed": 45,
+  "javascript_tests_passed": 1,
+  "new_development_executions": 108,
+  "reused_development_questions": 27,
+  "final_executions": 0,
+  "human_judgments": 0,
+  "xlsx_formula_errors": 0,
+  "workbook_calculation_simulation_passed": true,
+  "native_Excel_opened": false,
+  "remote_Overleaf_used": false,
+  "Overleaf_zip_compiled_in_isolated_folder": true,
+  "active_freeze": "637e6f7c2f06abaf9de65a5bc248db6b53284354ea714c6656ba9fef7269a5cf",
+  "model_digests": {
+    "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+  },
+  "known_build_notes": "Tres avisos de comentarios UTF-8 do algorithm2e e aviso de configuracao fontconfig; sem caractere substituto extraido ou defeito visual observado."
+}

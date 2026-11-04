@@ -1,0 +1,54 @@
+\chapter{Referencial teórico}\label{cap:referencial}
+
+\section{Procedimento de busca}
+
+Foi realizada em 3 de novembro de 2026 uma busca narrativa orientada pelo problema, com acesso por mecanismo de busca na web e conferência nas páginas primárias da ACL Anthology, arXiv, ACM/DOI e repositório da Universidade de Oxford. Também foram consultados os portais oficiais do MEC e do MJSP para referências curriculares e descritores de conteúdo. Não houve busca direta em Scopus, Web of Science ou bases pagas, nem protocolo de revisão sistemática.
+
+As consultas incluíram as expressões \texttt{``child'' ``guardrails'' ``Portuguese'' LLM educational chatbot}, \texttt{``MinorBench'' ``children'' benchmark 2025}, \texttt{``LLM Safety for Children'' Rath} e \texttt{``guardrails'' ``chatbot'' ``infantil'' português}. Consultas por títulos e domínios verificaram metadados. O registro integral das consultas efetivamente executadas, seleção e exclusões está em \nolinkurl{avaliacao/BUSCA_NARRATIVA.md}. Consideraram-se publicações de 2020 a 2026, em português ou inglês, pertinentes a segurança de LLMs para menores ou à arquitetura adotada; documentos curriculares anteriores foram admitidos por sua função normativa. A seleção foi intencional e complementou as referências já existentes no projeto.
+
+Foram priorizadas fontes primárias com autoria e descrição verificáveis. Resultados promocionais sem método, duplicatas e páginas sem relação com o problema não fundamentam conclusões. Não foi estimado um universo de resultados nem calculado fluxo PRISMA. A seleção tem viés de idioma, termos e acesso; sua finalidade é fundamentar decisões deste artefato, sem demonstrar exaustividade ou uma lacuna absoluta na literatura brasileira.
+
+\section{Segurança e contexto infantil}
+
+A avaliação de riscos nas interações infantis com modelos de linguagem pode considerar diferentes perfis de usuários (Rath et al., 2025). Essa perspectiva orienta a PoC, cujo recorte se concentra em um único perfil fictício. A cobertura das situações de risco também se apoia nas categorias do MinorBench, um benchmark voltado a riscos de conteúdo para crianças (Khoo; Chua; Shong, 2025). Os casos deste projeto foram elaborados em português e não constituem uma tradução validada desse instrumento. Por isso, seus resultados não permitem comparação direta com os estudos de referência.
+
+O design apropriado à idade considera princípios e práticas de desenvolvimento de sistemas de IA para crianças, ampliando a discussão sobre proteção para além da filtragem de palavras (Wang et al., 2022). Na PoC, essa orientação fundamenta a escolha da linguagem e dos limites de resposta associados ao perfil fictício. Sua aplicação permanece conceitual, pois o perfil ainda não foi validado com usuários. As evidências obtidas em outros sistemas ou contextos não validam, por si, este protótipo.
+
+Os descritores do Guia Prático da Classificação Indicativa oferecem uma referência contextual para discutir e organizar categorias de conteúdo (Brasil, 2025). Neste projeto, são utilizados como inspiração, sem conferir ao chatbot classificação oficial, certificação ou autorização de uso por menores. Privacidade e injeção de prompt são tratadas também como riscos de interação e de funcionamento, respeitando as diferenças em relação aos descritores audiovisuais.
+
+\section{Guardrails e geração com recuperação}
+
+Os guardrails podem organizar controles programáveis para aplicações com modelos de linguagem, como no NeMo Guardrails (Rebedea et al., 2023), e verificações de entrada e saída, como no Llama Guard (Inan et al., 2023). Essa organização inspira as etapas de verificação da PoC. A implementação utiliza Qwen3:8b, instruções locais e validação estruturada por Pydantic; NeMo Guardrails e Llama Guard não integram os componentes executados pelo protótipo.
+
+A geração aumentada por recuperação combina a produção de respostas com a consulta a uma memória externa (Lewis et al., 2020). Na PoC, esse princípio é aplicado pelo fornecimento de passagens recuperadas ao gerador, sem reproduzir o treinamento da arquitetura original. O BGE-M3 gera vetores para a pergunta e as passagens, cuja similaridade orienta a seleção do contexto. Esse escore indica proximidade vetorial e não comprova a veracidade ou a suficiência da fonte. Da mesma forma, um identificador válido confirma que a referência pertence ao conjunto fornecido, mas não assegura que todas as afirmações estejam sustentadas. A implementação inclui, portanto, uma verificação semântica adicional, também sujeita a erros.
+
+\begin{table}[htbp]
+\centering\small\SingleSpacing
+\caption{Relação entre referências e contribuição delimitada}\label{tab:trabalhos}
+\begin{tabularx}{\textwidth}{L{3.1cm} Y Y}
+\toprule Referência & Contribuição aproveitada & Limite da relação com a PoC \\\midrule
+Wang et al. (2022) & Princípios de IA apropriada à idade & Não é validação do perfil fictício adotado. \\
+Rath et al. (2025) & Riscos e perfis infantis & Não se reproduz avaliação de vários modelos. \\
+MinorBench (2025) & Cobertura de riscos de conteúdo & Casos próprios, sem validação de tradução. \\
+NeMo; Llama Guard (2023) & Controles de entrada e saída & Inspiração; ferramentas não implementadas. \\
+Lewis et al. (2020) & Geração com memória recuperada & Recuperação local pequena, sem treinamento do RAG original. \\
+\bottomrule\end{tabularx}
+\fonte{Elaboração própria com base nas referências indicadas.}
+\end{table}
+
+\section{Aprendizagem e limites do domínio}
+
+O recorte curricular inicial de Ciências contempla a análise e a construção de cadeias alimentares simples, com atenção ao papel do Sol, previstas na habilidade EF04CI04 da BNCC. Inclui também a participação de fungos e bactérias na decomposição e a importância ambiental desse processo, associadas à habilidade EF04CI06 (Brasil, 2018, p. 339). Essas habilidades fundamentam a escolha do domínio; a aprendizagem por meio do chatbot depende de avaliação específica. A correspondência entre os objetivos de explicação, os recortes e os casos é apresentada na Tabela~\ref{tab:curriculo}.
+
+\begin{table}[htbp]\centering\small\SingleSpacing
+\caption{Correspondência curricular do recorte inicial de Ciências}\label{tab:curriculo}
+\begin{tabularx}{\textwidth}{L{2.1cm} Y Y L{1.8cm}}
+\toprule Habilidade & Objetivo de explicação & Trechos recuperáveis & Famílias históricas \\\midrule
+EF04CI04 & Relacionar alimentação, produtores e consumidores & \nolinkurl{trilhas2021-p154-1}; \nolinkurl{sp2024-p8-1}; \nolinkurl{sp2024-p9-1} & L01, L02, P01--P03 \\
+EF04CI06 & Explicar decomposição e retorno de nutrientes & \nolinkurl{sp2024-p13-1}; \nolinkurl{sp2024-p27-1} & L03 \\
+\bottomrule\end{tabularx}\fonte{Elaboração própria; BNCC e recortes do índice ativo.}
+\end{table}
+
+Cinco recortes bastam para formular perguntas restritas a esses conceitos, não para cobrir Ciências do quarto ano. Não abrangem quantidades diárias de alimento de espécies, duração exata da decomposição ou prevenção em saúde. Essas ausências permitem examinar se o sistema reconhece seus limites sem confundir falta de apoio com tema proibido.
+
+A ampliação para História, Geografia e Geral utiliza sínteses experimentais delimitadas, com referências de conferência registradas no manifesto. Não se atribui a esses três chats cobertura curricular integral nem adequação etária demonstrada. As habilidades de Ciências da Tabela~\ref{tab:curriculo} fundamentam o recorte inicial, sem validar automaticamente os novos espaços.

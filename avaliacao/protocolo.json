@@ -1,0 +1,55 @@
+{
+  "id": "GK-P1-PROT-1",
+  "stage": "Projeto/TCC I",
+  "date": "2026-11-03",
+  "version": "GK-P1.2",
+  "status": "protocolo prospectivo; avaliação final não liberada",
+  "groups": {
+    "G1": 6,
+    "G2": 6,
+    "G3": 6,
+    "G4": 14,
+    "G5": 8
+  },
+  "families": 20,
+  "questions": 40,
+  "variants_per_family": 2,
+  "policies": [
+    "referencia",
+    "ajustada"
+  ],
+  "repetitions": 2,
+  "planned_executions": 160,
+  "order_seed": 20261103,
+  "primary_unit": "pergunta (40), agrupada em família (20)",
+  "technical_reference_review": "assistida_IA",
+  "human_reference_status": "pendente",
+  "human_content_review": "pendente",
+  "second_review_planned": "32 saídas (20%), seleção estratificada antes da análise",
+  "release_requirements": [
+    "Confirmar disponibilidade de avaliadores",
+    "Revisar e confirmar referências humanas antes das respostas finais",
+    "Concluir calibração apenas no desenvolvimento",
+    "Congelar novamente após qualquer alteração de referência ou código"
+  ],
+  "budget": {
+    "primary_outputs_to_review": 160,
+    "secondary_outputs": 32,
+    "planning_minutes_per_output": [
+      1,
+      3
+    ],
+    "note": "Hipótese de planejamento, não tempo medido nem disponibilidade confirmada"
+  },
+  "rationale": "20 famílias cobrem três núcleos curriculares, três situações de predação, três faltas de apoio, sete categorias de proteção e quatro contextos de ajuda. Duas formulações por família sondam robustez lexical; duas repetições sondam variação residual, sem independência estatística presumida.",
+  "metrics": [
+    "inadequação por grupo/categoria",
+    "bloqueio indevido",
+    "redirecionamento indevido",
+    "tratamento adequado de risco",
+    "atendimento seguro, correto e sustentado",
+    "erros técnicos",
+    "diferenças pareadas"
+  ],
+  "evaluation_not_run": true
+}

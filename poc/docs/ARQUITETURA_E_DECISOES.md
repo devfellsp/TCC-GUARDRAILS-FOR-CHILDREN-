@@ -1,4 +1,4 @@
-# Arquitetura e decisões iniciais — 25/10/2026
+# Arquitetura e decisões — piloto de 25/10/2026 e revisão de 03/11/2026
 
 Este documento descreve a implementação inicial para desenvolvimento. Os diagramas são fontes editáveis para posterior adaptação à metodologia. Não descrevem uma avaliação final concluída.
 
@@ -22,7 +22,9 @@ As políticas orientam a implementação e o julgamento. A calibração permite 
 
 ```mermaid
 flowchart TD
-    P[Pergunta fictícia em sessão independente] --> E[Qwen3: classificação contextual de entrada]
+    P[Pergunta em sessão independente] --> X[Detecção parcial de identificadores explícitos]
+    X -- Identificador detectado --> M[Orientação segura de privacidade]
+    X -- Sem detecção --> E[Qwen3: classificação contextual de entrada]
     E --> D{Política permite?}
     D -- Não --> M[Mensagem fixa de proteção ou cuidado]
     D -- Sim --> V[BGE-M3 em CPU: vetor da pergunta]
@@ -33,26 +35,28 @@ flowchart TD
     G --> A{Modelo indica apoio e cita IDs válidos?}
     A -- Sem apoio --> I
     A -- Citação inválida --> T[Erro técnico registrado]
-    A -- Sim --> S[Qwen3: classificação contextual da saída]
+    A -- Sim --> V2[Qwen3: verificação adicional de sustentação]
+    V2 -- Sem apoio --> I
+    V2 -- Apoio indicado --> S[Qwen3: classificação contextual da saída]
     S --> O{Política permite a resposta?}
     O -- Não --> M
     O -- Sim --> F[Resposta educativa com páginas das fontes]
-    M --> L[Registro completo da execução]
+    M --> L[Registro minimizado ou sintético explícito]
     I --> L
     F --> L
     T --> L
 ```
 
-A recuperação usa somente os parágrafos selecionados no manifesto. O índice local guarda os vetores e metadados de fonte/página. O BGE-M3 executa em CPU para reservar memória da GPU ao Qwen3 8B. A geração é orientada pelo perfil fixo de 9 anos/4º ano e tem temperatura zero, semente 42, top-p 0,9 e contexto de 4096 tokens. Essas opções reduzem variação, mas não garantem determinismo entre versões ou equipamentos.
+A recuperação usa somente os parágrafos selecionados no manifesto. O índice local guarda vetores e metadados em data/indices/<id>/; data/current.json aponta para uma versão completa. A leitura valida hashes, texto e metadados contra a extração dos PDFs, normalizando espaços. O BGE-M3 executa em CPU para reservar memória da GPU ao Qwen3 8B. A geração é orientada pelo perfil fixo de 9 anos/4º ano e tem temperatura zero, semente 42, top-p 0,9 e contexto de 4096 tokens. Essas opções reduzem variação, mas não garantem determinismo entre versões ou equipamentos.
 
-Classificação e geração são chamadas independentes do mesmo Qwen3, com instruções e esquema de saída diferentes. Isso simplifica a execução local, mas não equivale a uma validação independente. Os registros distinguem decisões de entrada, ausência de fonte, indicação de insuficiência pelo gerador e proteção de saída. A recusa feita pelo próprio modelo também precisa ser reconhecida na análise humana.
+Classificação, geração e verificação adicional de sustentação são chamadas separadas do mesmo Qwen3, com instruções e esquema de saída diferentes. Isso simplifica a execução local, mas não equivale a uma validação independente. Os registros distinguem decisões de entrada, ausência de fonte, indicação de insuficiência pelo gerador e proteção de saída. A recusa feita pelo próprio modelo também precisa ser reconhecida na análise humana.
 
 ## 3. Aplicação das políticas
 
 ```mermaid
 flowchart TD
     A[Categoria, necessidade de proteção e contexto educativo] --> B{Exige proteção?}
-    B -- Sim --> C{Autolesão ou privacidade?}
+    B -- Sim --> C{Autolesão, privacidade ou ajuda reconhecida em perigo, sexual, ofensa ou substância?}
     C -- Sim --> D[Orientação de cuidado previamente definida]
     C -- Não --> E[Bloqueio com mensagem previamente definida]
     B -- Não --> F{Predação educativa identificada?}
@@ -87,14 +91,14 @@ O piloto atual exporta perguntas e respostas, mas não preenche julgamentos de s
 |---|---|
 | Modelo gerador e verificador | Qwen3 8B Q4_K_M no Ollama, sem treino dos pesos |
 | Embeddings | BGE-M3, vetores normalizados de 1024 dimensões, execução em CPU |
-| Armazenamento | NumPy local; cinco trechos, sem necessidade de banco vetorial adicional |
+| Armazenamento | NumPy local; cinco trechos, versões publicadas antes da troca do ponteiro ativo |
 | Corpus | Uma passagem do Trilhas e quatro do Livro do Estudante de SP |
-| Fragmentação | Máximo alvo de 850 caracteres por sentenças, sobreposição de uma sentença quando necessária |
+| Fragmentação | Limite rígido de 850 caracteres; sobreposição reduzida se não houver espaço |
 | Busca | Até três resultados, similaridade cosseno mínima provisória de 0,45 |
 | Interface | FastAPI e HTML local, endereço 127.0.0.1:8765 |
 | Categorias | Dano, autolesão, sexual, ódio/ofensas, substâncias, privacidade e tentativa de substituir instruções |
 | Fora do acervo | Busca e declaração de apoio insuficiente pelo gerador, sem garantia de detecção perfeita |
-| Registro | Pergunta, resposta intermediária e final, verificações, configurações, hashes, fontes e durações |
+| Registro | Texto livre omitido por padrão; conteúdo integral apenas em execução declarada fictícia, com configurações, hashes e durações |
 | Avaliação final | Ainda não executada; faltam amostra, repetições, revisão das políticas e congelamento |
 | Reutilização das obras | Condições e créditos de terceiros ainda precisam de documentação para distribuição |
 
@@ -105,3 +109,9 @@ O piloto atual exporta perguntas e respostas, mas não preenche julgamentos de s
 - [API de embeddings](https://docs.ollama.com/api/embed): vetorização local.
 - [Saídas estruturadas](https://docs.ollama.com/capabilities/structured-outputs): esquema JSON e validação.
 - [Controle de pensamento](https://docs.ollama.com/capabilities/thinking): desativação explícita durante as chamadas.
+
+## Revisão de segurança
+
+A API valida hosts e origens locais, limita o corpo a 8 KiB e não aceita habilitação de logs integrais. Uma pergunta é processada por vez; concorrência recebe 429. Falha na persistência retém a resposta. O orçamento de inferência padrão é 120 s; uma operação de rede em espera pode terminar ao responder ou ao atingir seu timeout. A desconexão sinaliza cancelamento para impedir etapas posteriores. `/api/health` é independente da inferência e `/api/status` valida o acervo e os modelos.
+
+Snapshots atuais incluem código, prompts, configuração, versões instaladas e metadados/vetores do índice quando disponível. A ferramenta de expiração atua somente sobre logs comuns novos; registros históricos e sintéticos são preservados. A verificação adicional usa o mesmo modelo e não substitui julgamento humano. O piloto histórico não foi executado novamente nem usado como avaliação da versão revisada.

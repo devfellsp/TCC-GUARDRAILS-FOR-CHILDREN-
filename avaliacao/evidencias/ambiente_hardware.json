@@ -1,0 +1,13 @@
+{
+  "note": "Sem comparacao entre equipamentos; VRAM nao inferida do campo WMI limitado.",
+  "ram_bytes": 17125724160,
+  "gpu": {
+    "Name": "NVIDIA GeForce RTX 4060",
+    "DriverVersion": "32.0.16.2101"
+  },
+  "cpu": {
+    "Name": "AMD Ryzen 5 3600X 6-Core Processor             ",
+    "NumberOfCores": 6,
+    "NumberOfLogicalProcessors": 12
+  }
+}

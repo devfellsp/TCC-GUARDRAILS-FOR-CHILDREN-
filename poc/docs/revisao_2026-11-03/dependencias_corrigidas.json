@@ -1,0 +1,146 @@
+{
+  "packages_checked": 28,
+  "advisories_found": 0,
+  "results": [
+    {
+      "package": "annotated-doc",
+      "version": "0.0.5",
+      "vulnerabilities": []
+    },
+    {
+      "package": "annotated-types",
+      "version": "0.8.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "anyio",
+      "version": "4.15.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "certifi",
+      "version": "2026.10.23",
+      "vulnerabilities": []
+    },
+    {
+      "package": "click",
+      "version": "8.5.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "colorama",
+      "version": "0.4.6",
+      "vulnerabilities": []
+    },
+    {
+      "package": "fastapi",
+      "version": "0.162.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "h11",
+      "version": "0.16.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "httpcore",
+      "version": "1.0.9",
+      "vulnerabilities": []
+    },
+    {
+      "package": "httpcore2",
+      "version": "2.16.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "httpx",
+      "version": "0.28.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "httpx2",
+      "version": "2.16.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "idna",
+      "version": "3.20",
+      "vulnerabilities": []
+    },
+    {
+      "package": "iniconfig",
+      "version": "2.3.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "vulnerabilities": []
+    },
+    {
+      "package": "opentelemetry-api",
+      "version": "1.45.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "packaging",
+      "version": "26.3",
+      "vulnerabilities": []
+    },
+    {
+      "package": "pluggy",
+      "version": "1.7.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "pydantic",
+      "version": "2.14.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "pydantic_core",
+      "version": "2.50.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "Pygments",
+      "version": "2.21.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "pypdf",
+      "version": "6.21.4",
+      "vulnerabilities": []
+    },
+    {
+      "package": "pytest",
+      "version": "9.1.1",
+      "vulnerabilities": []
+    },
+    {
+      "package": "starlette",
+      "version": "1.10.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "truststore",
+      "version": "0.10.5",
+      "vulnerabilities": []
+    },
+    {
+      "package": "typing-inspection",
+      "version": "0.4.4",
+      "vulnerabilities": []
+    },
+    {
+      "package": "typing_extensions",
+      "version": "4.16.0",
+      "vulnerabilities": []
+    },
+    {
+      "package": "uvicorn",
+      "version": "0.54.0",
+      "vulnerabilities": []
+    }
+  ]
+}

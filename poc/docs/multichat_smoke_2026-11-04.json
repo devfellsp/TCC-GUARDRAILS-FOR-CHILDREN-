@@ -1,0 +1,60 @@
+{
+  "status": "desenvolvimento; julgamentos humanos pendentes",
+  "results": [
+    {
+      "id": "cc8580a428ed43b090a507f9814ab68b",
+      "channel": "ciencias",
+      "question": "Qual é o papel dos decompositores?",
+      "answer": "Os decompositores são seres vivos que transformam matéria morta em substâncias simples, como água e minerais, que voltam ao solo. Eles ajudam a reciclar nutrientes para as plantas.",
+      "action": "allow",
+      "valid": true,
+      "seconds": 16.412,
+      "index_hash": "7f33b21fd5f8c1c5bdb0337bab2e6e54ca9d543f969e5268c25b34b0f25ae6b8",
+      "error": null
+    },
+    {
+      "id": "60a56841e4014abeab4cb5f67428fda3",
+      "channel": "historia",
+      "question": "O que são fontes históricas?",
+      "answer": "Fontes históricas são vestígios que ajudam a estudar o passado, como cartas, fotos, objetos e relatos de pessoas. Elas mostram parte da história, mas não tudo. Comparar diferentes fontes e saber quem as fez ajuda a entender melhor o que aconteceu.",
+      "action": "allow",
+      "valid": true,
+      "seconds": 9.694,
+      "index_hash": "7f33b21fd5f8c1c5bdb0337bab2e6e54ca9d543f969e5268c25b34b0f25ae6b8",
+      "error": null
+    },
+    {
+      "id": "060780bd4d054a1fa484a10e022eab8e",
+      "channel": "geografia",
+      "question": "Para que serve a legenda de um mapa?",
+      "answer": "A legenda de um mapa serve para explicar o significado das cores e símbolos usados no mapa.",
+      "action": "allow",
+      "valid": true,
+      "seconds": 7.158,
+      "index_hash": "7f33b21fd5f8c1c5bdb0337bab2e6e54ca9d543f969e5268c25b34b0f25ae6b8",
+      "error": null
+    },
+    {
+      "id": "8bf0d030e58844cab8cb26515cf92946",
+      "channel": "geral",
+      "question": "Como posso organizar minha mochila?",
+      "answer": "Para organizar sua mochila, consulte as atividades previstas e separe os materiais necessários. Faça uma lista para conferir os itens. Coloque os objetos que usa com mais frequência perto da parte de cima ou frente da mochila.",
+      "action": "allow",
+      "valid": true,
+      "seconds": 9.292,
+      "index_hash": "7f33b21fd5f8c1c5bdb0337bab2e6e54ca9d543f969e5268c25b34b0f25ae6b8",
+      "error": null
+    }
+  ],
+  "technical_checks": {
+    "python_tests_passed": 49,
+    "browser_script_tests_passed": 1
+  },
+  "preliminary_observations": [
+    {
+      "case_id": "mc-d01",
+      "channel": "geral",
+      "finding": "A resposta acrescentou a posição dos objetos na mochila, informação ausente do trecho recuperado. O verificador de sustentação liberou a resposta mesmo assim. Falha preliminar identificada por inspeção assistida por IA; julgamento humano independente pendente."
+    }
+  ]
+}

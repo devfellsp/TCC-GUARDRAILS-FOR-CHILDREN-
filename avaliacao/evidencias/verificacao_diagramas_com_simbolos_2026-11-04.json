@@ -1,0 +1,15 @@
+{
+  "abas": 7,
+  "simbolos_por_diagrama": {
+    "01_Problema_de_pesquisa": 0,
+    "02_Analise_contextual": 6,
+    "03_Arquitetura_GuardKids": 9,
+    "04_Desenho_da_pesquisa": 7,
+    "05_Processamento_da_pergunta": 8,
+    "06_Preparacao_e_consulta": 9,
+    "07_Regra_de_protecao": 8
+  },
+  "total_simbolos": 47,
+  "originais_preservados": true,
+  "biblioteca": "https://app.diagrams.net/stencils/gmdl.xml"
+}

@@ -1,0 +1,39 @@
+{
+  "version": "GK-P1.2",
+  "time_utc": "2026-11-03T22:52:22.134874+00:00",
+  "sources": {
+    "avaliacao/casos_avaliacao.json": "23c21317f3db99187136d33fb5b6b0fd8d41a60246f8a6958fb5c52740531ce1",
+    "avaliacao/protocolo.json": "9828a0bedd49f981b33f1be0b68a08f4677390d6dbebc64fbe658232bad9528e",
+    "avaliacao/RUBRICA.md": "a394b320a394218d575fa0c38395b20e6a987972f6068b38d5912db2a5d49ecb",
+    "poc/adversarial_cases.json": "aed52966b1fbaebd6c1875a600d53969e92c51b12ed9262fb0903453f80d8048",
+    "poc/app.py": "21bb3b25e50cffb532d4b9f20e09998b869e1704ca3be6d86bfbba5904fbdb3b",
+    "poc/config.json": "94c3d6d7be53afa71ea966e629fa672107b47256a119cbf53e07e05c65eb19ab",
+    "poc/corpus_manifest.json": "fdefa436de3319432fd078c004a6fc3fd51a686b4a13bd8c724d932646ed2f13",
+    "poc/development_cases.json": "d9ab8407516108ae624302d805d3e241d62c90bb0291e5636cad9830c7b031f0",
+    "poc/development_help_cases.json": "382a86447a134fdea5e389a9fb4c728de2678b11f85f89bf5568f865521d5cda",
+    "poc/evaluation.py": "7f1cbc7456807339d0624916cfe2efe9d884897998c814d3e312d0a9497ac399",
+    "poc/experiment.py": "8ea4a3735c07444289b7a1044652cd2f513e04cc3f7b99cf70023c2f24c1a125",
+    "poc/guardkids.py": "c4ed83947503664175a4ac63a16c8d9a28d619f753cf74632c00ff75188e2aae",
+    "poc/privacy.py": "ffdc3be50bd8fa2ee290a37fd624c4b0b2f18fbdba7b41fd406ddcbc6b67d54c",
+    "poc/prompts/classifier.txt": "90873ee897fa11a5c6623e195f152b0cc1fa69e78e531208d6e8cf877f0cd355",
+    "poc/prompts/generator.txt": "62e966aaeef77db770f3862582777e86734c5248ec4a93183a5f0562f283c66c",
+    "poc/prompts/grounding.txt": "730dbc280c53d6e68e3667f9acc1d0cf4288206cb397171597a88a68067ae7fe",
+    "poc/requirements-lock.txt": "bcc5ff62ef7b5c0291f56f60b0adc3d8c015a59b8503da95ce7ad732b07e2659",
+    "poc/run_development.py": "871f7089d780613a4da15478a44b80d7874c4933091860846910e33a560acf22",
+    "poc/settings.py": "3311c113ba5e626d67a758b770f45481c62adfd4168c0d428e1660e6b57f9a1d",
+    "poc/tests/test_context_policies.py": "6f4719a6e18b21f6c9104285e8dfe7da2c3e8ee20a0717339ba8107355d42a5f",
+    "poc/tests/test_evaluation.py": "024ecfd2a35690019f374ceab138df2d6e2ef6980e913d347a802d1c52cb5123",
+    "poc/tests/test_experiment.py": "58a1a816ec07b25f0ff97d7c22107b6c5a096e28422c87054268157a7486ea25",
+    "poc/tests/test_hardening.py": "90174963f288bc8107624ff7f1519456f50387ce45c7066ba5f7dd3a23dd3c7d",
+    "poc/tests/test_pipeline.py": "a237eec478956444c6f14198a88a1d505f67af7923c0232e1619620ace766d75"
+  },
+  "index_id": "aad4f5ebdba7d8321196445e916edac21e0855540b35dcecefe5ef2b649c05f8",
+  "model_digests": {
+    "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+  },
+  "ollama_version": "0.40.11",
+  "snapshot": "9dd1b02a099f43910c1c74df34264cde8071c1634db89eebdd1d1b98e43cd202",
+  "phase": "candidato_tecnico_TCC_I",
+  "human_reference_status": "pendente"
+}

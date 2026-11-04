@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-04",
+  "python_tests_passed": 74,
+  "interface_script_tests_passed": 1,
+  "development_attempts": 32,
+  "development_losses": 0,
+  "human_fields_empty": true,
+  "reserved_final_questions": 32,
+  "planned_final_attempts": 64,
+  "final_inference_runs": 0,
+  "pdf_checks": {
+    "local": {
+      "pages": 31,
+      "replacement_chars": 0,
+      "sha256": "74d6dc2f798c74c5d6210523fd3bfac3c607b9e1c44e131237c00bc3ec271fbe"
+    },
+    "pacote": {
+      "pages": 31,
+      "replacement_chars": 0,
+      "sha256": "606dc237a191a15df19ac8edb98b1187bc6dbe4723baae17f876c17a8d4630f5"
+    }
+  },
+  "latex_overflow_or_undefined_references": false,
+  "visual_review": "31 páginas renderizadas; contatos e páginas complexas inspecionados"
+}

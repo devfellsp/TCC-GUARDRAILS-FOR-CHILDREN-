@@ -1,0 +1,30 @@
+\chapter{Introdução}\label{cap:intro}
+
+O desenvolvimento de chatbots educativos destinados a crianças exige cuidados com a segurança do conteúdo, a adequação da linguagem e a pertinência das respostas ao contexto escolar. Nesse cenário, os mecanismos de proteção precisam reconhecer solicitações potencialmente nocivas e preservar o atendimento a dúvidas legítimas. Este trabalho aborda esse desafio por meio de guardrails configuráveis, entendidos como regras e verificações que orientam e restringem o comportamento de uma prova de conceito de chatbot em português brasileiro.
+
+Grandes modelos de linguagem produzem respostas abertas e podem gerar erros ou conteúdo inadequado. Guardrails de entrada e saída procuram limitar esses comportamentos, mas seus próprios classificadores também podem errar. A avaliação desses sistemas precisa considerar os riscos das interações com menores e as necessidades específicas das crianças (Rath et al., 2025; Wang et al., 2022). Essa perspectiva orienta a avaliação contextual proposta neste trabalho; a adequação do protótipo depende de evidências sobre seu funcionamento e suas respostas.
+
+A prova de conceito (PoC) desenvolvida neste trabalho opera localmente, em português brasileiro, e combina recuperação de passagens didáticas e verificações sobre a entrada, a sustentação e a saída. Seu público destinatário pretendido é de sete a onze anos. Entretanto, o recorte operacional deste projeto é um perfil fictício fixo de nove anos, estudante do quarto ano, em quatro chats de acervo restrito: Ciências, História, Geografia e Geral. O recorte inicial de Ciências foi ampliado durante o desenvolvimento, preservando separadamente suas evidências históricas. Não há participantes infantis, observação de aprendizagem nem medição de compreensão por crianças.
+
+O projeto compreende o desenvolvimento do artefato, a verificação de seu funcionamento e a preparação de uma avaliação comparativa de conteúdo. O protótipo foi submetido a testes funcionais e de desenvolvimento, enquanto o julgamento humano das respostas permanece como etapa posterior. A verificação preliminar concentra-se no comportamento técnico do sistema e não inclui avaliação de aprendizagem ou compreensão por crianças.
+
+\section{Motivação}
+
+A motivação da pesquisa está na necessidade de conciliar proteção e atendimento educativo nas interações com o chatbot. Para isso, é necessário examinar a intenção da solicitação, a disponibilidade de informações nas fontes selecionadas e a adequação da resposta produzida. Uma recusa pode evitar conteúdo nocivo e, ao mesmo tempo, deixar de atender uma dúvida legítima. Uma resposta fluente pode conter informações corretas sem estar sustentada no acervo autorizado. Essas situações justificam a avaliação conjunta das decisões de proteção e da qualidade das respostas.
+
+A questão que orienta este TCC I é: \textit{como desenvolver e verificar preliminarmente guardrails contextuais em uma prova de conceito com quatro chats educativos e uma regra comum de proteção, distinguindo segurança, sustentação e clareza em dois estilos de explicação?} O contraste atual examina respostas diretas e explicações passo a passo sob a mesma proteção. O efeito causal da proteção, em relação a um sistema sem guardrails, não é estimado por esse desenho.
+
+
+A contribuição pretendida é a operacionalização documentada de políticas contextuais em um domínio pequeno, com separação entre referência de apoio, recuperação e julgamento da resposta. Os mecanismos de recuperação e classificação são adaptados de abordagens descritas na literatura. O trabalho compreende um protótipo configurável, um acervo restrito rastreável e um protocolo com rubrica, casos e instrumentos de avaliação.
+
+A execução local dos modelos permite realizar os experimentos sem depender de serviços de inferência pagos. O corpus pequeno facilita a conferência das referências, mas restringe a variedade de dúvidas respondíveis. A busca narrativa descrita no Capítulo~\ref{cap:referencial} situa o recorte em relação aos trabalhos selecionados, considerando seus limites de idioma, cobertura e acesso.
+
+\section{Objetivos}
+
+\subsection{Objetivo geral}
+
+O objetivo geral é desenvolver e verificar funcionalmente uma prova de conceito de chatbot com guardrails configuráveis para o cenário delimitado e preparar um protocolo rastreável de avaliação contextual.
+
+\subsection{Objetivos específicos}
+
+São objetivos específicos: (a) explicitar uma regra contextual comum para conteúdo educativo, risco, ajuda e falta de apoio; (b) implementar e verificar o fluxo de entrada, recuperação, geração, sustentação, saída e registro; (c) revisar documentalmente os acervos e comparar estilos no desenvolvimento, distinguindo rotas técnicas, inspeção assistida e julgamentos humanos; e (d) preparar casos reservados, rubrica e instrumentos para a avaliação humana comparativa posterior. O cumprimento desses objetivos é examinado na Tabela~\ref{tab:objetivos}; a execução da avaliação final permanece como continuidade planejada.

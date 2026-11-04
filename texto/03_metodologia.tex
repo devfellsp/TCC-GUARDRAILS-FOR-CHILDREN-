@@ -1,0 +1,102 @@
+\chapter{Metodologia}\label{cap:metodo}
+
+\section{Descrição do Problema}
+
+Esta pesquisa aplicada desenvolve e verifica preliminarmente uma prova de conceito de chatbot educativo com guardrails contextuais. O público pretendido é de sete a onze anos; a operação usa somente um perfil fictício de nove anos, em português brasileiro. Não há participantes infantis, observação de aprendizagem nem medição de compreensão. A versão atual, \texttt{GK-P2.1-dev}, atende quatro espaços: Ciências, História, Geografia e Geral, todos delimitados por seus acervos.
+
+O desenho atual adota uma regra de proteção comum e compara dois estilos de explicação. A regra procura permitir conteúdo educativo, intervir em pedidos prejudiciais, oferecer cuidado em pedidos de ajuda e informar falta de apoio nas fontes. O estilo Direto privilegia concisão; o Passo a passo solicita frase inicial simples, duas etapas e exemplo concreto, até 120 palavras. Essa instrução não garante clareza, sustentação ou adequação etária. Segurança, decisão de tratamento, correção, fidelidade e linguagem são avaliadas separadamente.
+
+A comparação anterior entre uma ablação conservadora e uma configuração que permitia predação foi retirada da configuração ativa. Seus registros permanecem como histórico de desenvolvimento. O novo contraste mantém a proteção fixa e modifica somente a instrução de linguagem; não mede o efeito causal dos guardrails em comparação com um sistema desprotegido. Os lotes históricos e atuais têm populações de perguntas e denominadores separados.
+
+\section{Materiais}
+
+\subsection{Acervo e revisão documental}
+
+O índice atual contém oito trechos: cinco recortes didáticos de Ciências e três sínteses autorais experimentais, uma por novo chat. O manifesto registra arquivos, páginas dos PDFs, âncoras, hashes, exclusões e referências externas das sínteses. Os textos de História, Geografia e Geral foram revisados com assistência de IA antes do novo lote; não receberam certificação pedagógica nem revisão humana independente.
+
+\begin{table}[htbp]\centering\small\SingleSpacing
+\caption{Conteúdo do acervo atual por chat}\label{tab:corpus}
+\begin{tabularx}{\textwidth}{L{2.1cm} L{2.1cm} Y}
+\toprule Chat & Trechos & Conteúdo e procedência \\\midrule
+Ciências & 5 recortes & Alimentação, produtores, consumidores e decomposição; SME-SP (2021) e SEDUC-SP (2024). Páginas impressas/PDF: 154/156, 8/10, 9/11, 13/15 e 27/29. \\
+História & 1 síntese & Fontes escritas, orais, visuais e materiais; memória e investigação de registros. Conferência conceitual em materiais da SME de Goiânia. \\
+Geografia & 1 síntese & Paisagem, legenda e relações campo-cidade; materiais da SME de Goiânia. \\
+Geral & 1 síntese & Sugestões autorais de organização e convivência; sombra conferida no Smithsonian e cuidados com dados no NIC.br. \\
+\bottomrule\end{tabularx}\fonte{Manifesto e revisão documental assistida por IA de 4 nov. 2026.}
+\end{table}
+
+Em Ciências, preservaram-se as exclusões anteriores de exercícios e formulações problemáticas. Nas sínteses, foram retiradas afirmações sem vínculo documental explícito, como a descrição de transportes no recorte de História. O exemplo de organização da mochila foi identificado como sugestão autoral, sem promessa de benefício escolar. As fontes externas foram usadas para conferir conceitos; não se importaram imagens nem páginas integrais. A existência de uma página institucional não certifica a adaptação produzida. Parte das fontes de conferência pertence a outros anos escolares e à EJA, exigindo revisão específica da linguagem para o perfil pretendido.
+
+O índice filtra o chat antes da seleção das passagens. Conteúdo disponível em Geografia não pode sustentar uma resposta do chat de Ciências. Os arquivos e suas referências estão em \nolinkurl{poc/corpus_manifest.json}; a revisão detalhada está em \nolinkurl{avaliacao/revisao_acervos_multichat_2026-11-04.json}. A revisão humana independente do acervo e das condições de reutilização permanece necessária.
+
+\subsection{Parâmetros e rastreabilidade}
+
+\begin{table}[htbp]\centering\small\SingleSpacing
+\caption{Parâmetros mantidos no novo lote}\label{tab:parametros}
+\begin{tabularx}{\textwidth}{L{4.1cm} L{2.8cm} Y}
+\toprule Parâmetro & Valor & Limite de interpretação \\\midrule
+Modelo / embeddings & Qwen3:8b / BGE-M3 & Modelos locais, sem seleção comparativa. \\
+Temperatura / semente & 0 / 42 & Não asseguram determinismo. \\
+Contexto / saída máxima & 4096 / 400 tokens & Sem prova de ausência de truncamento em toda entrada. \\
+Top-p / penalidade & 0,9 / 1,1 & Mantidos, não otimizados neste estudo. \\
+Recuperação & 3 trechos / 0,45 & Similaridade não prova apoio factual. \\
+Blocos / sobreposição & 850 caracteres / 1 sentença & Acervo pequeno e intencional. \\
+Resposta / prazo & 120 palavras / 120 segundos & Não medem compreensão infantil. \\
+\bottomrule\end{tabularx}\fonte{Configuração da versão GK-P2.1-dev.}
+\end{table}
+
+A sondagem histórica examinou os limiares 0,35, 0,45 e 0,55 em 27 perguntas de Ciências; observaram-se respectivamente 20, 6 e 6 passagens pelo filtro. Esses resultados não calibram automaticamente os novos chats. O limiar 0,45 foi conservado como opção operacional anterior, sem alegação de ótimo. Cada lote registra hashes de código, configuração, estilos, modelos e índice. O novo acervo exigiu reconstrução do índice antes das inferências.
+
+\input{texto/04_artefato.tex}
+
+\section{Protocolo de avaliação}
+
+\subsection{Desenvolvimento e comparação pareada}
+
+O desenvolvimento atual utiliza 16 enunciados fictícios conhecidos dos autores, quatro por chat: pergunta educativa apoiada, falta de apoio, risco e ajuda. Cada pergunta é submetida aos estilos Direto e Passo a passo, totalizando 32 tentativas sobre 16 perguntas. O modelo, os parâmetros, as fontes, o perfil e a regra comum permanecem iguais. A agenda é embaralhada com semente 20261104 e alterna o primeiro estilo: oito perguntas começam por cada estilo. Não há memória entre perguntas nem repetição seletiva para substituir falhas.
+
+As referências esperadas foram conferidas antes das saídas por leitura dos trechos e da regra de cuidado. A recuperação efetiva é uma variável distinta: o sistema pode falhar em recuperar uma resposta existente. Os casos de risco e ajuda são julgados pela regra de proteção, sem atribuir ao acervo didático a autoridade para orientações de cuidado. As referências são assistidas por IA, sem assinatura humana inventada.
+
+O lote de desenvolvimento serve para encontrar falhas e preparar a avaliação posterior. A inspeção assistida por IA considera conteúdo e fontes, mas não é um julgamento humano, independente ou cego. As contagens de rotas são apresentadas separadamente dessa inspeção. Os resultados e limitações do lote constam do Capítulo~\ref{cap:evidencias}.
+
+\subsection{Conjunto reservado e plano final}
+
+O plano posterior, identificado como \texttt{GK-P2-FINAL-1}, prevê 32 enunciados em 16 famílias, com duas formulações por família, distribuídos conforme a Tabela~\ref{tab:amostra}. Cada pergunta será submetida aos dois estilos sob a regra comum, em uma tentativa por condição: 64 oportunidades planejadas. A ausência de repetições técnicas limita a análise da variação residual. Esse conjunto não foi usado no desenvolvimento do protótipo nem executado nesta revisão.
+
+\begin{table}[htbp]\centering\small\SingleSpacing
+\caption{Cobertura proposta para a avaliação final multidisciplinar}\label{tab:amostra}
+\begin{tabularx}{\textwidth}{L{2.6cm} Y L{1.7cm} L{1.9cm}}
+\toprule Tipo & Cobertura & Perguntas & Tentativas \\\midrule
+Educativa apoiada & Duas por chat, com referências explícitas & 8 & 16 \\
+Falta de apoio & Duas por chat, conteúdo ausente do respectivo acervo & 8 & 16 \\
+Risco & Duas por chat, distinguindo intenção nociva e cuidado & 8 & 16 \\
+Ajuda & Duas por chat, sem pedido de instruções de dano & 8 & 16 \\
+Total & Quatro chats; duas formulações por família & 32 & 64 \\
+\bottomrule\end{tabularx}\fonte{Proposta assistida por IA, pendente de ratificação humana; avaliação não executada.}
+\end{table}
+
+A reserva é operacional: os enunciados são conhecidos pelo pesquisador e pela IA autora, e compartilham conceitos e categorias com o desenvolvimento. Não representam um teste externo independente, população infantil ou cobertura exaustiva de riscos. As paráfrases de uma família não são observações independentes. Uma mudança posterior motivada pelas saídas finais invalida a reserva para aquela versão e exige novo planejamento, sem apagar o lote anterior.
+
+A agenda proposta usa semente fixa, alternância equilibrada de estilos e seleção prévia de 16 saídas para segunda revisão, quatro por chat, incluindo os quatro tipos de caso. Planejam-se 64 julgamentos primários e 16 secundários. Uma hipótese de um a três minutos por julgamento corresponde a 80--240 minutos, além da leitura das fontes e conciliação; não é tempo medido nem compromisso de disponibilidade. Os textos podem revelar o estilo, portanto a ocultação de metadados é parcial e não constitui cegamento pleno.
+
+\subsection{Rubrica e condições para liberação}
+
+A revisão separa segurança, tratamento da solicitação, correção factual, fidelidade às fontes, clareza e qualidade dos exemplos. Classificações inconclusivas e não aplicáveis exigem justificativa. Para clareza, a comparação pareada admite preferência pelo Direto, pelo Passo a passo, empate ou inconclusivo; quantidade de palavras não é sinônimo de qualidade. Recusas e orientações fixas podem ser iguais nos dois estilos, sem constituir falha da comparação.
+
+Antes das respostas finais, um revisor humano deve conferir categoria, apoio, tratamento esperado e referências dos 32 casos, registrando identidade, data e justificativa. O protocolo, os casos, os modelos, o índice e as instruções devem ser congelados após essa ratificação. O executor reservado verifica esses requisitos e interrompe a execução caso haja alteração. A referência assistida por IA não libera automaticamente a avaliação final.
+
+\subsection{Indicadores e tratamento das perdas}
+
+As rotas observadas não substituem julgamento de adequação. Apresentam-se contagens e denominadores por chat, tipo de solicitação e estilo: inadequação de conteúdo, recusa indevida, insuficiência correta ou indevida, orientação de ajuda, correção, sustentação e clareza. Para perguntas educativas, o atendimento seguro, correto e sustentado é definido na Equação~\ref{eq:ascs}; a clareza é relatada separadamente.
+
+\begin{equation}\label{eq:ascs}
+ASCS=\frac{\text{saídas educativas seguras, corretas, sustentadas e atendidas}}{\text{saídas educativas com julgamento conclusivo nas dimensões}}
+\end{equation}
+
+Erros de modelo, prazo, JSON, índice ou persistência são perdas técnicas, não proteção correta. Pares incompletos ou inconclusivos são excluídos somente da comparação correspondente, com contagem explícita; as tentativas originais permanecem nos registros. Relata-se também atendimento por oportunidade planejada. Não se somam as 32 tentativas atuais às 108 históricas para formar um indicador de eficácia. Taxas finais permanecem pendentes enquanto faltarem julgamentos humanos conclusivos.
+
+\begin{figure}[htbp]\centering
+\input{texto/figura_protocolo.tex}
+\caption{Separação entre histórico, desenvolvimento executado e avaliação final planejada}\label{fig:protocolo}
+\fonte{Elaboração própria; a avaliação final depende de ratificação e congelamento.}
+\end{figure}

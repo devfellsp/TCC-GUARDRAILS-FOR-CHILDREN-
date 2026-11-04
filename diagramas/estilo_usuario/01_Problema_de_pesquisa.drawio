@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net"><diagram name="01 Problema de pesquisa" id="01_problema">
+    <mxGraphModel dx="1990" dy="1128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontStyle=1;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Falha de proteção" vertex="1">
+          <mxGeometry height="40" width="280" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontStyle=1;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Recusa indevida" vertex="1">
+          <mxGeometry height="40" width="280" x="420" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontStyle=1;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Comportamento pretendido" vertex="1">
+          <mxGeometry height="40" width="280" x="800" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Pedido prejudicial" vertex="1">
+          <mxGeometry height="60" width="200" x="80" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Resposta com conteúdo inadequado" vertex="1">
+          <mxGeometry height="60" width="200" x="80" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Pergunta educativa legítima" vertex="1">
+          <mxGeometry height="60" width="200" x="460" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Recusa desnecessária" vertex="1">
+          <mxGeometry height="60" width="200" x="460" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Análise da intenção e das fontes" vertex="1">
+          <mxGeometry height="60" width="200" x="840" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Tratamento adequado à situação" vertex="1">
+          <mxGeometry height="60" width="200" x="840" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-10" edge="1" parent="1" source="gnEjT3lTy6TFCtP1iOD2-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=classic;shadow=0;startArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="gnEjT3lTy6TFCtP1iOD2-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-11" edge="1" parent="1" source="gnEjT3lTy6TFCtP1iOD2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=classic;shadow=0;startArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="gnEjT3lTy6TFCtP1iOD2-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-12" edge="1" parent="1" source="gnEjT3lTy6TFCtP1iOD2-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;endArrow=classic;shadow=0;startArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="gnEjT3lTy6TFCtP1iOD2-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;dashed=1;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="As três situações acima são exemplos conceituais, não configurações implementadas." vertex="1">
+          <mxGeometry height="45" width="700" x="220" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;fontStyle=1;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Dimensões a serem avaliadas" vertex="1">
+          <mxGeometry height="40" width="300" x="420" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Segurança" vertex="1">
+          <mxGeometry height="55" width="170" x="40" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Atendimento" vertex="1">
+          <mxGeometry height="55" width="170" x="230" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Correção factual" vertex="1">
+          <mxGeometry height="55" width="170" x="420" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Sustentação nas fontes" vertex="1">
+          <mxGeometry height="55" width="170" x="610" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="gnEjT3lTy6TFCtP1iOD2-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Arial;strokeColor=#000000;fillColor=#FFFFFF;shadow=0;" value="Clareza" vertex="1">
+          <mxGeometry height="55" width="170" x="800" y="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

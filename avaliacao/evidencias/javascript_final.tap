@@ -1,0 +1,16 @@
+TAP version 13
+# Subtest: falha depois de sucesso nao reapresenta fontes ou identificadores antigos
+ok 1 - falha depois de sucesso nao reapresenta fontes ou identificadores antigos
+  ---
+  duration_ms: 3.5818
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 106.6547

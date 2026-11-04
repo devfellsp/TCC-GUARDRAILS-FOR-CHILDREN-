@@ -1,6 +1,7 @@
 fastapi
 uvicorn
-pypdf
+pypdf>=6.21.4
 numpy
 httpx
+httpx2
 pytest

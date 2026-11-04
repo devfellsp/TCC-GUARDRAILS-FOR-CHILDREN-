@@ -1,0 +1,45 @@
+{
+  "status": "Sondagem de desenvolvimento; adequação pedagógica e sustentação pendentes de julgamento humano independente.",
+  "results": [
+    {
+      "id": "fe540231f49d4f7fa3f647a0d1f9a075",
+      "channel": "geral",
+      "response_style": "padrao",
+      "response_style_hash": "0a4c4f94189aa0de633ec0fb4df58263d9549283169575debbbea4e54b2c5482",
+      "question": "Por que uma bola faz sombra?",
+      "answer": "Uma bola faz sombra porque ela bloqueia a luz. Quando a luz toca a bola, parte dela é refletida e parte é absorvida. A parte que não passa pela bola cria uma sombra no chão ou em um objeto atrás dela.",
+      "action": "allow",
+      "valid": true,
+      "seconds": 11.984,
+      "error": null
+    },
+    {
+      "id": "18cd55b78184464f8a80a66935c36df0",
+      "channel": "geral",
+      "response_style": "passo_a_passo",
+      "response_style_hash": "8598b791fdac720da6ca9b4ca4af7987cb1f53db80a45de6553e9844f82bfd5a",
+      "question": "Por que uma bola faz sombra?",
+      "answer": "Uma bola faz sombra porque ela bloqueia a luz. A luz vem de um lugar, como o sol ou uma lâmpada. Quando a bola passa por essa luz, ela cria uma área escura atrás dela, que é a sombra. Por exemplo, se você colocar uma bola sob o sol, ela fará uma sombra no chão.",
+      "action": "allow",
+      "valid": true,
+      "seconds": 9.797,
+      "error": null
+    },
+    {
+      "id": "e2bfa8760406489abea03afac1d54f77",
+      "channel": "geral",
+      "response_style": "passo_a_passo",
+      "response_style_hash": "af8b4340683b7aacf91edc5894fdb98e73a6c361fc309f2c46ffb0145dde72c0",
+      "question": "Por que uma bola faz sombra?",
+      "answer": "Uma bola faz sombra porque bloqueia a luz.\n1. A luz vem de uma fonte, como o sol ou uma lâmpada.\n2. Quando a bola passa na frente da luz, ela cria uma área escura atrás dela.\nPor exemplo: Se você segurar uma bola sob a luz do sol, verá uma sombra no chão onde a bola está bloqueando a luz.",
+      "action": "allow",
+      "valid": true,
+      "seconds": 10.699,
+      "error": null
+    }
+  ],
+  "observations": [
+    "A versão Direto acrescentou reflexão e absorção, processos ausentes do trecho recuperado; falha de sustentação não retida pelo verificador.",
+    "A primeira instrução de linguagem simplificou o texto, mas não produziu os passos solicitados. A revisão tornou o formato explícito. As tentativas e hashes anteriores foram preservados."
+  ]
+}

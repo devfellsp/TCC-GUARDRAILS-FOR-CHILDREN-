@@ -1,0 +1,51 @@
+[
+  {
+    "number": 1,
+    "slug": "01_dilema_calibracao_guardrails",
+    "title": "Proteção contextual e atendimento educativo",
+    "width": 1000,
+    "height": 650
+  },
+  {
+    "number": 2,
+    "slug": "02_fluxo_classificacao_indicativa",
+    "title": "Da referência de risco à decisão contextual",
+    "width": 1000,
+    "height": 730
+  },
+  {
+    "number": 3,
+    "slug": "03_arquitetura_conceitual_integrada",
+    "title": "Arquitetura do GuardKids por camadas",
+    "width": 1000,
+    "height": 820
+  },
+  {
+    "number": 4,
+    "slug": "04_protocolo_experimental_metodologia",
+    "title": "Desenho de pesquisa e separação das evidências",
+    "width": 1000,
+    "height": 800
+  },
+  {
+    "number": 5,
+    "slug": "05_pipeline_5_etapas_guardkids",
+    "title": "Fluxo de uma pergunta e saídas alternativas",
+    "width": 1000,
+    "height": 770
+  },
+  {
+    "number": 6,
+    "slug": "06_curadoria_e_indexacao_rag",
+    "title": "Acervo rastreável e recuperação por chat",
+    "width": 1000,
+    "height": 850
+  },
+  {
+    "number": 7,
+    "slug": "07_regra_protecao_comum",
+    "title": "Regra de proteção comum: precedência e decisões",
+    "width": 1000,
+    "height": 980
+  }
+]

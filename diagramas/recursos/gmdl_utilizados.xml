@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shapes name="mxgraph.gmdl"><!-- Símbolos da biblioteca nativa do Draw.io: https://app.diagrams.net/stencils/gmdl.xml ; preservados sem alteração. --><shape aspect="variable" h="80" name="chat2" strokewidth="inherit" w="100">
+    <connections />
+    <foreground>
+        <path>
+            <move x="0" y="80" />
+            <line x="0" y="5" />
+            <arc large-arc-flag="0" rx="5" ry="5" sweep-flag="1" x="5" x-axis-rotation="0" y="0" />
+            <line x="95" y="0" />
+            <arc large-arc-flag="0" rx="5" ry="5" sweep-flag="1" x="100" x-axis-rotation="0" y="5" />
+            <line x="100" y="60" />
+            <arc large-arc-flag="0" rx="5" ry="5" sweep-flag="1" x="95" x-axis-rotation="0" y="65" />
+            <line x="15" y="65" />
+            <close />
+        </path>
+        <fillstroke />
+    </foreground>
+</shape>
+<shape aspect="variable" h="75" name="check" strokewidth="inherit" w="100">
+    <connections />
+    <foreground>
+        <fillcolor color="none" />
+        <path>
+            <move x="0" y="50" />
+            <line x="30" y="75" />
+            <line x="100" y="0" />
+        </path>
+        <stroke />
+    </foreground>
+</shape>
+<shape aspect="variable" h="16" name="folder" strokewidth="inherit" w="24">
+    <connections />
+    <foreground>
+        <path>
+            <move x="0" y="3" />
+            <arc large-arc-flag="0" rx="3" ry="3" sweep-flag="1" x="3" x-axis-rotation="0" y="0" />
+            <line x="9" y="0" />
+            <arc large-arc-flag="0" rx="3" ry="3" sweep-flag="1" x="12" x-axis-rotation="0" y="3" />
+            <line x="21" y="3" />
+            <arc large-arc-flag="0" rx="3" ry="3" sweep-flag="1" x="24" x-axis-rotation="0" y="6" />
+            <line x="24" y="13" />
+            <arc large-arc-flag="0" rx="3" ry="3" sweep-flag="1" x="21" x-axis-rotation="0" y="16" />
+            <line x="3" y="16" />
+            <arc large-arc-flag="0" rx="3" ry="3" sweep-flag="1" x="0" x-axis-rotation="0" y="13" />
+            <close />
+        </path>
+        <fillstroke />
+    </foreground>
+</shape>
+<shape aspect="variable" h="24" name="search" strokewidth="inherit" w="24">
+    <connections />
+    <foreground>
+        <save />
+        <fillcolor color="none" />
+        <ellipse h="16" w="16" x="0" y="0" />
+        <stroke />
+        <restore />
+        <rect />
+        <stroke />
+        <path>
+            <move x="13.5" y="13.5" />
+            <line x="24" y="24" />
+        </path>
+        <fillstroke />
+    </foreground>
+</shape>
+</shapes>

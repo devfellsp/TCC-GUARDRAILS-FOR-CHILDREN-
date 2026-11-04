@@ -1,0 +1,9 @@
+{
+  "kind": "simulacao_de_calculo_sem_alterar_entregavel",
+  "passed": true,
+  "expected": {
+    "reference_ASCS": 0,
+    "adjusted_ASCS": 1
+  },
+  "native_Excel_opened": false
+}

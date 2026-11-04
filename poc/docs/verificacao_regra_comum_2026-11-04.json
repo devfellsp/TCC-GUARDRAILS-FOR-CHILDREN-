@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-04",
+  "version": "GK-P2.0-dev",
+  "python_tests": {
+    "passed": 69,
+    "failed": 0
+  },
+  "interface_script_tests": {
+    "passed": 1,
+    "failed": 0
+  },
+  "planned_questions": 16,
+  "planned_attempts": 32,
+  "new_model_attempts_executed": 0,
+  "protection_rule": "comum",
+  "styles": [
+    "padrao",
+    "passo_a_passo"
+  ],
+  "human_review": "pendente",
+  "local_server_started_in_this_revision": false,
+  "check_kind": "verificação técnica com respostas simuladas; não mede eficácia"
+}

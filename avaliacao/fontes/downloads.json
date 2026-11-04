@@ -1,0 +1,18 @@
+[
+  {
+    "id": "manual_unitins",
+    "url": "https://www.unitins.br/cms/Arquivos/Download/D5D2798C96CF7CE88B0DBDD1CB2AE0174CC49043",
+    "file": "avaliacao\\fontes\\manual_unitins.pdf",
+    "sha256": "b9b85c7508c7b8c163714615fc8f6342e926171e508eb63da90d4f8db11ff45b",
+    "bytes": 1013926,
+    "retrieved_on": "2026-11-03"
+  },
+  {
+    "id": "bncc",
+    "url": "https://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf",
+    "file": "avaliacao\\fontes\\bncc.pdf",
+    "sha256": "ad623d7b33986a4e87e1441a4e675064cd30db3650b86a75caefa476e802272b",
+    "bytes": 3058960,
+    "retrieved_on": "2026-11-03"
+  }
+]

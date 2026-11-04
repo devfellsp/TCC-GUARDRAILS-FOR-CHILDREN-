@@ -1,0 +1,29 @@
+{
+  "id": "GK-P2-FINAL-1",
+  "date": "2026-11-04",
+  "version": "GK-P2.1-dev",
+  "status": "proposta prospectiva; não liberada",
+  "protection_rule": "comum",
+  "styles": [
+    "padrao",
+    "passo_a_passo"
+  ],
+  "questions": 32,
+  "families": 16,
+  "repetitions": 1,
+  "planned_attempts": 64,
+  "seed": 202611041,
+  "primary_reviews": 64,
+  "secondary_reviews": 16,
+  "human_reference_status": "pendente",
+  "human_response_review": "pendente",
+  "final_evaluation_executed": false,
+  "external_independence": false,
+  "development_batch": "avaliacao/evidencias/multichat_20261104_revisado",
+  "limitations": [
+    "reserva apenas operacional; conceitos sobrepostos ao desenvolvimento",
+    "amostra intencional pequena; famílias não independentes",
+    "sem compreensão infantil medida; sem ablação de proteção",
+    "ratificação humana e congelamento antes da inferência"
+  ]
+}

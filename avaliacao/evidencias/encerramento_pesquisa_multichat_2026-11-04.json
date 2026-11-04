@@ -1,0 +1,5 @@
+{
+  "poc_active": false,
+  "ollama_active": false,
+  "task_owned_ollama_stopped": true
+}

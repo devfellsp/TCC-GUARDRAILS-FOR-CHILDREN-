@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="980" viewBox="0 0 1000 980">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#20364a"/></marker></defs>
+<rect width="1000" height="100%" fill="white"/>
+<text x="500" y="38" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle" fill="#20364a">Regra de proteção comum: precedência e decisões</text>
+<text x="500" y="76" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#536574">A mesma regra vale para Ciências, História, Geografia e Geral.</text>
+<polyline points="525.0,175.0 525.0,230.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="400.0,285.0 310.0,285.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="525.0,340.0 525.0,410.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="177,340 177,420" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="45,285 20,285 20,630 45,630" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="177,500 177,550 335,550 335,850 177,850 177,885" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="177,670 177,885" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="650.0,465.0 745.0,465.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="525.0,520.0 525.0,580.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="525.0,670.0 525.0,730.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="650.0,780.0 735.0,775.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="525.0,830.0 525.0,885.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="852.5,865.0 852.5,885.0" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="960,465 985,465 985,917 970,917" fill="none" stroke="#20364a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="390" y="110" width="270" height="65" rx="7" fill="#f4f5f6" stroke="#73808c" stroke-width="1.8"/>
+<text x="525.0" y="150.5" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Pergunta validada</text>
+<rect x="45" y="100" width="265" height="110" rx="7" fill="#f4f5f6" stroke="#73808c" stroke-width="1.8"/>
+<text x="177.5" y="122.5" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Critério de cuidado</text>
+<text x="177.5" y="152.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Autolesão ou privacidade;</text>
+<text x="177.5" y="177.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">perigo, sexual, ofensas ou</text>
+<text x="177.5" y="202.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">substâncias, se pedir ajuda</text>
+<polygon points="525.0,230 650,285.0 525.0,340 400,285.0" fill="#eef4fb" stroke="#426b95" stroke-width="1.8"/>
+<text x="525.0" y="280.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Exige</text>
+<text x="525.0" y="307.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">proteção?</text>
+<polygon points="177.5,230 310,285.0 177.5,340 45,285.0" fill="#eef4fb" stroke="#426b95" stroke-width="1.8"/>
+<text x="177.5" y="280.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Cuidado fixo</text>
+<text x="177.5" y="307.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">aplicável?</text>
+<rect x="45" y="420" width="265" height="80" rx="7" fill="#edf6f2" stroke="#367260" stroke-width="1.8"/>
+<text x="177.5" y="452.5" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Orientar cuidado</text>
+<text x="177.5" y="482.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Mensagem fixa por categoria</text>
+<rect x="45" y="590" width="265" height="80" rx="7" fill="#fbeeee" stroke="#a14b4b" stroke-width="1.8"/>
+<text x="177.5" y="622.5" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Bloquear pedido</text>
+<text x="177.5" y="652.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Recusa do pedido nocivo</text>
+<polygon points="525.0,410 650,465.0 525.0,520 400,465.0" fill="#eef4fb" stroke="#426b95" stroke-width="1.8"/>
+<text x="525.0" y="460.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Há trechos</text>
+<text x="525.0" y="487.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">no chat?</text>
+<rect x="745" y="425" width="215" height="80" rx="7" fill="#fff6e8" stroke="#9c702e" stroke-width="1.8"/>
+<text x="852.5" y="457.5" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Informar limite</text>
+<text x="852.5" y="487.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Apoio insuficiente</text>
+<rect x="400" y="580" width="250" height="90" rx="7" fill="#f3eff8" stroke="#78628f" stroke-width="1.8"/>
+<text x="525.0" y="617.5" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Gerar e conferir</text>
+<text x="525.0" y="647.5" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Fontes, estilo e segurança</text>
+<polygon points="525.0,730 650,780.0 525.0,830 400,780.0" fill="#eef4fb" stroke="#426b95" stroke-width="1.8"/>
+<text x="525.0" y="775.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Resposta</text>
+<text x="525.0" y="802.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">aprovada?</text>
+<rect x="735" y="685" width="235" height="180" rx="7" fill="#fff6e8" stroke="#9c702e" stroke-width="1.8"/>
+<text x="852.5" y="730.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Se houver reprovação</text>
+<text x="852.5" y="760.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Sem apoio: informar limite</text>
+<text x="852.5" y="785.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Risco: aplicar proteção</text>
+<text x="852.5" y="810.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Erro: registrar perda</text>
+<text x="852.5" y="835.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Reter o rascunho</text>
+<rect x="400" y="885" width="250" height="65" rx="7" fill="#edf6f2" stroke="#367260" stroke-width="1.8"/>
+<text x="525.0" y="910.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Registrar e exibir</text>
+<text x="525.0" y="940.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Resposta com fontes</text>
+<rect x="45" y="885" width="265" height="65" rx="7" fill="#f4f5f6" stroke="#73808c" stroke-width="1.8"/>
+<text x="177.5" y="910.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Registrar e exibir</text>
+<text x="177.5" y="940.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Mensagem fixa</text>
+<rect x="735" y="885" width="235" height="65" rx="7" fill="#f4f5f6" stroke="#73808c" stroke-width="1.8"/>
+<text x="852.5" y="910.0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#20364a">Registrar e exibir</text>
+<text x="852.5" y="940.0" font-family="Arial, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#20364a">Mensagem da rota</text>
+<rect x="350.781005859375" y="260.0" width="40.43798828125" height="23" rx="3" fill="white"/>
+<text x="371.0" y="277.0" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#20364a">sim</text>
+<rect x="519.818115234375" y="350.0" width="42.36376953125" height="23" rx="3" fill="white"/>
+<text x="541.0" y="367.0" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#20364a">não</text>
+<rect x="186.781005859375" y="371" width="40.43798828125" height="23" rx="3" fill="white"/>
+<text x="207" y="388" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#20364a">sim</text>
+<rect x="18.818115234375" y="543" width="42.36376953125" height="23" rx="3" fill="white"/>
+<text x="40" y="560" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#20364a">não</text>
+<rect x="692.318115234375" y="440.0" width="42.36376953125" height="23" rx="3" fill="white"/>
+<text x="713.5" y="457.0" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#20364a">não</text>
+<rect x="520.781005859375" y="525.0" width="40.43798828125" height="23" rx="3" fill="white"/>
+<text x="541.0" y="542.0" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#20364a">sim</text>
+<rect x="687.318115234375" y="752.5" width="42.36376953125" height="23" rx="3" fill="white"/>
+<text x="708.5" y="769.5" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#20364a">não</text>
+<rect x="520.781005859375" y="832.5" width="40.43798828125" height="23" rx="3" fill="white"/>
+<text x="541.0" y="849.5" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#20364a">sim</text>
+<text x="500" y="970" font-family="Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#536574">Predação educativa não gráfica pode prosseguir; risco, falta de apoio e falha técnica são distintos.</text>
+</svg>

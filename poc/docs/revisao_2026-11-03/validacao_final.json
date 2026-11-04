@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "python_tests_passed": 35,
+  "javascript_tests_passed": 1,
+  "synthetic_real_model_checks": 5,
+  "osv_packages_checked": 28,
+  "osv_advisories_found": 0,
+  "pdf_pages": 57,
+  "pdf_overfull_or_missing_references": false,
+  "pdf_sha256": "0fe8507d93e22a006a0d95369d84a4f5cc171195ca5e0b0811225d88915e1c8e",
+  "overleaf_zip_sha256": "b60e8831df77f5b88c8e36954940b97c45a6f8b0ea14aaf4b18dc5bc37df14f7",
+  "overleaf_deterministic": true,
+  "notes": [
+    "Verificacoes funcionais, sem medida de eficacia ou julgamento humano.",
+    "Alguns avisos de codificacao da dependencia algorithm2e no compilador portatil, sem glifos ausentes no PDF.",
+    "Servidor Ollama temporario encerrado apos os testes."
+  ]
+}

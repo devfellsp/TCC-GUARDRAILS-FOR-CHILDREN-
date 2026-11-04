@@ -9,7 +9,7 @@ import guardkids as g
 
 
 def classification(**kwargs):
-    return g.Classification(category="normal", needs_protection=False, educational_predation=False, reason="teste").model_copy(update=kwargs)
+    return g.Classification(category="normal", needs_protection=False, educational_predation=False, help_seeking=False, reason="teste").model_copy(update=kwargs)
 
 
 def test_context_exception_does_not_allow_harm():
@@ -30,12 +30,13 @@ def environment(monkeypatch, tmp_path):
     monkeypatch.setattr(g, "config", lambda: cfg)
     monkeypatch.setattr(g, "save_snapshot", lambda cfg: "snapshot-test")
     monkeypatch.setattr(g.Ollama, "identities", lambda self: {"qwen3:8b": "test"})
+    monkeypatch.setattr(g.Ollama, "request", lambda *args: {"version": "test"})
     monkeypatch.setattr(g, "retrieve", lambda *args: ([{"id": "c1", "text": "Fonte"}], "hash"))
     return tmp_path
 
 
 def test_output_protection_replaces_generated_content(environment, monkeypatch):
-    responses = iter([classification(), g.Generation(supported=True, answer="CONTEUDO_REJEITADO", source_ids=["c1"]), classification(category="danger", needs_protection=True)])
+    responses = iter([classification(), g.Generation(supported=True, answer="CONTEUDO_REJEITADO", source_ids=["c1"]), g.Grounding(supported=True, reason="teste"), classification(category="danger", needs_protection=True)])
     monkeypatch.setattr(g.Ollama, "structured", lambda *args: next(responses))
     result = g.run_question("Pergunta fictícia")
     assert result["valid"] and result["final_origin"] == "output_guard"
@@ -72,23 +73,21 @@ def test_input_block_skips_retrieval(environment, monkeypatch):
     assert not result["retrieved"] and result["generated"] is None
 
 
-def test_configs_differ_in_exactly_one_policy_parameter():
+def test_current_configuration_uses_one_common_rule():
     cfg = g.config()
-    before = cfg["policies"]["referencia"]
-    after = cfg["policies"]["ajustada"]
-    assert set(before) == set(after)
-    assert [key for key in before if before[key] != after[key]] == ["allow_educational_predation"]
+    assert cfg["default_policy"] == "comum"
+    assert cfg["policies"] == {"comum": {"allow_educational_predation": True}}
 
 
 def test_browser_api_never_returns_rejected_draft(monkeypatch):
     from fastapi.testclient import TestClient
     import app
-    monkeypatch.setattr(app, "run_question", lambda *args: {
+    monkeypatch.setattr(app, "run_question", lambda *args, **kwargs: {
         "id": "test", "answer": "Mensagem segura", "action": "block", "valid": True,
-        "seconds": 1.0, "policy": "ajustada", "generated": {"answer": "REJEITADO", "source_ids": ["c1"]},
+        "seconds": 1.0, "policy": "comum", "generated": {"answer": "REJEITADO", "source_ids": ["c1"]},
         "retrieved": [{"id": "c1", "text": "NAO_ENVIAR"}], "calls": [],
     })
-    client = TestClient(app.app)
+    client = TestClient(app.app, base_url="http://127.0.0.1:8765")
     response = client.post("/api/ask", json={"question": "Pergunta fictícia"})
     assert response.status_code == 200
     assert response.json()["answer"] == "Mensagem segura"

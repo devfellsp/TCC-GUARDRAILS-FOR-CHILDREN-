@@ -1,59 +1,21 @@
-<mxfile host="app.diagrams.net" modified="2026-11-03T16:35:00.000Z" agent="GuardKids-TCC" version="24.0.0" type="device">
-  <diagram id="diag_1" name="Fig 1 - Dilema de Calibracao">
-    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="650" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="title_banner" value="Figura 1 — O dilema de calibração de guardrails em chatbots educativos infantis (Segurança vs. Utilidade)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;fontColor=#1A365D;" vertex="1" parent="1"><mxGeometry x="30" y="15" width="1040" height="35" as="geometry" /></mxCell>
-        <mxCell id="in_q" value="Solicitação do Estudante (7 a 11 anos | Perfil Fictício: 9 anos / 4º ano)&lt;br&gt;Dúvidas de Ciências (Seres Vivos), Casos Ambíguos (Predação) ou Solicitações de Risco" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#1A365D;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="310" y="65" width="480" height="65" as="geometry" /></mxCell>
-        <mxCell id="g_perm" value="1. Política Excessivamente Permissiva" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fdf2f2;strokeColor=#b85450;fontSize=12;fontStyle=1;align=center;verticalAlign=top;spacingTop=8;dashed=1;dashPattern=8 8;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="40" y="180" width="310" height="410" as="geometry" /></mxCell>
-        <mxCell id="p_mech" value="Sem Guardrails Dedicados à Infância&lt;br&gt;(Apenas alinhamento nativo adulto do LLM)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="65" y="225" width="260" height="75" as="geometry" /></mxCell>
-        <mxCell id="p_eff" value="Falha em solicitações nocivas infantis&lt;br&gt;e alucinações fora do currículo escolar&lt;br&gt;(Rath et al., 2025; Khoo et al., 2025)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="65" y="335" width="260" height="85" as="geometry" /></mxCell>
-        <mxCell id="p_ind" value="Efeito nos Indicadores:&lt;br&gt;• Taxa de Respostas Inadequadas ALTA (T_RI ↑)&lt;br&gt;• Criança exposta a conteúdos impróprios&lt;br&gt;(51% a 64% de falha em LLMs gerais)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="65" y="455" width="260" height="105" as="geometry" /></mxCell>
-        <mxCell id="g_rest" value="2. Política Excessivamente Restritiva" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fffdf0;strokeColor=#d6b656;fontSize=12;fontStyle=1;align=center;verticalAlign=top;spacingTop=8;dashed=1;dashPattern=8 8;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="395" y="180" width="310" height="410" as="geometry" /></mxCell>
-        <mxCell id="r_mech" value="Filtro Rígido Descontextualizado&lt;br&gt;(Bloqueio por palavras sensíveis: &#x27;morte&#x27;, &#x27;comer&#x27;)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="420" y="225" width="260" height="75" as="geometry" /></mxCell>
-        <mxCell id="r_eff" value="Rejeita dúvidas legítimas de Ciências&lt;br&gt;sobre predação na cadeia alimentar&lt;br&gt;(Ex.: &#x27;Por que o falcão come o esquilo?&#x27;)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="420" y="335" width="260" height="85" as="geometry" /></mxCell>
-        <mxCell id="r_ind" value="Efeito nos Indicadores:&lt;br&gt;• Taxa de Bloqueios Indevidos ALTA (T_BI ↑)&lt;br&gt;• Alto Custo de Segurança (Safety Cost)&lt;br&gt;• Prejuízo à utilidade pedagógica" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="420" y="455" width="260" height="105" as="geometry" /></mxCell>
-        <mxCell id="g_ctx" value="3. Guardrails Contextuais Configuráveis (GuardKids)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#f0f9f0;strokeColor=#82b366;fontSize=12;fontStyle=1;align=center;verticalAlign=top;spacingTop=8;dashed=1;dashPattern=8 8;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="750" y="180" width="310" height="410" as="geometry" /></mxCell>
-        <mxCell id="c_mech" value="Guardrails de Entrada/Saída + RAG&lt;br&gt;Pondera Risco Real vs. Contexto Educativo&lt;br&gt;(Classificação Indicativa — Brasil, 2025)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="775" y="225" width="260" height="75" as="geometry" /></mxCell>
-        <mxCell id="c_eff" value="Bloqueia instruções de dano (needs_protection)&lt;br&gt;e permite predação ecológica ancorada&lt;br&gt;na apostila do 4º ano (ajuste pontual)" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="775" y="335" width="260" height="85" as="geometry" /></mxCell>
-        <mxCell id="c_ind" value="Equilíbrio Alvo no TCC:&lt;br&gt;• Respostas Inadequadas Minimizadas (T_RI = 0%)&lt;br&gt;• Bloqueios Indevidos Eliminados (T_BI ↓)&lt;br&gt;• Respostas corretas, pertinentes e claras" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;fontColor=#1a1a1a;strokeWidth=1.5;spacingLeft=6;spacingRight=6;" vertex="1" parent="1"><mxGeometry x="775" y="455" width="260" height="105" as="geometry" /></mxCell>
-        <mxCell id="e1_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.2;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="in_q" target="p_mech">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="195" y="155" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e1_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="in_q" target="r_mech">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e1_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.8;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="in_q" target="c_mech">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="905" y="155" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e1_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p_mech" target="p_eff">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e1_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p_eff" target="p_ind">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e1_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="r_mech" target="r_eff">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e1_7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="r_eff" target="r_ind">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e1_8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="c_mech" target="c_eff">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e1_9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;strokeWidth=1.8;fontSize=11;fontStyle=1;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.0;entryDx=0;entryDy=0;" edge="1" parent="1" source="c_eff" target="c_ind">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+<mxfile host="app.diagrams.net"><diagram id="gk-1" name="Proteção contextual e atendimento educativo"><mxGraphModel page="1" pageWidth="1000" pageHeight="650" grid="1"><root><mxCell id="0"/><mxCell id="1" parent="0"/>
+<mxCell id="title" value="Proteção contextual e atendimento educativo" style="text;html=1;align=center;fontSize=28;fontStyle=1;fontColor=#20364a;" vertex="1" parent="1"><mxGeometry x="20" y="8" width="960" height="40" as="geometry"/></mxCell>
+<mxCell id="subtitle" value="O problema de pesquisa: a mesma palavra pode aparecer em intenções diferentes." style="text;html=1;align=center;fontSize=17;fontColor=#536574;" vertex="1" parent="1"><mxGeometry x="20" y="48" width="960" height="42" as="geometry"/></mxCell>
+<mxCell id="edge0" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#20364a;dashed=0;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="open" target="question"><mxGeometry relative="1" as="geometry">
+<mxPoint x="180" y="380" as="sourcePoint"/><mxPoint x="500" y="445" as="targetPoint"/>
+<Array as="points"><mxPoint x="180" y="415"/><mxPoint x="500" y="415"/></Array>
+</mxGeometry></mxCell>
+<mxCell id="edge1" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#20364a;dashed=0;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="closed" target="question"><mxGeometry relative="1" as="geometry">
+<mxPoint x="500" y="380" as="sourcePoint"/><mxPoint x="500" y="445" as="targetPoint"/>
+<Array as="points"><mxPoint x="500" y="415"/><mxPoint x="500" y="415"/></Array>
+</mxGeometry></mxCell>
+<mxCell id="edge2" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#20364a;dashed=0;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="context" target="question"><mxGeometry relative="1" as="geometry">
+<mxPoint x="820" y="380" as="sourcePoint"/><mxPoint x="500" y="445" as="targetPoint"/>
+<Array as="points"><mxPoint x="820" y="415"/><mxPoint x="500" y="415"/></Array>
+</mxGeometry></mxCell>
+<mxCell id="open" value="&lt;b&gt;1  Permissividade&lt;/b&gt;&lt;br&gt;&lt;br&gt;Resposta fluente não basta.&lt;br&gt;Um pedido prejudicial pode&lt;br&gt;receber instruções de dano.&lt;br&gt;Risco: liberação inadequada." style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;align=center;fontFamily=Arial;fontSize=18;fontColor=#20364a;fillColor=#fbeeee;strokeColor=#a14b4b;strokeWidth=1.8;" vertex="1" parent="1"><mxGeometry x="40" y="150" width="280" height="230" as="geometry"/></mxCell>
+<mxCell id="closed" value="&lt;b&gt;2  Restrição excessiva&lt;/b&gt;&lt;br&gt;&lt;br&gt;Palavra sensível não basta.&lt;br&gt;Uma dúvida escolar pode&lt;br&gt;ser recusada sem necessidade.&lt;br&gt;Risco: bloqueio indevido." style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;align=center;fontFamily=Arial;fontSize=18;fontColor=#20364a;fillColor=#fff6e8;strokeColor=#9c702e;strokeWidth=1.8;" vertex="1" parent="1"><mxGeometry x="360" y="150" width="280" height="230" as="geometry"/></mxCell>
+<mxCell id="context" value="&lt;b&gt;3  Leitura contextual&lt;/b&gt;&lt;br&gt;&lt;br&gt;Examinar intenção e contexto.&lt;br&gt;Distinguir educação e risco.&lt;br&gt;Oferecer cuidado na ajuda.&lt;br&gt;Conferir apoio nas fontes." style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;align=center;fontFamily=Arial;fontSize=18;fontColor=#20364a;fillColor=#edf6f2;strokeColor=#367260;strokeWidth=1.8;" vertex="1" parent="1"><mxGeometry x="680" y="150" width="280" height="230" as="geometry"/></mxCell>
+<mxCell id="question" value="&lt;b&gt;Avaliar dimensões separadas&lt;/b&gt;&lt;br&gt;&lt;br&gt;Segurança  |  Tratamento  |  Correção  |  Sustentação  |  Clareza" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;align=center;fontFamily=Arial;fontSize=18;fontColor=#20364a;fillColor=#eef4fb;strokeColor=#426b95;strokeWidth=1.8;" vertex="1" parent="1"><mxGeometry x="110" y="445" width="780" height="95" as="geometry"/></mxCell>
+<mxCell id="note0" value="Quadro conceitual. As três situações não são condições experimentais da POC atual." style="text;html=1;align=center;fontSize=17;fontColor=#536574;" vertex="1" parent="1"><mxGeometry x="20" y="575" width="960" height="30" as="geometry"/></mxCell>
+</root></mxGraphModel></diagram></mxfile>

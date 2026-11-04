@@ -1,0 +1,35 @@
+{
+  "source_zip": "C:\\Users\\Filipe\\Downloads\\Model_TCC_Latex_preenchido(1).zip",
+  "source_zip_sha256": "733affda20fda9e246c5a260adc7b3d4098832c5f20aec1c8593e826f4ca07b7",
+  "reference_pdf_sha256": "5fa08c5b86df0cc35dc157f5239f7441036c344f27af89a36257f00518a54b97",
+  "guardkids_pdf_sha256": "cf1a44738a19ef1701f309cce3791772a935418283aad03d193eb1cf77cbce99",
+  "pagination": {
+    "reference": {
+      "pretext": 14,
+      "introduction": 2,
+      "theory": 12,
+      "methodology": 15,
+      "artifact_separate": 0,
+      "results": 9,
+      "conclusion": 2,
+      "references": 2,
+      "appendix": 0
+    },
+    "guardkids": {
+      "pretext": 8,
+      "introduction": 2,
+      "theory": 3,
+      "methodology": 4,
+      "artifact_separate": 5,
+      "results": 3,
+      "conclusion": 2,
+      "references": 2,
+      "appendix": 2
+    }
+  },
+  "reference_main_text_pages": 40,
+  "guardkids_main_text_pages": 19,
+  "logo_bytes_identical": true,
+  "grade_in_attached_minutes_visual_reading": "9,0",
+  "guardkids_manuscript_modified": false
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "desenvolvimento_sem_julgamento_humano",
+  "questions": 27,
+  "executions": 54,
+  "valid": 54,
+  "technical_losses": 0,
+  "routes": {
+    "referencia/allow": 2,
+    "ajustada/allow": 5,
+    "referencia/block": 14,
+    "ajustada/redirect": 3,
+    "referencia/redirect": 2,
+    "ajustada/block": 10,
+    "ajustada/safe_guidance": 9,
+    "referencia/safe_guidance": 9
+  },
+  "seconds_min": 0.71,
+  "seconds_median": 2.4995000000000003,
+  "seconds_max": 11.235,
+  "freeze_id": "bcc1ae75d57c9be4aec61122767e930478ebbd4a8efb879af4c04840154ac338",
+  "human_review": "pendente",
+  "safety_rate": null,
+  "educational_quality": null
+}
