@@ -27,7 +27,15 @@ Geral & 1 síntese & Sugestões autorais de organização e convivência; sombra
 
 Em Ciências, preservaram-se as exclusões anteriores de exercícios e formulações problemáticas. Nas sínteses, foram retiradas afirmações sem vínculo documental explícito, como a descrição de transportes no recorte de História. O exemplo de organização da mochila foi identificado como sugestão autoral, sem promessa de benefício escolar. As fontes externas foram usadas para conferir conceitos; não se importaram imagens nem páginas integrais. A existência de uma página institucional não certifica a adaptação produzida. Parte das fontes de conferência pertence a outros anos escolares e à EJA, exigindo revisão específica da linguagem para o perfil pretendido.
 
-O índice filtra o chat antes da seleção das passagens. Conteúdo disponível em Geografia não pode sustentar uma resposta do chat de Ciências. Os arquivos e suas referências estão em \nolinkurl{poc/corpus_manifest.json}; a revisão detalhada está em \nolinkurl{avaliacao/revisao_acervos_multichat_2026-11-04.json}. A revisão humana independente do acervo e das condições de reutilização permanece necessária.
+Como os textos da Tabela~\ref{tab:corpus} se tornam fontes de uma resposta? A Figura~\ref{fig:acervo} distingue a preparação do índice, realizada antes das consultas, da busca executada para cada pergunta. Na preparação, cada um dos oito trechos recebe um identificador, a indicação do chat a que pertence e uma representação vetorial. Na consulta, o sistema representa a pergunta como vetor e considera apenas os trechos do chat escolhido ao selecionar os resultados. Assim, mesmo que um trecho de Geografia seja parecido com uma pergunta de Ciências, ele fica fora da seleção.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{diagramas/pdf/06_Preparacao_e_consulta.pdf}
+\caption{Preparação do índice e consulta ao acervo do chat selecionado}\label{fig:acervo}
+\fonte{Elaboração própria a partir do manifesto do acervo e da configuração de recuperação.}
+\end{figure}
+
+Os arquivos e suas referências estão em \nolinkurl{poc/corpus_manifest.json}; a revisão detalhada está em \nolinkurl{avaliacao/revisao_acervos_multichat_2026-11-04.json}. A revisão humana independente do acervo e das condições de reutilização permanece necessária.
 
 \subsection{Parâmetros e rastreabilidade}
 
@@ -50,6 +58,14 @@ A sondagem histórica examinou os limiares 0,35, 0,45 e 0,55 em 27 perguntas de 
 \input{texto/04_artefato.tex}
 
 \section{Protocolo de avaliação}
+
+Quais evidências já foram produzidas e quais decisões ainda dependem de avaliação? A Figura~\ref{fig:protocolo} distingue os dois lotes históricos de Ciências, com 108 execuções sobre 27 perguntas reutilizadas, do lote atual, com 32 tentativas sobre 16 perguntas. As 64 tentativas do plano final dependem da ratificação humana das referências e do congelamento da versão.
+
+\begin{figure}[htbp]\centering
+\input{texto/figura_protocolo.tex}
+\caption{Separação entre histórico, desenvolvimento executado e avaliação final planejada}\label{fig:protocolo}
+\fonte{Elaboração própria; a avaliação final depende de ratificação e congelamento.}
+\end{figure}
 
 \subsection{Desenvolvimento e comparação pareada}
 
@@ -94,9 +110,3 @@ ASCS=\frac{\text{saídas educativas seguras, corretas, sustentadas e atendidas}}
 \end{equation}
 
 Erros de modelo, prazo, JSON, índice ou persistência são perdas técnicas, não proteção correta. Pares incompletos ou inconclusivos são excluídos somente da comparação correspondente, com contagem explícita; as tentativas originais permanecem nos registros. Relata-se também atendimento por oportunidade planejada. Não se somam as 32 tentativas atuais às 108 históricas para formar um indicador de eficácia. Taxas finais permanecem pendentes enquanto faltarem julgamentos humanos conclusivos.
-
-\begin{figure}[htbp]\centering
-\input{texto/figura_protocolo.tex}
-\caption{Separação entre histórico, desenvolvimento executado e avaliação final planejada}\label{fig:protocolo}
-\fonte{Elaboração própria; a avaliação final depende de ratificação e congelamento.}
-\end{figure}

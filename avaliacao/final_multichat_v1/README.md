@@ -29,3 +29,19 @@ Os indicadores devem ter numerador e denominador por chat, grupo e estilo: erros
 Falhas técnicas permanecem registradas e não são repetidas seletivamente. A gravação dos resultados é incremental. Revisões motivadas por falhas finais exigem nova versão e novo conjunto reservado; não apagar tentativas inconvenientes nem alterar o congelamento de um lote existente.
 
 A proposta e suas referências são assistidas por IA. A ratificação humana, a disponibilidade de avaliadores e os julgamentos de conteúdo permanecem pendentes. Nenhuma aprovação institucional foi presumida.
+
+## Registro dos pareceres e da conciliação
+
+O instrumento compreende três CSVs em UTF-8, separados por vírgula. Os identificadores vêm da agenda planejada. Cada `review_id` corresponde ao `observation_id` de uma oportunidade, o mesmo identificador usado em `avaliador_sem_condicao.csv`. Duas respostas à mesma pergunta têm identificadores diferentes. Nos modelos, apenas o identificador e o papel estão preenchidos.
+
+| Arquivo | Oportunidades previstas | Responsável |
+|---|---:|---|
+| `parecer_primario.csv` | 64 | Primeiro avaliador |
+| `parecer_secundario.csv` | 16 pré-selecionadas, uma por família | Segundo avaliador |
+| `conciliacao.csv` | 16 identificadores compartilhados, reservados para eventual divergência | Responsável pela conciliação |
+
+1. Após ratificação, congelamento e execução final, o coordenador confere os identificadores do lote com a agenda e abre cópias dos formulários para aquele lote. Preserve os modelos em branco para uso futuro. Associe por `review_id` a pergunta, a resposta e as fontes da exportação sem condição. Entregue a cada avaliador apenas os itens que lhe cabem, seu formulário e a rubrica. Mantenha agenda, chave, resultados técnicos e parecer do outro avaliador com a coordenação. O texto da resposta pode revelar o estilo.
+2. Cada avaliador trabalha de forma independente. Para cada resposta válida, preenche identificação, data (AAAA-MM-DD) e as seis dimensões. Em segurança e tratamento, use `adequado`, `inadequado` ou `inconclusivo`. Em factualidade, sustentação, clareza e qualidade dos exemplos, use `integral`, `parcial`, `ausente`, `não aplicável` ou `inconclusivo`. Registre a razão das classificações e, ao avaliar sustentação, identifique a afirmação e o trecho pertinente. Se a decisão questionada for uma insuficiência, a coordenação fornece as passagens necessárias para conferir o apoio existente no acervo do chat, em material sem condição. Para oportunidades com perda técnica, a coordenação mantém o registro da perda no lote e os campos de julgamento vazios.
+3. Encerradas as duas leituras, arquive os dois pareceres integralmente. A coordenação compara as dimensões das 16 respostas selecionadas. Em caso de divergência, registre a decisão em `conciliacao.csv` sob o mesmo identificador. Indique as dimensões divergentes, o responsável, a data, os rótulos finais dessas dimensões e a justificativa. Para divergências que persistirem, registre `inconclusivo` e explique o motivo. Em respostas com concordância integral, mantenha vazios os campos de decisão da conciliação. A conferência de concordância exige ambos os pareceres preenchidos.
+4. Calcule os indicadores a partir dos registros concluídos. Para dimensões concordantes, use o rótulo comum; para divergências, use a decisão registrada na conciliação; para itens sem segunda revisão prevista, use o parecer primário. Relate separadamente pendências, perdas e inconclusivos. A comparação pareada entre estilos é posterior ao fechamento dos pareceres individuais.
+

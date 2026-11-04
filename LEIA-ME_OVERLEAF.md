@@ -2,14 +2,14 @@
 
 Versão atualizada em 04/11/2026: regra comum, 32 tentativas de desenvolvimento efetivamente executadas e plano final de 32 perguntas/64 oportunidades ainda não executado. Os 108 registros anteriores permanecem em seção histórica, com denominadores próprios. A revisão de conteúdo atual é assistida por IA, não ratificação humana.
 
-1. Importe `Overleaf_TCC_PoC.zip` como novo projeto no Overleaf.
+1. Importe `Overleaf_TCC_Drawio_rotulos.zip` como novo projeto no Overleaf.
 2. Abra **Settings/Configurações** pelo ícone de engrenagem (ou menu **File → Settings**). Em **Compiler/Compilador**, selecione **XeLaTeX**. Confirme `main.tex` como documento principal. Em interfaces anteriores, essas opções ficam em **Menu → Settings**. TeX Live 2025 ou posterior é recomendado; não foi executada compilação no serviço Overleaf nesta revisão.
 3. Compile novamente se necessário para atualizar sumário, listas e referências. A entrada `document.tex` apenas carrega `main.tex`.
-4. Edite os capítulos em `texto/`. As três figuras usam PDFs vetoriais em `diagramas/pdf/`, incluídos no pacote. Preserve essa pasta ao importar no Overleaf. As tabelas `generated/development_*.tex` são geradas das evidências locais, não contêm julgamentos humanos. Não as trate como resultados finais.
+4. Edite os capítulos em `texto/`. As sete figuras usam PDFs vetoriais em `diagramas/pdf/`, incluídos no pacote. Os originais editáveis estão em `diagramas/drawio/`. Cada PDF tem o mesmo nome-base que a fonte individual. O arquivo com sete abas reúne os mesmos desenhos. Para alterar uma figura, edite-a no Draw.io, atualize também a aba correspondente do arquivo conjunto e exporte o desenho como PDF no caminho indicado no LaTeX. Preserve ambas as pastas ao importar no Overleaf. As tabelas `generated/development_*.tex` são geradas das evidências locais, não contêm julgamentos humanos. Não as trate como resultados finais.
 
 O pacote é autossuficiente para compilar o texto; não precisa dos modelos nem PDFs didáticos. Utiliza abnTeX2, fontspec, TikZ e algorithm2e. No Windows usa Times New Roman instalada; em ambiente sem essa fonte usa TeX Gyre Termes, compatível visualmente mas não idêntica. Conferir exigência de fonte com orientador antes da entrega institucional. Não redistribuir arquivos de fonte proprietária sem licença.
 
-A versão foi verificada localmente com Tectonic 0.17.0/XeTeX. A compilação foi concluída e o PDF foi inspecionado visualmente. A ratificação de referências, a revisão humana de conteúdo e a avaliação final estão pendentes. A ausência de banca/assinaturas nesta versão é intencional: não se declara aprovação de um Projeto/TCC I ainda em elaboração.
+A edição de origem foi verificada localmente com Tectonic 0.17.0/XeTeX. A nota de entrega da edição com sete figuras registra as verificações desta revisão. A ratificação de referências, a revisão humana de conteúdo e a avaliação final estão pendentes. A ausência de banca/assinaturas nesta versão é intencional: não se declara aprovação de um Projeto/TCC I ainda em elaboração.
 
 ## Erro “fontspec requires either XeTeX or LuaTeX”
 

@@ -1,5 +1,0 @@
-Abra GuardKids_7_diagramas.drawio no Draw.io: há sete abas, uma por desenho.
-Os arquivos numerados permitem abrir ou imprimir cada diagrama separadamente.
-O primeiro desenho é a versão corrigida do autor; os outros seis seguem seu estilo.
-Cada aba tem formato de página adequado ao desenho. Não juntar as sete abas em uma área única.
-Este pacote não substitui automaticamente as figuras do manuscrito.

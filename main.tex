@@ -32,6 +32,16 @@
 \tipotrabalho{Projeto de Pesquisa -- TCC I}
 \preambulo{Projeto de Pesquisa apresentado à disciplina de Trabalho de Conclusão de Curso I do Curso de Sistemas de Informação da Universidade Estadual do Tocantins -- UNITINS, sob orientação do Prof. Marcos Souza.}
 \hypersetup{hypertexnames=false,pdftitle={Prova de conceito -- Projeto/TCC I},pdfauthor={Filipe Martins Henrique},colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,bookmarksdepth=3}
+% A capa e a folha de rosto já incluem a mesma marca no próprio conteúdo.
+\usepackage{eso-pic}
+\AddToShipoutPictureFG{%
+  \ifnum\ReadonlyShipoutCounter>2\relax
+    \AtPageUpperLeft{%
+      \put(\LenToUnit{0.5\paperwidth},\LenToUnit{-2.22cm}){%
+        \makebox[0pt][c]{\includegraphics[width=8.5cm]{unitins.png}}}%
+    }%
+  \fi
+}
 \begin{document}
 \frenchspacing
 \imprimircapa

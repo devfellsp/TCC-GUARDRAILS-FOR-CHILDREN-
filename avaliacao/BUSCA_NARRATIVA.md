@@ -46,3 +46,11 @@ Martínez et al. e métricas lexicais foram retirados do argumento central porqu
 ## Evidência local
 
 `fontes/downloads.json` conserva URLs, tamanho e hashes dos downloads oficiais de BNCC e manual. `fontes/bncc_habilidades.txt` registra a extração da página relevante; a extração de PDF foi conferida para códigos/conteúdo, sem substituir inspeção do documento. A atribuição da obra SEDUC-SP 2024 deriva do exemplar e manifesto locais; suas condições de reutilização exigem conferência antes de redistribuir o corpus. O pacote de entrega não inclui os PDFs didáticos completos nem pesos dos modelos.
+
+## Consulta complementar para a revisão do capítulo 2 — 04/11/2026
+
+Foram conferidas as publicações primárias abaixo, selecionadas para esclarecer três decisões que o levantamento inicial não desenvolvia. Esta consulta dirigida complementa a busca narrativa de 03/11, sem alterar retrospectivamente seu registro ou transformar a revisão em sistemática.
+
+- Recuperação densa: consulta por BGE-M3, Chen e ACL. [Chen et al. (2024)](https://aclanthology.org/2024.findings-acl.137/) fundamenta a distinção entre as capacidades do modelo e a recuperação efetivamente usada na PoC.
+- Sustentação de respostas: consulta por ALCE, geração com citações e Gao. [Gao et al. (2023)](https://aclanthology.org/2023.emnlp-main.398/) distingue fluência, correção e qualidade das citações.
+- Linguagem escolar: consulta por compreensão de conectivos no ensino primário. [Volodina e Weinert (2020)](https://doi.org/10.3389/fpsyg.2020.00814) investigam relações linguísticas em uma amostra alemã; o estudo não avalia chatbots ou estudantes brasileiros.

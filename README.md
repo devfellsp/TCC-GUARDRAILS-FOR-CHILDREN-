@@ -11,10 +11,9 @@ A versão `GK-P2.1-dev` usa uma regra comum em Ciências, História, Geografia e
 
 O conjunto reservado atual tem 32 perguntas em 16 famílias e 64 oportunidades, ainda não executadas. A referência humana e o congelamento permanecem pendentes. O manuscrito e seus diagramas foram atualizados, mantendo as 108 execuções anteriores em seção histórica, sem somar denominadores.
 
-- PDF atual: `output/pdf/TCC_PoC_TCCI_multichat_revisado.pdf`.
-- Diagramas revisados: `output/pdf/Diagramas_GuardKids_revisados.pdf` e `diagramas/Diagramas_GuardKids_editaveis.zip`; três figuras vetoriais incorporadas ao TCC, agora com 33 páginas.
-- Versões visuais posteriores, disponíveis separadamente: `diagramas/estilo_usuario/` (preto e branco) e `diagramas/estilo_usuario_com_simbolos/` (símbolos editáveis do Draw.io). Seus PDFs estão em `output/pdf/`; essas versões ainda não foram incorporadas ao manuscrito.
-- Fonte e pacote: `main.tex`, `texto/`, `generated/` e `Overleaf_TCC_PoC.zip`.
+- [TCC aprovado em PDF](TCC_GuardKids_Drawio_rotulos.pdf) — 41 páginas, sete figuras Draw.io.
+- [Projeto aprovado para o Overleaf](Overleaf_TCC_Drawio_rotulos.zip) — selecione main.tex e XeLaTeX.
+- [Sete diagramas editáveis em um arquivo](GuardKids_Drawio_rotulos.drawio). As fontes individuais estão em diagramas/drawio/ e as figuras do manuscrito em diagramas/pdf/.
 - Relatório: `poc/docs/RELATORIO_PESQUISA_2026-11-04.md`.
 - Lote e revisão: `avaliacao/evidencias/multichat_20261104_revisado/`.
 - Protocolo final atual: `avaliacao/final_multichat_v1/README.md`.
@@ -24,7 +23,7 @@ O conjunto reservado atual tem 32 perguntas em 16 famílias e 64 oportunidades, 
 ## Entrega acadêmica anterior, revisada em 03/11/2026
 
 - Fonte principal: `main.tex`, com capítulos e figuras em `texto/`; compilador XeLaTeX. Instruções em `LEIA-ME_OVERLEAF.md`.
-- PDF: `output/pdf/TCC_GuardKids_TCCI_revisado.pdf`.
+- O PDF e os pacotes dessa entrega anterior foram arquivados fora da pasta ativa.
 - Protocolo, rubrica, casos e matrizes: `avaliacao/`; comece por `avaliacao/ALTERACOES_E_PENDENCIAS.md`.
 - Planilha completa e cópia com condições omitidas: `outputs/guardkids_revisao_20261103/`.
 - Evidências: dois lotes de desenvolvimento (108 execuções sobre 27 perguntas reutilizadas), sondagem e congelamentos em `avaliacao/evidencias/` e `avaliacao/congelamentos/`.
@@ -53,7 +52,7 @@ Os diagramas editáveis estão em `diagramas/`; as decisões, em `poc/docs/ARQUI
 
 As correções estão descritas em `poc/docs/CORRECOES_2026-11-03.md`. Os registros comuns omitem texto livre; o executor de desenvolvimento habilita registros completos somente para seus casos fictícios. O índice local anterior pode ser validado e migrado com `poc/.venv/Scripts/python.exe poc/guardkids.py migrate-index`, sem nova inferência.
 
-`poc/docs/pilot_evidence.json` contém as 22 execuções fictícias conferidas do piloto histórico, com identificadores e julgamentos pendentes. `tools/build_assets.py` gera as transcrições e o pacote Overleaf a partir dessa evidência e da fonte principal. Para regenerar os diagramas, execute `python diagramas/gerar_diagramas.py`. A suíte é executada com `python -m pytest poc/tests -q`, usando o ambiente do projeto.
+`poc/docs/pilot_evidence.json` contém as 22 execuções fictícias conferidas do piloto histórico, com identificadores e julgamentos pendentes. `tools/build_assets.py` gera as transcrições e o pacote Overleaf a partir dessa evidência e da fonte principal. Para atualizar uma figura vigente, edite o arquivo Draw.io correspondente e exporte o PDF pelo Draw.io Desktop. A suíte é executada com `python -m pytest poc/tests -q`, usando o ambiente do projeto.
 
 ## Histórico
 

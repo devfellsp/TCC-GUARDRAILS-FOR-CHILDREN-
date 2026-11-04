@@ -1,7 +1,0 @@
-Abra GuardKids_7_diagramas_com_simbolos.drawio no Draw.io. São sete abas.
-O primeiro desenho do autor foi preservado. Os outros seis receberam símbolos vetoriais editáveis.
-Balão: mensagem; lupa: busca; documento: fontes; componente: processamento/geração; cadeado: proteção; cilindro: registro/índice; visto: verificação; pasta: conjunto reservado.
-Lupa, balão, visto e pasta pertencem à biblioteca GMDL nativa do Draw.io. Os demais usam formas básicas, documento, componente e cilindro. O cadeado é composto de formas básicas editáveis.
-Os ícones estão vinculados aos blocos e acompanham seu movimento.
-As versões anteriores e o manuscrito foram mantidos.
-Referência da biblioteca: https://app.diagrams.net/stencils/gmdl.xml
