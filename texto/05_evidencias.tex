@@ -8,7 +8,7 @@ Os testes automatizados verificam precedência de proteção, orientação de aj
 
 \subsection{Lote atual: regra comum e dois estilos}
 
-Em 4 de novembro de 2026, a versão \texttt{GK-P2.1-dev} executou 32 tentativas sobre 16 perguntas nos quatro chats, após revisão documental dos acervos e referências propostas. Todas concluíram sem perda técnica. A Tabela~\ref{tab:multichat} apresenta oito explicações liberadas, seis bloqueios, dez orientações de cuidado e oito mensagens de apoio insuficiente. Cada pergunta seguiu a mesma rota nos dois estilos. As 32 rotas coincidiram com o tratamento proposto antes das respostas. Para verificar se uma explicação liberada se manteve fiel ao acervo, foi necessário comparar seu conteúdo com a fonte citada.
+Em 4 de novembro de 2026, a versão \texttt{GK-P2.1-dev} executou 32 tentativas sobre 16 perguntas nos quatro chats, após revisão documental dos acervos e referências propostas. Todas foram concluídas sem perda técnica. A Tabela~\ref{tab:multichat} apresenta oito explicações liberadas, seis bloqueios, dez orientações de cuidado e oito mensagens de apoio insuficiente. Cada pergunta seguiu a mesma rota nos dois estilos. As 32 rotas coincidiram com o tratamento proposto antes das respostas. Para verificar se uma explicação liberada se manteve fiel ao acervo, foi necessário comparar seu conteúdo com a fonte citada.
 
 \begin{table}[htbp]\centering\small\SingleSpacing
 \caption{Rotas do novo lote, sem agrupamento com o histórico}\label{tab:multichat}
@@ -22,7 +22,7 @@ Em Geografia, o Passo a passo acrescentou um quadrado vermelho como símbolo de 
 
 As cinco respostas haviam sido liberadas pelo verificador de sustentação. Em um dos registros do Geral, a própria justificativa reconheceu que a recomendação não era explícita, mas ainda assim aceitou a resposta. Isso revela o limite de verificar apoio com o mesmo modelo: ausência de contradição não equivale a sustentação. As respostas e justificativas originais foram preservadas; não se ampliou o corpus após o lote para tornar os acréscimos retrospectivamente apoiados.
 
-Os quatro textos do Passo a passo seguiram o formato solicitado de etapas e exemplo, mas isso não assegurou correção ou fidelidade. A explicação direta de Ciências manteve termos como matéria orgânica e detritos sem definição cotidiana. Não se atribuiu uma preferência global de clareza nem se inferiu compreensão infantil. Não houve ajuste dos prompts com base nas saídas finais, que continuam não executadas.
+Os quatro textos do Passo a passo seguiram o formato solicitado de etapas e exemplo, mas isso não assegurou correção ou fidelidade. A explicação direta de Ciências manteve termos como matéria orgânica e detritos sem definição cotidiana. Não se atribuiu uma preferência global de clareza nem se inferiu compreensão infantil. Não houve ajuste dos prompts com base em respostas da avaliação final, pois essa avaliação ainda não foi executada.
 
 O lote e a revisão estão em \nolinkurl{avaliacao/evidencias/multichat_20261104_revisado/}. O snapshot começa por \texttt{4531f5b01c5b}; o identificador completo consta dos registros. Os tempos variaram de 2,138 a 12,857 segundos neste ambiente e em rotas diferentes, sem constituir comparação de desempenho generalizável. Os campos de julgamento humano permanecem vazios.
 
@@ -40,13 +40,15 @@ Os dois lotes históricos de desenvolvimento usaram as mesmas 27 perguntas em du
 
 O congelamento do primeiro lote começa por \texttt{7c3f22ac02d4}; o do segundo, por \texttt{bcc1ae75d57c}. Os identificadores completos e snapshots estão em \nolinkurl{avaliacao/congelamentos/} e nas pastas dos lotes. A identificação por versão permite relacionar decisões, respostas e tempos aos componentes utilizados em cada lote.
 
+A Tabela~\ref{tab:rotas} apresenta as rotas observadas em cada condição da versão GK-P1.2.
+
 \begin{table}[htbp]\centering\small\SingleSpacing
 \caption{Rotas finais observadas no lote GK-P1.2}\label{tab:rotas}
 \input{generated/development_routes.tex}
 \fonte{27 execuções por condição; rotas não equivalem a julgamentos de adequação.}
 \end{table}
 
-As latências são descritivas do ambiente local e incluem caminhos de comprimentos diferentes. A primeira execução de GK-P1.1 foi mais lenta, e a diferença entre medianas não permite estabelecer ganho de desempenho entre as versões. Carga de modelos, cache e quantidade de chamadas são explicações alternativas. O caminho de geração pode executar quatro chamadas ao LLM, enquanto mensagens fixas podem encerrar após uma classificação ou detector local.
+As latências são descritivas do ambiente local e incluem caminhos de comprimentos diferentes. A primeira execução de GK-P1.1 foi mais lenta, e a diferença entre medianas não permite estabelecer ganho de desempenho entre as versões. Carga de modelos, cache e quantidade de chamadas são explicações alternativas. O caminho de geração pode executar quatro chamadas ao LLM. Nas rotas de mensagens fixas, a decisão de tratamento pode ser obtida após a classificação da entrada ou a detecção local de identificadores, sem percorrer todo o caminho de geração.
 
 \subsubsection{Falha detectada e alteração de desenvolvimento}
 
@@ -64,12 +66,12 @@ Outra falha observável está em \texttt{dev02}: a classificação de entrada ma
 
 \subsubsection{Piloto histórico preservado}
 
-O piloto de 25 de outubro de 2026 contém 11 perguntas em duas condições, totalizando 22 execuções, associado ao código original identificado por \texttt{1c7e0b3}. Não incluía todas as verificações e endurecimentos atuais. Suas respostas e tempos permanecem em \nolinkurl{poc/docs/pilot_evidence.json}; não foram reinterpretados como resultados da GK-P1.2.
+O piloto de 25 de outubro de 2026 está associado ao código original identificado por \texttt{1c7e0b3}. Contém 11 perguntas em duas condições, totalizando 22 execuções. Não incluía todas as verificações e endurecimentos atuais. Suas respostas e tempos permanecem em \nolinkurl{poc/docs/pilot_evidence.json}; não foram reinterpretados como resultados da GK-P1.2.
 
 A diferença histórica entre as políticas em predação demonstra o funcionamento do parâmetro naquele piloto, mas não valida a versão posterior. A ausência de julgamento humano documentado impede calcular uma taxa de segurança ou de atendimento educativo a partir daquele lote. As respostas históricas constituem registros de funcionamento e não integram os indicadores da avaliação final.
 
 \subsection{Alcance das evidências preliminares}
 
-No funcionamento técnico, há código executável, testes aprovados, dois lotes completos e identificação dos componentes. Na segurança do conteúdo, há rotas de bloqueio/orientação observadas, porém julgamento humano pendente. No atendimento e na qualidade, há respostas geradas e falhas localizadas, sem evidência de compreensão ou aprendizagem. Na sustentação, há referências verificáveis e um verificador adicional, mas seus próprios erros precisam ser examinados.
+Há código executável, testes aprovados e componentes identificados nos dois lotes históricos de Ciências e no lote multidisciplinar; o piloto é documentado separadamente. Os registros permitem examinar rotas, respostas e falhas, inclusive do verificador de sustentação, mas não demonstram segurança geral, qualidade pedagógica, compreensão ou aprendizagem.
 
-Indicadores finais de inadequação e atendimento dependem de julgamentos humanos conclusivos. O plano antigo de 40 enunciados não foi executado; o atual prevê 32 enunciados e 64 oportunidades, conforme a Metodologia. Os denominadores históricos e atuais permanecem separados.
+Os indicadores finais dependem de julgamentos humanos conclusivos. O plano de 40 enunciados não foi executado; o atual prevê 32 enunciados e 64 oportunidades. Os denominadores históricos e atuais permanecem separados.

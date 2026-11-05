@@ -2,11 +2,11 @@
 
 O desenvolvimento de chatbots educativos destinados a crianças exige cuidados com a segurança do conteúdo, a adequação da linguagem e a pertinência das respostas ao contexto escolar. Nesse cenário, os mecanismos de proteção precisam reconhecer solicitações potencialmente nocivas e preservar o atendimento a dúvidas legítimas. Este trabalho aborda esse desafio por meio de guardrails configuráveis, entendidos como regras e verificações que orientam e restringem o comportamento de uma prova de conceito de chatbot em português brasileiro.
 
-Grandes modelos de linguagem produzem respostas abertas e podem gerar erros ou conteúdo inadequado. Guardrails de entrada e saída procuram limitar esses comportamentos, mas seus próprios classificadores também podem errar. A avaliação desses sistemas precisa considerar os riscos das interações com menores e as necessidades específicas das crianças (Rath et al., 2025; Wang et al., 2022). Essa perspectiva orienta a avaliação contextual proposta neste trabalho; a adequação do protótipo depende de evidências sobre seu funcionamento e suas respostas.
+Grandes modelos de linguagem (\textit{large language models}, LLMs) produzem respostas abertas e podem gerar erros ou conteúdo inadequado. Guardrails de entrada e saída procuram limitar esses comportamentos, mas seus próprios classificadores também podem errar. A avaliação desses sistemas precisa considerar os riscos das interações com menores e as necessidades específicas das crianças (Rath et al., 2025; Wang et al., 2022). Essa perspectiva orienta a avaliação contextual proposta neste trabalho; a adequação do protótipo depende de evidências sobre seu funcionamento e suas respostas.
 
 A prova de conceito (PoC) desenvolvida neste trabalho opera localmente, em português brasileiro, e combina recuperação de passagens didáticas e verificações sobre a entrada, a sustentação e a saída. Seu público destinatário pretendido é de sete a onze anos. Entretanto, o recorte operacional deste projeto é um perfil fictício fixo de nove anos, estudante do quarto ano, em quatro chats de acervo restrito: Ciências, História, Geografia e Geral. O recorte inicial de Ciências foi ampliado durante o desenvolvimento, preservando separadamente suas evidências históricas. Não há participantes infantis, observação de aprendizagem nem medição de compreensão por crianças.
 
-O projeto compreende o desenvolvimento do artefato, a verificação de seu funcionamento e a preparação de uma avaliação comparativa de conteúdo. O protótipo foi submetido a testes funcionais e de desenvolvimento, enquanto o julgamento humano das respostas permanece como etapa posterior. A verificação preliminar concentra-se no comportamento técnico do sistema e não inclui avaliação de aprendizagem ou compreensão por crianças.
+O projeto compreende o desenvolvimento do artefato, a verificação de seu funcionamento e a preparação de uma avaliação comparativa de conteúdo. O protótipo foi submetido a testes funcionais e de desenvolvimento, enquanto o julgamento humano das respostas permanece como etapa posterior. A verificação preliminar concentra-se no comportamento técnico do sistema.
 
 \section{Motivação}
 
@@ -15,8 +15,8 @@ A motivação da pesquisa está na necessidade de conciliar proteção e atendim
 Como distinguir uma dúvida escolar sobre predação de um pedido para ferir um animal? A Figura~\ref{fig:dilema} ilustra o custo de uma regra excessivamente restritiva ou permissiva. Se um estudante pergunta por que um falcão come um esquilo, bloquear toda menção a ferimentos pode impedir uma explicação sobre cadeias alimentares. Se o estudante pede instruções para ferir o esquilo, reconhecer o tema de Ciências é insuficiente para permitir a resposta. A decisão depende do que o estudante pretende obter.
 
 \begin{figure}[htbp]\centering
-\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{diagramas/pdf/01_Problema_de_pesquisa.pdf}
 \caption{Dilema de calibração entre proteção e atendimento educativo}\label{fig:dilema}
+\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{diagramas/pdf/01_Problema_de_pesquisa.pdf}
 \fonte{Elaboração própria a partir do problema de pesquisa.}
 \end{figure}
 

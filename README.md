@@ -11,9 +11,10 @@ A versão `GK-P2.1-dev` usa uma regra comum em Ciências, História, Geografia e
 
 O conjunto reservado atual tem 32 perguntas em 16 famílias e 64 oportunidades, ainda não executadas. A referência humana e o congelamento permanecem pendentes. O manuscrito e seus diagramas foram atualizados, mantendo as 108 execuções anteriores em seção histórica, sem somar denominadores.
 
-- [TCC aprovado em PDF](TCC_GuardKids_Drawio_rotulos.pdf) — 41 páginas, sete figuras Draw.io.
-- [Projeto aprovado para o Overleaf](Overleaf_TCC_Drawio_rotulos.zip) — selecione main.tex e XeLaTeX.
+- [TCC revisado em PDF](TCC_GuardKids_Drawio_rotulos.pdf) — 40 páginas, sete figuras Draw.io.
+- [Projeto revisado para o Overleaf](Overleaf_TCC_Drawio_rotulos.zip) — selecione main.tex e XeLaTeX.
 - [Sete diagramas editáveis em um arquivo](GuardKids_Drawio_rotulos.drawio). As fontes individuais estão em diagramas/drawio/ e as figuras do manuscrito em diagramas/pdf/.
+- Revisão editorial e bibliográfica aplicada: [registro das correções e verificações](avaliacao/APLICACAO_AUDITORIA.md).
 - Relatório: `poc/docs/RELATORIO_PESQUISA_2026-11-04.md`.
 - Lote e revisão: `avaliacao/evidencias/multichat_20261104_revisado/`.
 - Protocolo final atual: `avaliacao/final_multichat_v1/README.md`.

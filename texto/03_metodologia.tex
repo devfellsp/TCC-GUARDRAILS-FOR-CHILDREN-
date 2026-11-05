@@ -12,32 +12,36 @@ A comparação anterior entre uma ablação conservadora e uma configuração qu
 
 \subsection{Acervo e revisão documental}
 
-O índice atual contém oito trechos: cinco recortes didáticos de Ciências e três sínteses autorais experimentais, uma por novo chat. O manifesto registra arquivos, páginas dos PDFs, âncoras, hashes, exclusões e referências externas das sínteses. Os textos de História, Geografia e Geral foram revisados com assistência de IA antes do novo lote; não receberam certificação pedagógica nem revisão humana independente.
+O índice utilizado no lote multidisciplinar de desenvolvimento contém oito trechos: cinco recortes didáticos de Ciências e três sínteses autorais experimentais, uma para cada um dos chats de História, Geografia e Geral. A prontidão da cópia local e o procedimento de reconstrução são descritos no Apêndice~\ref{ap:reproducao}. O manifesto registra arquivos, páginas dos documentos em formato PDF (do inglês \textit{Portable Document Format}), âncoras, hashes, exclusões e referências externas das sínteses. Os textos de História, Geografia e Geral foram revisados com assistência de IA antes do novo lote; não receberam certificação pedagógica nem revisão humana independente.
+
+A Tabela~\ref{tab:corpus} apresenta o conteúdo e a procedência dos trechos de cada chat.
 
 \begin{table}[htbp]\centering\small\SingleSpacing
 \caption{Conteúdo do acervo atual por chat}\label{tab:corpus}
 \begin{tabularx}{\textwidth}{L{2.1cm} L{2.1cm} Y}
 \toprule Chat & Trechos & Conteúdo e procedência \\\midrule
-Ciências & 5 recortes & Alimentação, produtores, consumidores e decomposição; SME-SP (2021) e SEDUC-SP (2024). Páginas impressas/PDF: 154/156, 8/10, 9/11, 13/15 e 27/29. \\
-História & 1 síntese & Fontes escritas, orais, visuais e materiais; memória e investigação de registros. Conferência conceitual em materiais da SME de Goiânia. \\
-Geografia & 1 síntese & Paisagem, legenda e relações campo-cidade; materiais da SME de Goiânia. \\
-Geral & 1 síntese & Sugestões autorais de organização e convivência; sombra conferida no Smithsonian e cuidados com dados no NIC.br. \\
+Ciências & 5 recortes & Alimentação, produtores, consumidores e decomposição; São Paulo (Município, 2021) e São Paulo (Estado, [2024]). Páginas impressas/PDF: 154/156, 8/10, 9/11, 13/15 e 27/29. \\
+História & 1 síntese & Fontes escritas, orais, visuais e materiais; memória e investigação de registros. Conferência conceitual em materiais da Secretaria Municipal de Educação de Goiânia (Goiânia, [202-]d, [202-]e). \\
+Geografia & 1 síntese & Paisagem, legenda e relações campo-cidade; materiais da Secretaria Municipal de Educação de Goiânia (Goiânia, [202-]a, [202-]b, [202-]c). \\
+Geral & 1 síntese & Sugestões autorais de organização e convivência; sombra conferida no Smithsonian Institution ([2012?]) e cuidados com dados no Núcleo de Informação e Coordenação do Ponto BR (2021). \\
 \bottomrule\end{tabularx}\fonte{Manifesto e revisão documental assistida por IA de 4 nov. 2026.}
 \end{table}
 
-Em Ciências, preservaram-se as exclusões anteriores de exercícios e formulações problemáticas. Nas sínteses, foram retiradas afirmações sem vínculo documental explícito, como a descrição de transportes no recorte de História. O exemplo de organização da mochila foi identificado como sugestão autoral, sem promessa de benefício escolar. As fontes externas foram usadas para conferir conceitos; não se importaram imagens nem páginas integrais. A existência de uma página institucional não certifica a adaptação produzida. Parte das fontes de conferência pertence a outros anos escolares e à EJA, exigindo revisão específica da linguagem para o perfil pretendido.
+Em Ciências, preservaram-se as exclusões anteriores de exercícios e formulações problemáticas. Nas sínteses, foram retiradas afirmações sem vínculo documental explícito, como a descrição de transportes no recorte de História. O exemplo de organização da mochila foi identificado como sugestão autoral, sem promessa de benefício escolar. As fontes externas foram usadas para conferir conceitos; não se importaram imagens nem páginas integrais. A existência de uma página institucional não certifica a adaptação produzida. Parte das fontes de conferência pertence a outros anos escolares e à Educação de Jovens e Adultos (EJA), exigindo revisão específica da linguagem para o perfil pretendido.
 
 Como os textos da Tabela~\ref{tab:corpus} se tornam fontes de uma resposta? A Figura~\ref{fig:acervo} distingue a preparação do índice, realizada antes das consultas, da busca executada para cada pergunta. Na preparação, cada um dos oito trechos recebe um identificador, a indicação do chat a que pertence e uma representação vetorial. Na consulta, o sistema representa a pergunta como vetor e considera apenas os trechos do chat escolhido ao selecionar os resultados. Assim, mesmo que um trecho de Geografia seja parecido com uma pergunta de Ciências, ele fica fora da seleção.
 
 \begin{figure}[htbp]\centering
-\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{diagramas/pdf/06_Preparacao_e_consulta.pdf}
 \caption{Preparação do índice e consulta ao acervo do chat selecionado}\label{fig:acervo}
+\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{diagramas/pdf/06_Preparacao_e_consulta.pdf}
 \fonte{Elaboração própria a partir do manifesto do acervo e da configuração de recuperação.}
 \end{figure}
 
 Os arquivos e suas referências estão em \nolinkurl{poc/corpus_manifest.json}; a revisão detalhada está em \nolinkurl{avaliacao/revisao_acervos_multichat_2026-11-04.json}. A revisão humana independente do acervo e das condições de reutilização permanece necessária.
 
 \subsection{Parâmetros e rastreabilidade}
+
+A Tabela~\ref{tab:parametros} reúne os parâmetros mantidos no lote de desenvolvimento.
 
 \begin{table}[htbp]\centering\small\SingleSpacing
 \caption{Parâmetros mantidos no novo lote}\label{tab:parametros}
@@ -62,8 +66,8 @@ A sondagem histórica examinou os limiares 0,35, 0,45 e 0,55 em 27 perguntas de 
 Quais evidências já foram produzidas e quais decisões ainda dependem de avaliação? A Figura~\ref{fig:protocolo} distingue os dois lotes históricos de Ciências, com 108 execuções sobre 27 perguntas reutilizadas, do lote atual, com 32 tentativas sobre 16 perguntas. As 64 tentativas do plano final dependem da ratificação humana das referências e do congelamento da versão.
 
 \begin{figure}[htbp]\centering
-\input{texto/figura_protocolo.tex}
 \caption{Separação entre histórico, desenvolvimento executado e avaliação final planejada}\label{fig:protocolo}
+\input{texto/figura_protocolo.tex}
 \fonte{Elaboração própria; a avaliação final depende de ratificação e congelamento.}
 \end{figure}
 
@@ -103,10 +107,10 @@ Antes das respostas finais, um revisor humano deve conferir categoria, apoio, tr
 
 \subsection{Indicadores e tratamento das perdas}
 
-As rotas observadas não substituem julgamento de adequação. Apresentam-se contagens e denominadores por chat, tipo de solicitação e estilo: inadequação de conteúdo, recusa indevida, insuficiência correta ou indevida, orientação de ajuda, correção, sustentação e clareza. Para perguntas educativas, o atendimento seguro, correto e sustentado é definido na Equação~\ref{eq:ascs}; a clareza é relatada separadamente.
+As rotas observadas não substituem julgamento de adequação. Apresentam-se contagens e denominadores por chat, tipo de solicitação e estilo: inadequação de conteúdo, recusa indevida, insuficiência correta ou indevida, orientação de ajuda, correção, sustentação e clareza. Para perguntas educativas, o atendimento seguro, correto e sustentado (ASCS) é definido na Equação~\ref{eq:ascs}; a clareza é relatada separadamente. Antes da avaliação final, o protocolo deve explicitar a unidade de contagem e os critérios de inclusão no denominador, inclusive o tratamento de recusas, julgamentos inconclusivos e dimensões não aplicáveis. O atendimento por oportunidade planejada será apresentado separadamente, conforme o tratamento das perdas descrito a seguir.
 
 \begin{equation}\label{eq:ascs}
 ASCS=\frac{\text{saídas educativas seguras, corretas, sustentadas e atendidas}}{\text{saídas educativas com julgamento conclusivo nas dimensões}}
 \end{equation}
 
-Erros de modelo, prazo, JSON, índice ou persistência são perdas técnicas, não proteção correta. Pares incompletos ou inconclusivos são excluídos somente da comparação correspondente, com contagem explícita; as tentativas originais permanecem nos registros. Relata-se também atendimento por oportunidade planejada. Não se somam as 32 tentativas atuais às 108 históricas para formar um indicador de eficácia. Taxas finais permanecem pendentes enquanto faltarem julgamentos humanos conclusivos.
+Erros de modelo, prazo, formato \textit{JavaScript Object Notation} (JSON), índice ou persistência são perdas técnicas, não proteção correta. Pares incompletos ou inconclusivos são excluídos somente da comparação correspondente, com contagem explícita; as tentativas originais permanecem nos registros. Relata-se também atendimento por oportunidade planejada. Não se somam as 32 tentativas atuais às 108 históricas para formar um indicador de eficácia. Taxas finais permanecem pendentes enquanto faltarem julgamentos humanos conclusivos.

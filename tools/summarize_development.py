@@ -24,7 +24,7 @@ def main():
     (ROOT/'avaliacao/evidencias/sintese_tecnica.json').write_text(json.dumps({'natureza':'contagem_tecnica_assistida_IA_sem_julgamento_humano','batches':summaries},ensure_ascii=False,indent=2),encoding='utf-8')
     lines = [r'\begin{tabularx}{\textwidth}{L{2.1cm} L{2.2cm} L{1.8cm} L{2.4cm} Y}',r'\toprule Versão & Perguntas / execuções & Perdas & Mediana (s) & Faixa observada (s) \\ \midrule']
     for s in summaries:
-        lines.append(f"{s['version']} & 27 / 54 & {s['technical_losses']} & {s['seconds_median']:.3f} & {s['seconds_min']:.3f} a {s['seconds_max']:.3f}"+r' \\')
+        lines.append(f"{s['version']} & 27 / 54 & {s['technical_losses']} & {format(s['seconds_median'], '.3f').replace('.', ',')} & {format(s['seconds_min'], '.3f').replace('.', ',')} a {format(s['seconds_max'], '.3f').replace('.', ',')}"+r' \\')
     lines += [r'\bottomrule\end{tabularx}']
     (ROOT/'generated/development_summary.tex').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     current = summaries[-1]

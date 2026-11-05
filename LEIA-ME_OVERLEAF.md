@@ -7,9 +7,9 @@ Versão atualizada em 04/11/2026: regra comum, 32 tentativas de desenvolvimento 
 3. Compile novamente se necessário para atualizar sumário, listas e referências. A entrada `document.tex` apenas carrega `main.tex`.
 4. Edite os capítulos em `texto/`. As sete figuras usam PDFs vetoriais em `diagramas/pdf/`, incluídos no pacote. Os originais editáveis estão em `diagramas/drawio/`. Cada PDF tem o mesmo nome-base que a fonte individual. O arquivo com sete abas reúne os mesmos desenhos. Para alterar uma figura, edite-a no Draw.io, atualize também a aba correspondente do arquivo conjunto e exporte o desenho como PDF no caminho indicado no LaTeX. Preserve ambas as pastas ao importar no Overleaf. As tabelas `generated/development_*.tex` são geradas das evidências locais, não contêm julgamentos humanos. Não as trate como resultados finais.
 
-O pacote é autossuficiente para compilar o texto; não precisa dos modelos nem PDFs didáticos. Utiliza abnTeX2, fontspec, TikZ e algorithm2e. No Windows usa Times New Roman instalada; em ambiente sem essa fonte usa TeX Gyre Termes, compatível visualmente mas não idêntica. Conferir exigência de fonte com orientador antes da entrega institucional. Não redistribuir arquivos de fonte proprietária sem licença.
+O pacote é autossuficiente para compilar o texto; não precisa dos modelos nem PDFs didáticos. Utiliza abnTeX2, fontspec, TikZ e algorithm2e. A revisão inclui as fontes Times New Roman em fontes/ para manter a mesma composição na cópia de trabalho e no pacote pessoal do autor. Preserve essa pasta ao compilar; sem ela, o preâmbulo utiliza TeX Gyre Termes como alternativa.
 
-A edição de origem foi verificada localmente com Tectonic 0.17.0/XeTeX. A nota de entrega da edição com sete figuras registra as verificações desta revisão. A ratificação de referências, a revisão humana de conteúdo e a avaliação final estão pendentes. A ausência de banca/assinaturas nesta versão é intencional: não se declara aprovação de um Projeto/TCC I ainda em elaboração.
+A edição atual foi compilada com XeLaTeX a partir de extração limpa do ZIP, com padrões de hifenização em português. A nota de entrega da edição com sete figuras registra as verificações desta revisão. A ratificação de referências, a revisão humana de conteúdo e a avaliação final estão pendentes. A ausência de banca/assinaturas nesta versão é intencional: não se declara aprovação de um Projeto/TCC I ainda em elaboração.
 
 ## Erro “fontspec requires either XeTeX or LuaTeX”
 
@@ -25,6 +25,6 @@ Orientação conferida na [documentação oficial do Overleaf](https://docs.over
 
 ## Notas de preparação do documento
 
-O manual disponível no portal do curso foi consultado na revisão (UNITINS, 2025). Ajustaram-se denominação institucional, quatro palavras-chave, margens, recuo, espaçamento e apresentação. O arquivo utiliza Times New Roman quando preparada a cópia local da fonte no Windows e TeX Gyre Termes no ambiente portátil do Overleaf. A fonte usada deve ser conferida na entrega institucional. A compilação e a inspeção visual não constituem certificação integral de conformidade com ABNT ou com o manual.
+O manual disponível no portal do curso foi consultado na revisão (UNITINS, 2025). Ajustaram-se denominação institucional, quatro palavras-chave, margens, recuo, espaçamento e apresentação. O arquivo utiliza os arquivos Times New Roman da pasta fontes/. Os resumos usam 11 pontos; o texto principal, 12 pontos. As sete figuras do Draw.io foram preservadas, com identificação acima e fonte abaixo. A compilação e a inspeção visual não constituem certificação integral de conformidade com ABNT ou com o manual.
 
 Essas informações documentam a edição e não integram o conteúdo acadêmico do PDF. O histórico de alterações, os backups e a matriz de atendimento ao parecer ficam nos materiais de acompanhamento, fora dos capítulos e apêndices da pesquisa.

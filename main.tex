@@ -1,16 +1,35 @@
 % !TeX program = xelatex
 % Overleaf: Settings > Compiler > XeLaTeX; Main document = main.tex.
 \PassOptionsToPackage{hyphens}{url}
-\documentclass[12pt,openany,oneside,a4paper,english,brazil]{abntex2}
+\documentclass[12pt,openany,oneside,a4paper,chapter=TITLE,english,brazil]{abntex2}
 \usepackage{fontspec}
-\IfFileExists{.cache/fontes/times.ttf}{
-  \setmainfont[Path=.cache/fontes/,BoldFont=timesbd.ttf,ItalicFont=timesi.ttf,BoldItalicFont=timesbi.ttf]{times.ttf}
+\IfFileExists{fontes/times.ttf}{
+  \setmainfont[Path=fontes/,BoldFont=timesbd.ttf,ItalicFont=timesi.ttf,BoldItalicFont=timesbi.ttf]{times.ttf}
 }{\setmainfont[BoldFont=texgyretermes-bold.otf,ItalicFont=texgyretermes-italic.otf,BoldItalicFont=texgyretermes-bolditalic.otf]{texgyretermes-regular.otf}}
 \usepackage{indentfirst,graphicx,microtype,xurl,booktabs,tabularx,array,float,amsmath,amssymb}
 \usepackage[portuguese,ruled,linesnumbered]{algorithm2e}
 \usepackage{tikz}
 \usetikzlibrary{positioning,arrows.meta}
 \usepackage{unitins}
+\renewcommand{\abstracttextfont}{\normalfont\fontsize{11}{13.2}\selectfont}
+
+% Apresentação institucional após auditoria.
+\renewcommand{\ABNTEXchapterfont}{\normalfont\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+\renewcommand{\ABNTEXsectionfont}{\normalfont\bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsectionfont}{\normalfont\bfseries}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsectionfont}{\normalfont\bfseries}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+\addto\captionsbrazil{%
+  \renewcommand{\resumoname}{RESUMO}%
+  \renewcommand{\listfigurename}{LISTA DE ILUSTRAÇÕES}%
+  \renewcommand{\listtablename}{LISTA DE TABELAS}%
+  \renewcommand{\contentsname}{SUMÁRIO}%
+  \renewcommand{\listadesiglasname}{LISTA DE ABREVIATURAS E SIGLAS}%
+}
+
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \setlrmarginsandblock{3cm}{2cm}{*}
@@ -47,16 +66,19 @@
 \imprimircapa
 \imprimirfolhaderosto*
 
-\begin{resumo}
+\begin{resumo}[RESUMO]
+\SingleSpacing\fontsize{11}{13.2}\selectfont
 Chatbots educativos baseados em grandes modelos de linguagem podem gerar conteúdo inadequado, recusar dúvidas legítimas ou acrescentar informações sem apoio documental. Este Projeto de Pesquisa/TCC I desenvolve e verifica preliminarmente uma prova de conceito com guardrails contextuais em português brasileiro, destinada a crianças de sete a onze anos, mas operada somente com perfil fictício de nove anos e sem participantes infantis. O artefato local combina Qwen3:8b, recuperação com BGE-M3 e verificações de entrada, sustentação e saída. A versão atual organiza Ciências, História, Geografia e questões gerais sob uma regra de proteção comum e compara os estilos Direto e Passo a passo. O acervo contém cinco recortes didáticos e três sínteses experimentais, revisadas com assistência de IA. Foram executadas 32 tentativas sobre 16 perguntas de desenvolvimento, sem perdas técnicas: oito respostas liberadas, seis bloqueios, dez orientações de cuidado e oito comunicações de apoio insuficiente. A concordância das rotas com as referências propostas não equivale à qualidade do conteúdo. A inspeção assistida pela IA autora apontou ressalvas de sustentação em cinco das oito explicações liberadas e não demonstra superioridade de linguagem ou compreensão infantil. Os 108 registros históricos de duas versões anteriores permanecem separados. Como continuidade, prepararam-se 32 enunciados em 16 famílias, 64 oportunidades e procedimentos de ratificação e congelamento. A avaliação final e os julgamentos humanos independentes permanecem pendentes. A contribuição é a implementação rastreável de proteção contextual e a separação entre tratamento técnico, segurança, fidelidade e clareza.
 
-\vspace{\onelineskip}\noindent\textbf{Palavras-chave}: Guardrails. Chatbot educativo. Segurança infantil. Geração aumentada por recuperação.
+\vspace{\onelineskip}\noindent\textbf{Palavras-chave}: guardrails; chatbot educativo; segurança infantil; geração aumentada por recuperação.
 \end{resumo}
-\begin{resumo}[Abstract]
+\begin{resumo}[ABSTRACT]
+\SingleSpacing\fontsize{11}{13.2}\selectfont
+
 \begin{otherlanguage*}{english}
 Educational chatbots based on large language models may produce inappropriate content, refuse legitimate questions, or add claims unsupported by their sources. This research proposal develops and preliminarily verifies a Brazilian Portuguese proof of concept with contextual guardrails, intended for children aged seven to eleven but operated only with a fictional nine-year-old profile and no child participants. The local artifact combines Qwen3:8b, BGE-M3 retrieval, and input, grounding, and output checks. The current version provides Science, History, Geography, and general-question spaces under one protection rule while comparing Direct and Step-by-step response styles. Its corpus contains five textbook excerpts and three experimental summaries reviewed with AI assistance. A development batch completed 32 attempts on 16 questions without technical losses: eight released answers, six blocks, ten fixed care messages, and eight insufficient-support messages. Agreement between routing and proposed references does not establish content quality. Inspection assisted by the authoring AI flagged source-support issues in five of the eight released explanations and does not demonstrate stylistic superiority or children's comprehension. The 108 historical records from two earlier versions remain separate. A prospective set of 32 questions in 16 families, 64 opportunities, and reference-ratification and freezing procedures was prepared. Final evaluation and independent human content judgments remain pending. The contribution is a traceable implementation of contextual protection that distinguishes technical treatment, safety, source fidelity, and clarity.
 
-\vspace{\onelineskip}\noindent\textbf{Keywords}: Guardrails. Educational chatbot. Child safety. Retrieval-augmented generation.
+\vspace{\onelineskip}\noindent\textbf{Keywords}: guardrails; educational chatbot; child safety; retrieval-augmented generation.
 \end{otherlanguage*}
 \end{resumo}
 \pdfbookmark[0]{\listfigurename}{lof}
@@ -66,14 +88,17 @@ Educational chatbots based on large language models may produce inappropriate co
 \listoftables*
 \cleardoublepage
 \begin{siglas}
+\item[API] Interface de programação de aplicações
 \item[ASCS] Atendimento seguro, correto e sustentado
 \item[BNCC] Base Nacional Comum Curricular
+\item[CSV] Comma-Separated Values (valores separados por vírgula)
+\item[EJA] Educação de Jovens e Adultos
 \item[IA] Inteligência artificial
 \item[JSON] JavaScript Object Notation
 \item[LLM] Large Language Model
+\item[PDF] Portable Document Format (formato de documento portátil)
 \item[PoC] Prova de conceito
 \item[RAG] Retrieval-Augmented Generation
-\item[SHA-256] Secure Hash Algorithm de 256 bits
 \item[TCC] Trabalho de Conclusão de Curso
 \item[UNITINS] Universidade Estadual do Tocantins
 \end{siglas}

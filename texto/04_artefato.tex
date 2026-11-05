@@ -4,29 +4,31 @@
 
 A versão atual examinada é \texttt{GK-P2.1-dev}, com regra comum nos quatro chats e duas instruções de linguagem. A comparação entre referência e ajustada pertence às versões históricas. A identificação de cada lote combina hashes dos arquivos experimentais com snapshots de código, configuração, prompts, dependências e índice. Esse registro permite distinguir os componentes utilizados em diferentes execuções. O piloto histórico é apresentado separadamente no Capítulo~\ref{cap:evidencias}.
 
-Quais componentes participam de uma resposta educativa e como se conectam? A Figura~\ref{fig:arquitetura} organiza os componentes em três grupos: entrada, processamento com fontes e verificação e entrega. O índice fornece trechos para a recuperação, e o estilo escolhido orienta a geração. As setas mostram onde uma intervenção ou a falta de apoio encerra esse caminho e conduz ao registro. Encerramentos alternativos são detalhados na Figura~\ref{fig:decisao}. Antes de inferência há validação de entrada e uma detecção local parcial de identificadores pessoais. O classificador de entrada produz categoria, necessidade de proteção, predação educativa, busca de ajuda e justificativa. Proteção tem precedência sobre a exceção educativa. Quando a entrada prossegue, a busca fornece até três passagens acima do limiar. Ausência de passagens provoca redirecionamento, não demonstra ausência real de apoio.
+Quais componentes participam de uma resposta educativa e como se conectam? A Figura~\ref{fig:arquitetura} organiza os componentes em três grupos: (i) entrada; (ii) processamento com fontes; e (iii) verificação e entrega. O índice fornece trechos para a recuperação, e o estilo escolhido orienta a geração. As setas mostram onde uma intervenção ou a falta de apoio encerra esse caminho e conduz ao registro. Encerramentos alternativos são detalhados na Figura~\ref{fig:decisao}. Antes de inferência há validação de entrada e uma detecção local parcial de identificadores pessoais. O classificador de entrada produz categoria, necessidade de proteção, predação educativa, busca de ajuda e justificativa. Proteção tem precedência sobre a exceção educativa. Quando a entrada prossegue, a busca fornece até três passagens acima do limiar. Ausência de passagens provoca redirecionamento, não demonstra ausência real de apoio.
 
 \begin{figure}[htbp]\centering
-\input{texto/figura_arquitetura.tex}
 \caption{Arquitetura do GuardKids e rotas de processamento e registro}\label{fig:arquitetura}
+\input{texto/figura_arquitetura.tex}
 \fonte{Elaboração própria a partir da implementação do protótipo.}
 \end{figure}
 
-O gerador informa resposta, IDs de fontes e indicação de apoio. A saída é recusada tecnicamente se não contiver citação válida, estiver vazia ou exceder 120 palavras. Uma verificação local de dados pessoais e um verificador semântico de sustentação precedem o classificador de saída. Todos os componentes generativos usam o mesmo Qwen3:8b; não são avaliadores independentes.
+O gerador informa resposta, identificadores (IDs) de fontes e indicação de apoio. A saída é recusada tecnicamente se não contiver citação válida, estiver vazia ou exceder 120 palavras. Uma verificação local de dados pessoais e um verificador semântico de sustentação precedem o classificador de saída. Todos os componentes generativos usam o mesmo Qwen3:8b; não são avaliadores independentes.
 
-No caminho completo há \textbf{quatro chamadas ao LLM}: classificação de entrada, geração, sustentação e classificação de saída, além de uma chamada de embedding da pergunta. Bloqueios iniciais normalmente usam uma classificação; identificadores detectados localmente podem dispensá-la. A falta de passagens encerra após classificação e embedding; insuficiência declarada pelo gerador e reprovação de sustentação encerram antes do classificador de saída. Consultas de estado e identidades não são chamadas de geração. Contagens reais por execução estão nos registros.
+No caminho completo há \textbf{quatro chamadas ao LLM}: classificação de entrada, geração, sustentação e classificação de saída, além de uma chamada de embedding da pergunta. Bloqueios iniciais normalmente usam uma classificação; identificadores detectados localmente podem dispensá-la. A ausência de passagens interrompe o caminho de geração após a classificação da entrada e a geração do embedding da pergunta. A insuficiência declarada pelo gerador e a reprovação na verificação de sustentação também interrompem esse caminho antes da classificação da saída. Em todos esses casos, a tentativa segue para o registro da rota correspondente. Consultas de estado e identidades não são chamadas de geração. Contagens reais por execução estão nos registros.
 
 Em que ponto uma pergunta pode deixar de seguir o caminho completo? A Figura~\ref{fig:percurso} ilustra essas decisões. Para explicar o papel dos decompositores, o chat de Ciências busca trechos do acervo. Três situações levam à mensagem de apoio insuficiente: a busca não recupera trechos acima do limiar, o próprio gerador declara que os trechos não bastam ou o verificador considera a explicação sem sustentação. A proteção pode intervir tanto na entrada quanto na saída. Se a saída exigir bloqueio ou orientação, o sistema substitui o rascunho pela mensagem de proteção correspondente. Uma falha técnica em qualquer etapa encaminha a tentativa para registro como perda. A mensagem de cada rota só é exibida após a gravação do registro. Se a gravação falhar, o sistema retém a resposta.
 
 \begin{figure}[htbp]\centering
-\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{diagramas/pdf/05_Processamento_da_pergunta.pdf}
 \caption{Percurso de uma pergunta e pontos de encerramento no GuardKids}\label{fig:percurso}
+\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{diagramas/pdf/05_Processamento_da_pergunta.pdf}
 \fonte{Elaboração própria a partir do fluxo da PoC.}
 \end{figure}
 
 \subsection{Políticas contextuais e busca de ajuda}
 
 A distinção entre intenção de causar dano e busca de ajuda orienta o tratamento de mensagens sobre ofensas, substâncias e situações de perigo. Na versão atual, o campo \texttt{help\_seeking} permite encaminhar pedidos de ajuda para mensagens fixas de cuidado, sem solicitar detalhes pessoais. O reconhecimento da intenção depende do classificador e está sujeito a erros de interpretação. Os testes desse comportamento são apresentados no Capítulo~\ref{cap:evidencias}.
+
+A Tabela~\ref{tab:politicas} relaciona as categorias de proteção aos tratamentos previstos.
 
 \begin{table}[htbp]\centering\small\SingleSpacing
 \caption{Correspondência contextual das sete categorias de proteção}\label{tab:politicas}
@@ -36,7 +38,7 @@ A distinção entre intenção de causar dano e busca de ajuda orienta o tratame
 \texttt{self\_harm} & Pedido de método: orientar sem instrução & Relato/ajuda: cuidado e adulto de confiança. \\
 \texttt{sexual} & Conteúdo explícito: bloquear & Busca de ajuda/proteção: orientação fixa sem detalhes. \\
 \texttt{hate} & Humilhar ou atacar: bloquear & Bullying relatado: orientar; explicação preventiva não é ataque por si só. \\
-\texttt{substance} & Ocultar ou facilitar consumo: bloquear & Ajuda para recusar/procurar responsável: orientar. \\
+\texttt{substance} & Ocultar ou facilitar consumo: bloquear & Pedido de ajuda para recusar o consumo ou procurar um responsável: orientar. \\
 \texttt{privacy} & Pedir/coletar identificadores: orientar sem coleta & Detecção local parcial e classificador; não anonimização completa. \\
 \nolinkurl{prompt_injection} & Substituir regras/revelar instruções: bloquear & Alegação de pesquisa ou ajuda não autoriza mudar regras. \\
 \bottomrule\end{tabularx}\fonte{Elaboração própria, com base nas referências de segurança e classificação de conteúdo discutidas no Capítulo~\ref{cap:referencial}.}
@@ -47,14 +49,16 @@ O rótulo \texttt{normal} representa entradas sem categoria de proteção. Expli
 Quando orientar, bloquear ou permitir que a consulta prossiga? A Figura~\ref{fig:decisao} apresenta a ordem dessas decisões na entrada e na saída. A proteção tem precedência mesmo quando a pergunta menciona um tema escolar.
 
 \begin{figure}[htbp]\centering
-\input{texto/figura_decisao.tex}
 \caption{Precedência das decisões de entrada e saída}\label{fig:decisao}
+\input{texto/figura_decisao.tex}
 \fonte{Elaboração própria; regras implementadas na função \texttt{decision}.}
 \end{figure}
 
 Uma dúvida escolar sobre predação pode prosseguir quando a entrada é permitida. Se a proteção é necessária, autolesão e privacidade recebem orientação. Nas categorias de perigo, conteúdo sexual, ofensa e substância, o sistema orienta quando reconhece um pedido de ajuda. Nos demais casos que exigem proteção, bloqueia o pedido.
 
 \subsection{Pseudocódigos}
+
+O Algoritmo~\ref{alg:fluxo} sintetiza o processamento, distinguindo insuficiência de apoio, proteção e falha técnica.
 
 \begin{algorithm}[htbp]
 \caption{Fluxo resumido da versão atual}\label{alg:fluxo}
@@ -75,8 +79,9 @@ Verificar sustentação semântica nas fontes citadas\;
 }{Definir mensagem fixa de bloqueio ou orientação\;}
 Em exceção técnica, registrar perda e mensagem de indisponibilidade\;
 Persistir atomicamente; se falhar, reter a resposta e sinalizar erro\;
+\par\medskip{\let\nl\relax\footnotesize Fonte: Elaboração própria a partir da implementação do GuardKids.\par}
 \end{algorithm}
 
-O Algoritmo~\ref{alg:fluxo} distingue falha técnica de insuficiência e proteção. A API limita tamanho de entrada, origem/host locais e concorrência; cancelamento e prazo são propagados às chamadas. Registros comuns omitem pergunta, resposta gerada e justificativas de classificadores. Os testes fictícios usam marca explícita para preservar o texto integral.
+O Algoritmo~\ref{alg:fluxo} distingue falha técnica de insuficiência e proteção. A interface de programação de aplicações (API) limita tamanho de entrada, origem/host locais e concorrência; cancelamento e prazo são propagados às chamadas. Registros comuns omitem pergunta, resposta gerada e justificativas de classificadores. Os testes fictícios usam marca explícita para preservar o texto integral.
 
 Os snapshots incluem código, configuração, prompts, dependências e vetores do índice; o congelamento experimental acrescenta protocolo e casos. Esses mecanismos favorecem rastreabilidade, sem garantir repetição idêntica de uma inferência. A reprodução depende das versões de software registradas, dos modelos identificados e das fontes compatíveis com os hashes do corpus.
