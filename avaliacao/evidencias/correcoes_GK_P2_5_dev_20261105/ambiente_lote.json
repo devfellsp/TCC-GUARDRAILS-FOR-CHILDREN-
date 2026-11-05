@@ -1,0 +1,36 @@
+{
+  "version": "GK-P2.5-dev",
+  "execution": "local_real_development",
+  "human_participants": false,
+  "first_attempt_utc": "2026-11-05T16:00:11.518005+00:00",
+  "last_attempt_started_utc": "2026-11-05T16:09:12.161749+00:00",
+  "ollama_version": [
+    "0.40.11"
+  ],
+  "model_digests": {
+    "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+  },
+  "snapshot": "e747d3c8adf7086bfd17617019c80761c0c2c911a4efcaa977569910591a4c81",
+  "index_id": "0ecdb1e4d95de9d7610186a0ea7347432a27811e54f1f92ab7693b875ba3c0cd",
+  "index_rebuilt": false,
+  "tests": {
+    "python_passed": 158,
+    "python_seconds": 30.7,
+    "javascript_passed": 2,
+    "model_batch_attempts": 40,
+    "diagnostic_cases": 8,
+    "diagnostic_local_only": 5,
+    "diagnostic_model_calls": 3,
+    "technical_losses": 0
+  },
+  "service_lifecycle": {
+    "owned": true,
+    "pid": 31040,
+    "started_utc": "2026-11-05T15:37:39.3742382Z",
+    "stopped_utc": "2026-11-05T16:10:29.5096664Z",
+    "executable": "C:\\Users\\Filipe\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+    "note": "Encerrado apenas o serviço iniciado para estas correções."
+  },
+  "note": "Testes simulados separados das inferências locais e dos diagnósticos sem modelo; revisão humana independente pendente."
+}

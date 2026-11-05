@@ -1,0 +1,283 @@
+{
+  "snapshot": "7e4a65ba8030d8edb5b8bf9675520fe5daf0fd922ef7f3a8155d12d3e4314a2c",
+  "results": [
+    {
+      "case_id": "exp22-h01",
+      "response_style": "passo_a_passo",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": true,
+            "reason": "A afirmação está alinhada com a citação que menciona o nomadismo como uma forma de vida sem habitação fixa, onde as pessoas se mudam quando os recursos se esgotam."
+          },
+          {
+            "claim": 2,
+            "supported": true,
+            "reason": "A afirmação está alinhada com a citação que menciona o sedentarismo como uma forma de vida com habitação fixa, onde as pessoas ficam em um lugar por muito tempo."
+          }
+        ],
+        "answers_question": true,
+        "language_ok": true,
+        "reason": "A resposta aborda corretamente a diferença entre modo de vida nômade e sedentário conforme solicitado na pergunta."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 15.541,
+          "eval_count": 188,
+          "prompt_eval_count": 1521,
+          "done_reason": "stop"
+        }
+      ]
+    },
+    {
+      "case_id": "exp22-h02",
+      "response_style": "passo_a_passo",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": true,
+            "reason": "A afirmação é apoiada pela citação que menciona a instalação em regiões próximas aos rios devido à facilidade de obter água e alimentos."
+          },
+          {
+            "claim": 2,
+            "supported": false,
+            "reason": "A afirmação sobre o rio Amazonas não está presente na citação, portanto, é uma generalização que não pode ser comprovada."
+          }
+        ],
+        "answers_question": true,
+        "language_ok": true,
+        "reason": "A resposta aborda a razão pela qual grupos humanos se instalar perto dos rios no Neolítico, conforme solicitado na pergunta. A linguagem está correta e clara."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 6.043,
+          "eval_count": 187,
+          "prompt_eval_count": 1155,
+          "done_reason": "stop"
+        }
+      ]
+    },
+    {
+      "case_id": "exp22-h04",
+      "response_style": "passo_a_passo",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": true,
+            "reason": "A afirmação está apoiada pela citação que menciona o uso do algodão para a produção de tecidos."
+          },
+          {
+            "claim": 2,
+            "supported": true,
+            "reason": "A afirmação está apoiada pela citação que menciona a soja sendo utilizada para a produção do óleo de cozinha."
+          },
+          {
+            "claim": 3,
+            "supported": false,
+            "reason": "A afirmação sobre o algodão ser cortado e transformado em roupas não está diretamente apoiada pela citação, que apenas menciona a produção de tecidos."
+          }
+        ],
+        "answers_question": true,
+        "language_ok": true,
+        "reason": "A resposta aborda corretamente os produtos feitos a partir do algodão e da soja conforme solicitado na pergunta."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 6.858,
+          "eval_count": 220,
+          "prompt_eval_count": 1131,
+          "done_reason": "stop"
+        }
+      ]
+    },
+    {
+      "case_id": "exp22-g03",
+      "response_style": "padrao",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": false,
+            "reason": "A afirmação menciona 'migrante interno' como o nome da migração, mas a citação refere-se a 'migrantes internos', que é uma categoria de pessoas, não o tipo de migração. A expressão correta seria 'migração interna'."
+          }
+        ],
+        "answers_question": false,
+        "language_ok": true,
+        "reason": "A resposta não responde diretamente à pergunta sobre o nome do tipo de migração, mas sim sobre uma categoria de pessoas. A afirmação também contém um erro terminológico."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 4.743,
+          "eval_count": 156,
+          "prompt_eval_count": 892,
+          "done_reason": "stop"
+        }
+      ]
+    },
+    {
+      "case_id": "exp22-h03",
+      "response_style": "padrao",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": false,
+            "reason": "A afirmação menciona a troca de mercadorias como alimentos e artesanato, mas a citação apenas menciona 'troca de mercadorias (agricultura e artesanato)' sem especificar que essas são as mercadorias trocadas. Além disso, não há menção à venda de coisã"
+          }
+        ],
+        "answers_question": true,
+        "language_ok": true,
+        "reason": "A afirmação responde diretamente à pergunta sobre a contribuição do estoque de produtos agrícolas para as trocas nas aldeias, mas alguns detalhes não estão apoiados pela citação."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 5.367,
+          "eval_count": 171,
+          "prompt_eval_count": 996,
+          "done_reason": "stop"
+        }
+      ]
+    },
+    {
+      "case_id": "exp22-g04",
+      "response_style": "padrao",
+      "expected_acceptance_proposed": false,
+      "accepted": true,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": true,
+            "reason": "A afirmação é apoiada pelas citações que mencionam contribuições culturais dos migrantes e a formação de uma cultura rica e diversificada."
+          }
+        ],
+        "answers_question": true,
+        "language_ok": true,
+        "reason": "A resposta aborda diretamente como a chegada de migrantes pode contribuir para a cultura do lugar que os recebe, mencionando o enriquecimento cultural através da troca de ideias e costumes."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 4.625,
+          "eval_count": 134,
+          "prompt_eval_count": 1303,
+          "done_reason": "stop"
+        }
+      ]
+    },
+    {
+      "case_id": "exp22-h04",
+      "response_style": "padrao",
+      "expected_acceptance_proposed": true,
+      "accepted": true,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": true,
+            "reason": "A afirmação está diretamente apoiada pela citação, que menciona o uso do algodão para a produção de tecidos e da soja para a produção do óleo de cozinha."
+          }
+        ],
+        "answers_question": true,
+        "language_ok": true,
+        "reason": "A resposta atende à pergunta ao listar os produtos feitos a partir do algodão e da soja, conforme mencionado no texto. A linguagem é clara e correta."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 4.437,
+          "eval_count": 135,
+          "prompt_eval_count": 1033,
+          "done_reason": "stop"
+        }
+      ]
+    },
+    {
+      "case_id": "exp22-h05",
+      "response_style": "padrao",
+      "expected_acceptance_proposed": true,
+      "accepted": true,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": true,
+            "reason": "A afirmação está diretamente apoiada pela citação, que define serviços de hotelaria como 'serviços de lazer, hospedagem e alimentação para turistas'."
+          }
+        ],
+        "answers_question": true,
+        "language_ok": true,
+        "reason": "A resposta fornece uma definição clara dos serviços de hotelaria conforme solicitado na pergunta."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 3.737,
+          "eval_count": 114,
+          "prompt_eval_count": 1021,
+          "done_reason": "stop"
+        }
+      ]
+    }
+  ],
+  "human_review": "pendente",
+  "note": "Verificações automatizadas, sem reexecução seletiva."
+}

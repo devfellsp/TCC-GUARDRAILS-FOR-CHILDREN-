@@ -1,0 +1,331 @@
+{
+  "version": "GK-P2.3-dev",
+  "snapshot": "7e4a65ba8030d8edb5b8bf9675520fe5daf0fd922ef7f3a8155d12d3e4314a2c",
+  "inputs": {
+    "app.py": "f0cee1ef5e07ad4bfd91d566122fea9917277d9006d644036b113146dccfa454",
+    "channels.py": "b4391f061d29492de127fda1be1bcc62ba1e6e09f04868eb1977122c2c8881f4",
+    "config.json": "9c27cae7a6e50cac0db32fdf477680372e7341ac9e892bf9511a29e998373340",
+    "corpus_manifest.json": "f10d390a98df6f9399a4bce67ed40088813cb418cf484cb761e7e48f582f1e8b",
+    "development_cases.json": "4140a2eb80a15f4d2dfb9654778254538fc4d8c23e66541fadbafb2c4083a341",
+    "guardkids.py": "bb2bea91f6cc198d00efa20f900fa0eba3779cb959024db59d90f86178b3bc75",
+    "Iniciar_GK_P2_3.cmd": "728603da720dfeb742472934323e69ee682a20b265d16b18e7b01e1ccf3655b7",
+    "privacy.py": "46dab207bd093dbd8946489dbb1c878f0d97bb7079d4d757d1faf1d5154a4e85",
+    "prompts/classifier.txt": "863aad8a48330fe29f0570ae51dcc55ee40a43c570d0b3c5a649da5284233023",
+    "prompts/generator.txt": "d8bbb17ecf20b8ab856abd370c5cb3904831b761b696d5299a675ce092910371",
+    "prompts/grounding.txt": "961cfea2e7fbd0010c97343b5b31b3abf44f34d1b2d1c7339c27ebbef75f3753",
+    "recortes_selecionados.json": "e8dbb51f5497014cef3f907bfa2671b18df650e85ce42bf98ca648d62b059e07",
+    "requirements-lock.txt": "bcc5ff62ef7b5c0291f56f60b0adc3d8c015a59b8503da95ce7ad732b07e2659",
+    "requirements.txt": "9f3366606a3c571262c1d870d4f9130b000d54953c6694f163a07dc50b2a9b1d",
+    "response_styles.py": "7d8625982c5b6f2cc2f80c448bef03de042245ac990b793e1579598ce9959bd4",
+    "restore_index.py": "f3233cd26e70ee3d18503b06050727c1cb4d5810605f25fb21d571c9c43f228c",
+    "run_expansion.py": "0b046ad69968dadaccd4a11c26f9dca9178f4d1f9d7a9cbce6f9c541649d8c9b",
+    "run_guard_regressions.py": "305b0a7d89f0cbd0c1f837d61a01a3724f6a01b1122a068b368230043f4be300",
+    "settings.py": "8279318b03770f7fdb78334f1a19488ae6df6ba81ec79a6378ccb194a967af8b",
+    "web/index.html": "55884e16e60f7b60d41f6c0372adf82cd6833bca6d7fb7645e61cc8d78e37f0a"
+  },
+  "cases": [
+    {
+      "case_id": "exp22-h01",
+      "response_style": "passo_a_passo",
+      "question": "O que diferencia o modo de vida nômade do modo de vida sedentário no material?",
+      "prior_run_id": "b7348c213bd24d6a9c3f32e7ef8a663a",
+      "prior_sha256": "fa80a5c767a7aa41db43deaf9934c56229b9a58929c3774409163ce2620e1c6a",
+      "draft": {
+        "supported": true,
+        "claims": [
+          {
+            "text": "O modo de vida nômade é quando as pessoas se mudam sempre que os recursos acabam.\n1. Nômades vivem em lugares diferentes, porque precisam buscar comida e água.\n2. Sedentários ficam em um lugar fixo, como uma casa, por muito tempo.\nPor exemplo: Nômades andam de planície em planície para caçar, enquanto sedentários plantam o que comem no mesmo terreno.",
+            "evidence": [
+              {
+                "source_id": "sp2024-hist-nomadismo-1",
+                "quote": "Nomadismo: forma de vida na qual não há habitação fixa, sendo importante estar sempre se mudando para novos lugares, quando os recursos existentes para a sobrevivência, em determinado lugar, se esgotam. Sedentarismo: forma de vida na qual a habitação é fixa. O surgimento da agricultura e a domesticação de animais contribuíram para a sedentarização das sociedades humanas."
+              },
+              {
+                "source_id": "sp2024-hist-sedentarismo-1",
+                "quote": "No sedentarismo, o ser humano passa a viver em um único lugar, ou seja, deixa de se mudar constantemente em busca de sua sobrevivência. Esse processo tem início na Pré-História, no período Neolítico. Na época do Neolítico, os seres humanos começaram a se instalar em regiões próximas aos rios, pela facilidade de obter água e alimentos."
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "sp2024-hist-nomadismo-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+          "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+          "pdf_page": 106,
+          "printed_page": 104,
+          "text": "Nomadismo: forma de vida na qual não há habitação fixa, sendo importante estar sempre se mudando para novos lugares, quando os recursos existentes para a sobrevivência, em determinado lugar, se esgotam. Sedentarismo: forma de vida na qual a habitação é fixa. O surgimento da agricultura e a domesticação de animais contribuíram para a sedentarização das sociedades humanas.",
+          "channel": "historia",
+          "score": 0.627655
+        },
+        {
+          "id": "sp2024-hist-sedentarismo-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+          "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+          "pdf_page": 105,
+          "printed_page": 103,
+          "text": "No sedentarismo, o ser humano passa a viver em um único lugar, ou seja, deixa de se mudar constantemente em busca de sua sobrevivência. Esse processo tem início na Pré-História, no período Neolítico. Na época do Neolítico, os seres humanos começaram a se instalar em regiões próximas aos rios, pela facilidade de obter água e alimentos.",
+          "channel": "historia",
+          "score": 0.538751
+        }
+      ],
+      "expected_acceptance_proposed": false
+    },
+    {
+      "case_id": "exp22-h02",
+      "response_style": "passo_a_passo",
+      "question": "Por que grupos humanos passaram a se instalar perto dos rios no período Neolítico?",
+      "prior_run_id": "f89b248b49c949328a7ba84c1121801b",
+      "prior_sha256": "b0cde512207b977b8276d13f47ced1bd006df973097f1e3037fa1284f924fe6d",
+      "draft": {
+        "supported": true,
+        "claims": [
+          {
+            "text": "Grupos humanos se instalar perto dos rios no Neolítico porque tinha água e comida.\n1. Os rios davam água para beber e lavar.\n2. Perto dos rios havia plantas e animais que podiam ser comidos.\nPor exemplo: As pessoas viviam perto do rio Amazonas por causa da muita agua e frutas.",
+            "evidence": [
+              {
+                "source_id": "sp2024-hist-sedentarismo-1",
+                "quote": "No sedentarismo, o ser humano passa a viver em um único lugar, ou seja, deixa de se mudar constantemente em busca de sua sobrevivência. Esse processo tem início na Pré-História, no período Neolítico. Na época do Neolítico, os seres humanos começaram a se instalar em regiões próximas aos rios, pela facilidade de obter água e alimentos."
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "sp2024-hist-sedentarismo-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+          "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+          "pdf_page": 105,
+          "printed_page": 103,
+          "text": "No sedentarismo, o ser humano passa a viver em um único lugar, ou seja, deixa de se mudar constantemente em busca de sua sobrevivência. Esse processo tem início na Pré-História, no período Neolítico. Na época do Neolítico, os seres humanos começaram a se instalar em regiões próximas aos rios, pela facilidade de obter água e alimentos.",
+          "channel": "historia",
+          "score": 0.621723
+        }
+      ],
+      "expected_acceptance_proposed": false
+    },
+    {
+      "case_id": "exp22-h04",
+      "response_style": "passo_a_passo",
+      "question": "Segundo o texto, quais produtos podem ser feitos a partir do algodão e da soja?",
+      "prior_run_id": "2e88e51e379644e78cc2136d670dcd85",
+      "prior_sha256": "c5872d1cd514a63aab87e65af63d01ee4b8c07388b2a0692392c26bf2235d994",
+      "draft": {
+        "supported": true,
+        "claims": [
+          {
+            "text": "O algodão pode ser usado para fazer tecidos.\n1. A soja é usada para produzir óleo de cozinha.\n2. O algodão é cortado e transformado em roupas.\nPor exemplo: A soja é colhida, espremida e o óleo fica pronto para usar na comida.",
+            "evidence": [
+              {
+                "source_id": "sp2024-hist-materias-primas-1",
+                "quote": "As matérias-primas são recursos originários (iniciais) utilizados para a produção de produtos diversos e são classificadas em vegetais, animais ou minerais. Vegetais: são materiais obtidos por meio da agricultura, por exemplo, o algodão, que é retirado para a produção de tecidos, ou a soja, que é utilizada para a produção do óleo de cozinha."
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "sp2024-hist-materias-primas-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+          "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+          "pdf_page": 115,
+          "printed_page": 113,
+          "text": "As matérias-primas são recursos originários (iniciais) utilizados para a produção de produtos diversos e são classificadas em vegetais, animais ou minerais. Vegetais: são materiais obtidos por meio da agricultura, por exemplo, o algodão, que é retirado para a produção de tecidos, ou a soja, que é utilizada para a produção do óleo de cozinha.",
+          "channel": "historia",
+          "score": 0.548635
+        }
+      ],
+      "expected_acceptance_proposed": false
+    },
+    {
+      "case_id": "exp22-g03",
+      "response_style": "padrao",
+      "question": "Uma pessoa muda de cidade, mas continua no mesmo país. Como se chama esse tipo de migração?",
+      "prior_run_id": "88d75c8d319f4a159bb3f94e3670a773",
+      "prior_sha256": "5d7a1d7fd19ab558517eb91121c04e2174fbb2c8d10b72eb843be3ec94490170",
+      "draft": {
+        "supported": true,
+        "claims": [
+          {
+            "text": "Essa migração se chama migrante interno.",
+            "evidence": [
+              {
+                "source_id": "sp2024-geo-migracao-interna-1",
+                "quote": "Também existem os migrantes internos, que são pessoas que saem de seus lugares de origem para viver em outros lugares, mas no mesmo país."
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "sp2024-geo-migracao-interna-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — geografia",
+          "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+          "pdf_page": 72,
+          "printed_page": 70,
+          "text": "Também existem os migrantes internos, que são pessoas que saem de seus lugares de origem para viver em outros lugares, mas no mesmo país.",
+          "channel": "geografia",
+          "score": 0.633053
+        }
+      ],
+      "expected_acceptance_proposed": false
+    },
+    {
+      "case_id": "exp22-h03",
+      "response_style": "padrao",
+      "question": "Como o estoque de produtos agrícolas contribuiu para as trocas nas aldeias?",
+      "prior_run_id": "83997a9cf1404b60abacb149b82b4176",
+      "prior_sha256": "6fc0f1f63e1d90ce3a221b5d7e4a6162957c821b3cbf063ecb8c3c0304175ae5",
+      "draft": {
+        "supported": true,
+        "claims": [
+          {
+            "text": "O estoque de produtos agrícolas ajudou as aldeias a trocar mercadorias, como alimentos e artesanato. Isso fez com que as pessoas comessem a vender coisas que produziam.",
+            "evidence": [
+              {
+                "source_id": "sp2024-hist-comercio-1",
+                "quote": "O desenvolvimento das atividades agrícolas trouxe como resultado o estoque de produtos, contribuindo para o desenvolvimento do comércio nas aldeias por meio da troca de mercadorias (agricultura e artesanato)."
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "sp2024-hist-comercio-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+          "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+          "pdf_page": 125,
+          "printed_page": 123,
+          "text": "O desenvolvimento das atividades agrícolas trouxe como resultado o estoque de produtos, contribuindo para o desenvolvimento do comércio nas aldeias por meio da troca de mercadorias (agricultura e artesanato).",
+          "channel": "historia",
+          "score": 0.72646
+        }
+      ],
+      "expected_acceptance_proposed": false
+    },
+    {
+      "case_id": "exp22-g04",
+      "response_style": "padrao",
+      "question": "Como a chegada de migrantes pode contribuir para a cultura do lugar que os recebe?",
+      "prior_run_id": "2b5bc2a53b014d8cb04c54d7f7637c14",
+      "prior_sha256": "fdb0f9d41d9ae408e47a2f989e0b5bf1d8c154259dba0136eaee1e9f96dc9b56",
+      "draft": {
+        "supported": true,
+        "claims": [
+          {
+            "text": "A chegada de migrantes traz novas ideias, costumes e formas de vida para o lugar que os recebe. Eles compartilham sua cultura, como comida, música e idiomas, enriquecendo a cultura local. Isso faz com que a cultura do lugar fique mais diversa e rica.",
+            "evidence": [
+              {
+                "source_id": "sp2024-geo-contribuicoes-1",
+                "quote": "A chegada dos migrantes externos ao Brasil não só aumenta a população, mas também nos traz muitas contribuições culturais, vindas desses povos, que vão sendo incorporadas à nossa, construindo uma cultura tão rica e diversa!"
+              },
+              {
+                "source_id": "sp2024-geo-migracoes-1",
+                "quote": "As migrações ocorrem quando as pessoas deixam seus lugares de origem e se deslocam para outros lugares. Isso pode ocorrer entre países ou dentro do próprio território. As migrações contribuem para a formação de uma cultura rica e diversificada."
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "sp2024-geo-contribuicoes-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — geografia",
+          "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+          "pdf_page": 62,
+          "printed_page": 60,
+          "text": "A chegada dos migrantes externos ao Brasil não só aumenta a população, mas também nos traz muitas contribuições culturais, vindas desses povos, que vão sendo incorporadas à nossa, construindo uma cultura tão rica e diversa!",
+          "channel": "geografia",
+          "score": 0.68168
+        },
+        {
+          "id": "sp2024-geo-migracoes-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — geografia",
+          "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+          "pdf_page": 56,
+          "printed_page": 54,
+          "text": "As migrações ocorrem quando as pessoas deixam seus lugares de origem e se deslocam para outros lugares. Isso pode ocorrer entre países ou dentro do próprio território. As migrações contribuem para a formação de uma cultura rica e diversificada.",
+          "channel": "geografia",
+          "score": 0.576014
+        }
+      ],
+      "expected_acceptance_proposed": false
+    },
+    {
+      "case_id": "exp22-h04",
+      "response_style": "padrao",
+      "question": "Segundo o texto, quais produtos podem ser feitos a partir do algodão e da soja?",
+      "prior_run_id": "81027f76c7c14987b39e2ce177df6b6a",
+      "prior_sha256": "2a3c9c8fab6323fb909ba3ce06888e880882ad098bacc8dbe574bb1f66ff0199",
+      "draft": {
+        "supported": true,
+        "claims": [
+          {
+            "text": "O algodão é usado para fazer tecidos e a soja é usada para produzir óleo de cozinha.",
+            "evidence": [
+              {
+                "source_id": "sp2024-hist-materias-primas-1",
+                "quote": "As matérias-primas são recursos originários (iniciais) utilizados para a produção de produtos diversos e são classificadas em vegetais, animais ou minerais. Vegetais: são materiais obtidos por meio da agricultura, por exemplo, o algodão, que é retirado para a produção de tecidos, ou a soja, que é utilizada para a produção do óleo de cozinha."
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "sp2024-hist-materias-primas-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+          "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+          "pdf_page": 115,
+          "printed_page": 113,
+          "text": "As matérias-primas são recursos originários (iniciais) utilizados para a produção de produtos diversos e são classificadas em vegetais, animais ou minerais. Vegetais: são materiais obtidos por meio da agricultura, por exemplo, o algodão, que é retirado para a produção de tecidos, ou a soja, que é utilizada para a produção do óleo de cozinha.",
+          "channel": "historia",
+          "score": 0.548635
+        }
+      ],
+      "expected_acceptance_proposed": true
+    },
+    {
+      "case_id": "exp22-h05",
+      "response_style": "padrao",
+      "question": "O que são serviços de hotelaria no texto sobre atividades no campo?",
+      "prior_run_id": "6c2b362498fc463d8891976c4f57fe5a",
+      "prior_sha256": "b2de8b23f2d358ae55e196f1bea007f0d50a7a7d2422cd5f5ff05a0cc3448584",
+      "draft": {
+        "supported": true,
+        "claims": [
+          {
+            "text": "Serviços de hotelaria são atividades que oferecem hospedagem, lazer e alimentação para turistas.",
+            "evidence": [
+              {
+                "source_id": "sp2024-hist-campo-atual-1",
+                "quote": "Desta forma, no Brasil, podemos observar que o espaço rural, além de realizar as atividades da agricultura e da pecuária, também disponibiliza atividades voltadas ao turismo e ao lazer, contribuindo para a construção de parques ambientais, condomínios fechados, centros comerciais, hotéis etc. *Hotelaria: Serviços de lazer, hospedagem e alimentação para turistas."
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "sp2024-hist-campo-atual-1",
+          "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+          "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+          "pdf_page": 116,
+          "printed_page": 114,
+          "text": "Desta forma, no Brasil, podemos observar que o espaço rural, além de realizar as atividades da agricultura e da pecuária, também disponibiliza atividades voltadas ao turismo e ao lazer, contribuindo para a construção de parques ambientais, condomínios fechados, centros comerciais, hotéis etc. *Hotelaria: Serviços de lazer, hospedagem e alimentação para turistas.",
+          "channel": "historia",
+          "score": 0.661243
+        }
+      ],
+      "expected_acceptance_proposed": true
+    }
+  ],
+  "human_review": "pendente",
+  "note": "Regressão diagnóstica de saídas de desenvolvimento conhecidas, não avaliação cega ou final.",
+  "plan_id": "1929105e3d6af896fd55a755d185f47d055ed858e76eed99d48d14eb160ac4a0"
+}

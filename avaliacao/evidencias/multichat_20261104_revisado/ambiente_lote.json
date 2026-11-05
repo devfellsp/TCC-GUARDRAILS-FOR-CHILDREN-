@@ -1,0 +1,28 @@
+{
+  "snapshot": "4531f5b01c5bc432a7c2ff8e67632c5e19cd0b8623ed414c89ec95731c4d3f8b",
+  "index_id": "d68f62ab258c4ab93e36ef54df0e3626f6d4f191afcd59d52f38fefea755a344",
+  "python": "3.12.15 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:14:50) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "ollama_versions": [
+    "0.40.11"
+  ],
+  "model_digests": {
+    "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+  },
+  "hardware_source": "avaliacao/evidencias/ambiente_hardware.json",
+  "hardware": {
+    "note": "Sem comparacao entre equipamentos; VRAM nao inferida do campo WMI limitado.",
+    "ram_bytes": 17125724160,
+    "gpu": {
+      "Name": "NVIDIA GeForce RTX 4060",
+      "DriverVersion": "32.0.16.2101"
+    },
+    "cpu": {
+      "Name": "AMD Ryzen 5 3600X 6-Core Processor             ",
+      "NumberOfCores": 6,
+      "NumberOfLogicalProcessors": 12
+    }
+  },
+  "note": "Hardware de referência registrado na documentação local; sem monitoramento por tentativa. Não constitui comparação controlada de desempenho."
+}

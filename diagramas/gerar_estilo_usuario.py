@@ -90,7 +90,7 @@ def diagrams():
     d.box('pilot',85,135,220,85,'Piloto\n22 execuções')
     d.box('science',85,275,220,110,'Dois lotes de Ciências\n108 execuções\n27 perguntas reutilizadas')
     d.box('cases',465,135,220,135,'16 perguntas\n2 estilos\n32 tentativas executadas')
-    d.box('review',465,345,220,80,'Inspeção das respostas\nassistida por IA')
+    d.box('review',465,345,220,80,'Inspeção preliminar\ndas respostas')
     d.box('reserve',845,135,220,135,'32 perguntas\n16 famílias\n2 estilos\n64 tentativas planejadas')
     d.box('human',845,345,220,80,'Ratificação humana\ne congelamento')
     d.box('after',845,500,220,80,'Execução e revisão\nPlanejadas')

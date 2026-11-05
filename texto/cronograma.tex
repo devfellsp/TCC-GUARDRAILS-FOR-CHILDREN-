@@ -1,0 +1,74 @@
+A Figura~\ref{fig:cronograma} apresenta o cronograma do projeto entre outubro de 2026 e junho de 2027, em intervalos quinzenais. As barras cinzas indicam atividades realizadas no desenvolvimento; as barras azuis representam a continuidade proposta. As datas futuras dependem de confirmação com o orientador e da disponibilidade dos revisores. A execução final somente poderá ocorrer após a ratificação das referências e o congelamento do protocolo.
+
+Quando atividades dependentes compartilham uma quinzena, a etapa posterior somente se inicia após o encerramento formal da anterior. Isso se aplica à conferência e ratificação antes do congelamento (atividades 8 a 10), à execução antes dos pareceres (11 e 12) e ao encerramento dos pareceres e da conciliação antes do cálculo dos indicadores (12 e 13). Na atividade 6, o trecho cinza corresponde ao início realizado na primeira quinzena de novembro de 2026; o trecho azul indica a continuidade proposta até dezembro.
+
+\begin{figure}[p]
+\centering
+\caption{Cronograma das atividades do projeto em intervalos quinzenais}
+\label{fig:cronograma}
+\begin{ganttchart}[
+    y unit title=0.5cm,
+    y unit chart=0.32cm,
+    x unit=0.78cm,
+    vgrid,hgrid,
+    title height=1,
+    title/.style={fill=none,draw=black!65},
+    title label font=\bfseries\scriptsize,
+    bar/.append style={fill=cyan!35,draw=black!65},
+    bar height=0.65,
+    bar label font=\scriptsize,
+    progress label text={},
+    inline=false
+]{1}{18}
+\gantttitle{2026}{6}\gantttitle{2027}{12}\\
+\gantttitle{Out}{2}\gantttitle{Nov}{2}\gantttitle{Dez}{2}
+\gantttitle{Jan}{2}\gantttitle{Fev}{2}\gantttitle{Mar}{2}
+\gantttitle{Abr}{2}\gantttitle{Mai}{2}\gantttitle{Jun}{2}\\
+\gantttitlelist{1,2}{1}\gantttitlelist{1,2}{1}\gantttitlelist{1,2}{1}
+\gantttitlelist{1,2}{1}\gantttitlelist{1,2}{1}\gantttitlelist{1,2}{1}
+\gantttitlelist{1,2}{1}\gantttitlelist{1,2}{1}\gantttitlelist{1,2}{1}\\
+\ganttbar[bar/.append style={fill=gray!55}]{1)}{2}{2}\\
+\ganttbar[bar/.append style={fill=gray!55}]{2)}{2}{3}\\
+\ganttbar[bar/.append style={fill=gray!55}]{3)}{2}{3}\\
+\ganttbar[bar/.append style={fill=gray!55}]{4)}{2}{2}\\
+\ganttbar[bar/.append style={fill=gray!55}]{5)}{3}{3}\\
+\ganttbar[bar/.append style={fill=gray!55}]{6)}{3}{3}
+\ganttbar{}{4}{6}\\
+\ganttbar{7)}{5}{6}\\
+\ganttbar{8)}{9}{9}\\
+\ganttbar{9)}{9}{10}\\
+\ganttbar{10)}{10}{10}\\
+\ganttbar{11)}{11}{11}\\
+\ganttbar{12)}{11}{13}\\
+\ganttbar{13)}{13}{14}\\
+\ganttbar{14)}{14}{16}\\
+\ganttbar{15)}{15}{17}\\
+\ganttbar{16)}{17}{18}
+\end{ganttchart}
+
+\par\smallskip
+{\footnotesize Cinza: realizado. Azul: proposto. 1 e 2: primeira e segunda quinzenas.\par}
+\medskip
+\begin{minipage}{\textwidth}
+\small\SingleSpacing
+\begin{enumerate}[label=\arabic*),nosep,leftmargin=0.8cm]
+\item Consolidação do tema, do problema e dos objetivos.
+\item Levantamento bibliográfico e seleção do acervo.
+\item Implementação da prova de conceito.
+\item Execução do piloto histórico.
+\item Verificações funcionais, lotes de desenvolvimento e preparação do protocolo e dos instrumentos.
+\item Redação e revisão do Projeto de Pesquisa/TCC I.
+\item Preparação e apresentação da proposta de TCC I.
+\item Conferência do ambiente e ajustes de desenvolvimento.
+\item Confirmação dos avaliadores e ratificação humana das fontes, dos casos e da rubrica.
+\item Congelamento do protocolo, código, índice e modelos.
+\item Execução das 64 oportunidades finais.
+\item Pareceres humanos e conciliação das divergências.
+\item Cálculo do ASCS e comparação pareada dos estilos.
+\item Análise, discussão dos resultados e conclusão.
+\item Revisão final do texto e das referências.
+\item Preparação da apresentação e entrega final.
+\end{enumerate}
+\end{minipage}
+\fonte{Elaboração própria; atividades futuras propostas, sem prazo institucional presumido.}
+\end{figure}

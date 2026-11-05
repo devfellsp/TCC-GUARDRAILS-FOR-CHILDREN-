@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-05",
+  "source_file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+  "source_sha256": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987",
+  "passages": [
+    {
+      "id": "sp2024-geo-migracoes",
+      "channel": "geografia",
+      "pdf_page": 56,
+      "printed_page": 54,
+      "topic": "Migrações",
+      "start": "As migrações ocorrem",
+      "end": "Os povos que ajudaram",
+      "text_sha256": "12ca9a30c89c60203b5eebd9b2ef26e39710154335e8ff244b1b18e1585db540",
+      "literal_text": "As migrações ocorrem quando as pessoas deixam seus lugares de origem e se deslocam para outros lugares. Isso pode ocorrer entre países ou dentro do próprio território. As migrações contribuem para a formação de uma cultura rica e diversificada.",
+      "characters": 244
+    },
+    {
+      "id": "sp2024-geo-imigracao",
+      "channel": "geografia",
+      "pdf_page": 61,
+      "printed_page": 59,
+      "topic": "Imigração e seus motivos",
+      "start": "Imigração é o processo",
+      "end": "Fatores da imigração",
+      "text_sha256": "dc6d770df40742242595323a1e62031e22080026360b0972edd366d36e1e6d40",
+      "literal_text": "Imigração é o processo de entrada de pessoas num determinado território, ou seja, elas saíram do seu lugar de origem, seu país, para viver em outro. São muitos os fatores que levam à imigração de indivíduos: alguns imigram em busca de trabalho ou buscam condições melhores de vida, outros fogem da guerra, de perseguições e crises políticas e socioeconômicas, desastres naturais e situações climáticas extremas.",
+      "characters": 411
+    },
+    {
+      "id": "sp2024-geo-migracao-interna",
+      "channel": "geografia",
+      "pdf_page": 72,
+      "printed_page": 70,
+      "topic": "Migração interna",
+      "start": "Também existem os migrantes internos",
+      "end": "Xilogravura retratando",
+      "text_sha256": "aa1727ef274b7249e2f21e44f2d3d6e0556306de65e9ec585f378a7546820af2",
+      "literal_text": "Também existem os migrantes internos, que são pessoas que saem de seus lugares de origem para viver em outros lugares, mas no mesmo país.",
+      "characters": 137
+    },
+    {
+      "id": "sp2024-geo-contribuicoes",
+      "channel": "geografia",
+      "pdf_page": 62,
+      "printed_page": 60,
+      "topic": "Contribuições culturais",
+      "start": "A chegada dos migrantes externos ao Brasil",
+      "end": "Treino de judô",
+      "text_sha256": "0e52464591d622fbaf2ff390d07a535c8833d37639348daf352abeff17e37f01",
+      "literal_text": "A chegada dos migrantes externos ao Brasil não só aumenta a população, mas também nos traz muitas contribuições culturais, vindas desses povos, que vão sendo incorporadas à nossa, construindo uma cultura tão rica e diversa!",
+      "characters": 223
+    },
+    {
+      "id": "sp2024-geo-quilombolas",
+      "channel": "geografia",
+      "pdf_page": 97,
+      "printed_page": 95,
+      "topic": "Comunidades quilombolas",
+      "start": "Segundo o Instituto Nacional de",
+      "end": "Há cerca de 3 mil",
+      "text_sha256": "a270d1ab7d03da3bc83bd1f54b4e3adb3bbec22a517158300bedec899377c5c1",
+      "literal_text": "Segundo o Instituto Nacional de Colonização e Reforma Agrária (INCRA), as comunidades quilombolas são grupos étnicos predominantemente constituídos de população negra rural ou urbana, descendentes de ex-escravizados, negros que se autodefinem a partir das relações específicas com a terra, o parentesco, o território, a ancestralidade, as tradições e práticas culturais próprias.",
+      "characters": 379
+    },
+    {
+      "id": "sp2024-hist-nomadismo",
+      "channel": "historia",
+      "pdf_page": 106,
+      "printed_page": 104,
+      "topic": "Nomadismo e sedentarismo",
+      "start": "Nomadismo: forma de vida",
+      "end": "Plantação de batata",
+      "text_sha256": "0bf47ed95eef0917d45218e712aa2ad10608d7bb04a6185cedb6f7fa07b79e96",
+      "literal_text": "Nomadismo: forma de vida na qual não há habitação fixa, sendo importante estar sempre se mudando para novos lugares, quando os recursos existentes para a sobrevivência, em determinado lugar, se esgotam. Sedentarismo: forma de vida na qual a habitação é fixa. O surgimento da agricultura e a domesticação de animais contribuíram para a sedentarização das sociedades humanas.",
+      "characters": 373
+    },
+    {
+      "id": "sp2024-hist-sedentarismo",
+      "channel": "historia",
+      "pdf_page": 105,
+      "printed_page": 103,
+      "topic": "Sedentarismo e proximidade dos rios",
+      "start": "No sedentarismo, o ser humano",
+      "end": "Grupo de pessoas na Pré-História",
+      "text_sha256": "94cb9e8071d0f29499eb659286db494492ee55cf47d4bb42af90d44896ce659c",
+      "literal_text": "No sedentarismo, o ser humano passa a viver em um único lugar, ou seja, deixa de se mudar constantemente em busca de sua sobrevivência. Esse processo tem início na Pré-História, no período Neolítico. Na época do Neolítico, os seres humanos começaram a se instalar em regiões próximas aos rios, pela facilidade de obter água e alimentos.",
+      "characters": 336
+    },
+    {
+      "id": "sp2024-hist-comercio",
+      "channel": "historia",
+      "pdf_page": 125,
+      "printed_page": 123,
+      "topic": "Agricultura, estoque e trocas",
+      "start": "O desenvolvimento das atividades agrícolas",
+      "end": "Ou seja,",
+      "text_sha256": "bce8c55bfefb5b973cb335308e3acce2e843d93e7025e399feb42a49a635c4f5",
+      "literal_text": "O desenvolvimento das atividades agrícolas trouxe como resultado o estoque de produtos, contribuindo para o desenvolvimento do comércio nas aldeias por meio da troca de mercadorias (agricultura e artesanato).",
+      "characters": 208
+    },
+    {
+      "id": "sp2024-hist-materias-primas",
+      "channel": "historia",
+      "pdf_page": 115,
+      "printed_page": 113,
+      "topic": "Matérias-primas e exemplos vegetais",
+      "start": "As matérias-primas são recursos",
+      "end": "Animais:",
+      "text_sha256": "9f425cd24e24c5bbc5eafe1faa4fe24255f9407ca66e968e284f08d0bb97d821",
+      "literal_text": "As matérias-primas são recursos originários (iniciais) utilizados para a produção de produtos diversos e são classificadas em vegetais, animais ou minerais. Vegetais: são materiais obtidos por meio da agricultura, por exemplo, o algodão, que é retirado para a produção de tecidos, ou a soja, que é utilizada para a produção do óleo de cozinha.",
+      "characters": 343
+    },
+    {
+      "id": "sp2024-hist-campo-atual",
+      "channel": "historia",
+      "pdf_page": 116,
+      "printed_page": 114,
+      "topic": "Atividades rurais, turismo e hotelaria",
+      "start": "Desta forma, no Brasil",
+      "end": "Hábitos da vida no campo:",
+      "text_sha256": "1bd2dd03d1cf795ccfe3b76458dc78c898f4cda31d0cd872bb5cd8dd53ccbe6b",
+      "literal_text": "Desta forma, no Brasil, podemos observar que o espaço rural, além de realizar as atividades da agricultura e da pecuária, também disponibiliza atividades voltadas ao turismo e ao lazer, contribuindo para a construção de parques ambientais, condomínios fechados, centros comerciais, hotéis etc. *Hotelaria: Serviços de lazer, hospedagem e alimentação para turistas.",
+      "characters": 364
+    }
+  ],
+  "limitations": [
+    "Síntese didática não descreve todos os grupos humanos nem todas as trajetórias históricas.",
+    "Exemplos de matérias-primas não substituem estudo completo dos setores econômicos.",
+    "Conferência documental preliminar; linguagem e adequação pedagógica independentes pendentes."
+  ]
+}

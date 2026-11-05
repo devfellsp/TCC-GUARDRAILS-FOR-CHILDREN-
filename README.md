@@ -7,11 +7,11 @@ Orientador: Prof. Marcos Souza
 
 ## POC atual — regra comum e comparação de linguagem (04/11/2026)
 
-A versão `GK-P2.1-dev` usa uma regra comum em Ciências, História, Geografia e Geral, com estilos Direto e Passo a passo. A revisão documental precedeu um lote de **32 tentativas executadas sobre 16 perguntas**, sem perdas técnicas. A inspeção assistida apontou ressalvas de sustentação em cinco das oito explicações liberadas; os campos humanos continuam vazios. As rotas não são indicadores de eficácia.
+A versão `GK-P2.1-dev` usa uma regra comum em Ciências, História, Geografia e Geral, com estilos Direto e Passo a passo. A revisão documental precedeu um lote de **32 tentativas executadas sobre 16 perguntas**, sem perdas técnicas. A inspeção preliminar apontou ressalvas de sustentação em cinco das oito explicações liberadas; os campos humanos continuam vazios. As rotas não são indicadores de eficácia.
 
-O conjunto reservado atual tem 32 perguntas em 16 famílias e 64 oportunidades, ainda não executadas. A referência humana e o congelamento permanecem pendentes. O manuscrito e seus diagramas foram atualizados, mantendo as 108 execuções anteriores em seção histórica, sem somar denominadores.
+O conjunto reservado atual tem 32 perguntas em 16 famílias e 64 oportunidades, ainda não executadas. A revisão prospectiva corrigiu o balanceamento da segunda revisão por chat e grupo e formalizou o ASCS no protocolo; seu cálculo final depende de revisão humana. A referência humana e o congelamento permanecem pendentes. O manuscrito e seus diagramas foram atualizados, mantendo as 108 execuções anteriores em seção histórica, sem somar denominadores.
 
-- [TCC revisado em PDF](TCC_GuardKids_Drawio_rotulos.pdf) — 40 páginas, sete figuras Draw.io.
+- [TCC revisado em PDF](TCC_GuardKids_Drawio_rotulos.pdf) — 41 páginas, sete figuras Draw.io e um cronograma de Gantt.
 - [Projeto revisado para o Overleaf](Overleaf_TCC_Drawio_rotulos.zip) — selecione main.tex e XeLaTeX.
 - [Sete diagramas editáveis em um arquivo](GuardKids_Drawio_rotulos.drawio). As fontes individuais estão em diagramas/drawio/ e as figuras do manuscrito em diagramas/pdf/.
 - Revisão editorial e bibliográfica aplicada: [registro das correções e verificações](avaliacao/APLICACAO_AUDITORIA.md).
@@ -62,3 +62,9 @@ As correções estão descritas em `poc/docs/CORRECOES_2026-11-03.md`. Os regist
 - `historico/Capitulo_3_Metodologia_Versao_Anterior.pdf`: PDF da metodologia anterior.
 
 A atualização copiou os arquivos da pasta recebida do Git e verificou a igualdade de conteúdo antes da limpeza. Em 03/11/2026, esta pasta foi conectada ao [repositório do projeto](https://github.com/devfellsp/TCC-GUARDRAILS-FOR-CHILDREN-), preservando o histórico existente e incluindo o código do protótipo em `poc/`. Ambientes locais, caches, índices gerados e registros individuais de execução ficam fora do versionamento; as decisões e os resumos do piloto estão em `poc/docs/`.
+
+O calculador prospectivo `poc/final_metrics.py` implementa os dois denominadores do ASCS e a conciliação dos pareceres. Sem lote final e revisão humana, informa pendências e mantém as taxas finais vazias. Uso em `avaliacao/final_multichat_v1/README.md`.
+
+As instruções de compilação, execução e conferência dos materiais estão em `poc/docs/MATERIAIS_E_REPRODUCAO.md`, fora do manuscrito.
+
+Os 32 registros completos e o snapshot do lote multidisciplinar estão arquivados em `avaliacao/evidencias/multichat_20261104_revisado/`, com manifesto SHA-256 e ambiente registrado. O pacote Overleaf inclui essas evidências e os lotes históricos selecionados. Para atualizar o pacote, use `python tools/package_overleaf.py`.

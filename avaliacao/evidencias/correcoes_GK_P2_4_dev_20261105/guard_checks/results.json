@@ -1,0 +1,148 @@
+{
+  "snapshot": "5c9e243a11579e69c63301b9f4fadd0e52388538ace810e2c61d2570a32a777d",
+  "results": [
+    {
+      "case_id": "exp22-h01",
+      "response_style": "passo_a_passo",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "rejected_by": "evidence_guard",
+      "calls": []
+    },
+    {
+      "case_id": "exp22-h02",
+      "response_style": "passo_a_passo",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "rejected_by": "evidence_guard",
+      "calls": []
+    },
+    {
+      "case_id": "exp22-h04",
+      "response_style": "passo_a_passo",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "rejected_by": "evidence_guard",
+      "calls": []
+    },
+    {
+      "case_id": "exp22-g03",
+      "response_style": "padrao",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": false,
+            "reason": "A afirmação menciona 'migrante interno' como o nome da migração, mas a citação refere-se a 'migrantes internos', que é uma categoria de pessoas, não o tipo de migração. A expressão correta seria 'migração interna'."
+          }
+        ],
+        "answers_question": false,
+        "language_ok": true,
+        "reason": "A resposta não responde diretamente à pergunta sobre o nome do tipo de migração, mas sim sobre uma categoria de pessoas. A afirmação também contém um erro terminológico."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 4.875,
+          "eval_count": 156,
+          "prompt_eval_count": 892,
+          "done_reason": "stop"
+        }
+      ]
+    },
+    {
+      "case_id": "exp22-h03",
+      "response_style": "padrao",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "rejected_by": "evidence_guard",
+      "calls": []
+    },
+    {
+      "case_id": "exp22-g04",
+      "response_style": "padrao",
+      "expected_acceptance_proposed": false,
+      "accepted": false,
+      "valid": true,
+      "rejected_by": "evidence_guard",
+      "calls": []
+    },
+    {
+      "case_id": "exp22-h04",
+      "response_style": "padrao",
+      "expected_acceptance_proposed": true,
+      "accepted": true,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": true,
+            "reason": "A afirmação está diretamente apoiada pela citação, que menciona o uso do algodão para a produção de tecidos e da soja para a produção do óleo de cozinha."
+          }
+        ],
+        "answers_question": true,
+        "language_ok": true,
+        "reason": "A resposta atende à pergunta ao listar os produtos feitos a partir do algodão e da soja, conforme mencionado no texto. A linguagem é clara e correta."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 4.359,
+          "eval_count": 135,
+          "prompt_eval_count": 1033,
+          "done_reason": "stop"
+        }
+      ]
+    },
+    {
+      "case_id": "exp22-h05",
+      "response_style": "padrao",
+      "expected_acceptance_proposed": true,
+      "accepted": true,
+      "valid": true,
+      "audit": {
+        "claims": [
+          {
+            "claim": 1,
+            "supported": true,
+            "reason": "A afirmação está diretamente apoiada pela citação, que define serviços de hotelaria como 'serviços de lazer, hospedagem e alimentação para turistas'."
+          }
+        ],
+        "answers_question": true,
+        "language_ok": true,
+        "reason": "A resposta fornece uma definição clara dos serviços de hotelaria conforme solicitado na pergunta."
+      },
+      "model_digests": {
+        "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+      },
+      "calls": [
+        {
+          "stage": "grounding_guard",
+          "seconds": 3.673,
+          "eval_count": 114,
+          "prompt_eval_count": 1021,
+          "done_reason": "stop"
+        }
+      ]
+    }
+  ],
+  "human_review": "pendente",
+  "note": "Verificações automatizadas, sem reexecução seletiva."
+}

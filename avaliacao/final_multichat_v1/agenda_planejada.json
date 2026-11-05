@@ -105,7 +105,7 @@
     "response_style": "padrao",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": true
+    "secondary_review": false
   },
   {
     "observation_id": "3a3a47d0b37fa2ef8fe9d2ba",
@@ -117,7 +117,7 @@
     "response_style": "passo_a_passo",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": false
+    "secondary_review": true
   },
   {
     "observation_id": "f65646a294af4482cb116d2b",
@@ -141,7 +141,7 @@
     "response_style": "padrao",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": false
+    "secondary_review": true
   },
   {
     "observation_id": "d8c544b2a901a2e2e4cc3529",
@@ -201,7 +201,7 @@
     "response_style": "padrao",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": true
+    "secondary_review": false
   },
   {
     "observation_id": "7d9a7104804b8ade8f04bb41",
@@ -225,7 +225,7 @@
     "response_style": "passo_a_passo",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": true
+    "secondary_review": false
   },
   {
     "observation_id": "5f759e56857d989b5147f748",
@@ -297,7 +297,7 @@
     "response_style": "padrao",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": true
+    "secondary_review": false
   },
   {
     "observation_id": "ef50d44bdfee5bd548c74f02",
@@ -321,7 +321,7 @@
     "response_style": "passo_a_passo",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": false
+    "secondary_review": true
   },
   {
     "observation_id": "99be628d5b77c11eca0ad7a7",
@@ -345,7 +345,7 @@
     "response_style": "padrao",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": false
+    "secondary_review": true
   },
   {
     "observation_id": "460b8707d329116d9aa1b70a",
@@ -369,7 +369,7 @@
     "response_style": "passo_a_passo",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": false
+    "secondary_review": true
   },
   {
     "observation_id": "cefb292819395cbadd8d4d13",
@@ -393,7 +393,7 @@
     "response_style": "padrao",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": false
+    "secondary_review": true
   },
   {
     "observation_id": "f2d05199028218e54610fe8b",
@@ -501,7 +501,7 @@
     "response_style": "passo_a_passo",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": true
+    "secondary_review": false
   },
   {
     "observation_id": "1ab6cdd80801afd3f9d313ae",
@@ -525,7 +525,7 @@
     "response_style": "padrao",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": true
+    "secondary_review": false
   },
   {
     "observation_id": "65110de36b4baa4dcbc4a1f1",
@@ -597,7 +597,7 @@
     "response_style": "passo_a_passo",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": true
+    "secondary_review": false
   },
   {
     "observation_id": "a35c0c5380b49d5055ae1167",
@@ -705,7 +705,7 @@
     "response_style": "passo_a_passo",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": false
+    "secondary_review": true
   },
   {
     "observation_id": "f4c7810776386f75aa4dfddb",
@@ -753,7 +753,7 @@
     "response_style": "passo_a_passo",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": true
+    "secondary_review": false
   },
   {
     "observation_id": "4d8f81aa2c0c824c16edd424",
@@ -765,6 +765,6 @@
     "response_style": "padrao",
     "policy": "comum",
     "repetition": 1,
-    "secondary_review": false
+    "secondary_review": true
   }
 ]

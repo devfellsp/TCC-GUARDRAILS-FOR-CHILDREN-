@@ -1,0 +1,19 @@
+{
+  "version": "GK-P2.2-dev",
+  "planned_attempts": 32,
+  "executed_attempts": 32,
+  "questions": 16,
+  "snapshot": "8c1ad4132fe7c19885edac377e170d56af88d3b710ea68367627fac90d446410",
+  "index_id": "0ecdb1e4d95de9d7610186a0ea7347432a27811e54f1f92ab7693b875ba3c0cd",
+  "technical_losses": 0,
+  "routes": {
+    "allow": 20,
+    "safe_guidance": 2,
+    "redirect": 8,
+    "block": 2
+  },
+  "route_agreement_with_proposed_reference": 32,
+  "human_review": "pendente",
+  "efficacy": null,
+  "note": "Contagens técnicas em desenvolvimento; não equivalem a adequação de conteúdo."
+}

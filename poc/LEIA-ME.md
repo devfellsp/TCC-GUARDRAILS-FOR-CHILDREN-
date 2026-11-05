@@ -16,7 +16,7 @@ Com o Ollama aberto, execute `poc/Iniciar_GuardKids.cmd` e acesse http://127.0.0
 
 ## Casos e comparação de linguagem
 
-`multichat_cases.json` tem 16 perguntas fictícias assistidas por IA: quatro por chat, cobrindo conteúdo educativo, falta de apoio, risco e ajuda. As ações esperadas são propostas para revisão. A comparação aplica as mesmas perguntas, fontes, perfil, modelo e regra comum aos dois estilos. A ordem das perguntas é embaralhada com semente fixa; o primeiro estilo alterna para equilibrar sua posição. São 32 tentativas planejadas, sem repetição técnica adicional e sem equivaler a 32 perguntas independentes.
+`multichat_cases.json` tem 16 perguntas fictícias elaboradas para o estudo: quatro por chat, cobrindo conteúdo educativo, falta de apoio, risco e ajuda. As ações esperadas são propostas para revisão. A comparação aplica as mesmas perguntas, fontes, perfil, modelo e regra comum aos dois estilos. A ordem das perguntas é embaralhada com semente fixa; o primeiro estilo alterna para equilibrar sua posição. São 32 tentativas planejadas, sem repetição técnica adicional e sem equivaler a 32 perguntas independentes.
 
 A partir da raiz do projeto:
 
@@ -36,11 +36,11 @@ poc/.venv/Scripts/python.exe poc/guardkids.py ask "Por que uma bola faz sombra?"
 
 Cada lote recebe uma pasta nova. A agenda é gravada antes das tentativas; os resultados são persistidos após cada uma. Falhas técnicas permanecem registradas, sem repetição seletiva. Os campos de julgamento humano ficam vazios. Não usar o resumidor histórico de comparação entre políticas para agrupar esses resultados: o contraste atual é entre estilos, dentro da mesma regra.
 
-Plano atual: `../avaliacao/PROTOCOLO_MULTICHAT_DESENVOLVIMENTO.md`. Lote revisado executado: `../avaliacao/evidencias/multichat_20261104_revisado/`. As 32 tentativas concluíram sem perdas técnicas; inspeção assistida apontou ressalvas de sustentação em cinco das oito explicações liberadas. Ver `REVISAO_DAS_RESPOSTAS.md` nessa pasta. As rotas coincidiram com a referência proposta, sem equivaler a qualidade de conteúdo.
+Plano atual: `../avaliacao/PROTOCOLO_MULTICHAT_DESENVOLVIMENTO.md`. Lote revisado executado: `../avaliacao/evidencias/multichat_20261104_revisado/`. As 32 tentativas concluíram sem perdas técnicas; inspeção preliminar apontou ressalvas de sustentação em cinco das oito explicações liberadas. Ver `REVISAO_DAS_RESPOSTAS.md` nessa pasta. As rotas coincidiram com a referência proposta, sem equivaler a qualidade de conteúdo.
 
 ## Fontes, funcionamento e registros
 
-A busca seleciona apenas trechos do chat escolhido antes de aplicar o top-k. Ciências usa as duas fontes didáticas anteriormente selecionadas. História, Geografia e Geral usam os pequenos textos de `corpus/`, assistidos por IA e pendentes de revisão pedagógica e factual independente. Esses textos foram revisados com fontes externas identificadas no manifesto, mantendo a condição de sínteses experimentais assistidas por IA; não representam cobertura integral das matérias. O Geral também depende do acervo, sem pesquisa livre na internet.
+A busca seleciona apenas trechos do chat escolhido antes de aplicar o top-k. Ciências usa as duas fontes didáticas anteriormente selecionadas. História, Geografia e Geral usam os pequenos textos de `corpus/`, experimentais e pendentes de revisão pedagógica e factual independente. Esses textos foram revisados com fontes externas identificadas no manifesto, mantendo seu caráter experimental; não representam cobertura integral das matérias. O Geral também depende do acervo, sem pesquisa livre na internet.
 
 O fluxo conserva proteção de entrada, busca, geração, verificação de sustentação e proteção de saída. Respostas rejeitadas não são enviadas ao navegador. O mesmo modelo participa das verificações; elas não são julgamentos independentes. Já houve acréscimos sem apoio liberados pelo verificador em sondagens anteriores, preservados nos registros.
 
@@ -59,3 +59,5 @@ Os protocolos, resultados, PDFs e congelamentos anteriores foram preservados. `e
 Documentação anterior preservada em `docs/LEIA_ME_ANTERIOR_REGRA_COMUM_2026-11-04.md`. Relatório desta revisão em `docs/RELATORIO_REGRA_COMUM_2026-11-04.md`.
 
 Relatório da etapa de pesquisa: `docs/RELATORIO_PESQUISA_2026-11-04.md`. O relatório da alteração inicial da regra comum é histórico e permanece preservado.
+
+O ASCS prospectivo é calculado por `final_metrics.py`, separado das métricas históricas. Sem lote final executado e revisão humana encerrada, mantém as taxas finais pendentes. Consulte o protocolo em `../avaliacao/final_multichat_v1/README.md`.

@@ -20,6 +20,13 @@ def test_reserved_plan_balances_styles_families_and_second_review():
     assert len(selected) == 16 and len({r["family_id"] for r in selected}) == 16
     assert set(Counter(r["channel"] for r in selected).values()) == {4}
     assert Counter(r["response_style"] for r in selected) == {"padrao":8, "passo_a_passo":8}
+    for field in ("channel", "group"):
+        for value in {r[field] for r in selected}:
+            assert Counter(r["response_style"] for r in selected if r[field] == value) == {
+                "padrao": 2, "passo_a_passo": 2}
+    reversed_selection = {r["observation_id"] for r in f.schedule(list(reversed(cases)), protocol["seed"])
+                          if r["secondary_review"]}
+    assert reversed_selection == {r["observation_id"] for r in selected}
     for case in cases:
         pair = [r for r in rows if r["case_id"] == case["id"]]
         assert len(pair) == 2 and {r["response_style"] for r in pair} == set(g.RESPONSE_STYLES)
@@ -34,6 +41,26 @@ def test_reserved_cases_have_references_and_no_literal_development_reuse():
         assert case["human_reference_status"] == "pendente"
         for identifier in case["reference_ids"]:
             assert any(c["id"] == identifier and c["channel"] == case["channel"] for c in chunks)
+
+
+def test_prospective_review_forms_match_corrected_agenda_and_remain_blank():
+    cases, protocol = f.inputs()
+    agenda = f.schedule(cases, protocol["seed"])
+    assert g.read_json(f.STUDY / "agenda_planejada.json") == agenda
+    selected = {r["observation_id"] for r in agenda if r["secondary_review"]}
+    for filename in ("parecer_secundario.csv", "conciliacao.csv"):
+        with (f.STUDY / filename).open(encoding="utf-8-sig", newline="") as stream:
+            rows = list(csv.DictReader(stream))
+        assert len(rows) == 16
+        assert {r["review_id"] for r in rows} == selected
+        assert all(not v for r in rows for k, v in r.items() if k not in {"review_id", "papel"})
+    with (f.STUDY / "comparacao_clareza.csv").open(encoding="utf-8-sig", newline="") as stream:
+        pairs = list(csv.DictReader(stream))
+    assert len(pairs) == 32 and len({p["case_id"] for p in pairs}) == 32
+    for pair in pairs:
+        expected = {r["observation_id"] for r in agenda if r["case_id"] == pair["case_id"]}
+        assert {pair["review_id_a"], pair["review_id_b"]} == expected
+        assert all(not pair[k] for k in ("preferencia", "avaliador", "data", "justificativa"))
 
 
 def test_incomplete_human_reference_rejected_without_signature():

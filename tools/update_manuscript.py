@@ -1,4 +1,4 @@
-"""Materializa a entrada LaTeX revisada; capitulos permanecem editaveis em texto/."""
+"""Template histórico preservado para consulta; execução de escrita desativada."""
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -84,12 +84,9 @@ Educational chatbots based on large language models may produce inappropriate re
 \input{texto/06_consideracoes.tex}
 \postextual
 \input{texto/referencias.tex}
-\begin{apendicesenv}
-\input{texto/apendice_reproducao.tex}
-\end{apendicesenv}
 \end{document}
 '''
 
 if __name__ == '__main__':
-    (ROOT / 'main.tex').write_text(MAIN, encoding='utf-8')
-    print('main.tex atualizado; capitulos em texto/.')
+    raise SystemExit('Gerador histórico desativado: não sobrescrever main.tex. '
+                     'Edite as fontes vigentes e use tools/package_overleaf.py para empacotar.')

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GK-P2.2-dev · GuardKids · Chats com fontes</title>
+<style>
+:root{font-family:Segoe UI,system-ui,sans-serif;color:#203a36;background:#f4f6f0;font-size:16px}*{box-sizing:border-box}body{margin:0}header{border-bottom:1px solid #dce3d6;padding:24px 6%;display:flex;align-items:center;justify-content:space-between}.brand{font-size:23px;font-weight:750;letter-spacing:-.7px}.brand span{color:#528663}.badge{font-size:12px;color:#51695e;background:#e4ecdf;padding:7px 12px;border-radius:30px}main{max-width:920px;margin:48px auto;padding:0 24px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#65816a}h1{font-size:clamp(29px,5vw,44px);line-height:1.14;letter-spacing:-1.5px;margin:15px 0}p{line-height:1.65}.intro{max-width:620px;color:#657367}.card{background:white;border:1px solid #dce3d6;border-radius:18px;padding:26px;margin-top:26px;box-shadow:0 6px 24px #15352206}label{display:block;font-weight:600;margin-bottom:10px}textarea{font:inherit;width:100%;border:1px solid #c8d3c4;border-radius:10px;padding:16px;resize:vertical;min-height:105px;outline-color:#387755}.row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:15px}button{font:inherit;border:0;border-radius:9px;padding:12px 20px;background:#285c48;color:white;cursor:pointer}button:disabled{opacity:.55;cursor:wait}.suggestion{background:#edf2e8;color:#395440;padding:8px 12px;font-size:13px}.tools{margin-top:20px;font-size:13px;color:#627360}select{font:inherit;padding:8px;border:1px solid #c8d3c4;border-radius:7px;background:white}#answer{white-space:pre-wrap;line-height:1.8;font-size:18px}#result[hidden]{display:none}.source{border-top:1px solid #e4eadf;padding-top:12px;font-size:13px;color:#5b715f}#meta{font-size:12px;color:#64775e;margin-bottom:14px}footer{font-size:12px;color:#73816c;margin:25px 0 40px;line-height:1.6}#status{font-size:13px;color:#587354}.busy{color:#7a684a}details{font-size:12px;margin-top:15px}summary{cursor:pointer}#stages{padding-left:20px}button:focus-visible,select:focus-visible{outline:3px solid #a3c7ab;outline-offset:3px}
+</style></head><body><header><div class="brand">Guard<span>Kids</span></div><span class="badge">Laboratório local · TCC</span><p>GK-P2.2-dev · Acervo ampliado de desenvolvimento</p></header>
+<main><label for="channel">Escolha um chat</label><select id="channel"><option value="ciencias">Ciências</option><option value="historia">História</option><option value="geografia">Geografia</option><option value="geral">Geral · dia a dia e curiosidades</option></select><div class="eyebrow" id="eyebrow">Ciências · 4º ano</div><h1 id="heading">Vamos entender a vida<br>e suas conexões?</h1><p class="intro" id="intro">Explore alimentação, cadeias alimentares e decomposição com explicações apoiadas nos materiais selecionados.</p><div id="status" role="status">Conferindo o funcionamento…</div>
+<section class="card"><label for="response-style">Como você quer a explicação?</label><select id="response-style" style="margin-bottom:20px"><option value="passo_a_passo" selected>Passo a passo · com exemplos</option><option value="padrao">Direto · explicação curta</option></select><form id="form"><label for="question">Qual é a sua dúvida?</label><textarea id="question" maxlength="1500" placeholder="Por que as plantas são chamadas de produtoras?" required></textarea><div class="row"><button type="submit" id="send">Perguntar</button><span id="progress" role="status" aria-live="polite"></span></div></form><div class="row"><button class="suggestion" type="button">Como as plantas se alimentam?</button><button class="suggestion" type="button">Qual é o papel dos decompositores?</button><button class="suggestion" type="button">Por que o falcão come o esquilo?</button></div>
+<details class="tools"><summary>Regra de proteção</summary><p><strong>Proteção educativa comum aos quatro chats.</strong></p><p>O sistema busca responder dúvidas educativas com apoio nas fontes, inclusive sobre animais que se alimentam de outros. Pedidos para causar dano são recusados; pedidos de ajuda recebem orientação de cuidado. Quando faltam fontes, o chat avisa.</p><p>Escolher “Direto” ou “Passo a passo” muda a forma de explicar. A regra de proteção continua a mesma. Cada pergunta é uma tentativa independente, sem memória das anteriores.</p></details></section>
+<section class="card" id="result" hidden aria-live="polite"><div id="meta"></div><div id="answer"></div><div id="sources"></div><details><summary>Etapas desta execução</summary><ul id="stages"></ul><p id="runid"></p></details></section>
+<footer>Prova de conceito em desenvolvimento para pesquisa. Use perguntas fictícias, sem dados pessoais. As perguntas e respostas desta interface são omitidas dos registros; ficam apenas dados técnicos da tentativa. A qualidade e a proteção ainda precisam de avaliação humana.</footer></main>
+<script>
+const $ = selector => document.querySelector(selector);
+const labels = {allow:'Resposta educativa', block:'Proteção aplicada', safe_guidance:'Orientação de cuidado', redirect:'Acervo insuficiente', technical_error:'Tentativa não concluída'};
+const styleNames = {padrao:'Direto', passo_a_passo:'Passo a passo'};
+const stageNames = {embedding:'Busca nas fontes', input_guard:'Proteção de entrada', generation:'Geração', grounding_guard:'Conferência de apoio nas fontes', output_guard:'Proteção de saída'};
+function clearResult() {
+  $('#result').hidden = true;
+  for (const id of ['answer', 'meta', 'runid']) $('#' + id).textContent = '';
+  $('#sources').replaceChildren();
+  $('#stages').replaceChildren();
+}
+let channels = {};
+function showChannel() {
+  const info = channels[$('#channel').value];
+  clearResult();
+  $('#question').value = '';
+  if (!info) return;
+  $('#eyebrow').textContent = `${info.label} · perfil fictício de 9 anos`;
+  $('#heading').textContent = info.title;
+  $('#intro').textContent = info.scope + ' Respostas apoiadas no acervo selecionado.';
+  $('#question').placeholder = info.examples[0];
+  document.querySelectorAll('.suggestion').forEach((button, index) => button.textContent = info.examples[index]);
+}
+$('#channel').onchange = showChannel;
+$('#response-style').onchange = clearResult;
+fetch('/api/channels').then(response => response.json()).then(data => { channels = data; showChannel(); }).catch(() => { $('#send').disabled = true; $('#status').textContent = 'Não foi possível carregar os chats. Recarregue a página.'; });
+document.querySelectorAll('.suggestion').forEach(button => button.onclick = () => {
+  $('#question').value = button.textContent;
+  $('#question').focus();
+});
+fetch('/api/status').then(response => response.json()).then(status => {
+  $('#status').textContent = status.ready ? '● Modelo e acervo disponíveis' : '● Preparação pendente: confira o Ollama e o índice';
+}).catch(() => $('#status').textContent = 'Não foi possível conferir o serviço');
+$('#form').onsubmit = async event => {
+  event.preventDefault();
+  clearResult();
+  $('#send').disabled = true;
+  $('#channel').disabled = true;
+  $('#response-style').disabled = true;
+  $('#progress').textContent = 'Consultando as fontes e verificando a resposta…';
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 130000);
+  try {
+    const response = await fetch('/api/ask', {method:'POST', headers:{'Content-Type':'application/json'}, signal:controller.signal,
+      body:JSON.stringify({question:$('#question').value, policy:'comum', channel:$('#channel').value, response_style:$('#response-style').value})});
+    if (!response.ok) {
+      if (response.status === 429) throw Error('Há outra pergunta em processamento. Aguarde e tente novamente.');
+      if (response.status === 503) throw Error('Não foi possível registrar esta tentativa. Peça ao pesquisador para verificar o serviço.');
+      throw Error('Não foi possível enviar a pergunta. Tente novamente.');
+    }
+    const data = await response.json();
+    $('#answer').textContent = data.answer;
+    $('#meta').textContent = `${labels[data.action] || data.action} · ${data.seconds.toFixed(1)} s · Proteção educativa comum · ${styleNames[data.response_style] || "Direto"}`;
+    for (const source of data.sources) {
+      const item = document.createElement('p'); item.className = 'source';
+      item.textContent = source.pdf_page == null ? `${source.source} · trecho textual` : `${source.source} · página ${source.page} (PDF: ${source.pdf_page})`;
+      $('#sources').append(item);
+    }
+    for (const stage of data.stages) {
+      const item = document.createElement('li');
+      item.textContent = `${stageNames[stage.name] || stage.name}: ${stage.seconds.toFixed(1)} s`;
+      $('#stages').append(item);
+    }
+    $('#runid').textContent = `Registro: ${data.id}`;
+    $('#result').hidden = false;
+  } catch (error) {
+    clearResult();
+    $('#answer').textContent = error.name === 'AbortError' ? 'O tempo de espera terminou. Tente novamente.' : error.message;
+    $('#result').hidden = false;
+  } finally {
+    clearTimeout(timeout);
+    $('#send').disabled = false;
+    $('#channel').disabled = false;
+    $('#response-style').disabled = false;
+    $('#progress').textContent = '';
+  }
+};
+</script></body></html>

@@ -1,0 +1,18 @@
+{
+  "version": "GK-P2.5-dev",
+  "verified_attempts": 40,
+  "index_id": "0ecdb1e4d95de9d7610186a0ea7347432a27811e54f1f92ab7693b875ba3c0cd",
+  "snapshot": "e747d3c8adf7086bfd17617019c80761c0c2c911a4efcaa977569910591a4c81",
+  "educational_attempts": 24,
+  "proposed_reference_retrieved": 24,
+  "proposed_reference_cited": 24,
+  "cross_channel_sources": 0,
+  "unretrieved_citations": 0,
+  "filled_human_fields": 0,
+  "baseline_files_checked": 262,
+  "baseline_files_changed": [],
+  "diagnostic_cases": 8,
+  "extractive_answers": 19,
+  "note": "Integridade e correspondência de IDs; não certifica sustentação semântica ou eficácia.",
+  "verified_utc": "2026-11-05T16:11:16.012565+00:00"
+}

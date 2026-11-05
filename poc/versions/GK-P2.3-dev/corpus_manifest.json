@@ -1,0 +1,309 @@
+{
+  "status": "Ampliação documental preliminar isolada; sem certificação pedagógica e sem participantes infantis.",
+  "sources": [
+    {
+      "id": "trilhas2021",
+      "file": "Livros_Didadicos/07_Apostila_Ciencias_4_Ano_Seres_Vivos_Trilhas_SP_2021.pdf",
+      "title": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª edição (SME-SP, 2021)",
+      "rights": "Conferir condições de reutilização e créditos de terceiros antes de publicar o corpus. Página 154 contém adaptação da Britannica.",
+      "passages": [
+        {
+          "pdf_page": 156,
+          "printed_page": 154,
+          "start": "Descobrindo sobre as cadeias alimentares",
+          "end": "Os decompositores geralmente",
+          "reason": "Explicação textual de produtores e consumidores; exclui exercícios com lacunas e a simplificação dos decompositores como elo final."
+        }
+      ],
+      "channel": "ciencias",
+      "source_sha256": "5a8395756c35e0f19f84a93636254c04bc2017cb07196466747cdc078864501d"
+    },
+    {
+      "id": "sp2024",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "title": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, 2024)",
+      "rights": "Conferir condições de reutilização e créditos antes de distribuir trechos ou disponibilizar o sistema publicamente.",
+      "passages": [
+        {
+          "pdf_page": 10,
+          "printed_page": 8,
+          "start": "A alimentação fornece",
+          "end": "Você sabia que",
+          "reason": "Parágrafo textual sobre alimentação e energia; tabela visual excluída."
+        },
+        {
+          "pdf_page": 11,
+          "printed_page": 9,
+          "start": "Você já pensou",
+          "end": "Fotossíntese",
+          "reason": "Explicação textual de onivoria e fotossíntese."
+        },
+        {
+          "pdf_page": 15,
+          "printed_page": 13,
+          "start": "Os consumidores",
+          "reason": "Definições de consumidores e decomposição legíveis como texto."
+        },
+        {
+          "pdf_page": 29,
+          "printed_page": 27,
+          "start": "Decompositores\nOs decompositores",
+          "reason": "Somente o texto sobre decomposição; exclui a definição excessivamente ampla de fungos como microscópicos."
+        }
+      ],
+      "exclusions": [
+        {
+          "pdf_page": 24,
+          "printed_page": 22,
+          "reason": "Formulação problemática sobre fluxo não unidirecional e produção de energia; página não incorporada."
+        },
+        {
+          "pdf_page": 14,
+          "printed_page": 12,
+          "reason": "Mistura definição de cadeia alimentar e ecossistema e apresenta decompositores como nível trófico único; excluída nesta seleção."
+        },
+        {
+          "reason": "Atividades verdadeiro/falso, lacunas, QR codes e figuras não são importados como afirmações científicas."
+        }
+      ],
+      "channel": "ciencias",
+      "source_sha256": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987"
+    },
+    {
+      "id": "piloto_historia",
+      "channel": "historia",
+      "file": "poc/corpus/historia.txt",
+      "title": "História — síntese experimental, revisão assistida por IA",
+      "rights": "Paráfrase autoral assistida por IA; sem imagens ou reprodução integral das páginas externas. Revisão humana independente pendente.",
+      "passages": [],
+      "references": [
+        {
+          "title": "História — Cada objeto conta uma história, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-cada-objeto-conta-uma-historia/",
+          "coverage": "Tipos de fonte, objetos antigos e memória; texto para 2º ano, não validação de adequação ao 4º ano."
+        },
+        {
+          "title": "História — Tipos de fontes históricas, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-tipos-de-fontes-historicas/",
+          "coverage": "Investigação crítica da fonte; material EJA usado apenas para conferência conceitual."
+        }
+      ],
+      "review": {
+        "date": "2026-11-04",
+        "nature": "assistida_IA",
+        "independent_human_review": "pendente"
+      },
+      "source_sha256": "4a1b258b4fa8249469503a7992e1ae8370b8aa9a612748fa5943ed7777322084"
+    },
+    {
+      "id": "piloto_geografia",
+      "channel": "geografia",
+      "file": "poc/corpus/geografia.txt",
+      "title": "Geografia — síntese experimental, revisão assistida por IA",
+      "rights": "Paráfrase autoral assistida por IA; sem imagens ou reprodução integral das páginas externas. Revisão humana independente pendente.",
+      "passages": [],
+      "references": [
+        {
+          "title": "Geografia — A legenda do mapa, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-a-legenda-dos-mapas/",
+          "coverage": "Símbolos, cores e legenda."
+        },
+        {
+          "title": "Geografia — Noções de paisagem natural e cultural, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/nocoes-de-paisagem-natural-e-cultural/",
+          "coverage": "Elementos e transformação da paisagem; sem incorporar definição exclusiva da visão."
+        },
+        {
+          "title": "Geografia — O trabalho e os trabalhadores, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-o-trabalho-e-os-trabalhadores/",
+          "coverage": "Relações campo-cidade; estatísticas e generalizações setoriais não incorporadas."
+        }
+      ],
+      "review": {
+        "date": "2026-11-04",
+        "nature": "assistida_IA",
+        "independent_human_review": "pendente"
+      },
+      "source_sha256": "0572e6b5de57774e4bab8ebcea0147600536e8f3a41de3ff2077e884b6ff49a7"
+    },
+    {
+      "id": "piloto_geral",
+      "channel": "geral",
+      "file": "poc/corpus/geral.txt",
+      "title": "Geral — síntese experimental, revisão assistida por IA",
+      "rights": "Paráfrase autoral assistida por IA; sem imagens ou reprodução integral das páginas externas. Revisão humana independente pendente.",
+      "passages": [],
+      "references": [
+        {
+          "title": "Here. There. Everywhere. — Shadows, Smithsonian",
+          "url": "https://hte.si.edu/shadows.html",
+          "coverage": "Bloqueio de luz e sombra; exemplo da bola é aplicação autoral do conceito."
+        },
+        {
+          "title": "Cuide de seus dados pessoais, NIC.br",
+          "url": "https://cidadaonarede.nic.br/pt/videos/seguranca/cuide-de-seus-dados-pessoais",
+          "coverage": "Não divulgar dados pessoais e senhas."
+        }
+      ],
+      "review": {
+        "date": "2026-11-04",
+        "nature": "assistida_IA",
+        "independent_human_review": "pendente"
+      },
+      "authorial_guidance": "Checklist de mochila e convivência são sugestões normativas do projeto, não resultados empíricos nem recomendações clínicas.",
+      "source_sha256": "80ca8f9070b6f69b3f391be9d4cd8c9a7b947bb8dd75021041e4f21c3afa581e"
+    },
+    {
+      "id": "sp2024_ampliado_historia",
+      "channel": "historia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "title": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+      "source_sha256": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987",
+      "rights": "Fonte local selecionada; condições de reutilização e créditos devem ser conferidos antes de redistribuição. Não se incorpora o livro integral ao pacote.",
+      "passages": [
+        {
+          "id": "sp2024-hist-nomadismo",
+          "pdf_page": 106,
+          "printed_page": 104,
+          "start": "Nomadismo: forma de vida",
+          "end": "Plantação de batata",
+          "topic": "Nomadismo e sedentarismo",
+          "text_sha256": "0bf47ed95eef0917d45218e712aa2ad10608d7bb04a6185cedb6f7fa07b79e96",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-hist-sedentarismo",
+          "pdf_page": 105,
+          "printed_page": 103,
+          "start": "No sedentarismo, o ser humano",
+          "end": "Grupo de pessoas na Pré-História",
+          "topic": "Sedentarismo e proximidade dos rios",
+          "text_sha256": "94cb9e8071d0f29499eb659286db494492ee55cf47d4bb42af90d44896ce659c",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-hist-comercio",
+          "pdf_page": 125,
+          "printed_page": 123,
+          "start": "O desenvolvimento das atividades agrícolas",
+          "end": "Ou seja,",
+          "topic": "Agricultura, estoque e trocas",
+          "text_sha256": "bce8c55bfefb5b973cb335308e3acce2e843d93e7025e399feb42a49a635c4f5",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-hist-materias-primas",
+          "pdf_page": 115,
+          "printed_page": 113,
+          "start": "As matérias-primas são recursos",
+          "end": "Animais:",
+          "topic": "Matérias-primas e exemplos vegetais",
+          "text_sha256": "9f425cd24e24c5bbc5eafe1faa4fe24255f9407ca66e968e284f08d0bb97d821",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-hist-campo-atual",
+          "pdf_page": 116,
+          "printed_page": 114,
+          "start": "Desta forma, no Brasil",
+          "end": "Hábitos da vida no campo:",
+          "topic": "Atividades rurais, turismo e hotelaria",
+          "text_sha256": "1bd2dd03d1cf795ccfe3b76458dc78c898f4cda31d0cd872bb5cd8dd53ccbe6b",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        }
+      ],
+      "exclusions": [
+        {
+          "reason": "Exercícios, poemas, imagens e legendas não selecionados; estatísticas datadas e generalizações sobre povos e causalidade demográfica excluídas."
+        }
+      ]
+    },
+    {
+      "id": "sp2024_ampliado_geografia",
+      "channel": "geografia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "title": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — geografia",
+      "source_sha256": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987",
+      "rights": "Fonte local selecionada; condições de reutilização e créditos devem ser conferidos antes de redistribuição. Não se incorpora o livro integral ao pacote.",
+      "passages": [
+        {
+          "id": "sp2024-geo-migracoes",
+          "pdf_page": 56,
+          "printed_page": 54,
+          "start": "As migrações ocorrem",
+          "end": "Os povos que ajudaram",
+          "topic": "Migrações",
+          "text_sha256": "12ca9a30c89c60203b5eebd9b2ef26e39710154335e8ff244b1b18e1585db540",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-geo-imigracao",
+          "pdf_page": 61,
+          "printed_page": 59,
+          "start": "Imigração é o processo",
+          "end": "Fatores da imigração",
+          "topic": "Imigração e seus motivos",
+          "text_sha256": "dc6d770df40742242595323a1e62031e22080026360b0972edd366d36e1e6d40",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-geo-migracao-interna",
+          "pdf_page": 72,
+          "printed_page": 70,
+          "start": "Também existem os migrantes internos",
+          "end": "Xilogravura retratando",
+          "topic": "Migração interna",
+          "text_sha256": "aa1727ef274b7249e2f21e44f2d3d6e0556306de65e9ec585f378a7546820af2",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-geo-contribuicoes",
+          "pdf_page": 62,
+          "printed_page": 60,
+          "start": "A chegada dos migrantes externos ao Brasil",
+          "end": "Treino de judô",
+          "topic": "Contribuições culturais",
+          "text_sha256": "0e52464591d622fbaf2ff390d07a535c8833d37639348daf352abeff17e37f01",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-geo-quilombolas",
+          "pdf_page": 97,
+          "printed_page": 95,
+          "start": "Segundo o Instituto Nacional de",
+          "end": "Há cerca de 3 mil",
+          "topic": "Comunidades quilombolas",
+          "text_sha256": "a270d1ab7d03da3bc83bd1f54b4e3adb3bbec22a517158300bedec899377c5c1",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        }
+      ],
+      "exclusions": [
+        {
+          "reason": "Exercícios, poemas, imagens e legendas não selecionados; estatísticas datadas e generalizações sobre povos e causalidade demográfica excluídas."
+        }
+      ]
+    }
+  ],
+  "study_version": "GK-P2.2-dev",
+  "based_on": "GK-P2.1-dev"
+}

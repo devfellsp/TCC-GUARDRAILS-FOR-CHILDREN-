@@ -1,0 +1,38 @@
+{
+  "version": "GK-P2.2-dev",
+  "execution": "local_real_development",
+  "human_participants": false,
+  "first_attempt_utc": "2026-11-05T15:10:58.592018+00:00",
+  "last_attempt_started_utc": "2026-11-05T15:17:57.472852+00:00",
+  "ollama_version": [
+    "0.40.11"
+  ],
+  "model_digests": {
+    "qwen3:8b": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "bge-m3:latest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab"
+  },
+  "snapshot": "8c1ad4132fe7c19885edac377e170d56af88d3b710ea68367627fac90d446410",
+  "index_id": "0ecdb1e4d95de9d7610186a0ea7347432a27811e54f1f92ab7693b875ba3c0cd",
+  "embedding_build_calls": [
+    {
+      "stage": "embedding",
+      "seconds": 12.52
+    }
+  ],
+  "tests": {
+    "python_passed": 121,
+    "javascript_passed": 1,
+    "python_seconds": 31.69,
+    "model_batch_attempts": 32,
+    "technical_losses": 0
+  },
+  "service_lifecycle": {
+    "owned": true,
+    "pid": 8780,
+    "executable": "C:\\Users\\Filipe\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+    "command_line": "\"C:\\Users\\Filipe\\AppData\\Local\\Programs\\Ollama\\ollama.exe\" serve",
+    "stopped_utc": "2026-11-05T15:27:41.9516504Z",
+    "note": "Encerrado somente o serviço iniciado para esta ampliação."
+  },
+  "note": "Testes simulados separados das execuções locais; avaliação humana independente pendente."
+}

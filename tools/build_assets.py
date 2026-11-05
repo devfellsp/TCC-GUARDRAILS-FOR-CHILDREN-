@@ -1,7 +1,6 @@
 """Gera transcricoes verificaveis e o pacote Overleaf a partir de uma fonte unica."""
 import json
 import re
-import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -43,28 +42,9 @@ def build():
     refs = re.findall(r"\\(?:ref|eqref|autoref|pageref)\{([^}]+)\}", main)
     if len(labels) != len(set(labels)) or set(refs) - set(labels):
         raise ValueError("Rotulos duplicados ou referencias internas ausentes")
-    files = ["main.tex", "document.tex", "unitins.sty", "unitins.png", "imagens/unitins.png",
-             "LEIA-ME_OVERLEAF.md", "latexmkrc", "poc/docs/pilot_evidence.json",
-             *[str(p.relative_to(ROOT)).replace("\\", "/") for p in sorted((ROOT / "texto").glob("*.tex"))],
-             *[str(p.relative_to(ROOT)).replace("\\", "/") for p in sorted((ROOT / "generated").glob("*.tex"))]]
-    files.extend(str(p.relative_to(ROOT)).replace("\\", "/") for p in sorted((ROOT / "diagramas/pdf").glob("*.pdf")))
-    # Evidências atuais junto ao manuscrito, sem pesos, PDFs didáticos ou dados reais.
-    files.extend(["poc/config.json", "poc/corpus_manifest.json", "poc/multichat_cases.json",
-                  "avaliacao/revisao_acervos_multichat_2026-11-04.json",
-                  "avaliacao/evidencias/multichat_20261104_revisado/resumo.json",
-                  "avaliacao/evidencias/multichat_20261104_revisado/revisao_assistida_IA.json",
-                  "avaliacao/evidencias/multichat_20261104_revisado/resultados.csv",
-                  "avaliacao/final_multichat_v1/README.md", "avaliacao/final_multichat_v1/casos.json",
-                  "avaliacao/final_multichat_v1/protocolo.json", "avaliacao/final_multichat_v1/agenda_planejada.json",
-                  "avaliacao/final_multichat_v1/referencia_humana.csv"])
-    with zipfile.ZipFile(ROOT / "Overleaf_TCC_PoC.zip", "w", zipfile.ZIP_DEFLATED) as archive:
-        for name in files:
-            data = (ROOT / name).read_bytes()
-            if Path(name).suffix in {".tex", ".sty", ".json"}:
-                data = data.replace(b"\r\n", b"\n")
-            entry = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
-            archive.writestr(entry, data, compress_type=zipfile.ZIP_DEFLATED)
-    print("Tabela de transcricoes, entrada de compatibilidade e pacote Overleaf atualizados.")
+    from package_overleaf import build as package_overleaf
+    package_overleaf(ROOT)
+    print("Transcricoes e pacote vigente Overleaf_TCC_Drawio_rotulos.zip atualizados.")
 
 
 if __name__ == "__main__":

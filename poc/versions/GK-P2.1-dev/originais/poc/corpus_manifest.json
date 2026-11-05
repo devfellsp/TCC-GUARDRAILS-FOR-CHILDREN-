@@ -1,0 +1,150 @@
+{
+  "status": "Seleção inicial para desenvolvimento local. Não é uma revisão pedagógica integral nem uma autorização de redistribuição das obras.",
+  "sources": [
+    {
+      "id": "trilhas2021",
+      "file": "Livros_Didadicos/07_Apostila_Ciencias_4_Ano_Seres_Vivos_Trilhas_SP_2021.pdf",
+      "title": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª edição (SME-SP, 2021)",
+      "rights": "Conferir condições de reutilização e créditos de terceiros antes de publicar o corpus. Página 154 contém adaptação da Britannica.",
+      "passages": [
+        {
+          "pdf_page": 156,
+          "printed_page": 154,
+          "start": "Descobrindo sobre as cadeias alimentares",
+          "end": "Os decompositores geralmente",
+          "reason": "Explicação textual de produtores e consumidores; exclui exercícios com lacunas e a simplificação dos decompositores como elo final."
+        }
+      ]
+    },
+    {
+      "id": "sp2024",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "title": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, 2024)",
+      "rights": "Conferir condições de reutilização e créditos antes de distribuir trechos ou disponibilizar o sistema publicamente.",
+      "passages": [
+        {
+          "pdf_page": 10,
+          "printed_page": 8,
+          "start": "A alimentação fornece",
+          "end": "Você sabia que",
+          "reason": "Parágrafo textual sobre alimentação e energia; tabela visual excluída."
+        },
+        {
+          "pdf_page": 11,
+          "printed_page": 9,
+          "start": "Você já pensou",
+          "end": "Fotossíntese",
+          "reason": "Explicação textual de onivoria e fotossíntese."
+        },
+        {
+          "pdf_page": 15,
+          "printed_page": 13,
+          "start": "Os consumidores",
+          "reason": "Definições de consumidores e decomposição legíveis como texto."
+        },
+        {
+          "pdf_page": 29,
+          "printed_page": 27,
+          "start": "Decompositores\nOs decompositores",
+          "reason": "Somente o texto sobre decomposição; exclui a definição excessivamente ampla de fungos como microscópicos."
+        }
+      ],
+      "exclusions": [
+        {
+          "pdf_page": 24,
+          "printed_page": 22,
+          "reason": "Formulação problemática sobre fluxo não unidirecional e produção de energia; página não incorporada."
+        },
+        {
+          "pdf_page": 14,
+          "printed_page": 12,
+          "reason": "Mistura definição de cadeia alimentar e ecossistema e apresenta decompositores como nível trófico único; excluída nesta seleção."
+        },
+        {
+          "reason": "Atividades verdadeiro/falso, lacunas, QR codes e figuras não são importados como afirmações científicas."
+        }
+      ]
+    },
+    {
+      "id": "piloto_historia",
+      "channel": "historia",
+      "file": "poc/corpus/historia.txt",
+      "title": "História — síntese experimental, revisão assistida por IA",
+      "rights": "Paráfrase autoral assistida por IA; sem imagens ou reprodução integral das páginas externas. Revisão humana independente pendente.",
+      "passages": [],
+      "references": [
+        {
+          "title": "História — Cada objeto conta uma história, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-cada-objeto-conta-uma-historia/",
+          "coverage": "Tipos de fonte, objetos antigos e memória; texto para 2º ano, não validação de adequação ao 4º ano."
+        },
+        {
+          "title": "História — Tipos de fontes históricas, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-tipos-de-fontes-historicas/",
+          "coverage": "Investigação crítica da fonte; material EJA usado apenas para conferência conceitual."
+        }
+      ],
+      "review": {
+        "date": "2026-11-04",
+        "nature": "assistida_IA",
+        "independent_human_review": "pendente"
+      }
+    },
+    {
+      "id": "piloto_geografia",
+      "channel": "geografia",
+      "file": "poc/corpus/geografia.txt",
+      "title": "Geografia — síntese experimental, revisão assistida por IA",
+      "rights": "Paráfrase autoral assistida por IA; sem imagens ou reprodução integral das páginas externas. Revisão humana independente pendente.",
+      "passages": [],
+      "references": [
+        {
+          "title": "Geografia — A legenda do mapa, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-a-legenda-dos-mapas/",
+          "coverage": "Símbolos, cores e legenda."
+        },
+        {
+          "title": "Geografia — Noções de paisagem natural e cultural, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/nocoes-de-paisagem-natural-e-cultural/",
+          "coverage": "Elementos e transformação da paisagem; sem incorporar definição exclusiva da visão."
+        },
+        {
+          "title": "Geografia — O trabalho e os trabalhadores, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-o-trabalho-e-os-trabalhadores/",
+          "coverage": "Relações campo-cidade; estatísticas e generalizações setoriais não incorporadas."
+        }
+      ],
+      "review": {
+        "date": "2026-11-04",
+        "nature": "assistida_IA",
+        "independent_human_review": "pendente"
+      }
+    },
+    {
+      "id": "piloto_geral",
+      "channel": "geral",
+      "file": "poc/corpus/geral.txt",
+      "title": "Geral — síntese experimental, revisão assistida por IA",
+      "rights": "Paráfrase autoral assistida por IA; sem imagens ou reprodução integral das páginas externas. Revisão humana independente pendente.",
+      "passages": [],
+      "references": [
+        {
+          "title": "Here. There. Everywhere. — Shadows, Smithsonian",
+          "url": "https://hte.si.edu/shadows.html",
+          "coverage": "Bloqueio de luz e sombra; exemplo da bola é aplicação autoral do conceito."
+        },
+        {
+          "title": "Cuide de seus dados pessoais, NIC.br",
+          "url": "https://cidadaonarede.nic.br/pt/videos/seguranca/cuide-de-seus-dados-pessoais",
+          "coverage": "Não divulgar dados pessoais e senhas."
+        }
+      ],
+      "review": {
+        "date": "2026-11-04",
+        "nature": "assistida_IA",
+        "independent_human_review": "pendente"
+      },
+      "authorial_guidance": "Checklist de mochila e convivência são sugestões normativas do projeto, não resultados empíricos nem recomendações clínicas."
+    }
+  ]
+}

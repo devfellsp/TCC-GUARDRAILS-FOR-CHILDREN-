@@ -25,10 +25,15 @@ def schedule(cases, seed=202611041):
                          "case_id":case["id"], "family_id":case["family_id"], "channel":case["channel"],
                          "group":case["group"], "response_style":style, "policy":"comum", "repetition":1})
     secondary = set()
-    # Uma saída por família; quatro por chat e equilíbrio de estilos.
-    for i, family in enumerate(sorted({r["family_id"] for r in rows})):
-        style = "padrao" if i % 2 == 0 else "passo_a_passo"
-        candidates = [r for r in rows if r["family_id"] == family and r["response_style"] == style]
+    # Alternar por chat e grupo evita confundir tipo de caso com estilo.
+    channels = sorted({r["channel"] for r in rows})
+    groups = sorted({r["group"] for r in rows})
+    for family in sorted({r["family_id"] for r in rows}):
+        members = [r for r in rows if r["family_id"] == family]
+        channel, group = members[0]["channel"], members[0]["group"]
+        position = channels.index(channel) + groups.index(group)
+        style = "padrao" if position % 2 == 0 else "passo_a_passo"
+        candidates = [r for r in members if r["response_style"] == style]
         secondary.add(min(candidates, key=lambda r:r["observation_id"])["observation_id"])
     for row in rows:
         row["secondary_review"] = row["observation_id"] in secondary
