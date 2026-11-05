@@ -2,16 +2,16 @@
 
 \section{Introdução}
 
-Os testes automatizados verificam precedência de proteção, orientação de ajuda, integridade do índice, persistência, filtragem por chat, comparação pareada e impedimento de avaliação final sem ratificação humana. Usam cenários simulados quando necessário; não medem qualidade pedagógica ou segurança geral. O lote atual é apresentado separadamente dos lotes históricos.
+Os testes automatizados verificam precedência de proteção, orientação de ajuda, integridade do índice, persistência, filtragem por chat, comparação pareada e impedimento de avaliação final sem ratificação humana. Usam cenários simulados quando necessário; não medem qualidade pedagógica ou segurança geral. O lote da GK-P2.1-dev, as verificações da GK-P2.6-dev e os lotes históricos são apresentados separadamente.
 
 \section{Apresentação de resultados}
 
-\subsection{Lote atual: regra comum e dois estilos}
+\subsection{GK-P2.1-dev: lote pareado de quatro chats}
 
 Em 4 de novembro de 2026, a versão \texttt{GK-P2.1-dev} executou 32 tentativas sobre 16 perguntas nos quatro chats, após revisão documental dos acervos e referências propostas. Todas foram concluídas sem perda técnica. A Tabela~\ref{tab:multichat} apresenta oito explicações liberadas, seis bloqueios, dez orientações de cuidado e oito mensagens de apoio insuficiente. Cada pergunta seguiu a mesma rota nos dois estilos. As 32 rotas coincidiram com o tratamento proposto antes das respostas. Essa concordância se refere à ação final, não à adequação da mensagem ou à categoria de proteção. No caso \texttt{mc-g04}, sobre ameaça de divulgação de localização, a categoria privacidade levou a um aviso para não compartilhar dados no chat, sem orientação explícita para procurar um adulto de confiança. No caso \texttt{mc-c04}, sobre ameaça a um animal, a categoria ofensa levou a uma mensagem sobre humilhação. Os registros preservam essas limitações de pertinência das mensagens fixas, ainda sujeitas a julgamento humano. Para verificar se uma explicação liberada se manteve fiel ao acervo, foi necessário comparar seu conteúdo com a fonte citada.
 
 \begin{table}[htbp]\centering\small\SingleSpacing
-\caption{Rotas do novo lote, sem agrupamento com o histórico}\label{tab:multichat}
+\caption{Rotas do lote GK-P2.1-dev, com denominador próprio}\label{tab:multichat}
 \input{generated/multichat_summary.tex}
 \fonte{Registros do lote multidisciplinar; quatro perguntas por chat, oito tentativas por chat.}
 \end{table}
@@ -26,9 +26,17 @@ Os quatro textos do Passo a passo seguiram o formato solicitado de etapas e exem
 
 O lote e a revisão estão em \nolinkurl{avaliacao/evidencias/multichat_20261104_revisado/}. O snapshot começa por \texttt{4531f5b01c5b}; o identificador completo consta dos registros. Os tempos variaram de 2,138 a 12,857 segundos neste ambiente e em rotas diferentes, sem constituir comparação de desempenho generalizável. Os campos de julgamento humano permanecem vazios.
 
+\subsection{GK-P2.6-dev: ampliação e verificações de desenvolvimento}
+
+Em 5 de novembro de 2026, a ampliação reuniu 40 blocos em dez chats. Passaram 25 testes Python e um teste de interface, abrangendo filtragem por matéria, proteção de dados pessoais em todos os chats, rejeição de matéria desconhecida, origem não autorizada, fontes inventadas, integridade documental e restauração do índice sem inferência. Testes de código e de interface não correspondem a 26 perguntas educativas avaliadas.
+
+Três consultas fictícias, todas no estilo Direto, percorreram a API real e foram concluídas com resposta liberada e fonte: definição de fábula em Português (303,546 s), operação inversa da adição em Matemática (115,096 s) e uso de \textit{there is/are} em Inglês (248,340 s). As verificações e os resultados constam de \nolinkurl{poc/versions/GK-P2.6-dev/VERIFICACAO_LOCAL.json}. Não houve comparação pareada dessas consultas, julgamento humano independente ou cobertura dos dez chats por inferência real. Os tempos descrevem aquela execução em CPU.
+
+Depois dessas consultas, foram ajustados o fechamento dos leitores PDF e a liberação do modelo de embeddings. Os 25 testes e o teste da interface passaram novamente. Uma busca real confirmou o mesmo índice e somente fontes da matéria selecionada; o serviço final informou prontidão para os dez chats. A documentação distingue essas verificações posteriores das três consultas completas anteriores ao ajuste de recursos. Os registros não foram somados ao lote da GK-P2.1-dev nem usados para calcular eficácia, segurança geral ou aprendizagem.
+
 \subsection{Histórico de Ciências}
 
-Os dois lotes históricos de desenvolvimento usaram as mesmas 27 perguntas em duas condições, com uma tentativa por pergunta e por condição em cada lote. O primeiro examinou a versão GK-P1.1. A omissão do campo de ajuda motivou a correção avaliada no segundo lote, com a versão GK-P1.2. Juntos, os lotes somaram \textbf{108 execuções sobre 27 perguntas reutilizadas}, todas tecnicamente válidas. Esta contagem é separada das 32 tentativas do desenvolvimento atual, realizadas em outro conjunto de perguntas. A Tabela~\ref{tab:lotes} apresenta os resultados por versão.
+Os dois lotes históricos de desenvolvimento usaram as mesmas 27 perguntas em duas condições, com uma tentativa por pergunta e por condição em cada lote. O primeiro examinou a versão GK-P1.1. A omissão do campo de ajuda motivou a correção avaliada no segundo lote, com a versão GK-P1.2. Juntos, os lotes somaram \textbf{108 execuções sobre 27 perguntas reutilizadas}, todas tecnicamente válidas. Esta contagem é separada das 32 tentativas da GK-P2.1-dev, realizadas em outro conjunto de perguntas. A Tabela~\ref{tab:lotes} apresenta os resultados por versão.
 
 \subsubsection{Funcionamento técnico e identificação dos lotes}
 
@@ -74,4 +82,4 @@ A diferença histórica entre as políticas em predação demonstra o funcioname
 
 Há código executável, testes aprovados e componentes identificados nos dois lotes históricos de Ciências e no lote multidisciplinar; o piloto é documentado separadamente. Os registros permitem examinar rotas, respostas e falhas, inclusive do verificador de sustentação, mas não demonstram segurança geral, qualidade pedagógica, compreensão ou aprendizagem.
 
-Os indicadores finais dependem de julgamentos humanos conclusivos. O plano de 40 enunciados não foi executado; o atual prevê 32 enunciados e 64 oportunidades. Os denominadores históricos e atuais permanecem separados.
+Os indicadores finais dependem de julgamentos humanos conclusivos. A proposta anterior de 40 enunciados não foi executada; a proposta de 32 enunciados e 64 oportunidades foi preparada para a GK-P2.1-dev. A ampliação GK-P2.6-dev exige replanejamento antes do congelamento. Nenhuma dessas propostas foi executada como avaliação final, e seus denominadores não são agregados às três consultas da ampliação.

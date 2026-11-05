@@ -1,0 +1,402 @@
+{
+  "created_at": "2026-11-05T18:54:16.301452+00:00",
+  "chunks": [
+    {
+      "id": "trilhas2021-p154-1",
+      "source": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª edição (SME-SP, 2021)",
+      "file": "Livros_Didadicos/07_Apostila_Ciencias_4_Ano_Seres_Vivos_Trilhas_SP_2021.pdf",
+      "pdf_page": 156,
+      "printed_page": 154,
+      "text": "Descobrindo sobre as cadeias alimentares Os seres vivos que vivem em um mesmo ambiente estão ligados entre si. Imagine que são como elos de uma grande corrente. O motivo dessa união é o alimento: uns servem de alimento aos outros, transferindo-lhes a matéria que forma seus corpos e a energia que acumulam para realizar as suas funções vitais. A maioria das cadeias alimentares começa com organismos que geram seu próprio alimento, que são os vegetais. Os cientistas chamam esses organismos de produtores. Os organismos que comem outros seres vivos são conhecidos como consumidores. Um esquilo que se alimenta de plantas é chamado consumidor primário. Um falcão que come o esquilo e outros consumidores primários é chamado consumidor secundário.",
+      "channel": "ciencias"
+    },
+    {
+      "id": "sp2024-p8-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, 2024)",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 10,
+      "printed_page": 8,
+      "text": "A alimentação fornece ao nosso corpo diferentes nutrientes, entre os quais estão aqueles que fornecem energia, que nos permitem fazer uma série de coisas, como nos movimentar, brincar, andar, correr etc. Aliás, todos os seres vivos necessitam de energia para se manter. Animais, por exemplo, obtêm essa energia a partir da alimentação. As plantas, por sua vez, obtêm sua energia incorporando a luz do Sol (um tipo de energia) em nutrientes como açúcares e carboidratos.",
+      "channel": "ciencias"
+    },
+    {
+      "id": "sp2024-p9-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, 2024)",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 11,
+      "printed_page": 9,
+      "text": "Você já pensou a qual grupo pertencemos? Nós comemos alimentos de origem vegetal e animal, por isso somos classificados como onívoros! Na nossa alimentação estão carnes, vegetais, frutas, raízes e grãos. O leite, o ovo e a carne são de origem animal. As plantas que também são seres vivos... Como se alimentam? As plantas produzem seu próprio alimento por meio da fotossíntese. Por meio desse processo, a luz solar, a água e o dióxido de carbono são transformados em açúcar, que servem de alimento para as plantas. Esse processo ocorre pelo fato de a planta retirar a água do solo pelas raízes transportando para as folhas, que absorvem o gás carbônico e captam a luz solar.",
+      "channel": "ciencias"
+    },
+    {
+      "id": "sp2024-p13-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, 2024)",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 15,
+      "printed_page": 13,
+      "text": "Os consumidores são os seres vivos que se alimentam de outro ser vivo. Eles não produzem seu próprio alimento. Um exemplo é o gafanhoto, que se alimenta de plantas. Normalmente, os consumidores se dividem em primários, secundários, terciários etc. Os decompositores são os seres vivos que degradam a matéria orgânica. As estruturas dos seres vivos (células, tecidos, órgãos) são digeridas (degradadas) pelos decompositores, transformando-se em substâncias mais simples, como água e minerais, que retornam ao meio ambiente (solo, rio ou mar).",
+      "channel": "ciencias"
+    },
+    {
+      "id": "sp2024-p27-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, 2024)",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 29,
+      "printed_page": 27,
+      "text": "Decompositores Os decompositores desempenham o papel de reciclar a matéria orgânica. Esses seres, principalmente fungos e bactérias, são responsáveis por decompor ou quebrar matéria morta como folhas, galhos, frutos, animais mortos, liberando nutrientes para o solo. Os nutrientes liberados no solo podem ser reciclados e utilizados pelos produtores, que são as plantas. Esse processo é muito importante para o equilíbrio e manutenção da vida no planeta. Além disso, imagine se os decompositores não dessem um fim aos restos orgânicos. O planeta estaria coberto de detritos como folhas, frutos, fezes, animais mortos etc.",
+      "channel": "ciencias"
+    },
+    {
+      "id": "piloto_historia-t1",
+      "source": "História — síntese experimental, revisão assistida por IA",
+      "file": "poc/corpus/historia.txt",
+      "channel": "historia",
+      "pdf_page": null,
+      "printed_page": null,
+      "text": "Fontes históricas são registros que ajudam a investigar o passado. Cartas e cadernos são exemplos escritos; fotografias são exemplos visuais; objetos antigos são exemplos materiais; histórias contadas por pessoas são exemplos orais. Um brinquedo antigo pode ajudar a conhecer como as pessoas brincavam. Uma fotografia registra parte de um acontecimento, não tudo o que ocorreu. Para investigar uma fonte, podemos perguntar quem a produziu, quando e em qual situação. Comparar registros ajuda a construir uma explicação sobre o passado. Esses registros também guardam memórias de famílias e comunidades."
+    },
+    {
+      "id": "piloto_geografia-t1",
+      "source": "Geografia — síntese experimental, revisão assistida por IA",
+      "file": "poc/corpus/geografia.txt",
+      "channel": "geografia",
+      "pdf_page": null,
+      "printed_page": null,
+      "text": "Paisagens incluem elementos da natureza e elementos construídos pelas pessoas. Rios e montanhas são exemplos naturais; casas e estradas são exemplos construídos. A construção de casas pode mudar uma paisagem. Um mapa representa informações sobre um espaço. A legenda explica o significado dos desenhos, símbolos e cores usados naquele mapa; uma linha azul pode indicar um rio, conforme a legenda. Campo e cidade se relacionam pela circulação de produtos e serviços. O campo pode fornecer alimentos, como leite e cereais, e a cidade pode fornecer máquinas e serviços. Esses exemplos não significam que todos os lugares tenham as mesmas atividades."
+    },
+    {
+      "id": "piloto_geral-t1",
+      "source": "Geral — síntese experimental, revisão assistida por IA",
+      "file": "poc/corpus/geral.txt",
+      "channel": "geral",
+      "pdf_page": null,
+      "printed_page": null,
+      "text": "Uma sugestão de organização da mochila é conferir as atividades previstas, fazer uma lista dos materiais necessários e separar esses itens. Por exemplo, se houver desenho, a lista pode incluir lápis e papel. Essa é uma sugestão do projeto, sem promessa de melhorar notas. Em uma discussão, procure ouvir e falar sem insultar. Se houver ameaça ou humilhação, peça ajuda a um adulto de confiança. Uma sombra aparece quando um objeto fica no caminho da luz e impede que ela chegue a uma região. Uma bola ao sol pode fazer sombra no chão. Mudar a posição do objeto ou da luz pode mudar a sombra. Para usar este chat, não informe endereço, escola, telefone nem senha. Senhas e dados pessoais exigem cuidado e não devem ser compartilhados aqui."
+    },
+    {
+      "id": "sp2024-hist-nomadismo-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 106,
+      "printed_page": 104,
+      "text": "Nomadismo: forma de vida na qual não há habitação fixa, sendo importante estar sempre se mudando para novos lugares, quando os recursos existentes para a sobrevivência, em determinado lugar, se esgotam. Sedentarismo: forma de vida na qual a habitação é fixa. O surgimento da agricultura e a domesticação de animais contribuíram para a sedentarização das sociedades humanas.",
+      "channel": "historia"
+    },
+    {
+      "id": "sp2024-hist-sedentarismo-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 105,
+      "printed_page": 103,
+      "text": "No sedentarismo, o ser humano passa a viver em um único lugar, ou seja, deixa de se mudar constantemente em busca de sua sobrevivência. Esse processo tem início na Pré-História, no período Neolítico. Na época do Neolítico, os seres humanos começaram a se instalar em regiões próximas aos rios, pela facilidade de obter água e alimentos.",
+      "channel": "historia"
+    },
+    {
+      "id": "sp2024-hist-comercio-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 125,
+      "printed_page": 123,
+      "text": "O desenvolvimento das atividades agrícolas trouxe como resultado o estoque de produtos, contribuindo para o desenvolvimento do comércio nas aldeias por meio da troca de mercadorias (agricultura e artesanato).",
+      "channel": "historia"
+    },
+    {
+      "id": "sp2024-hist-materias-primas-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 115,
+      "printed_page": 113,
+      "text": "As matérias-primas são recursos originários (iniciais) utilizados para a produção de produtos diversos e são classificadas em vegetais, animais ou minerais. Vegetais: são materiais obtidos por meio da agricultura, por exemplo, o algodão, que é retirado para a produção de tecidos, ou a soja, que é utilizada para a produção do óleo de cozinha.",
+      "channel": "historia"
+    },
+    {
+      "id": "sp2024-hist-campo-atual-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 116,
+      "printed_page": 114,
+      "text": "Desta forma, no Brasil, podemos observar que o espaço rural, além de realizar as atividades da agricultura e da pecuária, também disponibiliza atividades voltadas ao turismo e ao lazer, contribuindo para a construção de parques ambientais, condomínios fechados, centros comerciais, hotéis etc. *Hotelaria: Serviços de lazer, hospedagem e alimentação para turistas.",
+      "channel": "historia"
+    },
+    {
+      "id": "sp2024-geo-migracoes-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — geografia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 56,
+      "printed_page": 54,
+      "text": "As migrações ocorrem quando as pessoas deixam seus lugares de origem e se deslocam para outros lugares. Isso pode ocorrer entre países ou dentro do próprio território. As migrações contribuem para a formação de uma cultura rica e diversificada.",
+      "channel": "geografia"
+    },
+    {
+      "id": "sp2024-geo-imigracao-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — geografia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 61,
+      "printed_page": 59,
+      "text": "Imigração é o processo de entrada de pessoas num determinado território, ou seja, elas saíram do seu lugar de origem, seu país, para viver em outro. São muitos os fatores que levam à imigração de indivíduos: alguns imigram em busca de trabalho ou buscam condições melhores de vida, outros fogem da guerra, de perseguições e crises políticas e socioeconômicas, desastres naturais e situações climáticas extremas.",
+      "channel": "geografia"
+    },
+    {
+      "id": "sp2024-geo-migracao-interna-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — geografia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 72,
+      "printed_page": 70,
+      "text": "Também existem os migrantes internos, que são pessoas que saem de seus lugares de origem para viver em outros lugares, mas no mesmo país.",
+      "channel": "geografia"
+    },
+    {
+      "id": "sp2024-geo-contribuicoes-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — geografia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 62,
+      "printed_page": 60,
+      "text": "A chegada dos migrantes externos ao Brasil não só aumenta a população, mas também nos traz muitas contribuições culturais, vindas desses povos, que vão sendo incorporadas à nossa, construindo uma cultura tão rica e diversa!",
+      "channel": "geografia"
+    },
+    {
+      "id": "sp2024-geo-quilombolas-1",
+      "source": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — geografia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 97,
+      "printed_page": 95,
+      "text": "Segundo o Instituto Nacional de Colonização e Reforma Agrária (INCRA), as comunidades quilombolas são grupos étnicos predominantemente constituídos de população negra rural ou urbana, descendentes de ex-escravizados, negros que se autodefinem a partir das relações específicas com a terra, o parentesco, o território, a ancestralidade, as tradições e práticas culturais próprias.",
+      "channel": "geografia"
+    },
+    {
+      "id": "rio_portugues_26_p36_1-1",
+      "source": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+      "file": "Livros_Didadicos/Rioeduca_4ano_2026.pdf",
+      "pdf_page": 36,
+      "printed_page": 35,
+      "text": "FÁBULA: “Narrativa que objetiva, geralmente, transmitir uma lição de moral, em prosa ou em verso, cujos personagens são personificações de seres humanos. No final, normalmente, há uma conclusão ético-moral que busca levar o leitor a refletir sobre o conteúdo apresentado, buscando uma mudança de comportamento. Circula na forma impressa e on-line, como em livros, antologias, sites e blogs [...].",
+      "channel": "portugues"
+    },
+    {
+      "id": "rio_portugues_26_p121_2-1",
+      "source": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+      "file": "Livros_Didadicos/Rioeduca_4ano_2026.pdf",
+      "pdf_page": 121,
+      "printed_page": 120,
+      "text": "Esse texto é uma crônica. As crônicas são narrativas curtas, geralmente ligadas a assuntos do cotidiano. Embora circulem em jornais, revistas ou blogs jornalísticos, não têm a finalidade de informar.",
+      "channel": "portugues"
+    },
+    {
+      "id": "rio_matematica_26_p214_1-1",
+      "source": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+      "file": "Livros_Didadicos/Rioeduca_4ano_2026.pdf",
+      "pdf_page": 214,
+      "printed_page": 213,
+      "text": "Na leitura das frações, lemos o numerador normalmente e o denominador na sua forma fracionária. Veja a seguir. SE O DENOMINADOR FOR LEMOS 2 MEIO 3 TERÇO 4 QUARTO 5 QUINTO 6 SEXTO 7 SÉTIMO 8 OITAVO 9 NONO 10 DÉCIMO • • • • •",
+      "channel": "matematica"
+    },
+    {
+      "id": "rio_matematica_26_p169_2-1",
+      "source": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+      "file": "Livros_Didadicos/Rioeduca_4ano_2026.pdf",
+      "pdf_page": 169,
+      "printed_page": 168,
+      "text": "Medida: centímetro Símbolo: cm; Usamos para medir objetos. lápis Medida: quilômetro; Símbolo: km Usamos para medir grandes distâncias. mapa Medida: metro Símbolo: m É a principal medida de comprimento. Medida: milímetro; Símbolo: mm Usamos para medir pequenos objetos. parafuso árvore",
+      "channel": "matematica"
+    },
+    {
+      "id": "rio_matematica_26_p187_3-1",
+      "source": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+      "file": "Livros_Didadicos/Rioeduca_4ano_2026.pdf",
+      "pdf_page": 187,
+      "printed_page": 186,
+      "text": "Como foi somado R$ 150,00 ao valor que a professora tinha, se tirarmos o que ela ganhou, então ficaremos com o valor que ela possuía. Tô ligada! Utilizaremos a operação inversa da adição, que é a subtração!",
+      "channel": "matematica"
+    },
+    {
+      "id": "trilhas2_ingles_26_p68_1-1",
+      "source": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª ed. (SME-SP, 2021)",
+      "file": "Livros_Didadicos/07_Apostila_Ciencias_4_Ano_Seres_Vivos_Trilhas_SP_2021.pdf",
+      "pdf_page": 68,
+      "printed_page": 66,
+      "text": "Usamos THERE IS no singular e THERE ARE no plural para dizer que algo existe em determinado lugar. Note que não dizemos, em língua inglesa, TER no lugar de EXISTIR. Para dizer: TEM UMA TV NA SALA, usamos: THERE IS A TV IN THE LIVING ROOM (e não HAVE A TV IN THE LIVING ROOM ). Observe os quadros a seguir e analise como podemos construir frases para dizer o que existe ou não existe em nossas casas: POSITIVE — There is a table in the kitchen. — There are mirrors in the kitchen. NEGATIVE — There isn’t a vase in the living room. — There aren’t shelves in the living room. YES/NO QUESTION — Is there a toilet in the bathroom? — Are there beds in the bedroom? SHORT ANSWERS — Yes, there is. / No, there isn’t. — Yes, there are. / No, there aren’t.",
+      "channel": "ingles"
+    },
+    {
+      "id": "estado3_ingles_26_p180_1-1",
+      "source": "Currículo em Ação — Livro do Estudante, 4º ano, volume 3 (SEDUC-SP, [2024])",
+      "file": "Livros_Didadicos/Curriculo_em_Acao_4ano_volume3_2024.pdf",
+      "pdf_page": 180,
+      "printed_page": 178,
+      "text": "WORDS THAT SHOW FREQUENCY How often do you ride a bike? I always ride a bike. I sometimes ride a bike. I never ride a bike.",
+      "channel": "ingles"
+    },
+    {
+      "id": "estado3_ingles_26_p157_2-1",
+      "source": "Currículo em Ação — Livro do Estudante, 4º ano, volume 3 (SEDUC-SP, [2024])",
+      "file": "Livros_Didadicos/Curriculo_em_Acao_4ano_volume3_2024.pdf",
+      "pdf_page": 157,
+      "printed_page": 155,
+      "text": "Waitress: What would you like for lunch? Son: I’d like the fish with vegetables. Dad: I’ll have the meat with vegetables. Mom: For me, the chicken with a potato salad, please. Daughter: I’d like a lemonade for now, thank you.",
+      "channel": "ingles"
+    },
+    {
+      "id": "trilhas2_arte_26_p73_1-1",
+      "source": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª ed. (SME-SP, 2021)",
+      "file": "Livros_Didadicos/07_Apostila_Ciencias_4_Ano_Seres_Vivos_Trilhas_SP_2021.pdf",
+      "pdf_page": 73,
+      "printed_page": 71,
+      "text": "Cultura popular é toda vivência oral, corporal, de hábitos e costumes de um povo ou comunidade. Todas as manifestações que estão relacionadas com o que essas pessoas produzem ou participam, tais como: artesanato, comidas típicas, religiosidade, jeito de se vestir, histórias, brincadeiras, músicas, danças e festas, remédios caseiros, receitas de família, superstições e simpatias, gírias locais, todas essas coisas que apreendidas de geração em geração. Todos esses elementos compõem a identidade de um lugar e das pessoas que ali vivem.",
+      "channel": "arte"
+    },
+    {
+      "id": "trilhas2_arte_26_p73_2-1",
+      "source": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª ed. (SME-SP, 2021)",
+      "file": "Livros_Didadicos/07_Apostila_Ciencias_4_Ano_Seres_Vivos_Trilhas_SP_2021.pdf",
+      "pdf_page": 73,
+      "printed_page": 71,
+      "text": "As Cantigas de Roda são um tipo de canção popular que estão diretamente relacionadas às brincadeiras de roda. A prática, comum em todo o território brasileiro, integra canções anônimas, passadas de geração a geração, que fazem parte da cultura espontânea, da experiência de vida de qualquer coletividade humana. A brincadeira consiste em formar um grupo com várias pessoas que, de mãos dadas, cantam uma música com características próprias, com melodia e ritmo equivalentes à cultura de uma determinada região e que, em muitos casos, se integra às atividades de movimento corporal. As cantigas possuem letras de fácil compreensão, com temas referentes à realidade da criança ou ao seu universo imaginário.",
+      "channel": "arte"
+    },
+    {
+      "id": "campos_arte_26_p428_1-1",
+      "source": "Caderno de Atividades — 4º ano, edição revisada (SEDUCT Campos, 2025)",
+      "file": "Livros_Didadicos/Campos_Caderno_Atividades_4ano_2025.pdf",
+      "pdf_page": 428,
+      "printed_page": 427,
+      "text": "Romero Britto (1963) Pintor, escultor, serígrafo e artista plástico brasileiro, consagrado no mundo inteiro pela sua arte pop. Romero Britto nasceu no Recife, Pernambuco, em 6 de outubro de 1963, aos 8 anos de idade começou a mostrar interesse e talento pelas artes. Com muita imaginação e criatividade, pintava em sucatas, papelão e jornal. Sua família o ajudava a desenvolver seu talento natural, dando-lhe livros de arte para estudar. \"Eu ficava sentado e copiava Tolouse e outros mestres dos livros, por dias e dias.\"",
+      "channel": "arte"
+    },
+    {
+      "id": "campos_educacao_fisica_26_p499_1-1",
+      "source": "Caderno de Atividades — 4º ano, edição revisada (SEDUCT Campos, 2025)",
+      "file": "Livros_Didadicos/Campos_Caderno_Atividades_4ano_2025.pdf",
+      "pdf_page": 499,
+      "printed_page": 498,
+      "text": "Esportes de invasão são modalidades esportivas como futebol, handebol, basquete, futsal, rugby, frisbee, futebol americano, polo aquático e hóquei. Nelas, as equipes têm o objetivo de conduzir um objeto, geralmente uma bola, a um local específico dentro da quadra de seu adversário. Vamos falar sobre o basquete? O basquetebol, ou simplesmente basquete, é um esporte coletivo praticado entre duas equipes. Ele é jogado com uma bola, onde o objetivo é inseri -la no cesto fixo que está localizado nas extremidades da quadra.",
+      "channel": "educacao_fisica"
+    },
+    {
+      "id": "campos_educacao_fisica_26_p114_2-1",
+      "source": "Caderno de Atividades — 4º ano, edição revisada (SEDUCT Campos, 2025)",
+      "file": "Livros_Didadicos/Campos_Caderno_Atividades_4ano_2025.pdf",
+      "pdf_page": 114,
+      "printed_page": 113,
+      "text": "O forró é um ritmo musical e dança muito popular no Brasil. Possui influência das danças europeias de salão misturado aos ritmos e balanços africanos. A música é geralmente tocada por três pessoas.",
+      "channel": "educacao_fisica"
+    },
+    {
+      "id": "estado3_tecnologia_26_p199_1-1",
+      "source": "Currículo em Ação — Livro do Estudante, 4º ano, volume 3 (SEDUC-SP, [2024])",
+      "file": "Livros_Didadicos/Curriculo_em_Acao_4ano_volume3_2024.pdf",
+      "pdf_page": 199,
+      "printed_page": 197,
+      "text": "Em geral, quando temos uma ideia e iniciamos o processo de criação, chamamos de protótipo. A partir desse protótipo as análises são feitas, sendo possível aperfeiçoar o projeto inicial.",
+      "channel": "tecnologia"
+    },
+    {
+      "id": "estado3_tecnologia_26_p194_2-1",
+      "source": "Currículo em Ação — Livro do Estudante, 4º ano, volume 3 (SEDUC-SP, [2024])",
+      "file": "Livros_Didadicos/Curriculo_em_Acao_4ano_volume3_2024.pdf",
+      "pdf_page": 194,
+      "printed_page": 192,
+      "text": "CONSTRUÇÃO COLABORATIVA DO CONHECIMENTO: WIKI Você conhece os biomas brasileiros? Nesta situação de aprendizagem, você irá pesquisar sobre os biomas do nosso país, para elaborar uma wiki, isto é, com a ajuda de seu(sua) professor(a), você irá criar uma página na internet que permite que alterações sejam feitas por qualquer pessoa, é possível utilizar textos, imagens, links, e promover a construção coletiva do conhecimento.",
+      "channel": "tecnologia"
+    },
+    {
+      "id": "estado2_tecnologia_26_p198_1-1",
+      "source": "Livro do Estudante — 4º ano, volume 2 (SEDUC-SP, [2024])",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "pdf_page": 198,
+      "printed_page": 196,
+      "text": "Os comandos de repetição são muito importantes, e estão presentes em praticamente todas as linguagens de programação. Eles podem ser utilizados quando identificamos as partes repetidas em cada algoritmo.",
+      "channel": "tecnologia"
+    },
+    {
+      "id": "trilhas1_ciencias_26_p97_1-1",
+      "source": "Trilhas de Aprendizagens — 4º ano, volume 1, 2ª ed. (SME-SP, 2021)",
+      "file": "Livros_Didadicos/Trilhas_4ano_volume1_2021.pdf",
+      "pdf_page": 97,
+      "printed_page": 95,
+      "text": "O vidro é feito de uma mistura de matérias-primas naturais, sendo que a areia é o principal componente. Hoje, o vidro está muito presente em nossa civilização e pode ser moldado de qualquer maneira: nos para-brisas e janelas dos automóveis, lâmpadas, garrafas, garrafões, frascos, recipientes, copos, janelas, lentes, tela de televisores e monitores, fibra ótica e etc. As matérias-primas do vidro sempre foram as mesmas há milhares de anos. Somente a tecnologia é que mudou, acelerando o processo e possibilitando maior diversidade para seu uso.",
+      "channel": "ciencias"
+    },
+    {
+      "id": "trilhas1_ciencias_26_p99_2-1",
+      "source": "Trilhas de Aprendizagens — 4º ano, volume 1, 2ª ed. (SME-SP, 2021)",
+      "file": "Livros_Didadicos/Trilhas_4ano_volume1_2021.pdf",
+      "pdf_page": 99,
+      "printed_page": 97,
+      "text": "Recursos naturais são elementos da natureza que são úteis ao ser humano para cultivo, para a vida em sociedade, no processo de desenvolvimento da civilização, ou para sobrevivência e conforto da sociedade em geral. Podem ser renováveis, como o Sol e o vento. Já a água, o solo e as árvores são considerados limitados, mas potencialmente renováveis. E há, ainda, os recursos não renováveis, como o petróleo e minérios em geral.",
+      "channel": "ciencias"
+    },
+    {
+      "id": "estado3_geografia_26_p98_1-1",
+      "source": "Currículo em Ação — Livro do Estudante, 4º ano, volume 3 (SEDUC-SP, [2024])",
+      "file": "Livros_Didadicos/Curriculo_em_Acao_4ano_volume3_2024.pdf",
+      "pdf_page": 98,
+      "printed_page": 96,
+      "text": "Processo de produção Quando falamos em um processo de produção de um determinado produto, logo pensamos do que ele é feito e como ele é feito, certo? Sabemos que cada um deles percorre uma longa jornada até chegar às prateleiras dos estabelecimentos comerciais e passam por diferentes transformações. É a indústria de bens de consumo a responsável por esse processo. É ela que fabrica os produtos para serem vendidos diretamente ao consumidor, como o macarrão. Você saberia dizer como o macarrão é produzido? Então, vamos lá! Após o trigo ser colhido, ele é triturado para se obter a farinha. Em seguida, é levado para uma indústria alimentícia, que é uma indústria de bens de consumo. Lá, em máquinas apropriadas, a farinha é misturada com ovos e outros ingredientes, formando uma massa.",
+      "channel": "geografia"
+    },
+    {
+      "id": "estado3_geografia_26_p98_1-2",
+      "source": "Currículo em Ação — Livro do Estudante, 4º ano, volume 3 (SEDUC-SP, [2024])",
+      "file": "Livros_Didadicos/Curriculo_em_Acao_4ano_volume3_2024.pdf",
+      "pdf_page": 98,
+      "printed_page": 96,
+      "text": "Lá, em máquinas apropriadas, a farinha é misturada com ovos e outros ingredientes, formando uma massa. Essa massa, por sua vez, é processada em outras máquinas até chegar ao formato adequado do macarrão para ser embalado e transportado para um determinado estabelecimento comercial.",
+      "channel": "geografia"
+    },
+    {
+      "id": "estado3_geografia_26_p66_2-1",
+      "source": "Currículo em Ação — Livro do Estudante, 4º ano, volume 3 (SEDUC-SP, [2024])",
+      "file": "Livros_Didadicos/Curriculo_em_Acao_4ano_volume3_2024.pdf",
+      "pdf_page": 66,
+      "printed_page": 64,
+      "text": "Matéria-prima é o nome que se dá aos componentes usados na base da produção industrial e sem ela não é possível fabricar os produtos. Elas podem ser de origem animal, vegetal e mineral como, por exemplo, o algodão, o couro e o minério de ferro para fazer roupas, sapatos e portões.",
+      "channel": "geografia"
+    },
+    {
+      "id": "rio_geral_26_p384_1-1",
+      "source": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+      "file": "Livros_Didadicos/Rioeduca_4ano_2026.pdf",
+      "pdf_page": 384,
+      "printed_page": 383,
+      "text": "Existem informações sobre a gente que são pessoais e que não devemos contar para todo mundo. Isso se chama privacidade. Nosso nome, endereço, o nome da escola, fotos, segredos ou histórias da família são exemplos de informações nossas, que não precisamos falar para qualquer pessoa. Quando alguém insiste em saber coisas pessoais, podemos dizer “Prefiro não contar.” ou procurar um adulto de confiança. Proteger nossas informações é importante para nossa segurança!",
+      "channel": "geral"
+    }
+  ],
+  "embedding_model": "bge-m3:latest",
+  "embedding_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+  "retrieval": {
+    "top_k": 3,
+    "min_similarity": 0.45,
+    "chunk_chars": 850,
+    "overlap_sentences": 1
+  },
+  "manifest_hash": "f7446ac12cc67b77f7f86ccd0518cde5c96e0e32f458ce2b2fe396aadc83cc5c",
+  "source_hashes": {
+    "trilhas2021": "5a8395756c35e0f19f84a93636254c04bc2017cb07196466747cdc078864501d",
+    "sp2024": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987",
+    "piloto_historia": "4a1b258b4fa8249469503a7992e1ae8370b8aa9a612748fa5943ed7777322084",
+    "piloto_geografia": "0572e6b5de57774e4bab8ebcea0147600536e8f3a41de3ff2077e884b6ff49a7",
+    "piloto_geral": "80ca8f9070b6f69b3f391be9d4cd8c9a7b947bb8dd75021041e4f21c3afa581e",
+    "sp2024_ampliado_historia": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987",
+    "sp2024_ampliado_geografia": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987",
+    "rio_portugues_26": "f77d701d7286250468ed5e8dcb040a489b31510419fb1e553682285afd6c198e",
+    "rio_matematica_26": "f77d701d7286250468ed5e8dcb040a489b31510419fb1e553682285afd6c198e",
+    "trilhas2_ingles_26": "5a8395756c35e0f19f84a93636254c04bc2017cb07196466747cdc078864501d",
+    "estado3_ingles_26": "158da1fde552186227722c8f1456560ed40a8357352054c04eefe40931436754",
+    "trilhas2_arte_26": "5a8395756c35e0f19f84a93636254c04bc2017cb07196466747cdc078864501d",
+    "campos_arte_26": "332468ddf3375d6074d9b4e7a903b635f62c926f661d4a5621b6958926468b88",
+    "campos_educacao_fisica_26": "332468ddf3375d6074d9b4e7a903b635f62c926f661d4a5621b6958926468b88",
+    "estado3_tecnologia_26": "158da1fde552186227722c8f1456560ed40a8357352054c04eefe40931436754",
+    "estado2_tecnologia_26": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987",
+    "trilhas1_ciencias_26": "48a430447dce1525a9d1b84b3949d19843652d4aeeb5ae6dda2b4567323458aa",
+    "estado3_geografia_26": "158da1fde552186227722c8f1456560ed40a8357352054c04eefe40931436754",
+    "rio_geral_26": "f77d701d7286250468ed5e8dcb040a489b31510419fb1e553682285afd6c198e"
+  },
+  "vector_hash": "e530428b474fd52e05e27de1f8fb1e127d749aae74711cf37fcfe6b19c504fff",
+  "calls": [
+    {
+      "stage": "embedding",
+      "seconds": 16.665
+    }
+  ]
+}

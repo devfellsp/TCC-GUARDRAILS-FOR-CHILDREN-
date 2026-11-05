@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-05",
+  "version": "GK-P2.6-dev",
+  "index_id": "009dce58ff44d9b2c89c18f1565173f60a483e8178eaf9eba9d0c65d455a52fd",
+  "blocks": 40,
+  "subjects": {
+    "ciencias": 7,
+    "historia": 6,
+    "geografia": 9,
+    "geral": 2,
+    "portugues": 2,
+    "matematica": 3,
+    "ingles": 3,
+    "arte": 3,
+    "educacao_fisica": 2,
+    "tecnologia": 3
+  },
+  "unique_pdf_files": 6,
+  "python_tests": 25,
+  "web_tests": 1,
+  "real_queries": [
+    {
+      "channel": "portugues",
+      "action": "allow",
+      "valid": true,
+      "seconds": 303.546,
+      "source_count": 1
+    },
+    {
+      "channel": "matematica",
+      "action": "allow",
+      "valid": true,
+      "seconds": 115.096,
+      "source_count": 1
+    },
+    {
+      "channel": "ingles",
+      "action": "allow",
+      "valid": true,
+      "seconds": 248.34,
+      "source_count": 1
+    }
+  ],
+  "status": {
+    "ready": true,
+    "index_id": "009dce58ff44d9b2c89c18f1565173f60a483e8178eaf9eba9d0c65d455a52fd",
+    "model": "qwen3:8b",
+    "embedding": "bge-m3:latest",
+    "policies": [
+      "comum"
+    ],
+    "version": "GK-P2.6-dev",
+    "request_timeout_ms": 610000
+  },
+  "review_status": "Verificacao de desenvolvimento; nao constitui avaliacao final ou certificacao pedagogica."
+}

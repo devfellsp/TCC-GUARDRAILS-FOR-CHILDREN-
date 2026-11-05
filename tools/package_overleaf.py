@@ -18,10 +18,18 @@ def build(root=ROOT):
              "tools/update_manuscript.py",
              "avaliacao/BUSCA_NARRATIVA.md", "avaliacao/CALCULO_ASCS_2026-11-04.md",
              "avaliacao/REVISAO_PROTOCOLO_2026-11-04.md", "avaliacao/revisao_acervos_multichat_2026-11-04.json",
+             "GuardKids_Drawio_rotulos.drawio", "avaliacao/PLANO_ATUALIZACAO_TCC_GK_P2_6.md",
+             "avaliacao/APLICACAO_TCC_GK_P2_6.md", "poc/docs/AMPLIACAO_MATERIAS_2026-11-05.md",
+             "poc/tests/test_school_subjects.py", "poc/tests/test_school_subjects_web.cjs",
              "avaliacao/evidencias/ambiente_hardware.json", "avaliacao/evidencias/calibracao_desenvolvimento.json"}
     patterns = ["texto/*.tex", "generated/*.tex", "fontes/*.ttf", "diagramas/pdf/*.pdf", "diagramas/drawio/*.drawio",
                 "poc/*.py", "poc/*.ps1", "poc/*.cmd", "poc/web/*.html", "poc/prompts/*.txt",
-                "poc/corpus/*.txt", "avaliacao/congelamentos/*.json"]
+                "poc/corpus/*.txt", "avaliacao/congelamentos/*.json",
+                "poc/versions/GK-P2.6-dev/*.py", "poc/versions/GK-P2.6-dev/*.json",
+                "poc/versions/GK-P2.6-dev/*.md", "poc/versions/GK-P2.6-dev/*.cmd",
+                "poc/versions/GK-P2.6-dev/prompts/*.txt", "poc/versions/GK-P2.6-dev/web/*.html",
+                "poc/versions/GK-P2.6-dev/indice_preservado/*",
+                "poc/versions/GK-P2.6-dev/indice_preservado/*/*"]
     for pattern in patterns:
         names.update(p.relative_to(root).as_posix() for p in root.glob(pattern) if p.is_file())
     for folder in [root / BATCH, *sorted((root / "avaliacao/evidencias").glob("desenvolvimento_20261103_*"))]:

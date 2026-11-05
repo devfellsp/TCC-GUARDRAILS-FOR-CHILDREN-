@@ -49,7 +49,7 @@ $('#form').onsubmit = async event => {
   $('#response-style').disabled = true;
   $('#progress').textContent = 'Consultando as fontes e verificando a resposta…';
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 130000);
+  const timeout = setTimeout(() => controller.abort(), 610000);
   try {
     const response = await fetch('/api/ask', {method:'POST', headers:{'Content-Type':'application/json'}, signal:controller.signal,
       body:JSON.stringify({question:$('#question').value, policy:'comum', channel:$('#channel').value, response_style:$('#response-style').value})});

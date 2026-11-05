@@ -45,3 +45,7 @@ poc/.venv/Scripts/python.exe -B poc/versions/verificar_ampliacao.py
 ```
 
 Os comandos de lote `run_expansion.py plan/run` e `run_guard_regressions.py plan/run` recusam repetir pastas já executadas. Não os use para tentar substituir resultados existentes.
+
+## Prazo de execução local
+
+O prazo total é de 600 segundos, com espera de 610 segundos na interface. Em execução pela CPU, a geração e as verificações podem ultrapassar os dois minutos do limite anterior. O prazo não altera as regras de liberação da resposta; tentativas que excedem o limite continuam sendo retidas e registradas como falha técnica. Recarregue a página após atualizar o prazo da interface.

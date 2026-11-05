@@ -1,0 +1,32 @@
+{
+  "study_version": "GK-P2.6-dev",
+  "ollama_url": "http://127.0.0.1:11434",
+  "model": "qwen3:8b",
+  "embedding_model": "bge-m3:latest",
+  "profile": "Estudante fictício de 9 anos, 4º ano do Ensino Fundamental, português brasileiro.",
+  "generation": {
+    "temperature": 0.0,
+    "seed": 42,
+    "top_p": 0.9,
+    "repeat_penalty": 1.1,
+    "num_ctx": 4096,
+    "num_predict": 900
+  },
+  "retrieval": {
+    "top_k": 3,
+    "min_similarity": 0.45,
+    "chunk_chars": 850,
+    "overlap_sentences": 1
+  },
+  "policies": {
+    "comum": {
+      "allow_educational_predation": true
+    }
+  },
+  "default_policy": "comum",
+  "runtime": {
+    "deadline_seconds": 600.0,
+    "status_timeout_seconds": 3.0,
+    "retention_days": 30
+  }
+}

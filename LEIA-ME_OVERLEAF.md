@@ -1,15 +1,12 @@
-# Prova de conceito com guardrails — Projeto/TCC I multidisciplinar
+# TCC GuardKids — edição GK-P2.6-dev
 
-Versão atualizada em 04/11/2026: regra comum, 32 tentativas de desenvolvimento efetivamente executadas e plano final de 32 perguntas/64 oportunidades ainda não executado. Os 108 registros anteriores permanecem em seção histórica, com denominadores próprios. A inspeção preliminar do conteúdo não equivale à ratificação humana independente.
+Importe o ZIP no Overleaf, selecione main.tex e o compilador XeLaTeX. O pacote contém fontes Times New Roman, texto, sete diagramas vetoriais do Draw.io com seus originais editáveis e o cronograma em LaTeX: oito figuras ao todo.
 
-1. Importe `Overleaf_TCC_Drawio_rotulos.zip` como novo projeto no Overleaf.
-2. Abra **Settings/Configurações** pelo ícone de engrenagem (ou menu **File → Settings**). Em **Compiler/Compilador**, selecione **XeLaTeX**. Confirme `main.tex` como documento principal. Em interfaces anteriores, essas opções ficam em **Menu → Settings**. TeX Live 2025 ou posterior é recomendado; não foi executada compilação no serviço Overleaf nesta revisão.
-3. Compile novamente se necessário para atualizar sumário, listas e referências. A entrada `document.tex` apenas carrega `main.tex`.
-4. Edite os capítulos em `texto/`. As sete figuras usam PDFs vetoriais em `diagramas/pdf/`, incluídos no pacote. Os originais editáveis estão em `diagramas/drawio/`. Cada PDF tem o mesmo nome-base que a fonte individual. O arquivo com sete abas reúne os mesmos desenhos. Para alterar uma figura, edite-a no Draw.io, atualize também a aba correspondente do arquivo conjunto e exporte o desenho como PDF no caminho indicado no LaTeX. Preserve ambas as pastas ao importar no Overleaf. As tabelas `generated/development_*.tex` são geradas das evidências locais, não contêm julgamentos humanos. Não as trate como resultados finais.
+O manuscrito apresenta a GK-P2.6-dev como artefato atual, com dez chats, seis volumes didáticos de quatro coleções, três sínteses e 40 blocos. Os resultados antigos continuam identificados por versão. As três consultas da ampliação são verificações de desenvolvimento; o plano final de 32 perguntas/64 oportunidades pertence à proposta anterior e exige replanejamento para os dez chats.
 
-O pacote é autossuficiente para compilar o texto; não precisa dos modelos nem PDFs didáticos. Utiliza abnTeX2, fontspec, TikZ, pgfgantt e algorithm2e. A revisão inclui as fontes Times New Roman em fontes/ para manter a mesma composição na cópia de trabalho e no pacote pessoal do autor. Preserve essa pasta ao compilar; sem ela, o preâmbulo utiliza TeX Gyre Termes como alternativa.
+Os suplementos selecionados incluem fontes da PoC atual, manifesto, seleção de recortes, índice preservado e verificações, além dos registros históricos citados. Compilar o texto não exige executar modelos. Os PDFs didáticos completos e os modelos locais não integram este pacote; para executar a PoC, é necessário o acervo da pasta local do projeto com os hashes indicados e os modelos Qwen3:8b e BGE-M3 instalados. Registros manuais, ambiente Python e estado ativo ficam fora do pacote.
 
-A edição atual foi recompilada localmente com Tectonic (motor XeTeX), a partir de extração limpa do ZIP. No Overleaf, selecione XeLaTeX. A nota de entrega da edição com sete figuras registra as verificações desta revisão. A ratificação de referências, a revisão humana de conteúdo e a avaliação final estão pendentes. A ausência de banca/assinaturas nesta versão é intencional: não se declara aprovação de um Projeto/TCC I ainda em elaboração.
+A revisão pedagógica independente e a ratificação das condições de reutilização permanecem pendentes. Os resumos usam 11 pontos, e o corpo, 12. A logo institucional foi preservada.
 
 ## Erro “fontspec requires either XeTeX or LuaTeX”
 
@@ -29,7 +26,7 @@ O manual disponível no portal do curso foi consultado na revisão (UNITINS, 202
 
 Essas informações documentam a edição e não integram o conteúdo acadêmico do PDF. O histórico de alterações, os backups e a matriz de atendimento ao parecer ficam nos materiais de acompanhamento, fora dos capítulos e apêndices da pesquisa.
 
-A revisão prospectiva de 04/11/2026 define o ASCS, equilibra a segunda revisão dentro de cada chat e tipo de caso e acrescenta o formulário de preferência pareada de clareza. Nenhuma resposta final ou assinatura humana foi produzida. A versão atual do PDF tem 41 páginas. O script histórico de métricas não implementa o novo protocolo.
+A revisão prospectiva de 04/11/2026 define o ASCS, equilibra a segunda revisão dentro de cada chat e tipo de caso e acrescenta o formulário de preferência pareada de clareza. Nenhuma resposta final ou assinatura humana foi produzida. A versão atual do PDF tem 44 páginas. O script histórico de métricas não implementa o novo protocolo.
 
 O ASCS prospectivo possui calculador próprio em `poc/final_metrics.py`, com verificação documental e taxas condicionadas à revisão humana encerrada. Seu código acompanha o pacote; não é necessário executá-lo para compilar o manuscrito.
 

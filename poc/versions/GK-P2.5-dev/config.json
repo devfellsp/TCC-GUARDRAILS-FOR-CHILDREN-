@@ -25,7 +25,7 @@
   },
   "default_policy": "comum",
   "runtime": {
-    "deadline_seconds": 120.0,
+    "deadline_seconds": 600.0,
     "status_timeout_seconds": 3.0,
     "retention_days": 30
   }

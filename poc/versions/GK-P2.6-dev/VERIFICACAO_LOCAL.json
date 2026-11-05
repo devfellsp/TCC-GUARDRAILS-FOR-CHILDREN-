@@ -1,0 +1,140 @@
+[
+  {
+    "channel": "portugues",
+    "question": "O que é uma fábula?",
+    "result": {
+      "from_source": true,
+      "id": "c9f74d329f5a485286556c5e49f7b116",
+      "answer": "FÁBULA: “Narrativa que objetiva, geralmente, transmitir uma lição de moral, em prosa ou em verso, cujos personagens são personificações de seres humanos. No final, normalmente, há uma conclusão ético-moral que busca levar o leitor a refletir sobre o conteúdo apresentado, buscando uma mudança de comportamento. Circula na forma impressa e on-line, como em livros, antologias, sites e blogs [...].",
+      "action": "allow",
+      "valid": true,
+      "seconds": 303.546,
+      "policy": "comum",
+      "channel": "portugues",
+      "response_style": "padrao",
+      "sources": [
+        {
+          "id": "rio_portugues_26_p36_1-1",
+          "source": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+          "page": 35,
+          "pdf_page": 36
+        }
+      ],
+      "stages": [
+        {
+          "name": "input_guard",
+          "seconds": 62.697
+        },
+        {
+          "name": "embedding",
+          "seconds": 0.088
+        },
+        {
+          "name": "generation",
+          "seconds": 110.16
+        },
+        {
+          "name": "grounding_guard",
+          "seconds": 93.084
+        },
+        {
+          "name": "output_guard",
+          "seconds": 20.108
+        }
+      ]
+    },
+    "kind": "verificacao manual ficticia; nao e avaliacao final"
+  },
+  {
+    "channel": "matematica",
+    "question": "Qual é a operação inversa da adição?",
+    "result": {
+      "from_source": false,
+      "id": "7ecf271e193f41aaa7e9525e02439284",
+      "answer": "A operação inversa da adição é a subtração.",
+      "action": "allow",
+      "valid": true,
+      "seconds": 115.096,
+      "policy": "comum",
+      "channel": "matematica",
+      "response_style": "padrao",
+      "sources": [
+        {
+          "id": "rio_matematica_26_p187_3-1",
+          "source": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+          "page": 186,
+          "pdf_page": 187
+        }
+      ],
+      "stages": [
+        {
+          "name": "input_guard",
+          "seconds": 14.815
+        },
+        {
+          "name": "embedding",
+          "seconds": 0.09
+        },
+        {
+          "name": "generation",
+          "seconds": 25.551
+        },
+        {
+          "name": "grounding_guard",
+          "seconds": 39.971
+        },
+        {
+          "name": "output_guard",
+          "seconds": 18.244
+        }
+      ]
+    },
+    "kind": "verificacao manual ficticia; nao e avaliacao final"
+  },
+  {
+    "channel": "ingles",
+    "question": "Quando usamos THERE IS e THERE ARE?",
+    "result": {
+      "from_source": true,
+      "id": "71da77116b7d4b2086e3788d9ebc2a5d",
+      "answer": "Usamos THERE IS no singular e THERE ARE no plural para dizer que algo existe em determinado lugar. Note que não dizemos, em língua inglesa, TER no lugar de EXISTIR. Para dizer: TEM UMA TV NA SALA, usamos: THERE IS A TV IN THE LIVING ROOM (e não HAVE A TV IN THE LIVING ROOM ).",
+      "action": "allow",
+      "valid": true,
+      "seconds": 248.34,
+      "policy": "comum",
+      "channel": "ingles",
+      "response_style": "padrao",
+      "sources": [
+        {
+          "id": "trilhas2_ingles_26_p68_1-1",
+          "source": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª ed. (SME-SP, 2021)",
+          "page": 66,
+          "pdf_page": 68
+        }
+      ],
+      "stages": [
+        {
+          "name": "input_guard",
+          "seconds": 16.355
+        },
+        {
+          "name": "embedding",
+          "seconds": 0.096
+        },
+        {
+          "name": "generation",
+          "seconds": 79.972
+        },
+        {
+          "name": "grounding_guard",
+          "seconds": 116.487
+        },
+        {
+          "name": "output_guard",
+          "seconds": 18.088
+        }
+      ]
+    },
+    "kind": "verificacao manual ficticia; nao e avaliacao final"
+  }
+]

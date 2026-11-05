@@ -2,9 +2,9 @@
 
 \section{Descrição do Problema}
 
-Esta pesquisa aplicada desenvolve e verifica preliminarmente uma prova de conceito de chatbot educativo com guardrails contextuais. O público pretendido é de sete a onze anos; a operação usa somente um perfil fictício de nove anos, em português brasileiro. Não há participantes infantis, observação de aprendizagem nem medição de compreensão. A versão atual, \texttt{GK-P2.1-dev}, atende quatro espaços: Ciências, História, Geografia e Geral, todos delimitados por seus acervos.
+Esta pesquisa aplicada desenvolve e verifica preliminarmente uma prova de conceito de chatbot educativo com guardrails contextuais. O público pretendido é de sete a onze anos; a operação usa somente um perfil fictício de nove anos, em português brasileiro. Não há participantes infantis, observação de aprendizagem nem medição de compreensão. A versão atual, \texttt{GK-P2.6-dev}, atende nove matérias e um chat Geral, delimitados por seus acervos. A GK-P2.1-dev, de quatro chats, permanece identificada no lote pareado já executado.
 
-O desenho atual adota uma regra de proteção comum e compara dois estilos de explicação. A regra procura permitir conteúdo educativo, intervir em pedidos prejudiciais, oferecer cuidado em pedidos de ajuda e informar falta de apoio nas fontes. O estilo Direto privilegia concisão; o Passo a passo solicita frase inicial simples, duas etapas e exemplo concreto, até 120 palavras. Essa instrução não garante clareza, sustentação ou adequação etária. Segurança, decisão de tratamento, correção, fidelidade e linguagem são avaliadas separadamente.
+O desenho atual adota uma regra de proteção comum e compara dois estilos de explicação. A regra procura permitir conteúdo educativo, intervir em pedidos prejudiciais, oferecer cuidado em pedidos de ajuda e informar falta de apoio nas fontes. O estilo Direto privilegia concisão; o Passo a passo solicita frase inicial simples, organização sequencial das ideias, até 120 palavras. Na GK-P2.6-dev, definições simples podem conter uma só afirmação, e exemplos dependem de apoio explícito nas fontes. Essa instrução não garante clareza, sustentação ou adequação etária. Segurança, decisão de tratamento, correção, fidelidade e linguagem são avaliadas separadamente.
 
 A comparação anterior entre uma ablação conservadora e uma configuração que permitia predação foi retirada da configuração ativa. Seus registros permanecem como histórico de desenvolvimento. O novo contraste mantém a proteção fixa e modifica somente a instrução de linguagem; não mede o efeito causal dos guardrails em comparação com um sistema desprotegido. Os lotes históricos e atuais têm populações de perguntas e denominadores separados.
 
@@ -12,24 +12,34 @@ A comparação anterior entre uma ablação conservadora e uma configuração qu
 
 \subsection{Acervo e revisão documental}
 
-O índice utilizado no lote multidisciplinar de desenvolvimento contém oito trechos: cinco recortes didáticos de Ciências e três sínteses experimentais, uma para cada um dos chats de História, Geografia e Geral. Os materiais suplementares acompanham o projeto: o lote multidisciplinar e seus identificadores estão em \nolinkurl{avaliacao/evidencias/multichat_20261104_revisado/}; os casos e instrumentos prospectivos, em \nolinkurl{avaliacao/final_multichat_v1/}. A configuração identifica a versão \texttt{GK-P2.1-dev}, e os registros vinculam cada execução ao snapshot correspondente. As instruções operacionais estão em \nolinkurl{poc/docs/MATERIAIS_E_REPRODUCAO.md}. O manifesto registra arquivos, páginas dos documentos em formato PDF (do inglês \textit{Portable Document Format}), âncoras, hashes, exclusões e referências externas das sínteses. Os textos de História, Geografia e Geral foram conferidos documentalmente antes do novo lote; não receberam certificação pedagógica nem revisão humana independente.
+O acervo atual contém \textbf{40 blocos de consulta}, extraídos de seis volumes didáticos de quatro coleções e de três sínteses experimentais. Na evolução do artefato, a GK-P2.1-dev continha oito blocos, e a etapa intermediária chegou a 18; a GK-P2.6-dev acrescentou 21 recortes, um deles segmentado em dois blocos. As contagens se referem a unidades distintas: volumes, recortes selecionados e blocos efetivamente recuperáveis. Os arquivos de origem, páginas impressas e páginas dos documentos em formato PDF (do inglês \textit{Portable Document Format}), âncoras, hashes e exclusões constam de \nolinkurl{poc/versions/GK-P2.6-dev/corpus_manifest.json}. A seleção literal e exemplos de perguntas estão em \nolinkurl{poc/versions/GK-P2.6-dev/SELECAO_DO_ACERVO.json}.
 
-A Tabela~\ref{tab:corpus} apresenta o conteúdo e a procedência dos trechos de cada chat.
+As coleções são Trilhas de Aprendizagens, volumes 1 e 2 (São Paulo, Município, 2021a, 2021b); Livro do Estudante/Currículo em Ação, volumes 2 e 3 (São Paulo, Estado, [2024]a, [2024]b); Material Rioeduca do quarto ano (Rio de Janeiro, 2026); e Caderno de Atividades do quarto ano, edição revisada (Campos dos Goytacazes, 2025). As três sínteses de História, Geografia e Geral da etapa anterior foram mantidas. Nessas sínteses, a conferência conceitual utiliza as obras de Goiânia ([202-]a--e), Smithsonian Institution ([2012?]) e Núcleo de Informação e Coordenação do Ponto BR (2021), além de sugestões autorais explicitamente identificadas.
+
+A Tabela~\ref{tab:corpus} apresenta a cobertura operacional, sem equivalê-la ao currículo integral do quarto ano.
 
 \begin{table}[htbp]\centering\small\SingleSpacing
-\caption{Conteúdo do acervo atual por chat}\label{tab:corpus}
-\begin{tabularx}{\textwidth}{L{2.1cm} L{2.1cm} Y}
-\toprule Chat & Trechos & Conteúdo e procedência \\\midrule
-Ciências & 5 recortes & Alimentação, produtores, consumidores e decomposição; São Paulo (Município, 2021) e São Paulo (Estado, [2024]). Páginas impressas/PDF: 154/156, 8/10, 9/11, 13/15 e 27/29. \\
-História & 1 síntese & Fontes escritas, orais, visuais e materiais; memória e investigação de registros. Conferência conceitual em materiais da Secretaria Municipal de Educação de Goiânia (Goiânia, [202-]d, [202-]e). \\
-Geografia & 1 síntese & Paisagem, legenda e relações campo-cidade; materiais da Secretaria Municipal de Educação de Goiânia (Goiânia, [202-]a, [202-]b, [202-]c). \\
-Geral & 1 síntese & Sugestões autorais de organização e convivência; sombra conferida no Smithsonian Institution ([2012?]) e cuidados com dados no Núcleo de Informação e Coordenação do Ponto BR (2021). \\
-\bottomrule\end{tabularx}\fonte{Manifesto e conferência documental de 4 nov. 2026.}
+\caption{Acervo recuperável por chat na GK-P2.6-dev}\label{tab:corpus}
+\begin{tabularx}{\textwidth}{L{2.6cm} L{1.2cm} Y}
+\toprule Chat & Blocos & Temas selecionados e procedência \\\midrule
+Língua Portuguesa & 2 & Fábula e crônica; Rioeduca. \\
+Matemática & 3 & Leitura de frações, medidas de comprimento e operação inversa; Rioeduca. \\
+Ciências & 7 & Alimentação, cadeias alimentares, decomposição, vidro e recursos naturais; Trilhas e Livro do Estudante. \\
+História & 6 & Fontes, memória, nomadismo, agricultura e trocas; síntese anterior e Livro do Estudante. \\
+Geografia & 9 & Paisagem, mapas, migração, matérias-primas e produção; síntese anterior e Livro do Estudante. \\
+Arte & 3 & Cultura popular, cantigas de roda e recorte sobre Romero Britto; Trilhas e Campos. \\
+Educação Física & 2 & Esportes de invasão, basquete e forró; Campos. \\
+Língua Inglesa & 3 & \textit{There is/are}, frequência e diálogo de restaurante; Trilhas e Livro do Estudante. \\
+Tecnologia e Inovação & 3 & Protótipos, wiki e comandos de repetição; Livro do Estudante. \\
+Geral & 2 & Organização, convivência, sombra e privacidade; síntese anterior e Rioeduca. \\
+Total & 40 & Seis PDFs e três sínteses; recuperação restrita ao chat selecionado. \\
+\bottomrule\end{tabularx}
+\fonte{Manifesto e índice preservado da GK-P2.6-dev; conferência documental de 5 nov. 2026.}
 \end{table}
 
-Em Ciências, preservaram-se as exclusões anteriores de exercícios e formulações problemáticas. Nas sínteses, foram retiradas afirmações sem vínculo documental explícito, como a descrição de transportes no recorte de História. O exemplo de organização da mochila foi identificado como sugestão autoral, sem promessa de benefício escolar. As fontes externas foram usadas para conferir conceitos; não se importaram imagens nem páginas integrais. A existência de uma página institucional não certifica a adaptação produzida. Parte das fontes de conferência pertence a outros anos escolares e à Educação de Jovens e Adultos (EJA), exigindo revisão específica da linguagem para o perfil pretendido.
+A seleção documental assistida privilegiou explicações textuais que permitem identificar uma afirmação e sua página de origem. Exercícios com lacunas, perguntas dependentes de imagens, instruções arriscadas e formulações problemáticas foram excluídos dos novos recortes. Educação Física utiliza explicações conceituais; Inglês utiliza exemplos bilíngues apoiados no material. O número de matérias corresponde ao conteúdo disponível, sem presumir a grade de uma escola real. Nenhum material recebeu certificação pedagógica independente. O acesso público ao PDF não foi interpretado como licença irrestrita: créditos, conteúdos de terceiros e condições de reutilização precisam de ratificação antes de redistribuição.
 
-Como os textos da Tabela~\ref{tab:corpus} se tornam fontes de uma resposta? A Figura~\ref{fig:acervo} distingue a preparação do índice, realizada antes das consultas, da busca executada para cada pergunta. Na preparação, cada um dos oito trechos recebe um identificador, a indicação do chat a que pertence e uma representação vetorial. Na consulta, o sistema representa a pergunta como vetor e considera apenas os trechos do chat escolhido ao selecionar os resultados. Assim, mesmo que um trecho de Geografia seja parecido com uma pergunta de Ciências, ele fica fora da seleção.
+Como os textos da Tabela~\ref{tab:corpus} se tornam fontes de uma resposta? A Figura~\ref{fig:acervo} distingue a preparação do índice, realizada antes das consultas, da busca executada para cada pergunta. Na preparação, cada um dos 40 blocos recebe um identificador, a indicação do chat a que pertence e uma representação vetorial. Na consulta, o sistema representa a pergunta como vetor e considera apenas os trechos do chat escolhido ao selecionar os resultados. Assim, mesmo que um trecho de Geografia seja parecido com uma pergunta de Ciências, ele fica fora da seleção.
 
 \begin{figure}[htbp]\centering
 \caption{Preparação do índice e consulta ao acervo do chat selecionado}\label{fig:acervo}
@@ -37,54 +47,54 @@ Como os textos da Tabela~\ref{tab:corpus} se tornam fontes de uma resposta? A Fi
 \fonte{Elaboração própria a partir do manifesto do acervo e da configuração de recuperação.}
 \end{figure}
 
-Os arquivos e suas referências estão em \nolinkurl{poc/corpus_manifest.json}; a revisão detalhada está em \nolinkurl{avaliacao/revisao_acervos_multichat_2026-11-04.json}. A revisão humana independente do acervo e das condições de reutilização permanece necessária.
+Os materiais e suas referências estão no manifesto da versão atual. Os arquivos \nolinkurl{VERIFICACAO_ENTREGA.json} e \nolinkurl{VERIFICACAO_LOCAL.json}, em \nolinkurl{poc/versions/GK-P2.6-dev/}, identificam as verificações da ampliação. As evidências do lote pareado continuam em \nolinkurl{avaliacao/evidencias/multichat_20261104_revisado/}; os instrumentos prospectivos originais permanecem em \nolinkurl{avaliacao/final_multichat_v1/}, vinculados à GK-P2.1-dev.
 
 \subsection{Parâmetros e rastreabilidade}
 
-A Tabela~\ref{tab:parametros} reúne os parâmetros mantidos no lote de desenvolvimento.
+A Tabela~\ref{tab:parametros} reúne os parâmetros operacionais da GK-P2.6-dev.
 
 \begin{table}[htbp]\centering\small\SingleSpacing
-\caption{Parâmetros mantidos no novo lote}\label{tab:parametros}
+\caption{Parâmetros operacionais da GK-P2.6-dev}\label{tab:parametros}
 \begin{tabularx}{\textwidth}{L{4.1cm} L{2.8cm} Y}
 \toprule Parâmetro & Valor & Limite de interpretação \\\midrule
 Modelo / embeddings & Qwen3:8b / BGE-M3 & Modelos locais, sem seleção comparativa. \\
 Temperatura / semente & 0 / 42 & Não asseguram determinismo. \\
-Contexto / saída máxima & 4096 / 400 tokens & Sem prova de ausência de truncamento em toda entrada. \\
+Contexto / saída máxima & 4096 / 900 tokens & Sem prova de ausência de truncamento em toda entrada. \\
 Top-p / penalidade & 0,9 / 1,1 & Mantidos, não otimizados neste estudo. \\
 Recuperação & 3 trechos / 0,45 & Similaridade não prova apoio factual. \\
 Blocos / sobreposição & 850 caracteres / 1 sentença & Acervo pequeno e intencional. \\
-Resposta / prazo & 120 palavras / 120 segundos & Não medem compreensão infantil. \\
-\bottomrule\end{tabularx}\fonte{Configuração da versão GK-P2.1-dev.}
+Resposta / prazo & 120 palavras / 600 segundos & Não medem compreensão infantil. \\
+\bottomrule\end{tabularx}\fonte{Configuração da versão GK-P2.6-dev; classificadores e auditor possuem limites próprios.}
 \end{table}
 
-A sondagem histórica examinou os limiares 0,35, 0,45 e 0,55 em 27 perguntas de Ciências; observaram-se respectivamente 20, 6 e 6 passagens pelo filtro. Esses resultados não calibram automaticamente os novos chats. O limiar 0,45 foi conservado como opção operacional anterior, sem alegação de ótimo. Cada lote registra hashes de código, configuração, estilos, modelos e índice. O novo acervo exigiu reconstrução do índice antes das inferências.
+A sondagem histórica examinou os limiares 0,35, 0,45 e 0,55 em 27 perguntas de Ciências; observaram-se respectivamente 20, 6 e 6 passagens pelo filtro. Esses resultados não calibram automaticamente os novos chats. O limiar 0,45 foi conservado como opção operacional anterior, sem alegação de ótimo. Cada lote registra hashes de código, configuração, estilos, modelos e índice. A ampliação exigiu reconstrução do índice. O prazo do navegador é de 610 segundos; os limites de saída são 240 tokens para os classificadores e 550 para o auditor. O limite de 900 tokens do gerador não substitui o controle final de 120 palavras.
 
 \input{texto/04_artefato.tex}
 
 \section{Protocolo de avaliação}
 
-Quais evidências já foram produzidas e quais decisões ainda dependem de avaliação? A Figura~\ref{fig:protocolo} distingue os dois lotes históricos de Ciências, com 108 execuções sobre 27 perguntas reutilizadas, do lote atual, com 32 tentativas sobre 16 perguntas. As 64 tentativas do plano final dependem da ratificação humana das referências e do congelamento da versão.
+A Figura~\ref{fig:protocolo} distingue o piloto, os dois lotes históricos de Ciências e o lote pareado da GK-P2.1-dev das verificações funcionais da GK-P2.6-dev. A proposta anterior de 32 perguntas e 64 oportunidades foi elaborada para quatro chats. A ampliação exige revisar casos, referências e cobertura antes de ratificar e congelar um novo plano final; não há quantitativo final definido para os dez chats.
 
 \begin{figure}[htbp]\centering
-\caption{Separação entre histórico, desenvolvimento executado e avaliação final planejada}\label{fig:protocolo}
+\caption{Evidências por versão e replanejamento da avaliação final}\label{fig:protocolo}
 \input{texto/figura_protocolo.tex}
 \fonte{Elaboração própria; a avaliação final depende de ratificação e congelamento.}
 \end{figure}
 
-\subsection{Desenvolvimento e comparação pareada}
+\subsection{Lote pareado da GK-P2.1-dev}
 
-O desenvolvimento atual utiliza 16 enunciados fictícios elaborados para o estudo e conhecidos no desenvolvimento, quatro por chat: pergunta educativa apoiada, falta de apoio, risco e ajuda. Cada pergunta é submetida aos estilos Direto e Passo a passo, totalizando 32 tentativas sobre 16 perguntas. O modelo, os parâmetros, as fontes, o perfil e a regra comum permanecem iguais. A agenda é embaralhada com semente 20261104 e alterna o primeiro estilo: oito perguntas começam por cada estilo. Não há memória entre perguntas nem repetição seletiva para substituir falhas.
+O lote de desenvolvimento da GK-P2.1-dev utilizou 16 enunciados fictícios elaborados para o estudo e conhecidos no desenvolvimento, quatro por chat: pergunta educativa apoiada, falta de apoio, risco e ajuda. Cada pergunta é submetida aos estilos Direto e Passo a passo, totalizando 32 tentativas sobre 16 perguntas. O modelo, os parâmetros, as fontes, o perfil e a regra comum permanecem iguais. A agenda é embaralhada com semente 20261104 e alterna o primeiro estilo: oito perguntas começam por cada estilo. Não há memória entre perguntas nem repetição seletiva para substituir falhas.
 
 As referências esperadas foram conferidas antes das saídas por leitura dos trechos e da regra de cuidado. A recuperação efetiva é uma variável distinta: o sistema pode falhar em recuperar uma resposta existente. Os casos de risco e ajuda são julgados pela regra de proteção, sem atribuir ao acervo didático a autoridade para orientações de cuidado. As referências propostas aguardam ratificação humana documentada.
 
 O lote de desenvolvimento serve para encontrar falhas e preparar a avaliação posterior. A inspeção preliminar considera conteúdo e fontes, mas não substitui julgamento humano independente; as condições eram conhecidas no desenvolvimento. As contagens de rotas são apresentadas separadamente dessa inspeção. Os resultados e limitações do lote constam do Capítulo~\ref{cap:evidencias}.
 
-\subsection{Conjunto reservado e plano final}
+\subsection{Proposta anterior de avaliação e replanejamento}
 
-O plano posterior, identificado como \texttt{GK-P2-FINAL-1}, prevê 32 enunciados em 16 famílias, com duas formulações por família, distribuídos conforme a Tabela~\ref{tab:amostra}. Cada pergunta será submetida aos dois estilos sob a regra comum, em uma tentativa por condição: 64 oportunidades planejadas. A ausência de repetições técnicas limita a análise da variação residual. Esse conjunto não foi usado no desenvolvimento do protótipo nem executado nesta revisão.
+A proposta elaborada para a GK-P2.1-dev, identificada como \texttt{GK-P2-FINAL-1}, prevê 32 enunciados em 16 famílias, com duas formulações por família, distribuídos conforme a Tabela~\ref{tab:amostra}. Cada pergunta será submetida aos dois estilos sob a regra comum, em uma tentativa por condição: 64 oportunidades planejadas. A ausência de repetições técnicas limita a análise da variação residual. Esse conjunto não foi executado. A reserva tinha caráter operacional, com enunciados conhecidos no desenvolvimento. Sua identificação é preservada, mas sua independência e suas referências não podem ser presumidas para o acervo ampliado.
 
 \begin{table}[htbp]\centering\small\SingleSpacing
-\caption{Cobertura proposta para a avaliação final multidisciplinar}\label{tab:amostra}
+\caption{Proposta de cobertura para a GK-P2.1-dev, anterior à ampliação}\label{tab:amostra}
 \begin{tabularx}{\textwidth}{L{2.6cm} Y L{1.7cm} L{1.9cm}}
 \toprule Tipo & Cobertura & Perguntas & Tentativas \\\midrule
 Educativa apoiada & Duas por chat, com referências explícitas & 8 & 16 \\
@@ -99,15 +109,17 @@ A reserva é operacional: os enunciados são conhecidos no desenvolvimento e com
 
 A agenda proposta usa semente fixa, alternância equilibrada de estilos e seleção prévia de 16 saídas para segunda revisão, uma por família. Cada chat e cada tipo de caso contribui com quatro saídas, duas de cada estilo. Planejam-se 64 julgamentos primários e 16 secundários. Uma hipótese de um a três minutos por julgamento corresponde a 80--240 minutos, além da leitura das fontes e conciliação; não é tempo medido nem compromisso de disponibilidade. Os textos podem revelar o estilo, portanto a ocultação de metadados é parcial e não constitui cegamento pleno.
 
+Para a GK-P2.6-dev, é necessário revisar as referências de apoio, os temas ausentes, a distribuição por matéria e o contraste entre estilos. Uma pergunta antes classificada como fora do acervo pode ter passado a encontrar apoio nos novos livros. O protocolo da ampliação deverá ser versionado e congelado após essa revisão; não se atribuem automaticamente aos dez chats os quantitativos da Tabela~\ref{tab:amostra}.
+
 \subsection{Rubrica e condições para liberação}
 
 A revisão separa segurança, tratamento da solicitação, correção factual, fidelidade às fontes, clareza e qualidade dos exemplos. Classificações inconclusivas e não aplicáveis exigem justificativa. Para clareza, a comparação pareada admite preferência pelo Direto, pelo Passo a passo, empate ou inconclusivo; quantidade de palavras não é sinônimo de qualidade. Recusas e orientações fixas podem ser iguais nos dois estilos, sem constituir falha da comparação.
 
-Antes das respostas finais, um revisor humano deve conferir categoria, apoio, tratamento esperado e referências dos 32 casos, registrando identidade, data e justificativa. O protocolo, os casos, os modelos, o índice e as instruções devem ser congelados após essa ratificação. O executor reservado verifica esses requisitos e interrompe a execução caso haja alteração. A referência proposta não libera automaticamente a avaliação final.
+Na proposta da GK-P2.1-dev, antes das respostas finais um revisor humano deveria conferir categoria, apoio, tratamento esperado e referências dos 32 casos, registrando identidade, data e justificativa. O protocolo, os casos, os modelos, o índice e as instruções devem ser congelados após essa ratificação. O executor reservado verifica esses requisitos e interrompe a execução caso haja alteração. A referência proposta não libera automaticamente a avaliação final. Esses requisitos também se aplicam ao novo planejamento, cujo conjunto de casos ainda precisa ser definido.
 
-\subsection{Indicadores e tratamento das perdas}
+\subsection{Indicadores prospectivos da proposta anterior}
 
-As rotas observadas não substituem julgamento de adequação. Os indicadores são apresentados por chat, grupo e estilo, com numerador, denominador e contagem de pendências. O atendimento seguro, correto e sustentado (ASCS) aplica-se exclusivamente às oito oportunidades educativas apoiadas de cada estilo, distribuídas em quatro famílias. Os grupos de risco, ajuda e falta de apoio recebem indicadores próprios.
+Os indicadores a seguir pertencem à proposta da GK-P2.1-dev e preservam seu denominador de oito oportunidades educativas por estilo. Sua adaptação à GK-P2.6-dev depende do novo plano. As rotas observadas não substituem julgamento de adequação. Os indicadores são apresentados por chat, grupo e estilo, com numerador, denominador e contagem de pendências. O atendimento seguro, correto e sustentado (ASCS) aplica-se exclusivamente às oito oportunidades educativas apoiadas de cada estilo, distribuídas em quatro famílias. Os grupos de risco, ajuda e falta de apoio recebem indicadores próprios.
 
 Para cada oportunidade educativa, define-se sucesso somente quando há execução válida, explicação liberada e julgamento humano conclusivo de segurança e tratamento adequados, factualidade integral e sustentação integral. No grupo educativo, tratamento adequado exige responder à pergunta central de modo completo e pertinente; resposta tangencial ou incompleta não satisfaz esse critério. Essa definição utiliza o campo de tratamento dos pareceres, sem presumir atendimento a partir da rota automática. No conjunto reservado atual, todas as perguntas educativas solicitam explicações factuais; factualidade não aplicável não caracteriza sucesso. Exemplos hipotéticos precisam ser identificados como tais e preservar as relações conceituais sustentadas pelas fontes.
 
@@ -120,4 +132,4 @@ ASCS_{\mathrm{oportunidade},s}=\frac{|S_s|}{8}
 
 O primeiro indicador não é calculado se $C_s$ estiver vazio. O segundo expressa a proporção de oportunidades com sucesso demonstrado; perdas técnicas e casos inconclusivos não entram no numerador, mas permanecem nas oito oportunidades. Isso não os transforma em falhas de conteúdo comprovadas. Antes de todas as oportunidades receberem execução ou registro de perda e de se encerrar a revisão humana dos resultados válidos, ambos permanecem pendentes. Julgamentos ausentes não são convertidos em insucessos. Relatam-se separadamente sucessos, insucessos conclusivos, inconclusivos, pendências e perdas técnicas.
 
-Erros de modelo, prazo, formato \textit{JavaScript Object Notation} (JSON), índice ou persistência são perdas técnicas, não proteção correta. A comparação pareada usa somente perguntas com decisão conclusiva nos dois estilos, explicitando pares excluídos. Apresentam-se também resultados por família, sem tratar suas duas formulações como observações independentes. A preferência de clareza é registrada separadamente, após os pareceres individuais, admitindo empate, inconclusivo ou não aplicável. Não se somam as 32 tentativas atuais às 108 históricas. Os indicadores de conteúdo dependem de revisão humana documentada. O cálculo prospectivo é implementado em \nolinkurl{poc/final_metrics.py}, separado do calculador histórico entre políticas. O programa lê resultados, pareceres e conciliação, confere a correspondência documental do lote e mantém as taxas finais pendentes até o encerramento previsto; não produz julgamentos humanos.
+Erros de modelo, prazo, formato \textit{JavaScript Object Notation} (JSON), índice ou persistência são perdas técnicas, não proteção correta. A comparação pareada usa somente perguntas com decisão conclusiva nos dois estilos, explicitando pares excluídos. Apresentam-se também resultados por família, sem tratar suas duas formulações como observações independentes. A preferência de clareza é registrada separadamente, após os pareceres individuais, admitindo empate, inconclusivo ou não aplicável. Não se somam as 32 tentativas da GK-P2.1-dev às 108 históricas nem às consultas da ampliação. Os indicadores de conteúdo dependem de revisão humana documentada. O cálculo prospectivo é implementado em \nolinkurl{poc/final_metrics.py}, separado do calculador histórico entre políticas. O programa lê resultados, pareceres e conciliação, confere a correspondência documental do lote e mantém as taxas finais pendentes até o encerramento previsto; não produz julgamentos humanos.

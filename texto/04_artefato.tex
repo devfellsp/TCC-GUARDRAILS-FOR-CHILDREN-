@@ -2,7 +2,7 @@
 
 \subsection{Versão e fluxo efetivo}
 
-A versão atual examinada é \texttt{GK-P2.1-dev}, com regra comum nos quatro chats e duas instruções de linguagem. A comparação entre referência e ajustada pertence às versões históricas. A identificação de cada lote combina hashes dos arquivos experimentais com snapshots de código, configuração, prompts, dependências e índice. Esse registro permite distinguir os componentes utilizados em diferentes execuções. O piloto histórico é apresentado separadamente no Capítulo~\ref{cap:evidencias}.
+A versão atual implementada é \texttt{GK-P2.6-dev}, com dez chats, regra comum de proteção e dois estilos de explicação. O lote pareado de 32 tentativas pertence à GK-P2.1-dev; a comparação entre políticas pertence às versões históricas. Cada execução identifica código, configuração, prompts, dependências, modelos e índice por hashes e snapshots, evitando atribuir uma evidência antiga a uma versão posterior.
 
 Quais componentes participam de uma resposta educativa e como se conectam? A Figura~\ref{fig:arquitetura} organiza os componentes em três grupos: (i) entrada; (ii) processamento com fontes; e (iii) verificação e entrega. O índice fornece trechos para a recuperação, e o estilo escolhido orienta a geração. As setas mostram onde uma intervenção ou a falta de apoio encerra esse caminho e conduz ao registro. Encerramentos alternativos são detalhados na Figura~\ref{fig:decisao}. Antes de inferência há validação de entrada e uma detecção local parcial de identificadores pessoais. O classificador de entrada produz categoria, necessidade de proteção, predação educativa, busca de ajuda e justificativa. Proteção tem precedência sobre a exceção educativa. Quando a entrada prossegue, a busca fornece até três passagens acima do limiar. Ausência de passagens provoca redirecionamento, não demonstra ausência real de apoio.
 
@@ -12,11 +12,11 @@ Quais componentes participam de uma resposta educativa e como se conectam? A Fig
 \fonte{Elaboração própria a partir da implementação do protótipo.}
 \end{figure}
 
-O gerador informa resposta, identificadores (IDs) de fontes e indicação de apoio. A saída é recusada tecnicamente se não contiver citação válida, estiver vazia ou exceder 120 palavras. Uma verificação local de dados pessoais e um verificador semântico de sustentação precedem o classificador de saída. Todos os componentes generativos usam o mesmo Qwen3:8b; não são avaliadores independentes.
+O gerador informa apoio e até três afirmações, cada uma vinculada a identificadores (IDs) de fontes recuperadas. O programa monta a resposta e verifica extensão, validade dos IDs e vocabulário ancorado nos trechos citados. Citações são obtidas do próprio acervo, não fornecidas livremente pelo gerador. O auditor verifica cada afirmação, a pertinência à pergunta e a linguagem. Se o candidato gerado não for aceito, uma alternativa literal do material pode ser examinada; sua liberação também depende das verificações e da proteção de saída. Esgotadas as alternativas sem aprovação, o sistema informa insuficiência. Todos os componentes generativos utilizam Qwen3:8b e não constituem avaliadores independentes.
 
-No caminho completo há \textbf{quatro chamadas ao LLM}: classificação de entrada, geração, sustentação e classificação de saída, além de uma chamada de embedding da pergunta. Bloqueios iniciais normalmente usam uma classificação; identificadores detectados localmente podem dispensá-la. A ausência de passagens interrompe o caminho de geração após a classificação da entrada e a geração do embedding da pergunta. A insuficiência declarada pelo gerador e a reprovação na verificação de sustentação também interrompem esse caminho antes da classificação da saída. Em todos esses casos, a tentativa segue para o registro da rota correspondente. Consultas de estado e identidades não são chamadas de geração. Contagens reais por execução estão nos registros.
+Quando o primeiro candidato é aprovado, o caminho completo utiliza quatro chamadas ao LLM: entrada, geração, sustentação e saída, além de uma chamada de embedding da pergunta. A avaliação de uma alternativa literal pode acrescentar outra chamada de sustentação; o gerador é acionado uma única vez por tentativa. Bloqueios na entrada e ausência de passagens encerram o caminho antecipadamente; a detecção local de dados pessoais pode dispensar a classificação por modelo. Consultas de estado não são gerações. As chamadas efetivamente realizadas constam do registro de cada tentativa.
 
-Em que ponto uma pergunta pode deixar de seguir o caminho completo? A Figura~\ref{fig:percurso} ilustra essas decisões. Para explicar o papel dos decompositores, o chat de Ciências busca trechos do acervo. Três situações levam à mensagem de apoio insuficiente: a busca não recupera trechos acima do limiar, o próprio gerador declara que os trechos não bastam ou o verificador considera a explicação sem sustentação. A proteção pode intervir tanto na entrada quanto na saída. Se a saída exigir bloqueio ou orientação, o sistema substitui o rascunho pela mensagem de proteção correspondente. Uma falha técnica em qualquer etapa encaminha a tentativa para registro como perda. A mensagem de cada rota só é exibida após a gravação do registro. Se a gravação falhar, o sistema retém a resposta.
+Em que ponto uma pergunta pode deixar de seguir o caminho completo? A Figura~\ref{fig:percurso} ilustra essas decisões. Para explicar o papel dos decompositores, o chat de Ciências busca trechos do acervo. A insuficiência é comunicada quando a busca não recupera trechos acima do limiar ou quando nenhum candidato passa pelos controles. A indicação de insuficiência pelo gerador impede liberar esse candidato; a alternativa literal, quando disponível, continua sujeita à verificação. A proteção pode intervir tanto na entrada quanto na saída. Se a saída exigir bloqueio ou orientação, o sistema substitui o rascunho pela mensagem de proteção correspondente. Uma falha técnica em qualquer etapa encaminha a tentativa para registro como perda. A mensagem de cada rota só é exibida após a gravação do registro. Se a gravação falhar, o sistema retém a resposta.
 
 \begin{figure}[htbp]\centering
 \caption{Percurso de uma pergunta e pontos de encerramento no GuardKids}\label{fig:percurso}
@@ -46,6 +46,8 @@ A Tabela~\ref{tab:politicas} relaciona as categorias de proteção aos tratament
 
 O rótulo \texttt{normal} representa entradas sem categoria de proteção. Explicar que uma palavra pode ofender, sem repeti-la abusivamente, não é automaticamente proibido. Entretanto, o corpus curricular atual não sustenta uma aula sobre bullying ou substâncias: uma explicação neutra pode terminar em insuficiência/redirecionamento. Solicitações de ajuda recebem orientação fixa quando reconhecidas. A Tabela~\ref{tab:politicas} distingue os propósitos, sem prometer conteúdo educativo fora do acervo.
 
+O iniciador \nolinkurl{poc/Iniciar_GuardKids_Atual.cmd} verifica os modelos instalados, inicia o serviço Ollama se necessário e restaura o índice preservado quando falta o índice ativo. A interface local utiliza a porta 8770. Os leitores PDF são fechados após a extração de cada fonte, e o BGE-M3 é liberado depois da busca para reduzir a memória ocupada durante a geração em CPU. Esses procedimentos não alteram o modelo, o limiar ou a exigência de sustentação.
+
 Quando orientar, bloquear ou permitir que a consulta prossiga? A Figura~\ref{fig:decisao} apresenta a ordem dessas decisões na entrada e na saída. A proteção tem precedência mesmo quando a pergunta menciona um tema escolar.
 
 \begin{figure}[htbp]\centering
@@ -71,11 +73,15 @@ Aplicar regra comum com precedência da proteção\;
 Filtrar o chat e recuperar até três passagens com limiar configurado\;
 \eSe{não há passagens}{Definir redirecionamento\;}{
 Gerar resposta estruturada no estilo escolhido\;
-\eSe{o gerador declara insuficiência}{Definir redirecionamento\;}{
-Validar resposta, extensão, citações e dados pessoais\;
-Verificar sustentação semântica nas fontes citadas\;
-\eSe{não sustentada}{Definir redirecionamento\;}{Classificar saída e aplicar proteção\;}
+Formar candidatos: rascunho gerado e alternativa literal disponível\;
+\Para{cada candidato, até encontrar uma decisão válida}{
+Validar apoio declarado, extensão, IDs e vocabulário ancorado\;
+\Se{candidato válido}{
+Conferir dados pessoais e sustentação de cada afirmação\;
+\Se{candidato aprovado}{Classificar saída e aplicar proteção; encerrar seleção\;}
 }}
+\Se{nenhum candidato aprovado}{Definir redirecionamento\;}
+}
 }{Definir mensagem fixa de bloqueio ou orientação\;}
 Em exceção técnica, registrar perda e mensagem de indisponibilidade\;
 Persistir atomicamente; se falhar, reter a resposta e sinalizar erro\;

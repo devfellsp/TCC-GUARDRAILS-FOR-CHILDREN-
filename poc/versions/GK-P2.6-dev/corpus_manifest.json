@@ -1,0 +1,663 @@
+{
+  "status": "Ampliacao documental assistida; revisao pedagogica independente e ratificacao das condicoes de reutilizacao pendentes.",
+  "sources": [
+    {
+      "id": "trilhas2021",
+      "file": "Livros_Didadicos/07_Apostila_Ciencias_4_Ano_Seres_Vivos_Trilhas_SP_2021.pdf",
+      "title": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª edição (SME-SP, 2021)",
+      "rights": "Conferir condições de reutilização e créditos de terceiros antes de publicar o corpus. Página 154 contém adaptação da Britannica.",
+      "passages": [
+        {
+          "pdf_page": 156,
+          "printed_page": 154,
+          "start": "Descobrindo sobre as cadeias alimentares",
+          "end": "Os decompositores geralmente",
+          "reason": "Explicação textual de produtores e consumidores; exclui exercícios com lacunas e a simplificação dos decompositores como elo final."
+        }
+      ],
+      "channel": "ciencias",
+      "source_sha256": "5a8395756c35e0f19f84a93636254c04bc2017cb07196466747cdc078864501d"
+    },
+    {
+      "id": "sp2024",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "title": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, 2024)",
+      "rights": "Conferir condições de reutilização e créditos antes de distribuir trechos ou disponibilizar o sistema publicamente.",
+      "passages": [
+        {
+          "pdf_page": 10,
+          "printed_page": 8,
+          "start": "A alimentação fornece",
+          "end": "Você sabia que",
+          "reason": "Parágrafo textual sobre alimentação e energia; tabela visual excluída."
+        },
+        {
+          "pdf_page": 11,
+          "printed_page": 9,
+          "start": "Você já pensou",
+          "end": "Fotossíntese",
+          "reason": "Explicação textual de onivoria e fotossíntese."
+        },
+        {
+          "pdf_page": 15,
+          "printed_page": 13,
+          "start": "Os consumidores",
+          "reason": "Definições de consumidores e decomposição legíveis como texto."
+        },
+        {
+          "pdf_page": 29,
+          "printed_page": 27,
+          "start": "Decompositores\nOs decompositores",
+          "reason": "Somente o texto sobre decomposição; exclui a definição excessivamente ampla de fungos como microscópicos."
+        }
+      ],
+      "exclusions": [
+        {
+          "pdf_page": 24,
+          "printed_page": 22,
+          "reason": "Formulação problemática sobre fluxo não unidirecional e produção de energia; página não incorporada."
+        },
+        {
+          "pdf_page": 14,
+          "printed_page": 12,
+          "reason": "Mistura definição de cadeia alimentar e ecossistema e apresenta decompositores como nível trófico único; excluída nesta seleção."
+        },
+        {
+          "reason": "Atividades verdadeiro/falso, lacunas, QR codes e figuras não são importados como afirmações científicas."
+        }
+      ],
+      "channel": "ciencias",
+      "source_sha256": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987"
+    },
+    {
+      "id": "piloto_historia",
+      "channel": "historia",
+      "file": "poc/corpus/historia.txt",
+      "title": "História — síntese experimental, revisão assistida por IA",
+      "rights": "Paráfrase autoral assistida por IA; sem imagens ou reprodução integral das páginas externas. Revisão humana independente pendente.",
+      "passages": [],
+      "references": [
+        {
+          "title": "História — Cada objeto conta uma história, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-cada-objeto-conta-uma-historia/",
+          "coverage": "Tipos de fonte, objetos antigos e memória; texto para 2º ano, não validação de adequação ao 4º ano."
+        },
+        {
+          "title": "História — Tipos de fontes históricas, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-tipos-de-fontes-historicas/",
+          "coverage": "Investigação crítica da fonte; material EJA usado apenas para conferência conceitual."
+        }
+      ],
+      "review": {
+        "date": "2026-11-04",
+        "nature": "assistida_IA",
+        "independent_human_review": "pendente"
+      },
+      "source_sha256": "4a1b258b4fa8249469503a7992e1ae8370b8aa9a612748fa5943ed7777322084"
+    },
+    {
+      "id": "piloto_geografia",
+      "channel": "geografia",
+      "file": "poc/corpus/geografia.txt",
+      "title": "Geografia — síntese experimental, revisão assistida por IA",
+      "rights": "Paráfrase autoral assistida por IA; sem imagens ou reprodução integral das páginas externas. Revisão humana independente pendente.",
+      "passages": [],
+      "references": [
+        {
+          "title": "Geografia — A legenda do mapa, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-a-legenda-dos-mapas/",
+          "coverage": "Símbolos, cores e legenda."
+        },
+        {
+          "title": "Geografia — Noções de paisagem natural e cultural, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/nocoes-de-paisagem-natural-e-cultural/",
+          "coverage": "Elementos e transformação da paisagem; sem incorporar definição exclusiva da visão."
+        },
+        {
+          "title": "Geografia — O trabalho e os trabalhadores, SME Goiânia",
+          "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-o-trabalho-e-os-trabalhadores/",
+          "coverage": "Relações campo-cidade; estatísticas e generalizações setoriais não incorporadas."
+        }
+      ],
+      "review": {
+        "date": "2026-11-04",
+        "nature": "assistida_IA",
+        "independent_human_review": "pendente"
+      },
+      "source_sha256": "0572e6b5de57774e4bab8ebcea0147600536e8f3a41de3ff2077e884b6ff49a7"
+    },
+    {
+      "id": "piloto_geral",
+      "channel": "geral",
+      "file": "poc/corpus/geral.txt",
+      "title": "Geral — síntese experimental, revisão assistida por IA",
+      "rights": "Paráfrase autoral assistida por IA; sem imagens ou reprodução integral das páginas externas. Revisão humana independente pendente.",
+      "passages": [],
+      "references": [
+        {
+          "title": "Here. There. Everywhere. — Shadows, Smithsonian",
+          "url": "https://hte.si.edu/shadows.html",
+          "coverage": "Bloqueio de luz e sombra; exemplo da bola é aplicação autoral do conceito."
+        },
+        {
+          "title": "Cuide de seus dados pessoais, NIC.br",
+          "url": "https://cidadaonarede.nic.br/pt/videos/seguranca/cuide-de-seus-dados-pessoais",
+          "coverage": "Não divulgar dados pessoais e senhas."
+        }
+      ],
+      "review": {
+        "date": "2026-11-04",
+        "nature": "assistida_IA",
+        "independent_human_review": "pendente"
+      },
+      "authorial_guidance": "Checklist de mochila e convivência são sugestões normativas do projeto, não resultados empíricos nem recomendações clínicas.",
+      "source_sha256": "80ca8f9070b6f69b3f391be9d4cd8c9a7b947bb8dd75021041e4f21c3afa581e"
+    },
+    {
+      "id": "sp2024_ampliado_historia",
+      "channel": "historia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "title": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — historia",
+      "source_sha256": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987",
+      "rights": "Fonte local selecionada; condições de reutilização e créditos devem ser conferidos antes de redistribuição. Não se incorpora o livro integral ao pacote.",
+      "passages": [
+        {
+          "id": "sp2024-hist-nomadismo",
+          "pdf_page": 106,
+          "printed_page": 104,
+          "start": "Nomadismo: forma de vida",
+          "end": "Plantação de batata",
+          "topic": "Nomadismo e sedentarismo",
+          "text_sha256": "0bf47ed95eef0917d45218e712aa2ad10608d7bb04a6185cedb6f7fa07b79e96",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-hist-sedentarismo",
+          "pdf_page": 105,
+          "printed_page": 103,
+          "start": "No sedentarismo, o ser humano",
+          "end": "Grupo de pessoas na Pré-História",
+          "topic": "Sedentarismo e proximidade dos rios",
+          "text_sha256": "94cb9e8071d0f29499eb659286db494492ee55cf47d4bb42af90d44896ce659c",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-hist-comercio",
+          "pdf_page": 125,
+          "printed_page": 123,
+          "start": "O desenvolvimento das atividades agrícolas",
+          "end": "Ou seja,",
+          "topic": "Agricultura, estoque e trocas",
+          "text_sha256": "bce8c55bfefb5b973cb335308e3acce2e843d93e7025e399feb42a49a635c4f5",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-hist-materias-primas",
+          "pdf_page": 115,
+          "printed_page": 113,
+          "start": "As matérias-primas são recursos",
+          "end": "Animais:",
+          "topic": "Matérias-primas e exemplos vegetais",
+          "text_sha256": "9f425cd24e24c5bbc5eafe1faa4fe24255f9407ca66e968e284f08d0bb97d821",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-hist-campo-atual",
+          "pdf_page": 116,
+          "printed_page": 114,
+          "start": "Desta forma, no Brasil",
+          "end": "Hábitos da vida no campo:",
+          "topic": "Atividades rurais, turismo e hotelaria",
+          "text_sha256": "1bd2dd03d1cf795ccfe3b76458dc78c898f4cda31d0cd872bb5cd8dd53ccbe6b",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        }
+      ],
+      "exclusions": [
+        {
+          "reason": "Exercícios, poemas, imagens e legendas não selecionados; estatísticas datadas e generalizações sobre povos e causalidade demográfica excluídas."
+        }
+      ]
+    },
+    {
+      "id": "sp2024_ampliado_geografia",
+      "channel": "geografia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "title": "Livro do Estudante — 4º ano, volume 2, 2º bimestre (SEDUC-SP, [2024]) — geografia",
+      "source_sha256": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987",
+      "rights": "Fonte local selecionada; condições de reutilização e créditos devem ser conferidos antes de redistribuição. Não se incorpora o livro integral ao pacote.",
+      "passages": [
+        {
+          "id": "sp2024-geo-migracoes",
+          "pdf_page": 56,
+          "printed_page": 54,
+          "start": "As migrações ocorrem",
+          "end": "Os povos que ajudaram",
+          "topic": "Migrações",
+          "text_sha256": "12ca9a30c89c60203b5eebd9b2ef26e39710154335e8ff244b1b18e1585db540",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-geo-imigracao",
+          "pdf_page": 61,
+          "printed_page": 59,
+          "start": "Imigração é o processo",
+          "end": "Fatores da imigração",
+          "topic": "Imigração e seus motivos",
+          "text_sha256": "dc6d770df40742242595323a1e62031e22080026360b0972edd366d36e1e6d40",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-geo-migracao-interna",
+          "pdf_page": 72,
+          "printed_page": 70,
+          "start": "Também existem os migrantes internos",
+          "end": "Xilogravura retratando",
+          "topic": "Migração interna",
+          "text_sha256": "aa1727ef274b7249e2f21e44f2d3d6e0556306de65e9ec585f378a7546820af2",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-geo-contribuicoes",
+          "pdf_page": 62,
+          "printed_page": 60,
+          "start": "A chegada dos migrantes externos ao Brasil",
+          "end": "Treino de judô",
+          "topic": "Contribuições culturais",
+          "text_sha256": "0e52464591d622fbaf2ff390d07a535c8833d37639348daf352abeff17e37f01",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        },
+        {
+          "id": "sp2024-geo-quilombolas",
+          "pdf_page": 97,
+          "printed_page": 95,
+          "start": "Segundo o Instituto Nacional de",
+          "end": "Há cerca de 3 mil",
+          "topic": "Comunidades quilombolas",
+          "text_sha256": "a270d1ab7d03da3bc83bd1f54b4e3adb3bbec22a517158300bedec899377c5c1",
+          "reason": "Explicação textual delimitada, independente de exercícios e imagens; seleção preliminar para o 4º ano.",
+          "transcription": "literal; somente normalização de espaços/quebras de linha",
+          "review": "conferência direta de texto e páginas; revisão pedagógica independente pendente"
+        }
+      ],
+      "exclusions": [
+        {
+          "reason": "Exercícios, poemas, imagens e legendas não selecionados; estatísticas datadas e generalizações sobre povos e causalidade demográfica excluídas."
+        }
+      ]
+    },
+    {
+      "id": "rio_portugues_26",
+      "channel": "portugues",
+      "file": "Livros_Didadicos/Rioeduca_4ano_2026.pdf",
+      "title": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+      "source_sha256": "f77d701d7286250468ed5e8dcb040a489b31510419fb1e553682285afd6c198e",
+      "origin_url": "https://materialrioeduca.prefeitura.rio/arquivos/pdf_08349_4-ordm-ano-rioeduca-2026-2.pdf",
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "rio_portugues_26_p36_1",
+          "pdf_page": 36,
+          "printed_page": 35,
+          "start": "FÁBULA:",
+          "text_sha256": "d5e0351af013da262051c00736e1b4f11c2399b4a885dd2a51c67c72bdd16641",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "O que é uma fábula?",
+          "end": "Adaptado de"
+        },
+        {
+          "id": "rio_portugues_26_p121_2",
+          "pdf_page": 121,
+          "printed_page": 120,
+          "start": "Esse texto é uma crônica.",
+          "text_sha256": "0df1822e460e75ed09982389b437209e03952e41feea77bb266e3d9c5ff9fba6",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "O que é uma crônica?",
+          "end": "HABILIDADE:"
+        }
+      ]
+    },
+    {
+      "id": "rio_matematica_26",
+      "channel": "matematica",
+      "file": "Livros_Didadicos/Rioeduca_4ano_2026.pdf",
+      "title": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+      "source_sha256": "f77d701d7286250468ed5e8dcb040a489b31510419fb1e553682285afd6c198e",
+      "origin_url": "https://materialrioeduca.prefeitura.rio/arquivos/pdf_08349_4-ordm-ano-rioeduca-2026-2.pdf",
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "rio_matematica_26_p214_1",
+          "pdf_page": 214,
+          "printed_page": 213,
+          "start": "Na leitura das frações,",
+          "text_sha256": "946212994dae206575a8d73ba49533bb14a08ca82c9f53e9ba40aaca0fa28ad9",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Como lemos os denominadores das frações?",
+          "end": "HABILIDADE:"
+        },
+        {
+          "id": "rio_matematica_26_p169_2",
+          "pdf_page": 169,
+          "printed_page": 168,
+          "start": "Medida: centímetro",
+          "text_sha256": "43438a09d464ec3b35f7ebb96471ef26aa90c594ad90f185a3f4e20edbce038e",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Para que usamos o centímetro e o quilômetro?",
+          "end": "Vocês conhecem"
+        },
+        {
+          "id": "rio_matematica_26_p187_3",
+          "pdf_page": 187,
+          "printed_page": 186,
+          "start": "Como foi somado R$ 150,00",
+          "text_sha256": "2885eb294603c68e5fb8b16a55f2bfc7caafdb3c51f014d91572f7365e0d49e6",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Qual é a operação inversa da adição no exemplo do material?",
+          "end_inclusive": "que é a subtração!"
+        }
+      ]
+    },
+    {
+      "id": "trilhas2_ingles_26",
+      "channel": "ingles",
+      "file": "Livros_Didadicos/07_Apostila_Ciencias_4_Ano_Seres_Vivos_Trilhas_SP_2021.pdf",
+      "title": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª ed. (SME-SP, 2021)",
+      "source_sha256": "5a8395756c35e0f19f84a93636254c04bc2017cb07196466747cdc078864501d",
+      "origin_url": null,
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "trilhas2_ingles_26_p68_1",
+          "pdf_page": 68,
+          "printed_page": 66,
+          "start": "Usamos THERE IS",
+          "text_sha256": "a83d1ba9faa243b0a5e5057e9afc0ad3d8161c4f13fa983f3e7cd2ed25404d48",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Quando usamos THERE IS e THERE ARE?",
+          "end": "Agora, observe"
+        }
+      ]
+    },
+    {
+      "id": "estado3_ingles_26",
+      "channel": "ingles",
+      "file": "Livros_Didadicos/Curriculo_em_Acao_4ano_volume3_2024.pdf",
+      "title": "Currículo em Ação — Livro do Estudante, 4º ano, volume 3 (SEDUC-SP, [2024])",
+      "source_sha256": "158da1fde552186227722c8f1456560ed40a8357352054c04eefe40931436754",
+      "origin_url": "https://efape.educacao.sp.gov.br/curriculopaulista/wp-content/uploads/2024/07/cadestud-4-ano-ef-3-bimestre-2024-web-compressed.pdf",
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "estado3_ingles_26_p180_1",
+          "pdf_page": 180,
+          "printed_page": 178,
+          "start": "WORDS THAT SHOW FREQUENCY",
+          "text_sha256": "ebc12409c2388650fc122ca77c558684991074a7e21c7c538b99fd2875098ed5",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Quais frases do material usam always, sometimes e never?",
+          "end": "PRATICANDO"
+        },
+        {
+          "id": "estado3_ingles_26_p157_2",
+          "pdf_page": 157,
+          "printed_page": 155,
+          "start": "Waitress:",
+          "text_sha256": "0ef6e06d4e5a8040681fc1ddc6588699facd30f151dd021999ed5062b0b52566",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Como o filho pede peixe com vegetais em inglês no diálogo?",
+          "end_inclusive": "now, thank you."
+        }
+      ]
+    },
+    {
+      "id": "trilhas2_arte_26",
+      "channel": "arte",
+      "file": "Livros_Didadicos/07_Apostila_Ciencias_4_Ano_Seres_Vivos_Trilhas_SP_2021.pdf",
+      "title": "Trilhas de Aprendizagens — 4º ano, volume 2, 2ª ed. (SME-SP, 2021)",
+      "source_sha256": "5a8395756c35e0f19f84a93636254c04bc2017cb07196466747cdc078864501d",
+      "origin_url": null,
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "trilhas2_arte_26_p73_1",
+          "pdf_page": 73,
+          "printed_page": 71,
+          "start": "Cultura popular é",
+          "text_sha256": "9e67a9931509e8112a9b984169c88a95e3f65676d45bf498d4fc0c4ff5f48c92",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "O que é cultura popular?",
+          "end": "As Cantigas"
+        },
+        {
+          "id": "trilhas2_arte_26_p73_2",
+          "pdf_page": 73,
+          "printed_page": 71,
+          "start": "As Cantigas de Roda",
+          "text_sha256": "24c52db34754ebff45ce6a73f52ca8790381d634d09678c06175e527da4bea83",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "O que são cantigas de roda?",
+          "end_inclusive": "universo imaginário."
+        }
+      ]
+    },
+    {
+      "id": "campos_arte_26",
+      "channel": "arte",
+      "file": "Livros_Didadicos/Campos_Caderno_Atividades_4ano_2025.pdf",
+      "title": "Caderno de Atividades — 4º ano, edição revisada (SEDUCT Campos, 2025)",
+      "source_sha256": "332468ddf3375d6074d9b4e7a903b635f62c926f661d4a5621b6958926468b88",
+      "origin_url": "https://seduct.campos.rj.gov.br/cadernos-pedagogicos/?ano=2025",
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "campos_arte_26_p428_1",
+          "pdf_page": 428,
+          "printed_page": 427,
+          "start": "Romero Britto (1963)",
+          "text_sha256": "753501a2eaca518bab305af3c456c0f637c92e8e0ece4fed5fd17791082c81c0",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Onde Romero Britto nasceu e que materiais usava para pintar?",
+          "end": "Aos 14 anos"
+        }
+      ]
+    },
+    {
+      "id": "campos_educacao_fisica_26",
+      "channel": "educacao_fisica",
+      "file": "Livros_Didadicos/Campos_Caderno_Atividades_4ano_2025.pdf",
+      "title": "Caderno de Atividades — 4º ano, edição revisada (SEDUCT Campos, 2025)",
+      "source_sha256": "332468ddf3375d6074d9b4e7a903b635f62c926f661d4a5621b6958926468b88",
+      "origin_url": "https://seduct.campos.rj.gov.br/cadernos-pedagogicos/?ano=2025",
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "campos_educacao_fisica_26_p499_1",
+          "pdf_page": 499,
+          "printed_page": 498,
+          "start": "Esportes de invasão são",
+          "text_sha256": "d61ae5359af5b61b084ec0bbdf5c9ffddfb1c6cdf0213d4ae86268b042ab2a8e",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "O que são esportes de invasão?",
+          "end": "Conheças as regras"
+        },
+        {
+          "id": "campos_educacao_fisica_26_p114_2",
+          "pdf_page": 114,
+          "printed_page": 113,
+          "start": "O forró é um ritmo",
+          "text_sha256": "5ce6399b6749b60066b7a58fddc3989b15186ca538087b378999b737ac559fdf",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "O que é o forró?",
+          "end": "Dentre as opções"
+        }
+      ]
+    },
+    {
+      "id": "estado3_tecnologia_26",
+      "channel": "tecnologia",
+      "file": "Livros_Didadicos/Curriculo_em_Acao_4ano_volume3_2024.pdf",
+      "title": "Currículo em Ação — Livro do Estudante, 4º ano, volume 3 (SEDUC-SP, [2024])",
+      "source_sha256": "158da1fde552186227722c8f1456560ed40a8357352054c04eefe40931436754",
+      "origin_url": "https://efape.educacao.sp.gov.br/curriculopaulista/wp-content/uploads/2024/07/cadestud-4-ano-ef-3-bimestre-2024-web-compressed.pdf",
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "estado3_tecnologia_26_p199_1",
+          "pdf_page": 199,
+          "printed_page": 197,
+          "start": "Em geral, quando",
+          "text_sha256": "494687ba6b36b94b63a165e070a3f5e4fd72734e23d340655bb6ad84a9d192e5",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Para que serve um protótipo?",
+          "end": "ATIVIDADE 1"
+        },
+        {
+          "id": "estado3_tecnologia_26_p194_2",
+          "pdf_page": 194,
+          "printed_page": 192,
+          "start": "CONSTRUÇÃO COLABORATIVA",
+          "text_sha256": "4cc3f2c90b278d758df0ec745a1e4a9835fac1c84ecc038312ae6dc83e1bf603",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "O que é uma wiki?",
+          "end": "Preparados?"
+        }
+      ]
+    },
+    {
+      "id": "estado2_tecnologia_26",
+      "channel": "tecnologia",
+      "file": "Livros_Didadicos/CadEstud_4ano_2_Bimestre_WEB.pdf",
+      "title": "Livro do Estudante — 4º ano, volume 2 (SEDUC-SP, [2024])",
+      "source_sha256": "f6552ce4db60bfc7c1ae222c7fb0ac47a7251b214f5cf36e7b00edf202da4987",
+      "origin_url": null,
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "estado2_tecnologia_26_p198_1",
+          "pdf_page": 198,
+          "printed_page": 196,
+          "start": "Os comandos de repetição",
+          "text_sha256": "baa5a020ddaf42382fd90e607408e1ec574fffeaf7130d0671d38e0b5551a578",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Quando usamos comandos de repetição?",
+          "end": "Desafio 1:"
+        }
+      ]
+    },
+    {
+      "id": "trilhas1_ciencias_26",
+      "channel": "ciencias",
+      "file": "Livros_Didadicos/Trilhas_4ano_volume1_2021.pdf",
+      "title": "Trilhas de Aprendizagens — 4º ano, volume 1, 2ª ed. (SME-SP, 2021)",
+      "source_sha256": "48a430447dce1525a9d1b84b3949d19843652d4aeeb5ae6dda2b4567323458aa",
+      "origin_url": "https://acervodigital.sme.prefeitura.sp.gov.br/wp-content/uploads/2021/10/4ano_TA_livro-2ed.pdf",
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "trilhas1_ciencias_26_p97_1",
+          "pdf_page": 97,
+          "printed_page": 95,
+          "start": "O vidro é feito",
+          "text_sha256": "518ac9785f78d2f4f02daeb3efd597d8ddec95c257a8160037d79c151a06d6b3",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Qual é o principal componente do vidro?",
+          "end": "Produção"
+        },
+        {
+          "id": "trilhas1_ciencias_26_p99_2",
+          "pdf_page": 99,
+          "printed_page": 97,
+          "start": "Recursos naturais são",
+          "text_sha256": "5f27d79b95ffd59103a09ecdc6fe54e229baa7eda122da3800d83d633dd63968",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "O que são recursos naturais renováveis e não renováveis?",
+          "end": "Adaptado de:"
+        }
+      ]
+    },
+    {
+      "id": "estado3_geografia_26",
+      "channel": "geografia",
+      "file": "Livros_Didadicos/Curriculo_em_Acao_4ano_volume3_2024.pdf",
+      "title": "Currículo em Ação — Livro do Estudante, 4º ano, volume 3 (SEDUC-SP, [2024])",
+      "source_sha256": "158da1fde552186227722c8f1456560ed40a8357352054c04eefe40931436754",
+      "origin_url": "https://efape.educacao.sp.gov.br/curriculopaulista/wp-content/uploads/2024/07/cadestud-4-ano-ef-3-bimestre-2024-web-compressed.pdf",
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "estado3_geografia_26_p98_1",
+          "pdf_page": 98,
+          "printed_page": 96,
+          "start": "Processo de produção",
+          "text_sha256": "2274dfc7d27e832bd92546bec21f9308909762a1a17f8593b942aa571a2026da",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "Como o trigo se transforma em macarrão no material?",
+          "end_inclusive": "estabelecimento comercial."
+        },
+        {
+          "id": "estado3_geografia_26_p66_2",
+          "pdf_page": 66,
+          "printed_page": 64,
+          "start": "Matéria-prima é",
+          "text_sha256": "c1a28a6ad8812f7de70497da57aaf7182fb0255519ac9685becbd109defefc29",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "O que é matéria-prima?",
+          "end_inclusive": "roupas, sapatos e portões."
+        }
+      ]
+    },
+    {
+      "id": "rio_geral_26",
+      "channel": "geral",
+      "file": "Livros_Didadicos/Rioeduca_4ano_2026.pdf",
+      "title": "Material Rioeduca — 4º ano (SME-Rio, 2026)",
+      "source_sha256": "f77d701d7286250468ed5e8dcb040a489b31510419fb1e553682285afd6c198e",
+      "origin_url": "https://materialrioeduca.prefeitura.rio/arquivos/pdf_08349_4-ordm-ano-rioeduca-2026-2.pdf",
+      "access_date": "2026-11-05",
+      "rights": "Acesso institucional publico; verificar creditos e direitos de terceiros antes de redistribuir. Revisao humana pendente.",
+      "passages": [
+        {
+          "id": "rio_geral_26_p384_1",
+          "pdf_page": 384,
+          "printed_page": 383,
+          "start": "Existem informações",
+          "text_sha256": "c1e546ac6c99cadede2e66f482c11c4d9b71f9a15be7d63296e5bdf5c2af2548",
+          "reason": "Recorte explicativo literal, separado das atividades. Revisao pedagogica independente pendente.",
+          "example_question": "O que significa privacidade?",
+          "end": "Vamos brincar?"
+        }
+      ]
+    }
+  ],
+  "study_version": "GK-P2.6-dev",
+  "based_on": "GK-P2.5-dev"
+}
