@@ -1,5 +1,9 @@
 # TCC GuardKids — edição GK-P2.6-dev
 
+A revisão mais recente trata as marcações vermelhas, amarelas e os quatro comentários da introdução: `avaliacao/REVISAO_MARCACOES_INTRODUCAO_2026-11-05.md` registra cada decisão. O diagrama 1 atualizado e o foco principal aprovado foram mantidos.
+
+O manuscrito foi realinhado à ficha do tema: a comparação principal é entre duas configurações de proteção, com indicadores de respostas inadequadas, bloqueios indevidos e tratamento de risco. A comparação de estilos é complementar. A implementação atual permanece com proteção comum; as duas condições no acervo ampliado ainda precisam ser especificadas, implementadas e avaliadas. A orientação vigente está em `avaliacao/COMPARACAO_GUARDRAILS_2026-11-05.md`; os relatos de revisões anteriores abaixo preservam seu contexto histórico.
+
 Importe o ZIP no Overleaf, selecione main.tex e o compilador XeLaTeX. O pacote contém fontes Times New Roman, texto, sete diagramas vetoriais do Draw.io com seus originais editáveis e o cronograma em LaTeX: oito figuras ao todo.
 
 O manuscrito apresenta a GK-P2.6-dev como artefato atual, com dez chats, seis volumes didáticos de quatro coleções, três sínteses e 40 blocos. Os resultados antigos continuam identificados por versão. As três consultas da ampliação são verificações de desenvolvimento; o plano final de 32 perguntas/64 oportunidades pertence à proposta anterior e exige replanejamento para os dez chats.
@@ -26,7 +30,7 @@ O manual disponível no portal do curso foi consultado na revisão (UNITINS, 202
 
 Essas informações documentam a edição e não integram o conteúdo acadêmico do PDF. O histórico de alterações, os backups e a matriz de atendimento ao parecer ficam nos materiais de acompanhamento, fora dos capítulos e apêndices da pesquisa.
 
-A revisão prospectiva de 04/11/2026 define o ASCS, equilibra a segunda revisão dentro de cada chat e tipo de caso e acrescenta o formulário de preferência pareada de clareza. Nenhuma resposta final ou assinatura humana foi produzida. A versão atual do PDF tem 44 páginas. O script histórico de métricas não implementa o novo protocolo.
+A revisão prospectiva de 04/11/2026 define o ASCS, equilibra a segunda revisão dentro de cada chat e tipo de caso e acrescenta o formulário de preferência pareada de clareza. Nenhuma resposta final ou assinatura humana foi produzida. A versão atual do PDF tem 45 páginas. O script histórico de métricas não implementa o novo protocolo.
 
 O ASCS prospectivo possui calculador próprio em `poc/final_metrics.py`, com verificação documental e taxas condicionadas à revisão humana encerrada. Seu código acompanha o pacote; não é necessário executá-lo para compilar o manuscrito.
 

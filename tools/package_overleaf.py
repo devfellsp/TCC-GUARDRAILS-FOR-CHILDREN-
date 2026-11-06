@@ -21,7 +21,10 @@ def build(root=ROOT):
              "GuardKids_Drawio_rotulos.drawio", "avaliacao/PLANO_ATUALIZACAO_TCC_GK_P2_6.md",
              "avaliacao/APLICACAO_TCC_GK_P2_6.md", "poc/docs/AMPLIACAO_MATERIAS_2026-11-05.md",
              "poc/tests/test_school_subjects.py", "poc/tests/test_school_subjects_web.cjs",
-             "avaliacao/evidencias/ambiente_hardware.json", "avaliacao/evidencias/calibracao_desenvolvimento.json"}
+             "avaliacao/evidencias/ambiente_hardware.json", "avaliacao/evidencias/calibracao_desenvolvimento.json",
+             "avaliacao/COMPARACAO_GUARDRAILS_2026-11-05.md",
+             "avaliacao/REALINHAMENTO_FICHA_2026-11-05.md",
+             "avaliacao/REVISAO_MARCACOES_INTRODUCAO_2026-11-05.md"}
     patterns = ["texto/*.tex", "generated/*.tex", "fontes/*.ttf", "diagramas/pdf/*.pdf", "diagramas/drawio/*.drawio",
                 "poc/*.py", "poc/*.ps1", "poc/*.cmd", "poc/web/*.html", "poc/prompts/*.txt",
                 "poc/corpus/*.txt", "avaliacao/congelamentos/*.json",

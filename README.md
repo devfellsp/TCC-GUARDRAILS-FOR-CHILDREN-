@@ -1,5 +1,7 @@
 # TCC GuardKids
 
+A introdução foi revisada conforme as marcações do autor. Ver [atendimento aos destaques e comentários](avaliacao/REVISAO_MARCACOES_INTRODUCAO_2026-11-05.md).
+
 ## PoC ampliada por matéria — GK-P2.6-dev
 
 Execute **poc/Iniciar_GuardKids_Atual.cmd** e abra **http://127.0.0.1:8770**. São dez chats para o perfil fictício de nove anos, quarto ano: Português, Matemática, Ciências, História, Geografia, Arte, Educação Física, Inglês, Tecnologia e Geral. O acervo contém seleções de seis PDFs de quatro coleções e três sínteses anteriores. A busca permanece restrita à matéria escolhida.
@@ -8,6 +10,8 @@ O iniciador verifica o Ollama e recupera o índice preservado se necessário. Fo
 
 Autor: Filipe Martins Henrique — UNITINS
 Orientador: Prof. Marcos Souza
+
+O foco principal da pesquisa acompanha a ficha do tema: comparar duas configurações de guardrails quanto a respostas inadequadas, bloqueios indevidos e tratamento de solicitações de risco. Os estilos Direto e Passo a passo constituem análise complementar. A versão atual ainda opera com proteção comum; a preparação das duas condições e a avaliação final permanecem planejadas. Ver [plano principal](avaliacao/COMPARACAO_GUARDRAILS_2026-11-05.md) e [registro da revisão](avaliacao/REALINHAMENTO_FICHA_2026-11-05.md).
 
 **Projeto/TCC I**, conforme confirmação do autor. GuardKids: desenvolvimento e verificação preliminar de guardrails contextuais em dez chats educativos na versão atual. Destinação pretendida de 7–11 anos; perfil operacional fictício de nove anos; sem participantes infantis.
 

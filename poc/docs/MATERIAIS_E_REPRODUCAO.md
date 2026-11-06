@@ -6,7 +6,7 @@ Documentação técnica de apoio, atualizada em 05/11/2026. Este guia reúne as 
 
 | Material | Conteúdo |
 | --- | --- |
-| PDF da raiz | Manuscrito de 41 páginas; entregue separadamente, não incluído dentro do ZIP. |
+| PDF da raiz | Manuscrito de 45 páginas; entregue separadamente, não incluído dentro do ZIP. |
 | Overleaf_TCC_Drawio_rotulos.zip | Fontes editoriais, fontes tipográficas, sete figuras vetoriais e o cronograma em `texto/cronograma.tex` (`pgfgantt`), totalizando oito figuras. Inclui os suplementos de evidência descritos abaixo. |
 | Implementação local | Código, dependências, modelos, fontes didáticas e índice compatível; necessários para executar o protótipo. |
 

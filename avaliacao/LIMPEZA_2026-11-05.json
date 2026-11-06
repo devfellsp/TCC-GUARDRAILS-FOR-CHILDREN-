@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-05",
+  "removed": [
+    {
+      "path": ".cache/testes-ampliacao",
+      "files": 19,
+      "bytes": 245006
+    },
+    {
+      "path": ".cache/testes-ampliacao-finais",
+      "files": 598,
+      "bytes": 17689175
+    },
+    {
+      "path": ".cache/testes-arquivamento",
+      "files": 314,
+      "bytes": 92479685
+    },
+    {
+      "path": ".cache/testes-ascs-completos",
+      "files": 112,
+      "bytes": 290603
+    },
+    {
+      "path": ".cache/testes-ascs-finais",
+      "files": 112,
+      "bytes": 291432
+    },
+    {
+      "path": ".cache/testes-completos-protocolo",
+      "files": 4,
+      "bytes": 14866
+    },
+    {
+      "path": ".cache/testes-correcao-completos",
+      "files": 633,
+      "bytes": 17983906
+    },
+    {
+      "path": ".cache/testes-correcao-definitivos",
+      "files": 709,
+      "bytes": 20658439
+    },
+    {
+      "path": ".cache/testes-correcao-final",
+      "files": 667,
+      "bytes": 18958112
+    },
+    {
+      "path": ".cache/testes-correcao-iniciais",
+      "files": 2,
+      "bytes": 6133
+    },
+    {
+      "path": ".cache/testes-correcao-iniciais-2",
+      "files": 2,
+      "bytes": 6133
+    },
+    {
+      "path": ".cache/testes-extrativo",
+      "files": 2,
+      "bytes": 8899
+    },
+    {
+      "path": ".cache/testes-metricas-adicionais",
+      "files": 11,
+      "bytes": 76921
+    },
+    {
+      "path": ".cache/testes-metricas-corrigidas",
+      "files": 11,
+      "bytes": 76877
+    },
+    {
+      "path": ".cache/testes-metricas-novas",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": ".cache/testes-protocolo",
+      "files": 0,
+      "bytes": 0
+    },
+    {
+      "path": ".cache/testes-protocolo-verificados",
+      "files": 101,
+      "bytes": 213687
+    },
+    {
+      "path": ".cache/testes-rastreabilidade-finais",
+      "files": 512,
+      "bytes": 16317411
+    },
+    {
+      "path": ".cache/testes-vocabulario",
+      "files": 1,
+      "bytes": 2570
+    },
+    {
+      "path": ".cache/testes-vocabulario-2",
+      "files": 1,
+      "bytes": 2570
+    },
+    {
+      "path": ".cache/v-precommit",
+      "files": 714,
+      "bytes": 20677767
+    },
+    {
+      "path": "diagramas/__pycache__",
+      "files": 2,
+      "bytes": 56441
+    },
+    {
+      "path": "poc/__pycache__",
+      "files": 1,
+      "bytes": 1521
+    },
+    {
+      "path": ".cache/testes-sincronizacao-20261105",
+      "files": 4,
+      "bytes": 14866
+    },
+    {
+      "path": ".cache/testes-sincronizacao-20261105b",
+      "files": 767,
+      "bytes": 22752260
+    }
+  ],
+  "files": 5299,
+  "bytes": 228825280
+}
